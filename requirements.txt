@@ -1,0 +1,4 @@
+bertopic==0.14.0
+gensim==4.3.0
+pandas==1.5.2
+wandb==0.13.10
