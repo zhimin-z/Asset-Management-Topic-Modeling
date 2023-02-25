@@ -14,17 +14,17 @@ import os
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
-path_dataset = '../Dataset'
+path_dataset = os.path.join(os.path.dirname(os.getcwd()), 'Dataset')
 
 wandb_project = 'asset-management-project'
 wandb.login()
 
-df_challenges = pd.read_json(os.path.join(path_dataset, 'challenges_original.json'))
-docs = df_challenges['Original_content'].tolist()
+df_all = pd.read_json(os.path.join(path_dataset, 'all_original.json'))
+docs = df_all['Challenge_original_content'].tolist()
 
 # set general sweep configuration
 sweep_configuration = {
-    "name": "experiment-1",
+    "name": "experiment-2",
     "metric": {
         'name': 'CoherenceCV',
         'goal': 'maximize'
@@ -36,7 +36,10 @@ sweep_configuration = {
         },
         'n_components': {
             'values': list(range(2, 12, 2))
-        }
+        },
+        'ngram_range': {
+            'values': list(range(3, 6))
+        },
     }
 }
 
@@ -44,11 +47,10 @@ sweep_configuration = {
 config_defaults = {
     'model_name': 'all-mpnet-base-v2',
     'metric_distane': 'manhattan',
-    'low_memory': False,
+    'low_memory': True,
     'max_cluster_size': 1500,
     'min_cluster_size': 50,
     'stop_words': 'english',
-    # 'ngram_range': (1, 5),
     'reduce_frequent_words': True
 }
 
@@ -71,7 +73,7 @@ def train():
 
         # Step 4 - Tokenize topics
         vectorizer_model = TfidfVectorizer(
-            stop_words=run.config.stop_words, ngram_range=(1, 5))
+            stop_words=run.config.stop_words, ngram_range=(1, wandb.config.ngram_range))
 
         # Step 5 - Create topic representation
         ctfidf_model = ClassTfidfTransformer(
