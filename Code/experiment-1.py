@@ -14,12 +14,12 @@ import os
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
-path_dateset = '../Dataset'
+path_dataset = '../Dataset'
 
 wandb_project = 'asset-management-project'
 wandb.login()
 
-df_challenges = pd.read_json(os.path.join(path_dateset, 'challenges_original.json'))
+df_challenges = pd.read_json(os.path.join(path_dataset, 'challenges_original.json'))
 docs = df_challenges['Original_content'].tolist()
 
 # set general sweep configuration
