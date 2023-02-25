@@ -4,4 +4,4 @@ COPY . .
 
 RUN pip3 install -r requirements.txt
 
-CMD ["python", "main.py"] 
+CMD ["python", "Code/experiment-2.py"]

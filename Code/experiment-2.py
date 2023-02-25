@@ -18,7 +18,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "true"
 wandb_project = 'asset-management-project'
 wandb.login()
 
-df_challenges = pd.read_json('challenges_original.json')
+df_challenges = pd.read_json(os.path.join(path_dateset, 'challenges_original.json'))
 docs = df_challenges['Original_content_gpt_summary'].tolist()
 
 # set general sweep configuration
