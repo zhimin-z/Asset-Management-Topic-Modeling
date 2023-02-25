@@ -12,20 +12,18 @@ import pandas as pd
 import wandb
 import os
 
-# Experiment 1
-
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 wandb_project = 'asset-management-project'
 wandb.login()
 
-df_questions = pd.read_json('all_topic_modeling.json')
-docs = df_questions['Question_original_content_preprocessed_text'].tolist()
+df_challenges = pd.read_json('challenges_original.json')
+docs = df_challenges['Original_content_gpt_summary'].tolist()
 
 # set general sweep configuration
 sweep_configuration = {
-    "name": "question-experiment",
+    "name": "experiment-2",
     "metric": {
         'name': 'CoherenceCV',
         'goal': 'maximize'
@@ -46,10 +44,10 @@ config_defaults = {
     'model_name': 'all-mpnet-base-v2',
     'metric_distane': 'manhattan',
     'low_memory': False,
-    'max_cluster_size': 1000,
-    'min_cluster_size': 100,
+    'max_cluster_size': 1500,
+    'min_cluster_size': 50,
     'stop_words': 'english',
-    'ngram_range': (1, 5),
+    # 'ngram_range': (1, 5),
     'reduce_frequent_words': True
 }
 
