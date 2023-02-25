@@ -14,6 +14,7 @@ import os
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
+path_dateset = '../Dataset'
 
 wandb_project = 'asset-management-project'
 wandb.login()
