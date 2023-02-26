@@ -19,7 +19,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "true"
 wandb_project = 'asset-management-project'
 wandb.login()
 
-path_dataset = os.path.join(os.path.dirname(os.getcwd()), 'Dataset')
+path_dataset = 'Dataset'
 df_all = pd.read_json(os.path.join(path_dataset, 'all_original.json'))
 docs = df_all['Challenge_preprocessed_content'].tolist()
 
