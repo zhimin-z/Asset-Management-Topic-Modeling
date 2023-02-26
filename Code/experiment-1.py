@@ -13,7 +13,7 @@ import wandb
 import os
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
-os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"]= "100"
+os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"]= "150"
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 wandb_project = 'asset-management-project'
