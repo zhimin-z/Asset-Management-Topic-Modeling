@@ -50,7 +50,7 @@ config_defaults = {
     'metric_distane': 'manhattan',
     'low_memory': True,
     'max_cluster_size': 1500,
-    'min_cluster_size': 50,
+    'min_cluster_size': 30,
     'stop_words': 'english',
     'reduce_frequent_words': True
 }
