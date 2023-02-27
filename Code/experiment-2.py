@@ -48,7 +48,7 @@ sweep_configuration = {
 config_defaults = {
     'model_name': 'all-mpnet-base-v2',
     'metric_distane': 'manhattan',
-    'low_memory': True,
+    'low_memory': False,
     'max_cluster_size': 1500,
     'min_cluster_size': 30,
     'stop_words': 'english',
