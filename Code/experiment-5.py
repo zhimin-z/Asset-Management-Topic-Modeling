@@ -49,8 +49,8 @@ config_defaults = {
     'model_name': 'all-mpnet-base-v2',
     'metric_distane': 'manhattan',
     'low_memory': False,
-    'max_cluster_size': 1500,
-    'min_cluster_size': 30,
+    'max_cluster_size': 800,
+    'min_cluster_size': 15,
     'stop_words': 'english',
     'reduce_frequent_words': True
 }
