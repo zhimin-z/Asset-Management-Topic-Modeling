@@ -20,7 +20,7 @@ wandb_project = 'asset-management-project'
 wandb.login()
 
 path_dataset = 'Dataset'
-df_all = pd.read_json(os.path.join(path_dataset, 'all_original.json'))
+df_all = pd.read_json(os.path.join(path_dataset, 'all_filtered.json'))
 docs = df_all['Challenge_original_content_gpt_summary'].tolist()
 
 # set general sweep configuration
