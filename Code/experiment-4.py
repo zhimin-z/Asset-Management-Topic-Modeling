@@ -95,27 +95,25 @@ def train():
             # verbose=True
         )
 
-        topics, _ = topic_model.fit_transform(docs)
+        topic_model.fit_transform(docs)
 
         # Preprocess documents
-        documents = pd.DataFrame(
-            {"Document": docs,
-             "ID": range(len(docs)),
-             "Topic": topics}
-        )
-        documents_per_topic = documents.groupby(
-            ['Topic'], as_index=False).agg({'Document': ' '.join})
-        cleaned_docs = topic_model._preprocess_text(
-            documents_per_topic.Document.values)
-
-        # Extract vectorizer and analyzer from fit model
+        cleaned_docs = topic_model._preprocess_text(docs)
+    
+        # Extract vectorizer and tokenizer from BERTopic
+        vectorizer = topic_model.vectorizer_model
         analyzer = vectorizer_model.build_analyzer()
-        # Extract features for topic coherence evaluation
+
+        # Extract features for Topic Coherence evaluation
+        words = vectorizer.get_feature_names_out()
         tokens = [analyzer(doc) for doc in cleaned_docs]
         dictionary = corpora.Dictionary(tokens)
         corpus = [dictionary.doc2bow(token) for token in tokens]
-        topic_words = [[words for words, _ in topic_model.get_topic(topic)]
-                       for topic in range(len(set(topics))-1)]
+        # Create topic words
+        topic_words = [[dictionary.token2id[w] for w in words if w in dictionary.token2id] for _ in range(topic_model.nr_topics)]
+
+        # this creates a list of the token ids (in the format of integers) of the words in words that are also present in the 
+        # dictionary created from the preprocessed text. The topic_words list contains list of token ids for each topic.
 
         coherence_cv = CoherenceModel(
             topics=topic_words,
