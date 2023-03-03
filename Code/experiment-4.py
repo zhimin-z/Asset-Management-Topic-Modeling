@@ -21,7 +21,7 @@ wandb.login()
 
 path_dataset = 'Dataset'
 df_all = pd.read_json(os.path.join(path_dataset, 'all_filtered.json'))
-docs = df_all[df_all['Challenge_original_content'] != '']['Challenge_original_content'].tolist()
+docs = df_all[df_all['Solution_original_content'] != '']['Challenge_original_content'].tolist()
 
 # set general sweep configuration
 sweep_configuration = {
@@ -102,11 +102,11 @@ def train():
     
         # Extract vectorizer and tokenizer from BERTopic
         vectorizer = topic_model.vectorizer_model
-        tokenizer = vectorizer.build_tokenizer()
+        analyzer = vectorizer.build_analyzer()
 
         # Extract features for Topic Coherence evaluation
         words = vectorizer.get_feature_names_out()
-        tokens = [tokenizer(doc) for doc in cleaned_docs]
+        tokens = [analyzer(doc) for doc in cleaned_docs]
         dictionary = corpora.Dictionary(tokens)
         corpus = [dictionary.doc2bow(token) for token in tokens]
         
