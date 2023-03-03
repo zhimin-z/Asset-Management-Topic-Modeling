@@ -58,7 +58,7 @@ config_defaults = {
 
 def train():
     # Initialize a new wandb run
-    with wandb.init() as run:
+    with wandb.init(project=wandb_project) as run:
         # update any values not set by sweep
         run.config.setdefaults(config_defaults)
 
