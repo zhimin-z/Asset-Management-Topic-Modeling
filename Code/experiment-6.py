@@ -25,7 +25,7 @@ docs = df_all[df_all['Challenge_original_content'] != '']['Solution_preprocessed
 
 # set general sweep configuration
 sweep_configuration = {
-    "name": "experiment-1",
+    "name": "experiment-6",
     "metric": {
         'name': 'CoherenceCV',
         'goal': 'maximize'
