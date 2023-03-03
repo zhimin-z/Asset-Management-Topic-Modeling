@@ -102,11 +102,11 @@ def train():
     
         # Extract vectorizer and tokenizer from BERTopic
         vectorizer = topic_model.vectorizer_model
-        tokenizer = vectorizer.build_tokenizer()
+        analyzer = vectorizer.build_analyzer()
 
         # Extract features for Topic Coherence evaluation
         words = vectorizer.get_feature_names_out()
-        tokens = [tokenizer(doc) for doc in cleaned_docs]
+        tokens = [analyzer(doc) for doc in cleaned_docs]
         dictionary = corpora.Dictionary(tokens)
         corpus = [dictionary.doc2bow(token) for token in tokens]
         
