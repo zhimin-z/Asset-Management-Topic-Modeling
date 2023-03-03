@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  experiment-1:
+    image: experiment
+    command: python3 Code/experiment-1.py
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+  experiment-2:
+    image: experiment
+    command: python3 Code/experiment-2.py
+  experiment-3:
+    image: experiment
+    command: python3 Code/experiment-3.py
+  experiment-4:
+    image: experiment
+    command: python3 Code/experiment-4.py
+  experiment-5:
+    image: experiment
+    command: python3 Code/experiment-5.py
+  experiment-6:
+    image: experiment
+    command: python3 Code/experiment-6.py
