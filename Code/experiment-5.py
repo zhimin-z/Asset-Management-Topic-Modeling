@@ -21,7 +21,9 @@ wandb.login()
 
 path_dataset = 'Dataset'
 df_all = pd.read_json(os.path.join(path_dataset, 'all_filtered.json'))
-docs = df_all[df_all['Solution_original_content'] != '']['Solution_original_content_gpt_summary'].tolist()
+df_all = df_all[df_all['Solution_original_content'].isnull() == False]
+df_all = df_all[df_all['Solution_original_content'] != '']
+docs = df_all['Solution_original_content_gpt_summary'].tolist()
 
 # set general sweep configuration
 sweep_configuration = {
