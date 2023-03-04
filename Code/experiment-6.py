@@ -97,7 +97,7 @@ def train():
             # verbose=True
         )
 
-        topic_model.fit_transform(docs)
+        topic_model.fit(docs)
 
         # Preprocess documents
         cleaned_docs = topic_model._preprocess_text(docs)
