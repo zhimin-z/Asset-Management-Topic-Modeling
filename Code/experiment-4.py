@@ -23,7 +23,7 @@ path_dataset = 'Dataset'
 df_all = pd.read_json(os.path.join(path_dataset, 'all_filtered.json'))
 df_all = df_all[df_all['Solution_original_content'].isnull() == False]
 df_all = df_all[df_all['Solution_original_content'] != '']
-docs = df_all['Challenge_original_content'].tolist()
+docs = df_all['Solution_original_content'].tolist()
 
 # set general sweep configuration
 sweep_configuration = {
