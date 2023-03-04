@@ -105,12 +105,12 @@ def train():
         analyzer = vectorizer.build_analyzer()
 
         # Extract features for Topic Coherence evaluation
-        words = vectorizer.get_feature_names_out()
         tokens = [analyzer(doc) for doc in cleaned_docs]
         dictionary = corpora.Dictionary(tokens)
         corpus = [dictionary.doc2bow(token) for token in tokens]
         
         # Create topic words
+        words = vectorizer.get_feature_names_out()
         topic_words = [[dictionary.token2id[w] for w in words if w in dictionary.token2id] for _ in range(topic_model.nr_topics)]
 
         # this creates a list of the token ids (in the format of integers) of the words in words that are also present in the 
