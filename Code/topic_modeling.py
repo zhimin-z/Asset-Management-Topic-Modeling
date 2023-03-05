@@ -65,9 +65,7 @@ config_solutions = {
 
 class TopicModeling:
     def __init__(self, docs_name):
-        self.wandb_project = 'asset-management-project'
-        self.sweep_count = 150
-        
+        sweep_defaults['name'] = docs_name
         df_all = pd.read_json(os.path.join('Dataset', 'all_filtered.json'))
         
         if docs_name in ['Solution_original_content', 'Solution_original_content_gpt_summary', 'Solution_preprocessed_content']:
@@ -78,7 +76,8 @@ class TopicModeling:
             sweep_defaults.update(config_challenges)
             
         self.docs = df_all[docs_name].tolist()
-        sweep_defaults['name'] = docs_name
+        self.wandb_project = 'asset-management-project'
+        self.sweep_count = 150
 
     def __train(self):
         # Initialize a new wandb run
