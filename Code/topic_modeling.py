@@ -140,7 +140,7 @@ class TopicModeling:
             analyzer = vectorizer.build_analyzer()
 
             # Extract features for Topic Coherence evaluation
-            words = vectorizer.get_feature_names()
+            words = vectorizer.get_feature_names_out()
             tokens = [analyzer(doc) for doc in cleaned_docs]
             dictionary = corpora.Dictionary(tokens)
             corpus = [dictionary.doc2bow(token) for token in tokens]
