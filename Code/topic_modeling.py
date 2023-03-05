@@ -24,6 +24,7 @@ config_defaults = {
     'model_name': 'all-mpnet-base-v2',
     'metric_distane': 'manhattan',
     'n_components': 5,
+    'random_state': 42,
     'low_memory': False,
     'stop_words': 'english',
     'reduce_frequent_words': True,
@@ -92,7 +93,7 @@ class TopicModeling:
             embedding_model = SentenceTransformer(run.config.model_name)
 
             # Step 2 - Reduce dimensionality
-            umap_model = UMAP(n_components=wandb.config.n_components,
+            umap_model = UMAP(n_components=wandb.config.n_components, random_state=run.config.random_state,
                               metric=run.config.metric_distane, low_memory=run.config.low_memory)
 
             # Step 3 - Cluster reduced embeddings
