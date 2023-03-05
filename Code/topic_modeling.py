@@ -12,8 +12,11 @@ import pandas as pd
 import wandb
 import os
 
+wandb_project = 'asset-management-project'
+sweep_count = 150
+
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
-os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"] = "150"
+os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"] = str(sweep_count)
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 # set default sweep configuration
@@ -76,8 +79,6 @@ class TopicModeling:
             sweep_defaults.update(config_challenges)
             
         self.docs = df_all[docs_name].tolist()
-        self.wandb_project = 'asset-management-project'
-        self.sweep_count = 150
 
     def __train(self):
         # Initialize a new wandb run
@@ -180,5 +181,5 @@ class TopicModeling:
 
     def sweep(self):
         wandb.login()
-        sweep_id = wandb.sweep(sweep_defaults, project=self.wandb_project)
-        wandb.agent(sweep_id, function=self.__train, count=self.sweep_count)
+        sweep_id = wandb.sweep(sweep_defaults, project=wandb_project)
+        wandb.agent(sweep_id, function=self.__train, count=sweep_count)
