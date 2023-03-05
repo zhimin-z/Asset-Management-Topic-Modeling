@@ -66,18 +66,20 @@ config_solutions = {
     },
 }
 
+
 class TopicModeling:
     def __init__(self, docs_name):
         sweep_defaults['name'] = docs_name
         df_all = pd.read_json(os.path.join('Dataset', 'all_filtered.json'))
-        
+
         if docs_name in ['Solution_original_content', 'Solution_original_content_gpt_summary', 'Solution_preprocessed_content']:
-            df_all = df_all[df_all['Solution_original_content'].isnull() == False]
+            df_all = df_all[df_all['Solution_original_content'].isnull()
+                            == False]
             df_all = df_all[df_all['Solution_original_content'] != '']
             sweep_defaults.update(config_solutions)
         else:
             sweep_defaults.update(config_challenges)
-            
+
         self.docs = df_all[docs_name].tolist()
 
     def __train(self):
@@ -94,7 +96,8 @@ class TopicModeling:
                               metric=run.config.metric_distane, low_memory=run.config.low_memory)
 
             # Step 3 - Cluster reduced embeddings
-            min_samples = int(wandb.config.min_cluster_size * wandb.config.min_samples_pct)
+            min_samples = int(wandb.config.min_cluster_size *
+                              wandb.config.min_samples_pct)
             min_samples = 1 if min_samples < 1 else min_samples
             hdbscan_model = HDBSCAN(
                 min_cluster_size=wandb.config.min_cluster_size, min_samples=min_samples)
