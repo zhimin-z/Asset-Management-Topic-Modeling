@@ -125,25 +125,32 @@ class TopicModeling:
 
             topics, _ = topic_model.fit_transform(self.docs)
 
-            # Preprocess documents
-            cleaned_docs = topic_model._preprocess_text(self.docs)
+            # Preprocess Documents
+            documents = pd.DataFrame({"Document": self.docs,
+                                      "ID": range(len(self.docs)),
+                                      "Topic": topics})
+            documents_per_topic = documents.groupby(
+                ['Topic'], as_index=False).agg({'Document': ' '.join})
+            cleaned_docs = topic_model._preprocess_text(
+                documents_per_topic.Document.values)
 
-            # Extract vectorizer and tokenizer from BERTopic
+            # Extract vectorizer and analyzer from BERTopic
             vectorizer = topic_model.vectorizer_model
             analyzer = vectorizer.build_analyzer()
 
             # Extract features for Topic Coherence evaluation
+            words = vectorizer.get_feature_names()
             tokens = [analyzer(doc) for doc in cleaned_docs]
             dictionary = corpora.Dictionary(tokens)
             corpus = [dictionary.doc2bow(token) for token in tokens]
 
-            # Create topic words
-            words = vectorizer.get_feature_names_out()
-            topic_words = [[dictionary.token2id[w] for w in words if w in dictionary.token2id]
-                           for _ in range(len(set(topics))-1)]
-
-            # this creates a list of the token ids (in the format of integers) of the words in words that are also present in the
-            # dictionary created from the preprocessed text. The topic_words list contains list of token ids for each topic.
+            # Extract words in each topic if they are non-empty and exist in the dictionary
+            topic_words = []
+            for topic in range(len(set(topics))-topic_model._outliers):
+                words = list(zip(*topic_model.get_topic(topic)))[0]
+                words = [word for word in words if word in dictionary.token2id]
+                topic_words.append(words)
+            topic_words = [words for words in topic_words if len(words) > 0]
 
             coherence_cv = CoherenceModel(
                 topics=topic_words,
