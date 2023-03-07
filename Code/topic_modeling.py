@@ -189,6 +189,8 @@ class TopicModeling:
             wandb.log({'CoherenceUMASS': coherence_umass.get_coherence()})
             wandb.log({'CoherenceUCI': coherence_cuci.get_coherence()})
             wandb.log({'CoherenceNPMI': coherence_cnpmi.get_coherence()})
+            wandb.log({'Number of Topics': topic_model.get_topic_info().shape[0] - 1})
+            wandb.log({'Number of Uncategorized': topic_model.get_topic_info().at[0, 'Count']})
 
     def sweep(self):
         wandb.login()
