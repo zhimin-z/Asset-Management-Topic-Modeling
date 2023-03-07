@@ -13,7 +13,7 @@ import wandb
 import os
 
 wandb_project = 'asset-management-project'
-sweep_count = 200
+sweep_count = 300
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"] = str(sweep_count)
