@@ -4,21 +4,27 @@ services:
   experiment-1:
     image: experiment
     command: python Code/experiment-1.py
+    restart: on-failure
     build:
       context: .
       dockerfile: ./Dockerfile
   experiment-2:
     image: experiment
     command: python Code/experiment-2.py
+    restart: on-failure
   experiment-3:
     image: experiment
     command: python Code/experiment-3.py
+    restart: on-failure
   experiment-4:
     image: experiment
     command: python Code/experiment-4.py
+    restart: on-failure
   experiment-5:
     image: experiment
     command: python Code/experiment-5.py
+    restart: on-failure
   experiment-6:
     image: experiment
     command: python Code/experiment-6.py
+    restart: on-failure
