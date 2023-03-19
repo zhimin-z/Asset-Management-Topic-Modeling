@@ -72,7 +72,7 @@ class TopicModeling:
     def __init__(self, docs_name):
         self.sweep_defaults = sweep_defaults
         self.sweep_defaults['name'] = docs_name
-        
+
         df_all = pd.read_json(os.path.join('Dataset', 'all_filtered.json'))
         if docs_name in ['Solution_original_content', 'Solution_original_content_gpt_summary', 'Solution_preprocessed_content']:
             df_all = df_all[df_all['Solution_original_content'].isnull()
@@ -189,8 +189,10 @@ class TopicModeling:
             wandb.log({'CoherenceUMASS': coherence_umass.get_coherence()})
             wandb.log({'CoherenceUCI': coherence_cuci.get_coherence()})
             wandb.log({'CoherenceNPMI': coherence_cnpmi.get_coherence()})
-            wandb.log({'Number of Topics': topic_model.get_topic_info().shape[0] - 1})
-            wandb.log({'Number of Uncategorized': topic_model.get_topic_info().at[0, 'Count']})
+            wandb.log(
+                {'Number of Topics': topic_model.get_topic_info().shape[0] - 1})
+            wandb.log(
+                {'Number of Uncategorized': topic_model.get_topic_info().at[0, 'Count']})
 
     def sweep(self):
         wandb.login()
