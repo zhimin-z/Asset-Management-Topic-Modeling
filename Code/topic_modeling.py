@@ -13,7 +13,7 @@ import wandb
 import os
 
 wandb_project = 'asset-management-project'
-sweep_count = 300
+sweep_count = 500
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"] = str(sweep_count)
@@ -99,7 +99,7 @@ class TopicModeling:
             # Step 3 - Cluster reduced embeddings
             min_samples = int(wandb.config.min_cluster_size *
                               wandb.config.min_samples_pct)
-            min_samples = 1 if min_samples < 1 else min_samples
+            min_samples = 5 if min_samples < 5 else min_samples
             hdbscan_model = HDBSCAN(
                 min_cluster_size=wandb.config.min_cluster_size, min_samples=min_samples)
 
@@ -144,14 +144,15 @@ class TopicModeling:
             tokens = [analyzer(doc) for doc in cleaned_docs]
             dictionary = corpora.Dictionary(tokens)
             corpus = [dictionary.doc2bow(token) for token in tokens]
+            topic_words = [[words for words, _ in topic_model.get_topic(topic)] for topic in range(len(set(topics))-1)]
 
-            # Extract words in each topic if they are non-empty and exist in the dictionary
-            topic_words = []
-            for topic in range(len(set(topics))-topic_model._outliers):
-                words = list(zip(*topic_model.get_topic(topic)))[0]
-                words = [word for word in words if word in dictionary.token2id]
-                topic_words.append(words)
-            topic_words = [words for words in topic_words if len(words) > 0]
+            # # Extract words in each topic if they are non-empty and exist in the dictionary
+            # topic_words = []
+            # for topic in range(len(set(topics))-topic_model._outliers):
+            #     words = list(zip(*topic_model.get_topic(topic)))[0]
+            #     words = [word for word in words if word in dictionary.token2id]
+            #     topic_words.append(words)
+            # topic_words = [words for words in topic_words if len(words) > 0]
 
             coherence_cv = CoherenceModel(
                 topics=topic_words,
