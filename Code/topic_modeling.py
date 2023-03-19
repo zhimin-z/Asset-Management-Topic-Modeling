@@ -146,14 +146,6 @@ class TopicModeling:
             corpus = [dictionary.doc2bow(token) for token in tokens]
             topic_words = [[words for words, _ in topic_model.get_topic(topic)] for topic in range(len(set(topics))-1)]
 
-            # # Extract words in each topic if they are non-empty and exist in the dictionary
-            # topic_words = []
-            # for topic in range(len(set(topics))-topic_model._outliers):
-            #     words = list(zip(*topic_model.get_topic(topic)))[0]
-            #     words = [word for word in words if word in dictionary.token2id]
-            #     topic_words.append(words)
-            # topic_words = [words for words in topic_words if len(words) > 0]
-
             coherence_cv = CoherenceModel(
                 topics=topic_words,
                 texts=tokens,
