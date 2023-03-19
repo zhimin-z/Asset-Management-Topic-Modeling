@@ -12,7 +12,7 @@ import pandas as pd
 import wandb
 import os
 
-wandb_project = 'asset-management-project'
+wandb_project = 'asset-management-topic-modeling'
 sweep_count = 500
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
