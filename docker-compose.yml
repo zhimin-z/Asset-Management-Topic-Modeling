@@ -5,6 +5,13 @@ services:
     image: experiment
     command: python Code/experiment-1.py
     restart: on-failure
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["1"]
+              capabilities: [gpu]
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -12,19 +19,54 @@ services:
     image: experiment
     command: python Code/experiment-2.py
     restart: on-failure
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["2"]
+              capabilities: [gpu]
   experiment-3:
     image: experiment
     command: python Code/experiment-3.py
     restart: on-failure
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["3"]
+              capabilities: [gpu]
   experiment-4:
     image: experiment
     command: python Code/experiment-4.py
     restart: on-failure
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["4"]
+              capabilities: [gpu]
   experiment-5:
     image: experiment
     command: python Code/experiment-5.py
     restart: on-failure
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["5"]
+              capabilities: [gpu]
   experiment-6:
     image: experiment
     command: python Code/experiment-6.py
     restart: on-failure
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["6"]
+              capabilities: [gpu]
