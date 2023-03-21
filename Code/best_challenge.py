@@ -76,13 +76,13 @@ fig = topic_model.visualize_documents(docs, embeddings=embeddings)
 fig.write_html(os.path.join(path_challenge, 'Document visualization.html'))
 
 # This uses the soft-clustering as performed by HDBSCAN to find the best matching topic for each outlier document.
-new_topics_challenge = topic_model.reduce_outliers(
+new_topics = topic_model.reduce_outliers(
     docs, topics, probabilities=probs, strategy="probabilities")
 
-df_all['Challenge_topic'] = ''
+df_all['Challenge_topic'] = -1
 
 for index, row in df_all.iterrows():
-    df_all.at[index, 'Challenge_topic'] = new_topics_challenge.pop(0)
+    df_all.at[index, 'Challenge_topic'] = new_topics.pop(0)
 
 df_all.to_json(os.path.join(path_dataset, 'all_topics.json'), indent=4, orient='records')
 
