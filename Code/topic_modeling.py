@@ -34,7 +34,7 @@ sweep_defaults = {
         'name': 'CoherenceCV',
         'goal': 'maximize'
     },
-    "method": "random",
+    "method": "grid",
 }
 
 config_challenges = {
@@ -46,7 +46,7 @@ config_challenges = {
             'values': list(range(1, 6))
         },
         'min_cluster_size': {
-            'values': list(range(30, 151, 5))
+            'values': list(range(30, 101, 5))
         },
     },
 }
@@ -60,7 +60,7 @@ config_solutions = {
             'values': list(range(1, 6))
         },
         'min_cluster_size': {
-            'values': list(range(15, 101, 5))
+            'values': list(range(10, 101, 5))
         },
     },
 }
@@ -185,4 +185,4 @@ class TopicModeling:
     def sweep(self):
         wandb.login()
         sweep_id = wandb.sweep(self.sweep_defaults, project=wandb_project)
-        wandb.agent(sweep_id, function=self.__train, count=sweep_count)
+        wandb.agent(sweep_id, function=self.__train)
