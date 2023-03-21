@@ -84,8 +84,7 @@ df_all['Challenge_topic'] = ''
 for index, row in df_all.iterrows():
     df_all.at[index, 'Challenge_topic'] = new_topics_challenge.pop(0)
 
-# df_all.to_json(os.path.join(path_dataset, 'all_topics.json'),
-#                indent=4, orient='records')
+df_all.to_json(os.path.join(path_dataset, 'all_topics.json'), indent=4, orient='records')
 
 from matplotlib import pyplot as plt
 from wordcloud import WordCloud
