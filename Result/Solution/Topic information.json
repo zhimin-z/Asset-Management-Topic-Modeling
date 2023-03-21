@@ -1,0 +1,292 @@
+[
+    {
+        "Topic":-1,
+        "Count":1876,
+        "Name":"-1_train model_dataset_data_automl model"
+    },
+    {
+        "Topic":0,
+        "Count":218,
+        "Name":"0_pipelinerun_pipelin yaml_build pipelin_pipelineparamet"
+    },
+    {
+        "Topic":1,
+        "Count":200,
+        "Name":"1_sql databas_import data_dataset tabular_tabular dataset"
+    },
+    {
+        "Topic":2,
+        "Count":161,
+        "Name":"2_support respons_messag support_support team_respons support"
+    },
+    {
+        "Topic":3,
+        "Count":157,
+        "Name":"3_file git_version control_git_git repo"
+    },
+    {
+        "Topic":4,
+        "Count":140,
+        "Name":"4_line chart_custom chart_chart workspac_chart custom"
+    },
+    {
+        "Topic":5,
+        "Count":139,
+        "Name":"5_python docker_docker run_dockerfil_exampl dockerfil"
+    },
+    {
+        "Topic":6,
+        "Count":128,
+        "Name":"6_pythonmodel_deploy model_model train_model file"
+    },
+    {
+        "Topic":7,
+        "Count":105,
+        "Name":"7_configur python_pip instal_pip conda_instal python"
+    },
+    {
+        "Topic":8,
+        "Count":91,
+        "Name":"8_configur sweep_sweep configur_hyperparamet sweep_sweep config"
+    },
+    {
+        "Topic":9,
+        "Count":81,
+        "Name":"9_workspac resourc_workspac delet_workspac enabl_workspac config"
+    },
+    {
+        "Topic":10,
+        "Count":80,
+        "Name":"10_webservic azur_web servic_azmlwebservic_webservic"
+    },
+    {
+        "Topic":11,
+        "Count":76,
+        "Name":"11_random forest_algorithm predict_predict analyt_big dataset"
+    },
+    {
+        "Topic":12,
+        "Count":73,
+        "Name":"12_artifact command_artifact upload_artifact api_artifact metadata"
+    },
+    {
+        "Topic":13,
+        "Count":58,
+        "Name":"13_endpoint invoc_endpoint boto_invok endpoint_endpoint aw"
+    },
+    {
+        "Topic":14,
+        "Count":53,
+        "Name":"14_model xgboost_xgboost model_file xgboost_train xgboost"
+    },
+    {
+        "Topic":15,
+        "Count":52,
+        "Name":"15_jupyt notebook_jupyterlab work_run jupyt_notebook jupyt"
+    },
+    {
+        "Topic":16,
+        "Count":48,
+        "Name":"16_forecast autom_forecast servic_autom forecast_model forecast"
+    },
+    {
+        "Topic":17,
+        "Count":47,
+        "Name":"17_cluster servic_cluster comput_kubernet_cluster workspac"
+    },
+    {
+        "Topic":18,
+        "Count":39,
+        "Name":"18_datastor upload_upload datafram_file bucket_upload data"
+    },
+    {
+        "Topic":19,
+        "Count":38,
+        "Name":"19_pysparkprocessor_spark configur_spark session_spark cluster"
+    },
+    {
+        "Topic":20,
+        "Count":38,
+        "Name":"20_vision api_cognit_ocr_support ocr"
+    },
+    {
+        "Topic":21,
+        "Count":38,
+        "Name":"21_speech api_cloud speech_speech servic_text speech"
+    },
+    {
+        "Topic":22,
+        "Count":35,
+        "Name":"22_process job_aw lambda_job transformjobstatu_aw sdk"
+    },
+    {
+        "Topic":23,
+        "Count":35,
+        "Name":"23_run tensorboard_command tensorboard_launch tensorboard_tensorboard command"
+    },
+    {
+        "Topic":24,
+        "Count":34,
+        "Name":"24_studio notebook_instanc notebook_notebook instanc_notebook portal"
+    },
+    {
+        "Topic":25,
+        "Count":34,
+        "Name":"25_gpu util_gpu instanc_gpu node_cluster gpu"
+    },
+    {
+        "Topic":26,
+        "Count":33,
+        "Name":"26_reason oserror_attributeerror encount_attributeerror_typeerror encount"
+    },
+    {
+        "Topic":27,
+        "Count":29,
+        "Name":"27_pdf document_amazon textract_process pdf_form extract"
+    },
+    {
+        "Topic":28,
+        "Count":29,
+        "Name":"28_tensorflow format_tensorflowmodel_pipemodedataset tensorflow_tensorflow code"
+    },
+    {
+        "Topic":29,
+        "Count":29,
+        "Name":"29_web servic_endpoint model_model cloud_model endpoint"
+    },
+    {
+        "Topic":30,
+        "Count":29,
+        "Name":"30_permiss access_grant access_role access_notebook permiss"
+    },
+    {
+        "Topic":31,
+        "Count":27,
+        "Name":"31_process slow_perform slow_slow perform_slow experi"
+    },
+    {
+        "Topic":32,
+        "Count":26,
+        "Name":"32_translat api_googl translat_languag translat_support languag"
+    },
+    {
+        "Topic":33,
+        "Count":26,
+        "Name":"33_auto label_label model_autom label_model label"
+    },
+    {
+        "Topic":34,
+        "Count":26,
+        "Name":"34_environ authent_encrypt automat_document authent_princip authent"
+    },
+    {
+        "Topic":35,
+        "Count":25,
+        "Name":"35_extract import_dataset file_folder extract_zip input"
+    },
+    {
+        "Topic":36,
+        "Count":24,
+        "Name":"36_gdrive client_gdrive servic_drive api_gdrive"
+    },
+    {
+        "Topic":37,
+        "Count":24,
+        "Name":"37_version studio_studio support_studio option_classic studio"
+    },
+    {
+        "Topic":38,
+        "Count":23,
+        "Name":"38_quota avail_configur quota_quota increas_check quota"
+    },
+    {
+        "Topic":39,
+        "Count":22,
+        "Name":"39_dataset mount_file dataset_path datafil_mount file"
+    },
+    {
+        "Topic":40,
+        "Count":22,
+        "Name":"40_openai commerci_openai servic_product line_design prototyp"
+    },
+    {
+        "Topic":41,
+        "Count":22,
+        "Name":"41_instal packag_packag instal_rlang version_rstudio"
+    },
+    {
+        "Topic":42,
+        "Count":21,
+        "Name":"42_sentiment analysi_nlp api_text analyt_nlp"
+    },
+    {
+        "Topic":43,
+        "Count":21,
+        "Name":"43_email feedback_microsoft email_advis email_email specif"
+    },
+    {
+        "Topic":44,
+        "Count":20,
+        "Name":"44_gcp kubeflow_project databrick_inform pipelinejob_databrick azur"
+    },
+    {
+        "Topic":45,
+        "Count":20,
+        "Name":"45_scale endpoint_queue configur_new endpoint_endpoint terraform"
+    },
+    {
+        "Topic":46,
+        "Count":20,
+        "Name":"46_support request_help support_azur support_support ticket"
+    },
+    {
+        "Topic":47,
+        "Count":18,
+        "Name":"47_access bucket_bucket access_permiss bucket_permiss listbucket"
+    },
+    {
+        "Topic":48,
+        "Count":17,
+        "Name":"48_serverless endpoint_async endpoint_endpoint specif_endpoint handl"
+    },
+    {
+        "Topic":49,
+        "Count":17,
+        "Name":"49_document tensorflow_net pytorch_link tensorflow_pytorch"
+    },
+    {
+        "Topic":50,
+        "Count":17,
+        "Name":"50_like pythonscriptstep_design python_releas python_python good"
+    },
+    {
+        "Topic":51,
+        "Count":16,
+        "Name":"51_script pythonscriptstep_import scriptrunconfig_pythonscriptstep_run script"
+    },
+    {
+        "Topic":52,
+        "Count":16,
+        "Name":"52_process job_job run_process relat_process guild"
+    },
+    {
+        "Topic":53,
+        "Count":16,
+        "Name":"53_tensorflow python_tensorflow version_python tensorflow_mount tensorflow"
+    },
+    {
+        "Topic":54,
+        "Count":16,
+        "Name":"54_colab restart_crash restart_code crash_inform restart"
+    },
+    {
+        "Topic":55,
+        "Count":16,
+        "Name":"55_command remot_remot filenam_folder remot_overwrit remot"
+    },
+    {
+        "Topic":56,
+        "Count":15,
+        "Name":"56_ssh config_creat ssh_form ssh_ssh remot"
+    }
+]
