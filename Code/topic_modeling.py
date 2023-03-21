@@ -60,7 +60,7 @@ config_solutions = {
             'values': list(range(1, 6))
         },
         'min_cluster_size': {
-            'values': list(range(10, 101, 5))
+            'values': list(range(15, 101, 5))
         },
     },
 }

@@ -19,13 +19,11 @@ from umap import UMAP
 embedding_model = SentenceTransformer("all-mpnet-base-v2")
 
 # Step 2 - Reduce dimensionality
-umap_model = UMAP(n_components=5, metric='manhattan',
-                  random_state=42, low_memory=False)
+umap_model = UMAP(n_components=5, metric='manhattan', low_memory=False)
 
 # Step 3 - Cluster reduced embeddings
-min_samples = int(35 * 0.5)
-hdbscan_model = HDBSCAN(min_cluster_size=35,
-                        min_samples=min_samples, prediction_data=True)
+min_samples = int(30 * 0.25)
+hdbscan_model = HDBSCAN(min_cluster_size=30, min_samples=min_samples, prediction_data=True)
 
 # Step 4 - Tokenize topics
 vectorizer_model = TfidfVectorizer(ngram_range=(1, 2))
