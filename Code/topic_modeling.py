@@ -21,7 +21,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 # set default sweep configuration
 config_defaults = {
-    'model_name': 'all-mpnet-base-v2',
+    'model_name': 'all-MiniLM-L6-v2',
     'metric_distane': 'manhattan',
     'n_components': 5,
     'low_memory': False,
