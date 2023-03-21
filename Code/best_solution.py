@@ -73,3 +73,14 @@ new_topics_solution = topic_model.reduce_outliers(
 
 info_df = topic_model.get_topic_info()
 info_df
+
+df_all = pd.read_json(os.path.join(path_dataset, 'all_topics.json'))
+df_all['Solution_topic'] = -1
+
+for index, row in df_all.iterrows():
+    if not row['Solution_original_content_gpt_summary']:
+        continue
+    df_all.at[index, 'Solution_topic'] = new_topics_solution.pop(0)
+
+df_all.to_json(os.path.join(path_dataset, 'all_topics.json'),
+               indent=4, orient='records')
