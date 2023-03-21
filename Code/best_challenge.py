@@ -104,4 +104,4 @@ for index, doc in enumerate(cleaned_docs):
     plt.axis("off")
     plt.tight_layout(pad=0)
     plt.savefig(os.path.join(path_wordcloud, f'Topic_{index}'+'.png'), bbox_inches='tight')
-    
+    plt.close()
