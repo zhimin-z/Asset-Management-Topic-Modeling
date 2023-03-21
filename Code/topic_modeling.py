@@ -26,7 +26,6 @@ config_defaults = {
     'n_components': 5,
     'random_state': 42,
     'low_memory': False,
-    'stop_words': 'english',
     'reduce_frequent_words': True,
 }
 
@@ -104,8 +103,7 @@ class TopicModeling:
                 min_cluster_size=wandb.config.min_cluster_size, min_samples=min_samples)
 
             # Step 4 - Tokenize topics
-            vectorizer_model = TfidfVectorizer(
-                stop_words=run.config.stop_words, ngram_range=(1, wandb.config.ngram_range))
+            vectorizer_model = TfidfVectorizer(ngram_range=(1, wandb.config.ngram_range))
 
             # Step 5 - Create topic representation
             ctfidf_model = ClassTfidfTransformer(

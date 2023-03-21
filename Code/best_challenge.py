@@ -28,7 +28,7 @@ hdbscan_model = HDBSCAN(min_cluster_size=35,
                         min_samples=min_samples, prediction_data=True)
 
 # Step 4 - Tokenize topics
-vectorizer_model = TfidfVectorizer(stop_words="english", ngram_range=(1, 2))
+vectorizer_model = TfidfVectorizer(ngram_range=(1, 2))
 
 # Step 5 - Create topic representation
 ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=True)
