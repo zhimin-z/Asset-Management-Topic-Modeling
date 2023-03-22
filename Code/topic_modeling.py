@@ -40,7 +40,7 @@ sweep_defaults = {
 config_challenges = {
     "parameters": {
         'min_samples_pct': {
-            'values': [.1, .25, .5, .75, 1]
+            'values': list(range(0.1, 1.1, 0.1))
         },
         'ngram_range': {
             'values': list(range(1, 6))
@@ -72,7 +72,7 @@ class TopicModeling:
         self.sweep_defaults['name'] = docs_name
 
         df_all = pd.read_json(os.path.join('Dataset', 'all_filtered.json'))
-        if docs_name in ['Solution_original_content', 'Solution_original_content_gpt_summary', 'Solution_preprocessed_content']:
+        if docs_name in ['Solution_original_content', 'Solution_preprocessed_content', 'Solution_gpt_summary']:
             df_all = df_all[df_all['Solution_original_content'].isnull()
                             == False]
             df_all = df_all[df_all['Solution_original_content'] != '']
