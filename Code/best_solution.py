@@ -3,9 +3,7 @@ import pandas as pd
 
 path_dataset = 'Dataset'
 df_all = pd.read_json(os.path.join(path_dataset, 'all_topics.json'))
-df_all = df_all[df_all['Solution_original_content'].isnull() == False]
-df_all = df_all[df_all['Solution_original_content'] != '']
-docs = df_all['Solution_original_content_gpt_summary'].tolist()
+df_all['Solution_topic'] = -1
 
 # visualize the best challenge topic model
 
@@ -18,7 +16,7 @@ from hdbscan import HDBSCAN
 from umap import UMAP
 
 # Step 1 - Extract embeddings
-embedding_model = SentenceTransformer("all-mpnet-base-v2")
+embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Step 2 - Reduce dimensionality
 umap_model = UMAP(n_components=5, metric='manhattan', low_memory=False)
@@ -47,6 +45,8 @@ topic_model = BERTopic(
     calculate_probabilities=True
 )
 
+df_all = df_all[df_all['Solution_summary'].str.len() > 0]
+docs = df_all['Solution_summary'].tolist()
 topics, probs = topic_model.fit_transform(docs)
 
 path_result = 'Result'
@@ -79,10 +79,8 @@ fig.write_html(os.path.join(path_solution, 'Document visualization.html'))
 new_topics = topic_model.reduce_outliers(
     docs, topics, probabilities=probs, strategy="probabilities")
 
-df_all['Solution_topic'] = -1
-
 for index, row in df_all.iterrows():
-    if not row['Solution_original_content_gpt_summary']:
+    if not row['Solution_summary']:
         continue
     df_all.at[index, 'Solution_topic'] = new_topics.pop(0)
 
