@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 path_dataset = 'Dataset'
-df_all = pd.read_json(os.path.join(path_dataset, 'all_topics.json'))
+df_all = pd.read_json(os.path.join(path_dataset, 'topics.json'))
 df_all['Solution_topic'] = -1
 
 # visualize the best challenge topic model
@@ -58,7 +58,7 @@ df_topics.to_json(os.path.join(path_solution, 'Topic information.json'), indent=
 fig = topic_model.visualize_topics()
 fig.write_html(os.path.join(path_solution, 'Topic visualization.html'))
 
-fig = topic_model.visualize_barchart()
+fig = topic_model.visualize_barchart(top_n_topics=df_topics.shape[0]-1, n_words=10)
 fig.write_html(os.path.join(path_solution, 'Term visualization.html'))
 
 fig = topic_model.visualize_heatmap()
@@ -84,7 +84,7 @@ for index, row in df_all.iterrows():
         continue
     df_all.at[index, 'Solution_topic'] = new_topics.pop(0)
 
-df_all.to_json(os.path.join(path_dataset, 'all_topics.json'), indent=4, orient='records')
+df_all.to_json(os.path.join(path_dataset, 'topics.json'), indent=4, orient='records')
 
 from matplotlib import pyplot as plt
 from wordcloud import WordCloud
