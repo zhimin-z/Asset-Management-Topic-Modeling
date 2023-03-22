@@ -50,7 +50,12 @@ docs = df_all['Solution_summary'].tolist()
 topics, probs = topic_model.fit_transform(docs)
 
 path_result = 'Result'
+if not os.path.exists(path_result):
+   os.makedirs(path_result)
+   
 path_solution = os.path.join(path_result, 'Solution')
+if not os.path.exists(path_solution):
+   os.makedirs(path_solution)
 
 df_topics = topic_model.get_topic_info()
 df_topics.to_json(os.path.join(path_solution, 'Topic information.json'), indent=4, orient='records')
@@ -90,6 +95,8 @@ from matplotlib import pyplot as plt
 from wordcloud import WordCloud
 
 path_wordcloud = os.path.join(path_solution, 'Wordcloud')
+if not os.path.exists(path_solution):
+   os.makedirs(path_solution)
 
 # Preprocess Documents
 documents = pd.DataFrame({"Document": docs, "ID": range(len(docs)), "Topic": topics})

@@ -49,7 +49,12 @@ docs = df_all['Challenge_summary'].tolist()
 topics, probs = topic_model.fit_transform(docs)
 
 path_result = 'Result'
+if not os.path.exists(path_result):
+   os.makedirs(path_result)
+   
 path_challenge = os.path.join(path_result, 'Challenge')
+if not os.path.exists(path_challenge):
+   os.makedirs(path_challenge)
 
 df_topics = topic_model.get_topic_info()
 df_topics.to_json(os.path.join(path_challenge, 'Topic information.json'), indent=4, orient='records')
