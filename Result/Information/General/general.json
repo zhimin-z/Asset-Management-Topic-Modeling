@@ -2,7 +2,7 @@
     {
         "Challenge_topic":0,
         "Mean_score":0.7444633731,
-        "Mean_comments":1.0625,
+        "Mean_comment_count":1.0625,
         "Score_comment_ratio":0.7,
         "Count":605,
         "Solved_count":183,
@@ -13,7 +13,7 @@
     {
         "Challenge_topic":1,
         "Mean_score":0.8617511521,
-        "Mean_comments":1.0656167979,
+        "Mean_comment_count":1.0656167979,
         "Score_comment_ratio":0.81,
         "Count":438,
         "Solved_count":133,
@@ -24,7 +24,7 @@
     {
         "Challenge_topic":2,
         "Mean_score":1.025210084,
-        "Mean_comments":0.8937198068,
+        "Mean_comment_count":0.8937198068,
         "Score_comment_ratio":1.15,
         "Count":247,
         "Solved_count":80,
@@ -35,7 +35,7 @@
     {
         "Challenge_topic":3,
         "Mean_score":0.9566210046,
-        "Mean_comments":0.9973190349,
+        "Mean_comment_count":0.9973190349,
         "Score_comment_ratio":0.96,
         "Count":440,
         "Solved_count":142,
@@ -46,7 +46,7 @@
     {
         "Challenge_topic":4,
         "Mean_score":0.8419243986,
-        "Mean_comments":1.0395256917,
+        "Mean_comment_count":1.0395256917,
         "Score_comment_ratio":0.81,
         "Count":304,
         "Solved_count":81,
@@ -57,7 +57,7 @@
     {
         "Challenge_topic":5,
         "Mean_score":0.5987261146,
-        "Mean_comments":0.6229508197,
+        "Mean_comment_count":0.6229508197,
         "Score_comment_ratio":0.96,
         "Count":157,
         "Solved_count":32,
@@ -68,7 +68,7 @@
     {
         "Challenge_topic":6,
         "Mean_score":0.6870748299,
-        "Mean_comments":1.35,
+        "Mean_comment_count":1.35,
         "Score_comment_ratio":0.51,
         "Count":150,
         "Solved_count":41,
@@ -79,7 +79,7 @@
     {
         "Challenge_topic":7,
         "Mean_score":1.3021582734,
-        "Mean_comments":0.6888888889,
+        "Mean_comment_count":0.6888888889,
         "Score_comment_ratio":1.89,
         "Count":156,
         "Solved_count":36,
@@ -90,7 +90,7 @@
     {
         "Challenge_topic":8,
         "Mean_score":0.8905109489,
-        "Mean_comments":0.8965517241,
+        "Mean_comment_count":0.8965517241,
         "Score_comment_ratio":0.99,
         "Count":139,
         "Solved_count":42,
@@ -101,7 +101,7 @@
     {
         "Challenge_topic":9,
         "Mean_score":0.5756097561,
-        "Mean_comments":0.7135678392,
+        "Mean_comment_count":0.7135678392,
         "Score_comment_ratio":0.81,
         "Count":217,
         "Solved_count":71,
@@ -112,7 +112,7 @@
     {
         "Challenge_topic":10,
         "Mean_score":1.4178082192,
-        "Mean_comments":0.8428571429,
+        "Mean_comment_count":0.8428571429,
         "Score_comment_ratio":1.68,
         "Count":152,
         "Solved_count":35,
@@ -123,7 +123,7 @@
     {
         "Challenge_topic":11,
         "Mean_score":0.7212389381,
-        "Mean_comments":0.7362637363,
+        "Mean_comment_count":0.7362637363,
         "Score_comment_ratio":0.98,
         "Count":227,
         "Solved_count":61,
@@ -134,7 +134,7 @@
     {
         "Challenge_topic":12,
         "Mean_score":0.7792915531,
-        "Mean_comments":0.9935064935,
+        "Mean_comment_count":0.9935064935,
         "Score_comment_ratio":0.78,
         "Count":379,
         "Solved_count":123,
@@ -145,7 +145,7 @@
     {
         "Challenge_topic":13,
         "Mean_score":0.9836065574,
-        "Mean_comments":1.6782608696,
+        "Mean_comment_count":1.6782608696,
         "Score_comment_ratio":0.59,
         "Count":126,
         "Solved_count":41,
@@ -156,7 +156,7 @@
     {
         "Challenge_topic":14,
         "Mean_score":0.7553191489,
-        "Mean_comments":1.1058823529,
+        "Mean_comment_count":1.1058823529,
         "Score_comment_ratio":0.68,
         "Count":110,
         "Solved_count":25,
@@ -167,7 +167,7 @@
     {
         "Challenge_topic":15,
         "Mean_score":0.7440944882,
-        "Mean_comments":0.9043062201,
+        "Mean_comment_count":0.9043062201,
         "Score_comment_ratio":0.82,
         "Count":265,
         "Solved_count":72,
@@ -178,7 +178,7 @@
     {
         "Challenge_topic":16,
         "Mean_score":0.6830601093,
-        "Mean_comments":1.1474358974,
+        "Mean_comment_count":1.1474358974,
         "Score_comment_ratio":0.6,
         "Count":183,
         "Solved_count":50,
@@ -189,7 +189,7 @@
     {
         "Challenge_topic":17,
         "Mean_score":0.8522727273,
-        "Mean_comments":0.7898089172,
+        "Mean_comment_count":0.7898089172,
         "Score_comment_ratio":1.08,
         "Count":184,
         "Solved_count":48,
@@ -200,7 +200,7 @@
     {
         "Challenge_topic":18,
         "Mean_score":1.4816753927,
-        "Mean_comments":1.1796407186,
+        "Mean_comment_count":1.1796407186,
         "Score_comment_ratio":1.26,
         "Count":191,
         "Solved_count":73,
@@ -211,7 +211,7 @@
     {
         "Challenge_topic":19,
         "Mean_score":0.6153846154,
-        "Mean_comments":0.8017241379,
+        "Mean_comment_count":0.8017241379,
         "Score_comment_ratio":0.77,
         "Count":132,
         "Solved_count":46,
@@ -222,7 +222,7 @@
     {
         "Challenge_topic":20,
         "Mean_score":0.8031496063,
-        "Mean_comments":0.8888888889,
+        "Mean_comment_count":0.8888888889,
         "Score_comment_ratio":0.9,
         "Count":127,
         "Solved_count":39,
@@ -233,7 +233,7 @@
     {
         "Challenge_topic":21,
         "Mean_score":0.7900355872,
-        "Mean_comments":1.0231660232,
+        "Mean_comment_count":1.0231660232,
         "Score_comment_ratio":0.77,
         "Count":287,
         "Solved_count":72,
@@ -244,7 +244,7 @@
     {
         "Challenge_topic":22,
         "Mean_score":0.5944055944,
-        "Mean_comments":0.9711538462,
+        "Mean_comment_count":0.9711538462,
         "Score_comment_ratio":0.61,
         "Count":147,
         "Solved_count":47,
@@ -255,7 +255,7 @@
     {
         "Challenge_topic":23,
         "Mean_score":0.9253731343,
-        "Mean_comments":0.8235294118,
+        "Mean_comment_count":0.8235294118,
         "Score_comment_ratio":1.12,
         "Count":134,
         "Solved_count":36,
@@ -266,7 +266,7 @@
     {
         "Challenge_topic":24,
         "Mean_score":0.8423076923,
-        "Mean_comments":1.1170212766,
+        "Mean_comment_count":1.1170212766,
         "Score_comment_ratio":0.75,
         "Count":267,
         "Solved_count":81,
@@ -277,7 +277,7 @@
     {
         "Challenge_topic":25,
         "Mean_score":0.7615384615,
-        "Mean_comments":1.0330578512,
+        "Mean_comment_count":1.0330578512,
         "Score_comment_ratio":0.74,
         "Count":133,
         "Solved_count":45,
@@ -288,7 +288,7 @@
     {
         "Challenge_topic":26,
         "Mean_score":0.8296296296,
-        "Mean_comments":1.2,
+        "Mean_comment_count":1.2,
         "Score_comment_ratio":0.69,
         "Count":140,
         "Solved_count":43,
@@ -299,7 +299,7 @@
     {
         "Challenge_topic":27,
         "Mean_score":0.7950819672,
-        "Mean_comments":0.7821782178,
+        "Mean_comment_count":0.7821782178,
         "Score_comment_ratio":1.02,
         "Count":140,
         "Solved_count":34,
@@ -310,7 +310,7 @@
     {
         "Challenge_topic":28,
         "Mean_score":1.9895833333,
-        "Mean_comments":1.2619047619,
+        "Mean_comment_count":1.2619047619,
         "Score_comment_ratio":1.58,
         "Count":96,
         "Solved_count":25,
@@ -321,7 +321,7 @@
     {
         "Challenge_topic":29,
         "Mean_score":0.223880597,
-        "Mean_comments":0.7692307692,
+        "Mean_comment_count":0.7692307692,
         "Score_comment_ratio":0.29,
         "Count":67,
         "Solved_count":13,
@@ -332,7 +332,7 @@
     {
         "Challenge_topic":30,
         "Mean_score":0.8888888889,
-        "Mean_comments":1.1392405063,
+        "Mean_comment_count":1.1392405063,
         "Score_comment_ratio":0.78,
         "Count":90,
         "Solved_count":27,
@@ -343,7 +343,7 @@
     {
         "Challenge_topic":31,
         "Mean_score":0.7888888889,
-        "Mean_comments":0.8266666667,
+        "Mean_comment_count":0.8266666667,
         "Score_comment_ratio":0.95,
         "Count":92,
         "Solved_count":23,
@@ -354,7 +354,7 @@
     {
         "Challenge_topic":32,
         "Mean_score":0.8197674419,
-        "Mean_comments":1.1666666667,
+        "Mean_comment_count":1.1666666667,
         "Score_comment_ratio":0.7,
         "Count":177,
         "Solved_count":59,
@@ -365,7 +365,7 @@
     {
         "Challenge_topic":33,
         "Mean_score":0.5647058824,
-        "Mean_comments":0.8333333333,
+        "Mean_comment_count":0.8333333333,
         "Score_comment_ratio":0.68,
         "Count":85,
         "Solved_count":17,
@@ -376,7 +376,7 @@
     {
         "Challenge_topic":34,
         "Mean_score":0.4230769231,
-        "Mean_comments":0.8831168831,
+        "Mean_comment_count":0.8831168831,
         "Score_comment_ratio":0.48,
         "Count":184,
         "Solved_count":58,
@@ -387,7 +387,7 @@
     {
         "Challenge_topic":35,
         "Mean_score":0.6530612245,
-        "Mean_comments":1.6136363636,
+        "Mean_comment_count":1.6136363636,
         "Score_comment_ratio":0.4,
         "Count":54,
         "Solved_count":19,
@@ -398,7 +398,7 @@
     {
         "Challenge_topic":36,
         "Mean_score":0.6210526316,
-        "Mean_comments":1.256097561,
+        "Mean_comment_count":1.256097561,
         "Score_comment_ratio":0.49,
         "Count":99,
         "Solved_count":32,
@@ -409,7 +409,7 @@
     {
         "Challenge_topic":37,
         "Mean_score":0.6,
-        "Mean_comments":0.9117647059,
+        "Mean_comment_count":0.9117647059,
         "Score_comment_ratio":0.66,
         "Count":81,
         "Solved_count":24,
@@ -420,7 +420,7 @@
     {
         "Challenge_topic":38,
         "Mean_score":1.1875,
-        "Mean_comments":1.7368421053,
+        "Mean_comment_count":1.7368421053,
         "Score_comment_ratio":0.68,
         "Count":49,
         "Solved_count":6,
@@ -431,7 +431,7 @@
     {
         "Challenge_topic":39,
         "Mean_score":0.5222222222,
-        "Mean_comments":0.9240506329,
+        "Mean_comment_count":0.9240506329,
         "Score_comment_ratio":0.57,
         "Count":90,
         "Solved_count":28,
@@ -442,7 +442,7 @@
     {
         "Challenge_topic":40,
         "Mean_score":0.3636363636,
-        "Mean_comments":0.5909090909,
+        "Mean_comment_count":0.5909090909,
         "Score_comment_ratio":0.62,
         "Count":91,
         "Solved_count":12,
@@ -453,7 +453,7 @@
     {
         "Challenge_topic":41,
         "Mean_score":0.7884615385,
-        "Mean_comments":1.7954545455,
+        "Mean_comment_count":1.7954545455,
         "Score_comment_ratio":0.44,
         "Count":52,
         "Solved_count":16,
@@ -464,7 +464,7 @@
     {
         "Challenge_topic":42,
         "Mean_score":0.9162303665,
-        "Mean_comments":1.0909090909,
+        "Mean_comment_count":1.0909090909,
         "Score_comment_ratio":0.84,
         "Count":192,
         "Solved_count":66,
@@ -475,7 +475,7 @@
     {
         "Challenge_topic":43,
         "Mean_score":0.88,
-        "Mean_comments":1.2828282828,
+        "Mean_comment_count":1.2828282828,
         "Score_comment_ratio":0.69,
         "Count":173,
         "Solved_count":39,
@@ -486,7 +486,7 @@
     {
         "Challenge_topic":44,
         "Mean_score":0.6206896552,
-        "Mean_comments":1.6451612903,
+        "Mean_comment_count":1.6451612903,
         "Score_comment_ratio":0.38,
         "Count":87,
         "Solved_count":16,
@@ -497,7 +497,7 @@
     {
         "Challenge_topic":45,
         "Mean_score":0.6514285714,
-        "Mean_comments":1.1366906475,
+        "Mean_comment_count":1.1366906475,
         "Score_comment_ratio":0.57,
         "Count":176,
         "Solved_count":56,
@@ -508,7 +508,7 @@
     {
         "Challenge_topic":46,
         "Mean_score":0.537037037,
-        "Mean_comments":1.3235294118,
+        "Mean_comment_count":1.3235294118,
         "Score_comment_ratio":0.41,
         "Count":54,
         "Solved_count":22,
@@ -519,7 +519,7 @@
     {
         "Challenge_topic":47,
         "Mean_score":0.9836065574,
-        "Mean_comments":1.0888888889,
+        "Mean_comment_count":1.0888888889,
         "Score_comment_ratio":0.9,
         "Count":61,
         "Solved_count":22,
@@ -530,7 +530,7 @@
     {
         "Challenge_topic":48,
         "Mean_score":0.7786259542,
-        "Mean_comments":0.6404494382,
+        "Mean_comment_count":0.6404494382,
         "Score_comment_ratio":1.22,
         "Count":137,
         "Solved_count":33,
@@ -541,7 +541,7 @@
     {
         "Challenge_topic":49,
         "Mean_score":1.4393939394,
-        "Mean_comments":1.0,
+        "Mean_comment_count":1.0,
         "Score_comment_ratio":1.44,
         "Count":67,
         "Solved_count":13,
@@ -552,7 +552,7 @@
     {
         "Challenge_topic":50,
         "Mean_score":0.6962025316,
-        "Mean_comments":0.6486486486,
+        "Mean_comment_count":0.6486486486,
         "Score_comment_ratio":1.07,
         "Count":81,
         "Solved_count":23,
@@ -563,7 +563,7 @@
     {
         "Challenge_topic":51,
         "Mean_score":0.7719298246,
-        "Mean_comments":1.1363636364,
+        "Mean_comment_count":1.1363636364,
         "Score_comment_ratio":0.68,
         "Count":114,
         "Solved_count":35,
@@ -574,7 +574,7 @@
     {
         "Challenge_topic":52,
         "Mean_score":0.8313253012,
-        "Mean_comments":1.0157480315,
+        "Mean_comment_count":1.0157480315,
         "Score_comment_ratio":0.82,
         "Count":169,
         "Solved_count":48,
@@ -585,7 +585,7 @@
     {
         "Challenge_topic":53,
         "Mean_score":0.5833333333,
-        "Mean_comments":0.7777777778,
+        "Mean_comment_count":0.7777777778,
         "Score_comment_ratio":0.75,
         "Count":34,
         "Solved_count":3,
@@ -596,7 +596,7 @@
     {
         "Challenge_topic":54,
         "Mean_score":1.3235294118,
-        "Mean_comments":0.75,
+        "Mean_comment_count":0.75,
         "Score_comment_ratio":1.76,
         "Count":34,
         "Solved_count":10,
@@ -607,7 +607,7 @@
     {
         "Challenge_topic":55,
         "Mean_score":0.8723404255,
-        "Mean_comments":1.2941176471,
+        "Mean_comment_count":1.2941176471,
         "Score_comment_ratio":0.67,
         "Count":99,
         "Solved_count":34,
@@ -618,7 +618,7 @@
     {
         "Challenge_topic":56,
         "Mean_score":1.0555555556,
-        "Mean_comments":1.2183908046,
+        "Mean_comment_count":1.2183908046,
         "Score_comment_ratio":0.87,
         "Count":164,
         "Solved_count":47,
@@ -629,7 +629,7 @@
     {
         "Challenge_topic":57,
         "Mean_score":0.9124087591,
-        "Mean_comments":0.904,
+        "Mean_comment_count":0.904,
         "Score_comment_ratio":1.01,
         "Count":140,
         "Solved_count":46,
