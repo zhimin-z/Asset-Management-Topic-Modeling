@@ -95,8 +95,8 @@ from matplotlib import pyplot as plt
 from wordcloud import WordCloud
 
 path_wordcloud = os.path.join(path_solution, 'Wordcloud')
-if not os.path.exists(path_solution):
-   os.makedirs(path_solution)
+if not os.path.exists(path_wordcloud):
+   os.makedirs(path_wordcloud)
 
 # Preprocess Documents
 documents = pd.DataFrame({"Document": docs, "ID": range(len(docs)), "Topic": topics})
