@@ -86,6 +86,10 @@ new_topics = topic_model.reduce_outliers(
 for index, row in df_all.iterrows():
     df_all.at[index, 'Challenge_topic'] = new_topics.pop(0)
 
+del df_all['Challenge_original_content']
+del df_all['Challenge_preprocessed_content']
+del df_all['Challenge_summary']
+
 df_all.to_json(os.path.join(path_dataset, 'topics.json'), indent=4, orient='records')
 
 from matplotlib import pyplot as plt
