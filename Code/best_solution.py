@@ -45,8 +45,14 @@ topic_model = BERTopic(
     calculate_probabilities=True
 )
 
-df_all = df_all[df_all['Solution_summary'].str.len() > 0]
-docs = df_all['Solution_summary'].tolist()
+docs = []
+indexes = []
+
+for index, row in df_all.iterrows():
+    if row['Solution_summary']:
+        docs.append(row['Solution_summary'])
+        indexes.append(index)
+
 topics, probs = topic_model.fit_transform(docs)
 
 path_result = 'Result'
@@ -84,9 +90,7 @@ fig.write_html(os.path.join(path_solution, 'Document visualization.html'))
 new_topics = topic_model.reduce_outliers(
     docs, topics, probabilities=probs, strategy="probabilities")
 
-for index, row in df_all.iterrows():
-    if not row['Solution_summary']:
-        continue
+for index in indexes:
     df_all.at[index, 'Solution_topic'] = new_topics.pop(0)
 
 df_all.to_json(os.path.join(path_dataset, 'topics.json'), indent=4, orient='records')
