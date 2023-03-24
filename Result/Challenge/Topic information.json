@@ -1,297 +1,262 @@
 [
     {
         "Topic":-1,
-        "Count":4165,
-        "Name":"-1_notebook instanc_studi_notebook_instanc"
+        "Count":3887,
+        "Name":"-1_model user_notebook instanc_user deploi_learn model"
     },
     {
         "Topic":0,
-        "Count":469,
-        "Name":"0_chart log_line chart_plot bar_bar chart"
+        "Count":547,
+        "Name":"0_pipelin process_data pipelin_pipelin data_design pipelin"
     },
     {
         "Topic":1,
-        "Count":319,
-        "Name":"1_model pipelin_environ pipelin_pipelin code_pipelin process"
+        "Count":457,
+        "Name":"1_autolog_log metric_autolog user_user plot"
     },
     {
         "Topic":2,
-        "Count":247,
-        "Name":"2_environ dockerfil_dockerfil_contain docker_api docker"
+        "Count":254,
+        "Name":"2_model train_train object_train model_user train"
     },
     {
         "Topic":3,
-        "Count":220,
-        "Name":"3_restart jupyt_notebook jupyterlab_jupyterlab notebook_jupyterlab jupyt"
+        "Count":249,
+        "Name":"3_dockerfil user_user docker_dockerfil_docker user"
     },
     {
         "Topic":4,
-        "Count":153,
-        "Name":"4_sql databas_databas studio_export data_databas code"
+        "Count":236,
+        "Name":"4_restart jupyt_jupyterlab user_jupyterlab notebook_notebook jupyterlab"
     },
     {
         "Topic":5,
-        "Count":152,
-        "Name":"5_label job_job label_text label_label text"
+        "Count":216,
+        "Name":"5_tune hyperparamet_hyperparamet tune_hyperparamet sweep_hyperparamet optim"
     },
     {
         "Topic":6,
-        "Count":150,
-        "Name":"6_model gpu_gpu memori_gpu train_averag gpu"
+        "Count":152,
+        "Name":"6_user gpu_gpu user_gpu memori_model gpu"
     },
     {
         "Topic":7,
-        "Count":145,
-        "Name":"7_run artifact_artifact run_artifact server_artifact store"
+        "Count":149,
+        "Name":"7_artifactdataset user_artifact user_artifact run_run artifact"
     },
     {
         "Topic":8,
-        "Count":134,
-        "Name":"8_model xgboost_xgboost model_predict xgboost_xgboost endpoint"
+        "Count":148,
+        "Name":"8_endpoint model_model endpoint_endpoint multi_endpoint multipl"
     },
     {
         "Topic":9,
-        "Count":126,
-        "Name":"9_deploi webservic_webservic deploi_webserviceexcept deploi_servic attributeerror"
+        "Count":147,
+        "Name":"9_label job_job ground_truth job_label task"
     },
     {
         "Topic":10,
-        "Count":125,
-        "Name":"10_file remot_remot file_remot repositori_command remot"
+        "Count":140,
+        "Name":"10_model xgboost_xgboost model_predict xgboost_invok xgboost"
     },
     {
         "Topic":11,
         "Count":124,
-        "Name":"11_hyperparamet train_hyperparamet tune_tune hyperparamet_hyperparamet optim"
+        "Name":"11_instal packag_packag instal_instal command_packag user"
     },
     {
         "Topic":12,
         "Count":122,
-        "Name":"12_model deeplen_train mxnet_model train_mxnet model"
+        "Name":"12_file remot_remot file_remot run_run remot"
     },
     {
         "Topic":13,
-        "Count":112,
-        "Name":"13_instal packag_packag instal_instal command_import packag"
+        "Count":117,
+        "Name":"13_user runstatu_run fail_fail run_user run"
     },
     {
         "Topic":14,
-        "Count":109,
-        "Name":"14_sparkmag pyspark_spark api_load spark_spark scala"
+        "Count":116,
+        "Name":"14_spark pyspark_pyspark user_spark user_sparkmag pyspark"
     },
     {
         "Topic":15,
-        "Count":108,
-        "Name":"15_model endpoint_endpoint multi_endpoint model_invok endpoint"
+        "Count":107,
+        "Name":"15_file bucket_bucket folder_bucket user_access bucket"
     },
     {
         "Topic":16,
-        "Count":101,
-        "Name":"16_connect workspac_workspac configur_workspac config_workspac connect"
+        "Count":106,
+        "Name":"16_data git_folder git_directori git_file git"
     },
     {
         "Topic":17,
         "Count":98,
-        "Name":"17_model file_model dump_dump model_file model"
+        "Name":"17_servic api_web servic_servic request_servic connect"
     },
     {
         "Topic":18,
-        "Count":98,
-        "Name":"18_file bucket_bucket folder_data bucket_access bucket"
+        "Count":93,
+        "Name":"18_transform batch_batch transform_output batch_result batch"
     },
     {
         "Topic":19,
-        "Count":93,
-        "Name":"19_cluster creat_cluster net_cluster run_cluster cluster"
+        "Count":92,
+        "Name":"19_forecast valu_seri forecast_timeseri forecast_forecast user"
     },
     {
         "Topic":20,
-        "Count":79,
-        "Name":"20_api gatewai_gatewai lambda_endpoint lambda_lambda endpoint"
+        "Count":83,
+        "Name":"20_invalid json_jsondecodeerror_result jsondecodeerror_json specifi"
     },
     {
         "Topic":21,
-        "Count":77,
-        "Name":"21_predict guidanc_predict train_data predict_custom predict"
+        "Count":83,
+        "Name":"21_panda datafram_tabulardatasetfactori parquet_datafram column_datafram row"
     },
     {
         "Topic":22,
-        "Count":77,
-        "Name":"22_train job_submit train_job repeatedli_job fail"
+        "Count":82,
+        "Name":"22_custom predict_predict serv_predict custom_predict endpoint"
     },
     {
         "Topic":23,
-        "Count":75,
-        "Name":"23_output batch_transform batch_batch job_batch transform"
+        "Count":76,
+        "Name":"23_connect workspac_workspac config_workspac connect_valid workspac"
     },
     {
         "Topic":24,
-        "Count":72,
-        "Name":"24_run fail_runstatu run_fail run_run success"
+        "Count":76,
+        "Name":"24_data csv_file csv_csv file_row csv"
     },
     {
         "Topic":25,
-        "Count":71,
-        "Name":"25_invalid json_jsondecodeerror_jsondecodeerror creat_result jsondecodeerror"
+        "Count":72,
+        "Name":"25_conda environ_instal conda_conda instal_run conda"
     },
     {
         "Topic":26,
-        "Count":69,
-        "Name":"26_role aw_iam role_role access_role permiss"
+        "Count":71,
+        "Name":"26_train job_submit train_dataset job_custom train"
     },
     {
         "Topic":27,
-        "Count":68,
-        "Name":"27_model registri_model regist_regist model_model version"
+        "Count":69,
+        "Name":"27_api gatewai_gatewai lambda_gatewai http_gatewai user"
     },
     {
         "Topic":28,
         "Count":68,
-        "Name":"28_folder git_data git_file git_understand git"
+        "Name":"28_model registri_regist model_model regist_model registr"
     },
     {
         "Topic":29,
-        "Count":67,
-        "Name":"29_speech text_speech api_text speech_file speech"
+        "Count":65,
+        "Name":"29_model automl_automl model_automl specif_valid automl"
     },
     {
         "Topic":30,
         "Count":65,
-        "Name":"30_panda datafram_tabulardatasetfactori parquet_datafram column_datafram row"
+        "Name":"30_format datetim_datetim format_column datetim_datetim column"
     },
     {
         "Topic":31,
         "Count":64,
-        "Name":"31_train object_video classif_object video_model detect"
+        "Name":"31_speech text_text speech_speech api_text transcript"
     },
     {
         "Topic":32,
-        "Count":61,
-        "Name":"32_column datetim_datetim format_date column_date data"
+        "Count":62,
+        "Name":"32_dataset datastor_datastor sdk_dataset sdk_data datastor"
     },
     {
         "Topic":33,
         "Count":60,
-        "Name":"33_configur sweep_agent sweep_sweep configur_sweep agent"
+        "Name":"33_slow execut_user slow_experienc slow_data parallel"
     },
     {
         "Topic":34,
-        "Count":56,
-        "Name":"34_model automl_automl model_automl specif_valid automl"
+        "Count":57,
+        "Name":"34_directori user_directori data_directori run_add directori"
     },
     {
         "Topic":35,
-        "Count":54,
-        "Name":"35_kubernet servic_deploi kubernet_kubernet configur_kubernet"
+        "Count":53,
+        "Name":"35_student account_account user_user account_experienc account"
     },
     {
         "Topic":36,
-        "Count":49,
-        "Name":"36_conda environ_config conda_instal conda_run conda"
+        "Count":52,
+        "Name":"36_version dataset_version data_version control_dataset git"
     },
     {
         "Topic":37,
-        "Count":48,
+        "Count":51,
         "Name":"37_forest algorithm_random forest_forest model_randomforest model"
     },
     {
         "Topic":38,
-        "Count":45,
-        "Name":"38_tensorboard log_log tensorboard_run tensorboard_tensorboard launch"
+        "Count":49,
+        "Name":"38_kubernet servic_user kubernet_kubernet user_deploi kubernet"
     },
     {
         "Topic":39,
-        "Count":44,
-        "Name":"39_seri forecast_forecast time_automl forecast_forecastdimens specifi"
+        "Count":48,
+        "Name":"39_cluster user_cluster net_cluster cluster_cluster node"
     },
     {
         "Topic":40,
-        "Count":43,
-        "Name":"40_account delet_delet account_student account_creat account"
+        "Count":47,
+        "Name":"40_tensorboard log_log tensorboard_user tensorboard_tensorboard user"
     },
     {
         "Topic":41,
-        "Count":43,
-        "Name":"41_instal librari_librari instal_import librari_librari sdk"
+        "Count":46,
+        "Name":"41_sql databas_databas connect_mssql databas_databas user"
     },
     {
         "Topic":42,
-        "Count":42,
-        "Name":"42_file csv_csv file_column csv_csv blob"
+        "Count":41,
+        "Name":"42_role permiss_role user_execut role_iam role"
     },
     {
         "Topic":43,
-        "Count":39,
-        "Name":"43_learn platform_commun champion_ad list_interact platform"
+        "Count":40,
+        "Name":"43_hour comput_comput hour_learn data_data regul"
     },
     {
         "Topic":44,
         "Count":38,
-        "Name":"44_guild file_guild command_pythonpath guild_run guild"
+        "Name":"44_request quota_servic quota_quota exceed_quota limit"
     },
     {
         "Topic":45,
-        "Count":37,
-        "Name":"45_data pipelin_dataset pipelin_kustostep pipelin_pipelineparamet data"
+        "Count":35,
+        "Name":"45_sdk user_sdk proprietari_sdk consid_kei sdk"
     },
     {
         "Topic":46,
-        "Count":35,
-        "Name":"46_checkpoint interfac_checkpoint determin_model checkpoint_latest checkpoint"
+        "Count":32,
+        "Name":"46_yml file_expect yml_yaml file_file yaml"
     },
     {
         "Topic":47,
-        "Count":35,
-        "Name":"47_yml file_port yml_yml run_execut yaml"
+        "Count":31,
+        "Name":"47_webservic user_updat webservic_deploi webservic_attributeerror updat"
     },
     {
         "Topic":48,
-        "Count":34,
-        "Name":"48_vpc subnet_privat subnet_specifi subnet_vpc privat"
+        "Count":30,
+        "Name":"48_featur bug_bug featur_improv bug_featur improv"
     },
     {
         "Topic":49,
-        "Count":33,
-        "Name":"49_version dataset_larg dataset_dataset version_data version"
+        "Count":30,
+        "Name":"49_redshift user_file redshift_api sage_access redshift"
     },
     {
         "Topic":50,
-        "Count":33,
-        "Name":"50_ocr process_ocr result_order ocr_ocr model"
-    },
-    {
-        "Topic":51,
-        "Count":32,
-        "Name":"51_endpoint transit_transit aw_transit hour_transit model"
-    },
-    {
-        "Topic":52,
-        "Count":32,
-        "Name":"52_job parallel_parallel job_data parallel_parallel resourc"
-    },
-    {
-        "Topic":53,
-        "Count":31,
-        "Name":"53_featur updat_featur bug_featur improv_bug featur"
-    },
-    {
-        "Topic":54,
         "Count":30,
-        "Name":"54_lifecycl config_lifecycl configur_notebook lifecycl_write lifecycl"
-    },
-    {
-        "Topic":55,
-        "Count":30,
-        "Name":"55_gcp api_gcp endpoint_endpoint gcp_gcp servic"
-    },
-    {
-        "Topic":56,
-        "Count":30,
-        "Name":"56_directori data_folder directori_output directori_directori content"
-    },
-    {
-        "Topic":57,
-        "Count":30,
-        "Name":"57_panda instal_version panda_panda version_instal pyarrow"
+        "Name":"50_join commun_commun_commun champion_opportun user"
     }
 ]
