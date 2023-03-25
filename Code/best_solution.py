@@ -16,7 +16,7 @@ from hdbscan import HDBSCAN
 from umap import UMAP
 
 # Step 1 - Extract embeddings
-embedding_model = SentenceTransformer('multi-qa-MiniLM-L6-cos-v1')
+embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Step 2 - Reduce dimensionality
 umap_model = UMAP(n_components=5, metric='manhattan', low_memory=False)
