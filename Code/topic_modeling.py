@@ -21,6 +21,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 # set default sweep configuration
 config_defaults = {
+    # Refer to https://www.sbert.net/docs/pretrained_models.html
     'model_name': 'multi-qa-MiniLM-L6-cos-v1',
     'metric_distane': 'manhattan',
     'n_components': 5,
