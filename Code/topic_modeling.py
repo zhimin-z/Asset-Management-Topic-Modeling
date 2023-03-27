@@ -75,7 +75,7 @@ class TopicModeling:
         self.sweep_defaults = config_challenges if 'Challenge' in docs_name else config_solutions
         self.sweep_defaults['name'] = docs_name
         df = df[~df[docs_name].isna()]
-        df = df[(df[docs_name].str.split().apply(len) >= 5) & (df[docs_name].apply(len) >= 25)]
+        df = df[df[docs_name].str.split().apply(len) >= 5]
         self.docs = df[docs_name].tolist()
 
     def __train(self):

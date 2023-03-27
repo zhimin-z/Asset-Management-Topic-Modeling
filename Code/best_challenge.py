@@ -7,7 +7,7 @@ docs_name = 'Challenge_summary'
 df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
 
 df = df[~df[docs_name].isna()]
-df = df[(df[].str.split().apply(len) >= 5) & (df[docs_name].apply(len) >= 25)]
+df = df[df[docs_name].str.split().apply(len) >= 5]
 
 df['Challenge_topic'] = -1
 
