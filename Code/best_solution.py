@@ -49,8 +49,8 @@ docs = []
 indexes = []
 
 for index, row in df_all.iterrows():
-    if row['Solution_summary']:
-        docs.append(row['Solution_summary'])
+    if row['Solution_gpt_summary']:
+        docs.append(row['Solution_gpt_summary'])
         indexes.append(index)
 
 topics, probs = topic_model.fit_transform(docs)
@@ -95,7 +95,7 @@ for index in indexes:
 
 del df_all['Solution_original_content']
 del df_all['Solution_preprocessed_content']
-del df_all['Solution_summary']
+del df_all['Solution_gpt_summary']
 
 df_all.to_json(os.path.join(path_dataset, 'topics.json'), indent=4, orient='records')
 
