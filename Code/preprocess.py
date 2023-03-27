@@ -14,9 +14,7 @@ pd.set_option("display.max_rows", None, "display.max_columns",
               None, 'display.max_colwidth', None)
 
 import subprocess
-
-# for complex commands, with many args, use string + `shell=True`:
-cmd_str = "!python -m spacy download en_core_web_sm -q"
+cmd_str = "python -m spacy download en_core_web_trf"
 subprocess.run(cmd_str, shell=True)
 
 path_dataset = 'Dataset'
@@ -37,105 +35,109 @@ import spacy
 # Refer to https://textacy.readthedocs.io/en/stable/api_reference/text_stats.html
 from textacy import text_stats
 
-nlp = spacy.load('en_core_web_sm')
+nlp = spacy.load('en_core_web_trf')
 link_pattern = '(?P<url>ftp|https?://[^\s]+)'
 
 df_issues = pd.read_json(os.path.join(path_dataset, 'issues.json'))
+
+for index, row in df_issues.iterrows():
+    df_issues.at[index, 'Challenge_link'] = row['Issue_link']
+    df_issues.at[index, 'Challenge_original_content'] = row['Issue_original_content']
+    df_issues.at[index, 'Challenge_preprocessed_content'] = row['Issue_preprocessed_content']
+    df_issues.at[index, 'Challenge_gpt_summary'] = row['Issue_gpt_summary']
+    df_issues.at[index, 'Challenge_creation_time'] = row['Issue_creation_time']
+    df_issues.at[index, 'Challenge_answer_count'] = row['Issue_answer_count']
+    df_issues.at[index, 'Challenge_score'] = row['Issue_upvote_count'] - row['Issue_downvote_count']
+    df_issues.at[index, 'Challenge_closed_time'] = row['Issue_closed_time']
+    
+    challenge_content = row['Issue_title'] + '. ' + str(row['Issue_body'])
+    challenge_content_nlp = nlp(challenge_content)
+    df_issues.at[index, 'Challenge_word_count'], df_issues.at[index, 'Challenge_unique_word_count'] = text_stats.utils.compute_n_words_and_types(challenge_content_nlp)
+    df_issues.at[index, 'Challenge_sentence_count'] = text_stats.basics.n_sents(challenge_content_nlp)
+    df_issues.at[index, 'Challenge_information_entropy'] = text_stats.basics.entropy(challenge_content_nlp)
+    df_issues.at[index, 'Challenge_readability'] = text_stats.readability.automated_readability_index(challenge_content_nlp)
+    df_issues.at[index, 'Challenge_link_count'] = len(re.findall(link_pattern, challenge_content))
+    
+    df_issues.at[index, 'Solution_original_content'] = row['Answer_original_content']
+    df_issues.at[index, 'Solution_preprocessed_content'] = row['Answer_preprocessed_content']
+    df_issues.at[index, 'Solution_gpt_summary'] = row['Answer_gpt_summary']
+    
+    discussion = '. '.join(row['Answer_list'])
+    
+    if discussion:
+        discussion_nlp = nlp(discussion)
+        df_issues.at[index, 'Solution_word_count'], df_issues.at[index, 'Solution_unique_word_count'] = text_stats.utils.compute_n_words_and_types(discussion_nlp)
+        df_issues.at[index, 'Solution_sentence_count'] = text_stats.basics.n_sents(discussion_nlp)
+        df_issues.at[index, 'Solution_information_entropy'] = text_stats.basics.entropy(discussion_nlp)
+        df_issues.at[index, 'Solution_readability'] = text_stats.readability.automated_readability_index(discussion_nlp)
+        df_issues.at[index, 'Solution_link_count'] = len(re.findall(link_pattern, discussion))
+    else:
+        df_issues.at[index, 'Solution_word_count'] = np.nan
+        df_issues.at[index, 'Solution_unique_word_count'] = np.nan
+        df_issues.at[index, 'Solution_sentence_count'] = np.nan
+        df_issues.at[index, 'Solution_information_entropy'] = np.nan
+        df_issues.at[index, 'Solution_readability'] = np.nan
+        df_issues.at[index, 'Solution_link_count'] = np.nan
+
 df_questions = pd.read_json(os.path.join(path_dataset, 'questions.json'))
 
-df_issues['Challenge_link'] = df_issues['Issue_link']
-df_issues['Challenge_original_content'] = df_issues['Issue_original_content']
-df_issues['Challenge_preprocessed_content'] = df_issues['Issue_preprocessed_content']
-df_issues['Challenge_summary'] = df_issues['Issue_gpt_summary']
-df_issues['Challenge_creation_time'] = df_issues['Issue_creation_time']
-df_issues['Challenge_answer_count'] = df_issues['Issue_answer_count']
-df_issues['Challenge_score'] = df_issues['Issue_upvote_count'] - \
-    df_issues['Issue_downvote_count']
-df_issues['Challenge_closed_time'] = df_issues['Issue_closed_time']
-
-challenge_content = df_issues['Issue_title'] + \
-    '. ' + df_issues['Issue_body'].astype(str)
-df_issues['Challenge_word_count'] = challenge_content.apply(
-    lambda x: text_stats.basics.n_words(nlp(x)))
-df_issues['Challenge_unique_word_count'] = challenge_content.apply(
-    lambda x: text_stats.basics.n_unique_words(nlp(x)))
-df_issues['Challenge_sentence_count'] = challenge_content.apply(
-    lambda x: text_stats.basics.n_sents(nlp(x)))
-df_issues['Challenge_information_entropy'] = challenge_content.apply(
-    lambda x: text_stats.basics.entropy(nlp(x)))
-df_issues['Challenge_readability'] = challenge_content.apply(
-    lambda x: text_stats.readability.automated_readability_index(nlp(x)))
-df_issues['Challenge_link_count'] = challenge_content.apply(
-    lambda x: len(re.findall(link_pattern, x)))
-
-df_issues['Solution_original_content'] = df_issues['Answer_original_content']
-df_issues['Solution_preprocessed_content'] = df_issues['Answer_preprocessed_content']
-df_issues['Solution_gpt_summary'] = df_issues['Answer_gpt_summary']
-
-solution_content = df_issues['Answer_list'].apply(lambda x: '. '.join(x))
-df_issues['Solution_word_count'] = solution_content.apply(
-    lambda x: text_stats.basics.n_words(nlp(x)))
-df_issues['Solution_unique_word_count'] = solution_content.apply(
-    lambda x: text_stats.basics.n_unique_words(nlp(x)))
-df_issues['Solution_sentence_count'] = solution_content.apply(
-    lambda x: text_stats.basics.n_sents(nlp(x)))
-df_issues['Solution_information_entropy'] = solution_content.apply(
-    lambda x: text_stats.basics.entropy(nlp(x)))
-df_issues['Solution_readability'] = solution_content.apply(
-    lambda x: text_stats.readability.automated_readability_index(nlp(x)) if x else pd.NA)
-df_issues['Solution_link_count'] = solution_content.apply(
-    lambda x: len(re.findall(link_pattern, x)))
-
-df_questions['Challenge_link'] = df_questions['Question_link']
-df_questions['Challenge_original_content'] = df_questions['Question_original_content']
-df_questions['Challenge_preprocessed_content'] = df_questions['Question_preprocessed_content']
-df_questions['Challenge_summary'] = df_questions['Question_gpt_summary']
-df_questions['Challenge_creation_time'] = df_questions['Question_creation_time']
-df_questions['Challenge_answer_count'] = df_questions['Question_answer_count']
-df_questions['Challenge_comment_count'] = df_questions['Question_comment_count']
-df_questions['Challenge_score'] = df_questions['Question_score']
-df_questions['Challenge_closed_time'] = df_questions['Question_closed_time']
-df_questions['Challenge_favorite_count'] = df_questions['Question_favorite_count']
-df_questions['Challenge_last_edit_time'] = df_questions['Question_last_edit_time']
-df_questions['Challenge_view_count'] = df_questions['Question_view_count']
-df_questions['Challenge_follower_count'] = df_questions['Question_follower_count']
-df_questions['Challenge_converted_from_issue'] = df_questions['Question_converted_from_issue']
-
-challenge_content = df_questions['Question_title'] + \
-    '. ' + df_questions['Question_body'].astype(str)
-df_questions['Challenge_word_count'] = challenge_content.apply(
-    lambda x: text_stats.basics.n_words(nlp(x)))
-df_questions['Challenge_unique_word_count'] = challenge_content.apply(
-    lambda x: text_stats.basics.n_unique_words(nlp(x)))
-df_questions['Challenge_sentence_count'] = challenge_content.apply(
-    lambda x: text_stats.basics.n_sents(nlp(x)))
-df_questions['Challenge_information_entropy'] = challenge_content.apply(
-    lambda x: text_stats.basics.entropy(nlp(x)))
-df_questions['Challenge_readability'] = challenge_content.apply(
-    lambda x: text_stats.readability.automated_readability_index(nlp(x)))
-df_questions['Challenge_link_count'] = challenge_content.apply(
-    lambda x: len(re.findall(link_pattern, x)))
-
-df_questions['Solution_view_count'] = df_questions['Answer_comment_count']
-df_questions['Solution_last_edit_time'] = df_questions['Answer_last_edit_time']
-df_questions['Solution_score'] = df_questions['Answer_score']
-df_questions['Solution_original_content'] = df_questions['Answer_original_content']
-df_questions['Solution_preprocessed_content'] = df_questions['Answer_preprocessed_content']
-df_questions['Solution_gpt_summary'] = df_questions['Answer_gpt_summary']
-
-solution_content = df_questions['Answer_list'].apply(lambda x: '. '.join(x))
-df_questions['Solution_word_count'] = solution_content.apply(
-    lambda x: text_stats.basics.n_words(nlp(x)))
-df_questions['Solution_unique_word_count'] = solution_content.apply(
-    lambda x: text_stats.basics.n_unique_words(nlp(x)))
-df_questions['Solution_sentence_count'] = solution_content.apply(
-    lambda x: text_stats.basics.n_sents(nlp(x)))
-df_questions['Solution_information_entropy'] = solution_content.apply(
-    lambda x: text_stats.basics.entropy(nlp(x)))
-df_questions['Solution_readability'] = solution_content.apply(
-    lambda x: text_stats.readability.automated_readability_index(nlp(x)) if x else pd.NA)
-df_questions['Solution_link_count'] = solution_content.apply(
-    lambda x: len(re.findall(link_pattern, x)))
+for index, row in df_questions.iterrows():
+    df_questions.at[index, 'Challenge_link'] = row['Question_link']
+    df_questions.at[index, 'Challenge_original_content'] = row['Question_original_content']
+    df_questions.at[index, 'Challenge_preprocessed_content'] = row['Question_preprocessed_content']
+    df_questions.at[index, 'Challenge_gpt_summary'] = row['Question_gpt_summary']
+    df_questions.at[index, 'Challenge_creation_time'] = row['Question_creation_time']
+    df_questions.at[index, 'Challenge_answer_count'] = row['Question_answer_count']
+    df_questions.at[index, 'Challenge_comment_count'] = row['Question_comment_count']
+    df_questions.at[index, 'Challenge_score'] = row['Question_score']
+    df_questions.at[index, 'Challenge_closed_time'] = row['Question_closed_time']
+    df_questions.at[index, 'Challenge_favorite_count'] = row['Question_favorite_count']
+    df_questions.at[index, 'Challenge_last_edit_time'] = row['Question_last_edit_time']
+    df_questions.at[index, 'Challenge_view_count'] = row['Question_view_count']
+    df_questions.at[index, 'Challenge_follower_count'] = row['Question_follower_count']
+    df_questions.at[index, 'Challenge_converted_from_issue'] = row['Question_converted_from_issue']
+    
+    challenge_content = row['Question_title'] + '. ' + str(row['Question_body'])
+    challenge_content_nlp = nlp(challenge_content)
+    df_questions.at[index, 'Challenge_word_count'], df_questions.at[index, 'Challenge_unique_word_count'] = text_stats.utils.compute_n_words_and_types(challenge_content_nlp)
+    df_questions.at[index, 'Challenge_sentence_count'] = text_stats.basics.n_sents(challenge_content_nlp)
+    df_questions.at[index, 'Challenge_information_entropy'] = text_stats.basics.entropy(challenge_content_nlp)
+    df_questions.at[index, 'Challenge_readability'] = text_stats.readability.automated_readability_index(challenge_content_nlp)
+    df_questions.at[index, 'Challenge_link_count'] = len(re.findall(link_pattern, challenge_content))
+    
+    df_questions.at[index, 'Solution_comment_count'] = row['Answer_comment_count']
+    df_questions.at[index, 'Solution_last_edit_time'] = row['Answer_last_edit_time']
+    df_questions.at[index, 'Solution_score'] = row['Answer_score']
+    df_questions.at[index, 'Solution_original_content'] = row['Answer_original_content']
+    df_questions.at[index, 'Solution_preprocessed_content'] = row['Answer_preprocessed_content']
+    df_questions.at[index, 'Solution_gpt_summary'] = row['Answer_gpt_summary']
+    
+    discussion = ''
+    if row['Answer_body']:
+        discussion = row['Answer_body']
+    elif row['Answer_list']:
+        if pd.notna(row['Question_closed_time']):
+            for comment in row['Answer_list']:
+                if comment['Answer_has_accepted']:
+                    discussion = comment['Answer_body']
+                    break
+        else:
+            discussion = '. '.join(row['Answer_list'])
+        
+    if discussion:
+        discussion_nlp = nlp(discussion)
+        df_questions.at[index, 'Solution_word_count'], df_questions.at[index, 'Solution_unique_word_count'] = text_stats.utils.compute_n_words_and_types(discussion_nlp)
+        df_questions.at[index, 'Solution_sentence_count'] = text_stats.basics.n_sents(discussion_nlp)
+        df_questions.at[index, 'Solution_information_entropy'] = text_stats.basics.entropy(discussion_nlp)
+        df_questions.at[index, 'Solution_readability'] = text_stats.readability.automated_readability_index(discussion_nlp)
+        df_questions.at[index, 'Solution_link_count'] = len(re.findall(link_pattern, discussion))
+    else:
+        df_questions.at[index, 'Solution_word_count'] = np.nan
+        df_questions.at[index, 'Solution_unique_word_count'] = np.nan
+        df_questions.at[index, 'Solution_sentence_count'] = np.nan
+        df_questions.at[index, 'Solution_information_entropy'] = np.nan
+        df_questions.at[index, 'Solution_readability'] = np.nan
+        df_questions.at[index, 'Solution_link_count'] = np.nan
 
 del df_issues['Issue_title']
 del df_issues['Issue_body']
@@ -188,271 +190,3 @@ del df_questions['Answer_gpt_summary']
 df_all = pd.concat([df_issues, df_questions], ignore_index=True)
 df_all.to_json(os.path.join(path_dataset, 'original.json'),
                indent=4, orient='records')
-
-# remove custom stop words from challenges and solutions
-
-from gensim.parsing.preprocessing import remove_stopwords
-
-stop_words_custom = [
-    'altern',
-    'amazon',
-    'answer',
-    # 'api',
-    'applic',
-    'appreci',
-    'approach',
-    'aris',
-    'ask',
-    'assum',
-    'attempt',
-    'aw',
-    'azur',
-    'bad',
-    # 'begin',
-    'behavior',
-    'behaviour',
-    'best',
-    'better',
-    'case',
-    'caus',
-    'challeng',
-    'cloudera',
-    # 'close',
-    'code',
-    'command',
-    'consid',
-    'contain',
-    'content',
-    'correct',
-    'correctli',
-    'correspond',
-    'couldn',
-    'curiou',
-    'custom',
-    'deep',
-    'demand',
-    'demo',
-    'despit',
-    'differ',
-    'differenti',
-    'difficult',
-    'difficulti',
-    'discuss',
-    'distinguish',
-    'easi',
-    'effect',
-    'encount',
-    # 'end',
-    'enquiri',
-    'error',
-    'especi',
-    'exampl',
-    'expect',
-    'experi',
-    'databrick',
-    'domo',
-    'face',
-    'fail',
-    'failur',
-    'favorit',
-    'favourit',
-    'feel',
-    'firstli',
-    'fix',
-    'gcp',
-    'given',
-    'good',
-    'googl',
-    'gurante',
-    'happen',
-    'hard',
-    'hei',
-    'hello',
-    'help',
-    'ibm',
-    'impli',
-    'implic',
-    'includ',
-    'incorrect',
-    'incorrectli',
-    'indic',
-    'info',
-    'inform',
-    'inquiri',
-    'insight',
-    'instead',
-    'intern',
-    'invalid',
-    'issu',
-    'lead',
-    'learn',
-    'like',
-    'look',
-    'machin',
-    'main',
-    'major',
-    'manner',
-    'mean',
-    'meaning',
-    'meaningfulli',
-    'meaningless',
-    'mention',
-    'method',
-    'microsoft',
-    'mind',
-    'mistak',
-    'mistakenli',
-    # 'multipl',
-    'need',
-    'new',
-    'non',
-    'occas',
-    'occasion',
-    'occur',
-    'offer',
-    'old',
-    'own',
-    # 'open',
-    'oracl',
-    'ought',
-    'outcom',
-    'particular',
-    'particularli',
-    'perspect',
-    'point',
-    'pointless',
-    'possibl',
-    'problem',
-    'product',
-    # 'program',
-    'project',
-    'provid',
-    'python',
-    'pytorch',
-    'question',
-    'refer',
-    'regard',
-    'requir',
-    'resolv',
-    'respond',
-    'result',
-    'right',
-    'rightli',
-    'scenario',
-    'scikit',
-    'script',
-    'second',
-    'secondli',
-    'seek',
-    'seen',
-    'shall',
-    'shan',
-    'shouldn',
-    'similar',
-    'situat',
-    'sklearn',
-    'snippet',
-    'snowflak',
-    'solut',
-    'solv',
-    'sound',
-    # 'sourc',
-    'special',
-    'specif',
-    # 'start',
-    'strang',
-    'struggl',
-    'succe',
-    'success',
-    'suggest',
-    'talk',
-    'tensorflow',
-    'thank',
-    'think',
-    'thirdli',
-    'thought',
-    'topic',
-    'try',
-    'unabl',
-    'understand',
-    'unexpect',
-    'us',
-    'user',
-    'usual',
-    'valid',
-    'view',
-    'viewpoint',
-    'wai',
-    'want',
-    'weird',
-    'worst',
-    'won',
-    'wonder',
-    'work',
-    'wors',
-    'wouldn',
-    'wrong',
-    'wrongli',
-] 
-
-df_all = pd.read_json(os.path.join(path_dataset, 'original.json'))
-
-for index, row in df_all.iterrows():
-    df_all.at[index, 'Challenge_original_content'] = remove_stopwords(row['Challenge_original_content'], stopwords=stop_words_custom)
-    df_all.at[index, 'Challenge_preprocessed_content'] = remove_stopwords(row['Challenge_preprocessed_content'], stopwords=stop_words_custom)
-    df_all.at[index, 'Challenge_summary'] = remove_stopwords(row['Challenge_summary'], stopwords=stop_words_custom)
-
-    if row['Solution_gpt_summary']:
-        df_all.at[index, 'Solution_original_content'] = remove_stopwords(row['Solution_original_content'], stopwords=stop_words_custom)
-        df_all.at[index, 'Solution_preprocessed_content'] = remove_stopwords(row['Solution_preprocessed_content'], stopwords=stop_words_custom)
-        df_all.at[index, 'Solution_gpt_summary'] = remove_stopwords(row['Solution_gpt_summary'], stopwords=stop_words_custom)
-
-df_all.to_json(os.path.join(path_dataset, 'preprocessed.json'),
-               indent=4, orient='records')
-
-# remove issues with uninformed content
-
-df_all = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
-
-for index, row in df_all.iterrows():
-    if len(row['Challenge_original_content'].split()) < 6 or len(row['Challenge_original_content']) < 30:
-        print(row['Challenge_original_content'])
-        df_all.drop(index, inplace=True)
-    elif row['Solution_original_content'] and (len(row['Solution_original_content'].split()) < 6 or len(row['Solution_original_content']) < 30):
-        print(row['Solution_original_content'])
-        df_all.drop(index, inplace=True)
-
-df_all.to_json(os.path.join(path_dataset, 'filtered.json'),
-               indent=4, orient='records')
-
-# Draw sankey diagram of tool and platform
-
-df_all = pd.read_json(os.path.join(path_dataset, 'filtered.json'))
-df_all['State'] = df_all['Challenge_closed_time'].apply(lambda x: 'closed' if not pd.isna(x) else 'open')
-
-categories = ['Tool', 'Platform', 'State']
-
-df_all = df_all.groupby(categories).size().reset_index(name='value')
-df_all.to_json(os.path.join(path_general, 'Tool platform info.json'),
-               indent=4, orient='records')
-
-newDf = pd.DataFrame()
-for i in range(len(categories)-1):
-    tempDf = df_all[[categories[i], categories[i+1], 'value']]
-    tempDf.columns = ['source', 'target', 'value']
-    newDf = pd.concat([newDf, tempDf])
-newDf = newDf.groupby(['source', 'target']).agg({'value': 'sum'}).reset_index()
-
-label = list(np.unique(df_all[categories].values))
-source = newDf['source'].apply(lambda x: label.index(x))
-target = newDf['target'].apply(lambda x: label.index(x))
-value = newDf['value']
-
-link = dict(source=source, target=target, value=value)
-node = dict(label=label)
-data = go.Sankey(link=link, node=node)
-
-fig = go.Figure(data)
-fig.update_layout(width=1000, height=1000, font_size=20)
-fig.write_image(os.path.join(
-    path_general, 'Tool platform sankey.png'))
