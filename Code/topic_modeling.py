@@ -39,7 +39,7 @@ config_challenges = {
     },
     "parameters": {
         'min_samples_pct': {
-            'values': list(range(0.1, 1.1, 0.1))
+            'values': [x / 10.0 for x in range(1, 10, 1)]
         },
         'ngram_range': {
             'values': list(range(1, 6))
@@ -58,7 +58,7 @@ config_solutions = {
     },
     "parameters": {
         'min_samples_pct': {
-            'values': list(range(0.1, 1.1, 0.1))
+            'values': [x / 10.0 for x in range(1, 10, 1)]
         },
         'ngram_range': {
             'values': list(range(1, 6))
