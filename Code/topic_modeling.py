@@ -19,6 +19,8 @@ os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"] = str(sweep_count)
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
+df = pd.read_json(os.path.join('Dataset', 'preprocessed.json'))
+
 # set default sweep configuration
 config_defaults = {
     # Refer to https://www.sbert.net/docs/pretrained_models.html
@@ -29,16 +31,12 @@ config_defaults = {
     'reduce_frequent_words': True,
 }
 
-# set general sweep configuration
-sweep_defaults = {
+config_challenges = {
+    "method": "grid",
     "metric": {
         'name': 'CoherenceCV',
         'goal': 'maximize'
     },
-    "method": "grid",
-}
-
-config_challenges = {
     "parameters": {
         'min_samples_pct': {
             'values': list(range(0.1, 1.1, 0.1))
@@ -53,15 +51,20 @@ config_challenges = {
 }
 
 config_solutions = {
+    "method": "grid",
+    "metric": {
+        'name': 'CoherenceCV',
+        'goal': 'maximize'
+    },
     "parameters": {
         'min_samples_pct': {
-            'values': [.1, .25, .5, .75, 1]
+            'values': list(range(0.1, 1.1, 0.1))
         },
         'ngram_range': {
             'values': list(range(1, 6))
         },
         'min_cluster_size': {
-            'values': list(range(15, 101, 5))
+            'values': list(range(20, 101, 5))
         },
     },
 }
@@ -69,16 +72,11 @@ config_solutions = {
 
 class TopicModeling:
     def __init__(self, docs_name):
-        self.sweep_defaults = sweep_defaults
+        self.sweep_defaults = config_challenges if 'Challenge' in docs_name else config_solutions
         self.sweep_defaults['name'] = docs_name
-
-        df_all = pd.read_json(os.path.join('Dataset', 'all_filtered.json'))
-        if docs_name in ['Solution_original_content', 'Solution_preprocessed_content', 'Solution_gpt_summary']:
-            df_all = df_all[df_all['Solution_original_content'].str.len() > 0]
-            self.sweep_defaults.update(config_solutions)
-        else:
-            self.sweep_defaults.update(config_challenges)
-        self.docs = df_all[docs_name].tolist()
+        df = df[~df[docs_name].isna()]
+        df = df[(df[docs_name].str.split().apply(len) >= 5) & (df[docs_name].apply(len) >= 25)]
+        self.docs = df[docs_name].tolist()
 
     def __train(self):
         # Initialize a new wandb run

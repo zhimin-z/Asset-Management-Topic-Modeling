@@ -2,8 +2,14 @@ import os
 import pandas as pd
 
 path_dataset = 'Dataset'
-df_all = pd.read_json(os.path.join(path_dataset, 'filtered.json'))
-df_all['Challenge_topic'] = -1
+docs_name = 'Challenge_summary'
+
+df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
+
+df = df[~df[docs_name].isna()]
+df = df[(df[].str.split().apply(len) >= 5) & (df[docs_name].apply(len) >= 25)]
+
+df['Challenge_topic'] = -1
 
 # visualize the best challenge topic model
 
@@ -45,7 +51,7 @@ topic_model = BERTopic(
     calculate_probabilities=True
 )
 
-docs = df_all['Challenge_summary'].tolist()
+docs = df[docs_name].tolist()
 topics, probs = topic_model.fit_transform(docs)
 
 path_result = 'Result'
@@ -83,14 +89,14 @@ fig.write_html(os.path.join(path_challenge, 'Document visualization.html'))
 new_topics = topic_model.reduce_outliers(
     docs, topics, probabilities=probs, strategy="probabilities")
 
-for index, row in df_all.iterrows():
-    df_all.at[index, 'Challenge_topic'] = new_topics.pop(0)
+for index, row in df.iterrows():
+    df.at[index, 'Challenge_topic'] = new_topics.pop(0)
 
-del df_all['Challenge_original_content']
-del df_all['Challenge_preprocessed_content']
-del df_all['Challenge_summary']
+del df['Challenge_original_content']
+del df['Challenge_preprocessed_content']
+del df['Challenge_summary']
 
-df_all.to_json(os.path.join(path_dataset, 'topics.json'), indent=4, orient='records')
+df.to_json(os.path.join(path_dataset, 'challenge_topics.json'), indent=4, orient='records')
 
 from matplotlib import pyplot as plt
 from wordcloud import WordCloud
