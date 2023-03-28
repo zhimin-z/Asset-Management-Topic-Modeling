@@ -13,13 +13,12 @@ import wandb
 import os
 
 wandb_project = 'asset-management-topic-modeling'
+path_dataset = 'Dataset'
 sweep_count = 500
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"] = str(sweep_count)
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
-
-df = pd.read_json(os.path.join('Dataset', 'preprocessed.json'))
 
 # set default sweep configuration
 config_defaults = {
@@ -74,6 +73,8 @@ class TopicModeling:
     def __init__(self, docs_name):
         self.sweep_defaults = config_challenges if 'Challenge' in docs_name else config_solutions
         self.sweep_defaults['name'] = docs_name
+
+        df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
         df = df[~df[docs_name].isna()]
         df = df[df[docs_name].str.split().apply(len) >= 5]
         self.docs = df[docs_name].tolist()
