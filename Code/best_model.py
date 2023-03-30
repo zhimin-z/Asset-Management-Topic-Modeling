@@ -69,7 +69,7 @@ min_samples = int(config_challenge['min_cluster_size']
                   * config_challenge['min_samples_pct'])
 min_samples = 5 if min_samples < 5 else min_samples
 hdbscan_model = HDBSCAN(
-    min_cluster_size=config_challenge['min_cluster_size'], min_samples=min_samples)
+    min_cluster_size=config_challenge['min_cluster_size'], min_samples=min_samples, prediction_data=True)
 
 # Step 4 - Tokenize topics
 vectorizer_model = TfidfVectorizer(
@@ -177,7 +177,7 @@ min_samples = int(config_solution['min_cluster_size']
                   * config_solution['min_samples_pct'])
 min_samples = 5 if min_samples < 5 else min_samples
 hdbscan_model = HDBSCAN(
-    min_cluster_size=config_solution['min_cluster_size'], min_samples=min_samples)
+    min_cluster_size=config_solution['min_cluster_size'], min_samples=min_samples, prediction_data=True)
 
 # Step 4 - Tokenize topics
 vectorizer_model = TfidfVectorizer(
@@ -235,12 +235,13 @@ fig.write_html(os.path.join(path_solution, 'Document visualization.html'))
 new_topics = topic_model.reduce_outliers(
     docs_solution, topics, probabilities=probs, strategy="probabilities")
 
-for index, row in df.iterrows():
+for index in indexes_solution:
     df.at[index, 'Solution_topic'] = new_topics.pop(0)
 
 del df['Challenge_original_content']
 del df['Challenge_preprocessed_content']
-del df['Challenge_summary']
+del df['Challenge_gpt_summary']
+
 del df['Solution_original_content']
 del df['Solution_preprocessed_content']
 del df['Solution_gpt_summary']
