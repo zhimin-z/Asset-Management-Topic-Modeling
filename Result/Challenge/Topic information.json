@@ -1,162 +1,217 @@
 [
     {
         "Topic":-1,
-        "Count":3190,
-        "Name":"-1_dataset_train job_train model_data"
+        "Count":3873,
+        "Name":"-1_dataset_train job_export data_import"
     },
     {
         "Topic":0,
-        "Count":822,
-        "Name":"0_jupyt notebook_notebook instal_notebook lifecycl_run notebook"
+        "Count":821,
+        "Name":"0_jupyt notebook_notebook instal_modulenotfounderror_instal pip"
     },
     {
         "Topic":1,
-        "Count":791,
-        "Name":"1_file git_file dataset_data folder_data file"
+        "Count":527,
+        "Name":"1_data pipelin_sdk pipelin_pipelin sdk_devop pipelin"
     },
     {
         "Topic":2,
-        "Count":564,
-        "Name":"2_model kubernet_deploi kubernet_kubernet servic_kubernet cluster"
+        "Count":310,
+        "Name":"2_dockerfil train_dockerfil_docker file_job docker"
     },
     {
         "Topic":3,
-        "Count":523,
-        "Name":"3_dataset pipelin_pipelineparamet_trigger pipelin_pipelin automat"
+        "Count":262,
+        "Name":"3_sweep hyperparamet_hyperparamet sweep_model sweep_tune hyperparamet"
     },
     {
         "Topic":4,
-        "Count":362,
-        "Name":"4_iam role_role access_execut role_role creat"
+        "Count":198,
+        "Name":"4_json payload_payload endpoint_payload format_request json"
     },
     {
         "Topic":5,
-        "Count":310,
-        "Name":"5_dockerfil_dockerfil train_docker file_configur docker"
+        "Count":197,
+        "Name":"5_save model_model save_export model_model file"
     },
     {
         "Topic":6,
-        "Count":259,
-        "Name":"6_sweep hyperparamet_hyperparamet sweep_sweep configur_configur sweep"
+        "Count":195,
+        "Name":"6_gpu cuda_docker gpu_gpu train_gpu run"
     },
     {
         "Topic":7,
-        "Count":207,
-        "Name":"7_payload endpoint_invok endpoint_endpoint api_payload format"
+        "Count":189,
+        "Name":"7_file csv_datafram csv_csv file_write csv"
     },
     {
         "Topic":8,
-        "Count":199,
-        "Name":"8_log metric_metric log_epoch log_log run"
+        "Count":156,
+        "Name":"8_automl forecast_forecast automl_forecast data_data forecast"
     },
     {
         "Topic":9,
-        "Count":195,
-        "Name":"9_gpu cuda_docker gpu_gpu train_gpu run"
+        "Count":148,
+        "Name":"9_artifact log_artifact api_configur artifact_artifact store"
     },
     {
         "Topic":10,
-        "Count":178,
-        "Name":"10_save model_model save_export model_modelchimp save"
+        "Count":143,
+        "Name":"10_model xgboost_hyperparamet xgboost_predict xgboost_xgboost model"
     },
     {
         "Topic":11,
-        "Count":154,
-        "Name":"11_artifact log_artifact api_configur artifact_artifact store"
+        "Count":142,
+        "Name":"11_model kubernet_deploi kubernet_kubernet servic_endpoint kubernet"
     },
     {
         "Topic":12,
-        "Count":147,
-        "Name":"12_xgboost endpoint_invok xgboost_xgboost data_model xgboost"
+        "Count":131,
+        "Name":"12_auto label_label ground_label job_label task"
     },
     {
         "Topic":13,
-        "Count":142,
-        "Name":"13_file remot_remot configur_configur remot_run remot"
+        "Count":123,
+        "Name":"13_remot configur_configur remot_run remot_remot path"
     },
     {
         "Topic":14,
-        "Count":132,
-        "Name":"14_auto label_label ground_label job_label task"
+        "Count":122,
+        "Name":"14_slow execut_core ram_hour comput_detail resourc"
     },
     {
         "Topic":15,
-        "Count":129,
-        "Name":"15_chart log_bar chart_chart visual_line chart"
+        "Count":120,
+        "Name":"15_spark pyspark_configur spark_scala spark_spark scala"
     },
     {
         "Topic":16,
-        "Count":128,
-        "Name":"16_program commun_commun expert_commun_text request"
+        "Count":118,
+        "Name":"16_log metric_metric log_log run_run log"
     },
     {
         "Topic":17,
-        "Count":118,
-        "Name":"17_spark pyspark_spark scala_scala spark_configur spark"
+        "Count":116,
+        "Name":"17_subscript account_account subscript_account extens_account sign"
     },
     {
         "Topic":18,
-        "Count":82,
-        "Name":"18_predict model_model predict_train predict_input predict"
+        "Count":111,
+        "Name":"18_plot bar_chart log_bar chart_line chart"
     },
     {
         "Topic":19,
-        "Count":80,
-        "Name":"19_automl forecast_forecast automl_forecast data_data forecast"
+        "Count":97,
+        "Name":"19_process nlp_nlp task_text_document translat"
     },
     {
         "Topic":20,
-        "Count":77,
-        "Name":"20_vision api_object detect_train object_detect train"
+        "Count":88,
+        "Name":"20_endpoint model_model endpoint_endpoint multimodel_multimodel endpoint"
     },
     {
         "Topic":21,
-        "Count":66,
-        "Name":"21_speech text_file speech_text speech_manual transcript"
+        "Count":85,
+        "Name":"21_file git_file gitignor_git check_file commit"
     },
     {
         "Topic":22,
-        "Count":64,
-        "Name":"22_cluster job_run job_train cluster_cluster tri"
+        "Count":78,
+        "Name":"22_iam role_role access_execut role_role exist"
     },
     {
         "Topic":23,
-        "Count":59,
-        "Name":"23_model regist_model registri_model version_regist model"
+        "Count":71,
+        "Name":"23_random forest_forest model_forest algorithm_forest classifi"
     },
     {
         "Topic":24,
-        "Count":57,
-        "Name":"24_forest model_random forest_forest classifi_forest algorithm"
+        "Count":65,
+        "Name":"24_program commun_text request_commun expert_join commun"
     },
     {
         "Topic":25,
-        "Count":48,
-        "Name":"25_tensorboard log_log tensorboard_get tensorboard_access tensorboard"
+        "Count":62,
+        "Name":"25_datastor creat_creat datastor_access datastor_datastor access"
     },
     {
         "Topic":26,
-        "Count":47,
-        "Name":"26_config yml_yml configur_yaml config_config paramet"
+        "Count":62,
+        "Name":"26_column valu_valu column_column_column comput"
     },
     {
         "Topic":27,
-        "Count":46,
-        "Name":"27_input model_input layer_shape model_pretrain model"
+        "Count":58,
+        "Name":"27_data na_version dataset_datacatalog_repositori data"
     },
     {
         "Topic":28,
-        "Count":45,
-        "Name":"28_updat text_bug text_bug document_releas text"
+        "Count":57,
+        "Name":"28_databas pyodbc_connect sql_databas connect_instal odbc"
     },
     {
         "Topic":29,
-        "Count":37,
-        "Name":"29_model mxnet_mxnet model_model mxnetmodel_model deeplen"
+        "Count":55,
+        "Name":"29_version stage_version model_model version_model regist"
     },
     {
         "Topic":30,
-        "Count":35,
-        "Name":"30_translat document_process nlp_languag translat_translat text"
+        "Count":51,
+        "Name":"30_model deeplen_yolov model_convert model_export model"
+    },
+    {
+        "Topic":31,
+        "Count":49,
+        "Name":"31_predict endpoint_endpoint predict_input predict_model predict"
+    },
+    {
+        "Topic":32,
+        "Count":49,
+        "Name":"32_train model_train classif_increment train_multipl train"
+    },
+    {
+        "Topic":33,
+        "Count":49,
+        "Name":"33_file speech_speech text_audio speech_text speech"
+    },
+    {
+        "Topic":34,
+        "Count":48,
+        "Name":"34_cloudwatch log_check cloudwatch_log cloudwatch_estim cloudwatch"
+    },
+    {
+        "Topic":35,
+        "Count":46,
+        "Name":"35_tensorboard log_log tensorboard_logdir tensorboard_get tensorboard"
+    },
+    {
+        "Topic":36,
+        "Count":45,
+        "Name":"36_config yml_yaml config_yml file_file yaml"
+    },
+    {
+        "Topic":37,
+        "Count":39,
+        "Name":"37_object track_automl video_train object_video classif"
+    },
+    {
+        "Topic":38,
+        "Count":38,
+        "Name":"38_updat text_bug document_bug improv_releas text"
+    },
+    {
+        "Topic":39,
+        "Count":36,
+        "Name":"39_sync run_run sync_finish sync_automat synchron"
+    },
+    {
+        "Topic":40,
+        "Count":32,
+        "Name":"40_model log_log model_log artifact_enabl log"
+    },
+    {
+        "Topic":41,
+        "Count":31,
+        "Name":"41_authorizationfail_auth_access authent_advic authorizationfail"
     }
 ]

@@ -1,147 +1,147 @@
 [
     {
         "Topic":-1,
-        "Count":1260,
-        "Name":"-1_train model_data sourc_dataset_import"
+        "Count":1152,
+        "Name":"-1_train model_dataset_train_config"
     },
     {
         "Topic":0,
-        "Count":280,
+        "Count":264,
         "Name":"0_instal pip_pip instal_instal packag_packag instal"
     },
     {
         "Topic":1,
-        "Count":99,
-        "Name":"1_pipelineparamet_nest sweep_sweep job_hyperparamet"
+        "Count":202,
+        "Name":"1_file git_git repositori_git push_push git"
     },
     {
         "Topic":2,
-        "Count":96,
-        "Name":"2_comput cluster_workload_autopilot_autoscal"
+        "Count":122,
+        "Name":"2_dataset modul_column train_primari dataset_dataset"
     },
     {
         "Topic":3,
-        "Count":88,
-        "Name":"3_dockerfil_model docker_dockerconfigur_imag dockerfil"
+        "Count":93,
+        "Name":"3_pipelineparamet_nest sweep_sweep job_train invok"
     },
     {
         "Topic":4,
-        "Count":87,
-        "Name":"4_log compon_log metric_log tabl_log pipelin"
+        "Count":90,
+        "Name":"4_log metric_log tabl_log pipelin_metric log"
     },
     {
         "Topic":5,
-        "Count":86,
-        "Name":"5_role access_role permiss_account role_iam role"
+        "Count":87,
+        "Name":"5_dockerfil_model docker_dockerconfigur_environ docker"
     },
     {
         "Topic":6,
-        "Count":70,
-        "Name":"6_neural network_model nlp_iri dataset_cognit search"
+        "Count":72,
+        "Name":"6_iri dataset_neural network_cognit search_speech text"
     },
     {
         "Topic":7,
-        "Count":63,
-        "Name":"7_automl_label data_column train_dataset"
+        "Count":67,
+        "Name":"7_pythonmodel log_model file_log model_model pythonmodel"
     },
     {
         "Topic":8,
-        "Count":55,
-        "Name":"8_artifact log_run artifact_artifact file_log artifact"
+        "Count":59,
+        "Name":"8_file data_download data_upload data_file datastor"
     },
     {
         "Topic":9,
-        "Count":53,
-        "Name":"9_yaml directori_directori yaml_directori stage_yaml file"
+        "Count":56,
+        "Name":"9_datafram panda_datafram dataset_panda datafram_csv datafram"
     },
     {
         "Topic":10,
-        "Count":51,
-        "Name":"10_datafram panda_datafram dataset_panda datafram_csv datafram"
+        "Count":49,
+        "Name":"10_file yaml_yaml file_file stage_yaml stage"
     },
     {
         "Topic":11,
-        "Count":51,
-        "Name":"11_remot repositori_git repositori_git repo_file repositori"
+        "Count":48,
+        "Name":"11_role access_access role_role permiss_notebook permiss"
     },
     {
         "Topic":12,
-        "Count":48,
-        "Name":"12_line json_payload json_json format_json dump"
+        "Count":47,
+        "Name":"12_creat endpointconfig_creat endpoint_endpointconfig_endpoint"
     },
     {
         "Topic":13,
-        "Count":47,
-        "Name":"13_model file_file model_filenam model_upload model"
+        "Count":42,
+        "Name":"13_model pipelin_pipelin model_pipelinemodel_task pipelin"
     },
     {
         "Topic":14,
-        "Count":46,
-        "Name":"14_creat endpointconfig_endpointconfig_creat endpoint_endpoint"
+        "Count":41,
+        "Name":"14_line json_payload json_json format_json dump"
     },
     {
         "Topic":15,
-        "Count":43,
-        "Name":"15_model pipelin_pipelin pipelineml_pipelin task_pipelin model"
+        "Count":40,
+        "Name":"15_random forest_forest algorithm_forest gpu_xgboost algorithm"
     },
     {
         "Topic":16,
-        "Count":41,
-        "Name":"16_random forest_forest algorithm_forest gpu_xgboost algorithm"
+        "Count":39,
+        "Name":"16_artifact file_artifact path_artifact log_run artifact"
     },
     {
         "Topic":17,
-        "Count":40,
-        "Name":"17_configur remot_remot configur_config remot_remot url"
+        "Count":38,
+        "Name":"17_job cloudwatch_autopilot_auto scale_shap autopilot"
     },
     {
         "Topic":18,
-        "Count":35,
-        "Name":"18_delet file_file delet_delet data_run delet"
+        "Count":36,
+        "Name":"18_cluster comput_comput cluster_cluster specifi_parallel run"
     },
     {
         "Topic":19,
-        "Count":33,
-        "Name":"19_symlink copi_symlink cach_symlink hardlink_reflink symlink"
+        "Count":35,
+        "Name":"19_delet file_file delet_delet data_run delet"
     },
     {
         "Topic":20,
-        "Count":32,
-        "Name":"20_sparkmag pyspark_spark model_run spark_spark cluster"
+        "Count":35,
+        "Name":"20_endpoint model_model endpoint_model deploi_endpoint multi"
     },
     {
         "Topic":21,
-        "Count":32,
-        "Name":"21_multi gpu_gpuqueu_train gpu_distribut gpu"
+        "Count":33,
+        "Name":"21_sparkmag pyspark_spark model_run spark_spark cluster"
     },
     {
         "Topic":22,
-        "Count":31,
-        "Name":"22_endpoint model_model endpoint_model deploi_endpoint multi"
+        "Count":32,
+        "Name":"22_gpu param_gpu task_train gpu_gpu runtim"
     },
     {
         "Topic":23,
-        "Count":29,
-        "Name":"23_file git_track git_commit git_data git"
+        "Count":26,
+        "Name":"23_format csv_csv format_file csv_convert csv"
     },
     {
         "Topic":24,
-        "Count":27,
-        "Name":"24_format csv_csv format_file csv_convert csv"
+        "Count":22,
+        "Name":"24_invok endpoint_lambda endpoint_endpoint invok_sdk lambda"
     },
     {
         "Topic":25,
-        "Count":23,
-        "Name":"25_invok endpoint_endpoint invok_api gatewai_lambda endpoint"
+        "Count":21,
+        "Name":"25_certif resourc_certif profil_certif_exam certif"
     },
     {
         "Topic":26,
-        "Count":22,
-        "Name":"26_dataset modul_column modul_column categor_column"
+        "Count":20,
+        "Name":"26_pipelinedata_pipe data_pipelinedata class_data pipelin"
     },
     {
         "Topic":27,
         "Count":20,
-        "Name":"27_pipelinedata_pipe data_pipelinedata class_data pipelin"
+        "Name":"27_bug advis_bug submit_bug sdk_advis submit"
     }
 ]

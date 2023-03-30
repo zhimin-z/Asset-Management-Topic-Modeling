@@ -34,8 +34,8 @@ config_defaults = {
 }
 
 config_challenge = {
-    'min_cluster_size': 35,
-    'min_samples_pct': 0.2,
+    'min_cluster_size': 30,
+    'min_samples_pct': 0.1,
     'ngram_range': 2,
 }
 
