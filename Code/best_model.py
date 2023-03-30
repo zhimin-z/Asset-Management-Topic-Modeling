@@ -68,9 +68,9 @@ umap_model = UMAP(n_components=config_defaults['n_components'],
 # Step 3 - Cluster reduced embeddings
 samples = int(config_challenge['min_cluster_size']
                   * config_challenge['min_samples_pct'])
-min_samples = samples if samples > config_defaults['min_samples'] else config_defaults['min_samples']
+samples = samples if samples > config_defaults['min_samples'] else config_defaults['min_samples']
 hdbscan_model = HDBSCAN(
-    min_cluster_size=config_challenge['min_cluster_size'], min_samples=min_samples, prediction_data=True)
+    min_cluster_size=config_challenge['min_cluster_size'], min_samples=samples, prediction_data=True)
 
 # Step 4 - Tokenize topics
 vectorizer_model = TfidfVectorizer(

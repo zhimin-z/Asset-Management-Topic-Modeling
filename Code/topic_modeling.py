@@ -94,9 +94,9 @@ class TopicModeling:
             # Step 3 - Cluster reduced embeddings
             samples = int(wandb.config.min_cluster_size *
                               wandb.config.min_samples_pct)
-            min_samples = samples if samples > run.config.min_samples else run.config.min_samples
+            samples = samples if samples > run.config.min_samples else run.config.min_samples
             hdbscan_model = HDBSCAN(
-                min_cluster_size=wandb.config.min_cluster_size, min_samples=min_samples)
+                min_cluster_size=wandb.config.min_cluster_size, min_samples=samples)
 
             # Step 4 - Tokenize topics
             vectorizer_model = TfidfVectorizer(ngram_range=(1, wandb.config.ngram_range))
