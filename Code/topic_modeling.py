@@ -15,7 +15,6 @@ import os
 wandb_project = 'asset-management-topic-modeling'
 path_dataset = 'Dataset'
 sweep_count = 500
-min_samples = 5
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"] = str(sweep_count)
