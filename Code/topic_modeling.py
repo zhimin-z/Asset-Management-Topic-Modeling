@@ -15,6 +15,7 @@ import os
 wandb_project = 'asset-management-topic-modeling'
 path_dataset = 'Dataset'
 sweep_count = 500
+min_samples = 5
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"] = str(sweep_count)
@@ -26,6 +27,7 @@ config_defaults = {
     'model_name': 'all-MiniLM-L6-v2',
     'metric_distane': 'manhattan',
     'n_components': 5,
+    'min_samples': 5,
     'low_memory': False,
     'reduce_frequent_words': True,
 }
@@ -91,9 +93,9 @@ class TopicModeling:
             umap_model = UMAP(n_components=wandb.config.n_components, metric=run.config.metric_distane, low_memory=run.config.low_memory)
 
             # Step 3 - Cluster reduced embeddings
-            min_samples = int(wandb.config.min_cluster_size *
+            samples = int(wandb.config.min_cluster_size *
                               wandb.config.min_samples_pct)
-            min_samples = 5 if min_samples < 5 else min_samples
+            min_samples = samples if samples > run.config.min_samples else run.config.min_samples
             hdbscan_model = HDBSCAN(
                 min_cluster_size=wandb.config.min_cluster_size, min_samples=min_samples)
 
