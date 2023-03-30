@@ -1,5 +1,3 @@
-# run best challenge topic model
-
 from wordcloud import WordCloud
 from matplotlib import pyplot as plt
 from umap import UMAP
@@ -46,6 +44,8 @@ config_solution = {
 }
 
 df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
+
+# run best challenge topic model
 
 df['Challenge_topic'] = -1
 
