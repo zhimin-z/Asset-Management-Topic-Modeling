@@ -16,9 +16,10 @@ wandb_project = 'asset-management-topic-modeling'
 path_dataset = 'Dataset'
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
-os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"] = "500"
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
-os.environ["WANDB__SERVICE_WAIT"] = "300"
+
+# os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"] = "500"
+# os.environ["WANDB__SERVICE_WAIT"] = "300"
 
 # set default sweep configuration
 config_defaults = {
