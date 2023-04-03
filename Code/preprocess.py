@@ -206,7 +206,7 @@ fig.update_layout(width=1000, height=1000, font_size=20)
 fig.write_image(os.path.join(
     path_general, 'Tool platform state sankey.png'))
 
-df_all = pd.read_json(os.path.join(path_general, 'Tool platform info.json'))
+df_all = pd.read_json(os.path.join(path_general, 'Tool platform state info.json'))
 df_all = df_all.groupby(['Platform', 'State']).agg({'value': 'sum'}).reset_index()
 df_all.to_json(os.path.join(path_general, 'Platform state info.json'),
                indent=4, orient='records')
