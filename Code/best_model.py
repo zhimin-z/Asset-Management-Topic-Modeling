@@ -54,7 +54,7 @@ indexes_challenge = []
 docs_challenge = []
 
 for index, row in df.iterrows():
-    if pd.notna(row[name_challenge]) and len(row[name_challenge].split()) >= 5:
+    if pd.notna(row[name_challenge]):
         indexes_challenge.append(index)
         docs_challenge.append(row[name_challenge])
 
@@ -162,7 +162,7 @@ indexes_solution = []
 docs_solution = []
 
 for index, row in df.iterrows():
-    if pd.notna(row[name_solution]) and len(row[name_solution].split()) >= 5:
+    if pd.notna(row[name_solution]):
         indexes_solution.append(index)
         docs_solution.append(row[name_solution])
 
