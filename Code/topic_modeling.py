@@ -41,7 +41,7 @@ config_challenges = {
             'values': [x / 10.0 for x in range(1, 10, 1)]
         },
         'ngram_range': {
-            'values': list(range(1, 6))
+            'values': list(range(2, 5))
         },
         'min_cluster_size': {
             'values': list(range(30, 101, 5))
@@ -60,7 +60,7 @@ config_solutions = {
             'values': [x / 10.0 for x in range(1, 10, 1)]
         },
         'ngram_range': {
-            'values': list(range(1, 6))
+            'values': list(range(2, 5))
         },
         'min_cluster_size': {
             'values': list(range(20, 101, 5))
