@@ -75,7 +75,7 @@ class TopicModeling:
         self.sweep_defaults['name'] = docs_name
 
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
-        df = df[df[docs_name].notna() & (df[docs_name].str.split().apply(len) >= 5)]
+        df = df[df[docs_name].notna()]
         self.docs = df[docs_name].tolist()
 
     def __train(self):
