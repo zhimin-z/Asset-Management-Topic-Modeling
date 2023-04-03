@@ -18,17 +18,16 @@ path_dataset = 'Dataset'
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"] = "100"
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
-os.environ["WANDB__SERVICE_WAIT"] = "300"
+os.environ["WANDB__SERVICE_WAIT"] = "100"
 
 # set default sweep configuration
 config_defaults = {
     # Refer to https://www.sbert.net/docs/pretrained_models.html
     'model_name': 'all-MiniLM-L6-v2',
     'metric_distane': 'manhattan',
+    'reduce_frequent_words': True,
     'n_components': 5,
     'min_samples': 5,
-    'low_memory': False,
-    'reduce_frequent_words': True,
 }
 
 config_challenges = {
@@ -89,7 +88,7 @@ class TopicModeling:
             embedding_model = SentenceTransformer(run.config.model_name)
 
             # Step 2 - Reduce dimensionality
-            umap_model = UMAP(n_components=wandb.config.n_components, metric=run.config.metric_distane, low_memory=run.config.low_memory)
+            umap_model = UMAP(n_components=wandb.config.n_components, metric=run.config.metric_distane)
 
             # Step 3 - Cluster reduced embeddings
             samples = int(wandb.config.min_cluster_size *
