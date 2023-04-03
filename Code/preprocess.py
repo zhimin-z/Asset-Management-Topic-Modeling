@@ -1,16 +1,9 @@
-import numpy as np
-import plotly.graph_objects as go
-
 import os
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
-import pandas as pd
-pd.set_option("display.max_rows", None, "display.max_columns",
-              None, 'display.max_colwidth', None)
+path_dataset = 'Dataset'
 
-path_dataset = os.path.join(os.path.dirname(os.getcwd()), 'Dataset')
-
-path_result = os.path.join(os.path.dirname(os.getcwd()), 'Result')
+path_result = 'Result'
 if not os.path.exists(path_result):
     os.makedirs(path_result)
 
@@ -22,12 +15,15 @@ if not os.path.exists(path_general):
 
 import re
 import spacy
-# Refer to https://textacy.readthedocs.io/en/stable/api_reference/text_stats.html
-from textacy import text_stats
+import numpy as np
+import pandas as pd
 
 import subprocess
 cmd_str = "python -m spacy download en_core_web_trf -q"
 subprocess.run(cmd_str, shell=True)
+
+# Refer to https://textacy.readthedocs.io/en/stable/api_reference/text_stats.html
+from textacy import text_stats
 
 nlp = spacy.load('en_core_web_trf')
 link_pattern = '(?P<url>ftp|https?://[^\s]+)'
@@ -177,6 +173,8 @@ df_all.to_json(os.path.join(path_dataset, 'original.json'),
                indent=4, orient='records')
 
 # Draw sankey diagram of tool and platform
+
+import plotly.graph_objects as go
 
 df_all = pd.read_json(os.path.join(path_dataset, 'original.json'))
 df_all['State'] = df_all['Challenge_closed_time'].apply(lambda x: 'closed' if not pd.isna(x) else 'open')
