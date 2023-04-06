@@ -127,33 +127,26 @@ fig = topic_model.visualize_documents(docs_challenge, embeddings=embeddings)
 fig.write_html(os.path.join(path_challenge, 'Document visualization.html'))
 
 # This uses the soft-clustering as performed by HDBSCAN to find the best matching topic for each outlier document.
-new_topics = topic_model.reduce_outliers(
+new_topics_challenge = topic_model.reduce_outliers(
     docs_challenge, topics, probabilities=probs, strategy="probabilities")
-
-for index in indice_challenge:
-    df.at[index, 'Challenge_topic'] = new_topics.pop(0)
 
 path_wordcloud = os.path.join(path_challenge, 'Wordcloud')
 if not os.path.exists(path_wordcloud):
     os.makedirs(path_wordcloud)
 
 # Preprocess Documents
-documents = pd.DataFrame(
-    {"Document": docs_challenge, "ID": range(len(docs_challenge)), "Topic": topics})
-documents_per_topic = documents.groupby(
-    ['Topic'], as_index=False).agg({'Document': ' '.join})
-cleaned_docs = topic_model._preprocess_text(
-    documents_per_topic.Document.values)
+documents = pd.DataFrame({'Document': docs_challenge, 'Topic': new_topics_challenge})
+documents_per_topic = documents.groupby(['Topic']).agg({'Document': ' '.join}).reset_index()
 
-for index, doc in enumerate(cleaned_docs):
+for index, row in documents_per_topic.iterrows():
     wordcloud = WordCloud(
-        width=800, height=800, background_color='white', min_font_size=10).generate(doc)
+        width=800, height=800, background_color='white', min_font_size=10).generate(row['Document'])
     plt.figure(figsize=(8, 8), facecolor=None)
     plt.imshow(wordcloud)
     plt.axis("off")
     plt.tight_layout(pad=0)
     plt.savefig(os.path.join(path_wordcloud,
-                f'Topic_{index}'+'.png'), bbox_inches='tight')
+                f'Topic_{row["Topic"]}'+'.png'), bbox_inches='tight')
     plt.close()
 
 # run best solution topic model
@@ -235,36 +228,35 @@ fig = topic_model.visualize_documents(docs_solution, embeddings=embeddings)
 fig.write_html(os.path.join(path_solution, 'Document visualization.html'))
 
 # This uses the soft-clustering as performed by HDBSCAN to find the best matching topic for each outlier document.
-new_topics = topic_model.reduce_outliers(
+new_topics_solution = topic_model.reduce_outliers(
     docs_solution, topics, probabilities=probs, strategy="probabilities")
-
-for index in indice_solution:
-    df.at[index, 'Solution_topic'] = new_topics.pop(0)
 
 path_wordcloud = os.path.join(path_solution, 'Wordcloud')
 if not os.path.exists(path_wordcloud):
     os.makedirs(path_wordcloud)
 
 # Preprocess Documents
-documents = pd.DataFrame(
-    {"Document": docs_solution, "ID": range(len(docs_solution)), "Topic": topics})
-documents_per_topic = documents.groupby(
-    ['Topic'], as_index=False).agg({'Document': ' '.join})
-cleaned_docs = topic_model._preprocess_text(
-    documents_per_topic.Document.values)
+documents = pd.DataFrame({'Document': docs_solution, 'Topic': new_topics_solution})
+documents_per_topic = documents.groupby('Topic').agg({'Document': ' '.join}).reset_index()
 
-for index, doc in enumerate(cleaned_docs):
+for index, row in documents_per_topic.iterrows():
     wordcloud = WordCloud(
-        width=800, height=800, background_color='white', min_font_size=10).generate(doc)
+        width=800, height=800, background_color='white', min_font_size=10).generate(row['Document'])
     plt.figure(figsize=(8, 8), facecolor=None)
     plt.imshow(wordcloud)
     plt.axis("off")
     plt.tight_layout(pad=0)
     plt.savefig(os.path.join(path_wordcloud,
-                f'Topic_{index}'+'.png'), bbox_inches='tight')
+                f'Topic_{row["Topic"]}'+'.png'), bbox_inches='tight')
     plt.close()
     
 # persist the document topics
+
+for index, topic in zip(indice_challenge, new_topics_challenge):
+    df.at[index, 'Challenge_topic'] = topic
+
+for index, topic in zip(indice_solution, new_topics_solution):
+    df.at[index, 'Solution_topic'] = topic
 
 del df['Challenge_original_content']
 del df['Challenge_preprocessed_content']
