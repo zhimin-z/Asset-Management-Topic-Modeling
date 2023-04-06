@@ -30,6 +30,8 @@ config_defaults = {
     'min_samples': 5,
     'low_memory': False,
     'reduce_frequent_words': True,
+    'prediction_data': True,
+    'calculate_probabilities': True,
 }
 
 config_challenge = {
@@ -70,7 +72,7 @@ samples = int(config_challenge['min_cluster_size']
                   * config_challenge['min_samples_pct'])
 samples = samples if samples > config_defaults['min_samples'] else config_defaults['min_samples']
 hdbscan_model = HDBSCAN(
-    min_cluster_size=config_challenge['min_cluster_size'], min_samples=samples, prediction_data=True)
+    min_cluster_size=config_challenge['min_cluster_size'], min_samples=samples, prediction_data=config_defaults['prediction_data'])
 
 # Step 4 - Tokenize topics
 vectorizer_model = TfidfVectorizer(
@@ -91,7 +93,7 @@ topic_model = BERTopic(
     vectorizer_model=vectorizer_model,
     ctfidf_model=ctfidf_model,
     representation_model=representation_model,
-    calculate_probabilities=True
+    calculate_probabilities=config_defaults['calculate_probabilities']
 )
 
 topics, probs = topic_model.fit_transform(docs_challenge)
@@ -178,7 +180,7 @@ samples = int(config_solution['min_cluster_size']
                   * config_solution['min_samples_pct'])
 samples = samples if samples > config_defaults['min_samples'] else config_defaults['min_samples']
 hdbscan_model = HDBSCAN(
-    min_cluster_size=config_solution['min_cluster_size'], min_samples=min_samples, prediction_data=True)
+    min_cluster_size=config_solution['min_cluster_size'], min_samples=min_samples, prediction_data=config_defaults['prediction_data'])
 
 # Step 4 - Tokenize topics
 vectorizer_model = TfidfVectorizer(
@@ -199,7 +201,7 @@ topic_model = BERTopic(
     vectorizer_model=vectorizer_model,
     ctfidf_model=ctfidf_model,
     representation_model=representation_model,
-    calculate_probabilities=True
+    calculate_probabilities=config_defaults['calculate_probabilities']
 )
 
 topics, probs = topic_model.fit_transform(docs_solution)
