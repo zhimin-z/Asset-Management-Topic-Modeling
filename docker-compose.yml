@@ -4,7 +4,7 @@ services:
   experiment-1:
     image: experiment
     volumes:
-      - /home/21zz42/Asset-Management-Topic-Modeling/Result:/app/Result
+      - .:/app
     command: python Code/experiment_1.py
     restart: on-failure
     deploy:
@@ -20,7 +20,7 @@ services:
   experiment-2:
     image: experiment
     volumes:
-      - /home/21zz42/Asset-Management-Topic-Modeling/Result:/app/Result
+      - .:/app
     command: python Code/experiment_2.py
     restart: on-failure
     deploy:
@@ -33,7 +33,7 @@ services:
   experiment-3:
     image: experiment
     volumes:
-      - /home/21zz42/Asset-Management-Topic-Modeling/Result:/app/Result
+      - .:/app
     command: python Code/experiment_3.py
     restart: on-failure
     deploy:
@@ -46,7 +46,7 @@ services:
   experiment-4:
     image: experiment
     volumes:
-      - /home/21zz42/Asset-Management-Topic-Modeling/Result:/app/Result
+      - .:/app
     command: python Code/experiment_4.py
     restart: on-failure
     deploy:
@@ -59,7 +59,7 @@ services:
   experiment-5:
     image: experiment
     volumes:
-      - /home/21zz42/Asset-Management-Topic-Modeling/Result:/app/Result
+      - .:/app
     command: python Code/experiment_5.py
     restart: on-failure
     deploy:
@@ -72,7 +72,7 @@ services:
   experiment-6:
     image: experiment
     volumes:
-      - /home/21zz42/Asset-Management-Topic-Modeling/Result:/app/Result
+      - .:/app
     command: python Code/experiment_6.py
     restart: on-failure
     deploy:
