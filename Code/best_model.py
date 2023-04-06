@@ -34,13 +34,13 @@ config_defaults = {
 
 config_challenge = {
     'min_cluster_size': 30,
-    'min_samples_pct': 0.1,
+    'min_samples_pct': 0.3,
     'ngram_range': 2,
 }
 
 config_solution = {
     'min_cluster_size': 20,
-    'min_samples_pct': 0.3,
+    'min_samples_pct': 0.2,
     'ngram_range': 2,
 }
 
@@ -50,12 +50,12 @@ df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
 
 df['Challenge_topic'] = -1
 
-indexes_challenge = []
+indice_challenge = []
 docs_challenge = []
 
 for index, row in df.iterrows():
     if pd.notna(row[name_challenge]):
-        indexes_challenge.append(index)
+        indice_challenge.append(index)
         docs_challenge.append(row[name_challenge])
 
 # Step 1 - Extract embeddings
@@ -128,7 +128,7 @@ fig.write_html(os.path.join(path_challenge, 'Document visualization.html'))
 new_topics = topic_model.reduce_outliers(
     docs_challenge, topics, probabilities=probs, strategy="probabilities")
 
-for index in indexes_challenge:
+for index in indice_challenge:
     df.at[index, 'Challenge_topic'] = new_topics.pop(0)
 
 path_wordcloud = os.path.join(path_challenge, 'Wordcloud')
@@ -158,12 +158,12 @@ for index, doc in enumerate(cleaned_docs):
 
 df['Solution_topic'] = -1
 
-indexes_solution = []
+indice_solution = []
 docs_solution = []
 
 for index, row in df.iterrows():
     if pd.notna(row[name_solution]):
-        indexes_solution.append(index)
+        indice_solution.append(index)
         docs_solution.append(row[name_solution])
 
 # Step 1 - Extract embeddings
@@ -236,19 +236,8 @@ fig.write_html(os.path.join(path_solution, 'Document visualization.html'))
 new_topics = topic_model.reduce_outliers(
     docs_solution, topics, probabilities=probs, strategy="probabilities")
 
-for index in indexes_solution:
+for index in indice_solution:
     df.at[index, 'Solution_topic'] = new_topics.pop(0)
-
-del df['Challenge_original_content']
-del df['Challenge_preprocessed_content']
-del df['Challenge_gpt_summary']
-
-del df['Solution_original_content']
-del df['Solution_preprocessed_content']
-del df['Solution_gpt_summary']
-
-df.to_json(os.path.join(path_general, 'Topics.json'),
-           indent=4, orient='records')
 
 path_wordcloud = os.path.join(path_solution, 'Wordcloud')
 if not os.path.exists(path_wordcloud):
@@ -272,3 +261,16 @@ for index, doc in enumerate(cleaned_docs):
     plt.savefig(os.path.join(path_wordcloud,
                 f'Topic_{index}'+'.png'), bbox_inches='tight')
     plt.close()
+    
+# persist the document topics
+
+del df['Challenge_original_content']
+del df['Challenge_preprocessed_content']
+del df['Challenge_gpt_summary']
+
+del df['Solution_original_content']
+del df['Solution_preprocessed_content']
+del df['Solution_gpt_summary']
+
+df.to_json(os.path.join(path_general, 'Topics.json'),
+           indent=4, orient='records')
