@@ -180,7 +180,7 @@ samples = int(config_solution['min_cluster_size']
                   * config_solution['min_samples_pct'])
 samples = samples if samples > config_defaults['min_samples'] else config_defaults['min_samples']
 hdbscan_model = HDBSCAN(
-    min_cluster_size=config_solution['min_cluster_size'], min_samples=min_samples, prediction_data=config_defaults['prediction_data'])
+    min_cluster_size=config_solution['min_cluster_size'], min_samples=samples, prediction_data=config_defaults['prediction_data'])
 
 # Step 4 - Tokenize topics
 vectorizer_model = TfidfVectorizer(
@@ -190,7 +190,7 @@ vectorizer_model = TfidfVectorizer(
 ctfidf_model = ClassTfidfTransformer(
     reduce_frequent_words=config_defaults['reduce_frequent_words'])
 
-# Step 6 - Fine-tune topic representation
+# Step 6 - (Optional) Fine-tune topic representation
 representation_model = KeyBERTInspired()
 
 # All steps together
