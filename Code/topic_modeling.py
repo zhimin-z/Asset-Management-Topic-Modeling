@@ -26,6 +26,7 @@ config_defaults = {
     'model_name': 'all-MiniLM-L6-v2',
     'metric_distane': 'manhattan',
     'reduce_frequent_words': True,
+    'low_memory': False,
     'n_components': 5,
     'min_samples': 5,
     'random_state': 0,
@@ -89,7 +90,8 @@ class TopicModeling:
             embedding_model = SentenceTransformer(run.config.model_name)
 
             # Step 2 - Reduce dimensionality
-            umap_model = UMAP(n_components=wandb.config.n_components, metric=run.config.metric_distane, random_state=config_defaults['random_state'])
+            umap_model = UMAP(n_components=wandb.config.n_components, metric=run.config.metric_distane, 
+                              random_state=config_defaults['random_state'], low_memory=config_defaults['low_memory'])
 
             # Step 3 - Cluster reduced embeddings
             samples = int(wandb.config.min_cluster_size *
