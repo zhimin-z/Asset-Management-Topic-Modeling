@@ -1,3 +1,4 @@
+**/wandb
 **/__pycache__
 **/.venv
 **/.ipynb
@@ -5,6 +6,7 @@
 **/.dockerignore
 **/.env
 **/.git
+**/.gitattributes
 **/.gitignore
 **/.project
 **/.settings
