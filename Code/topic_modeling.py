@@ -12,8 +12,21 @@ import pandas as pd
 import wandb
 import os
 
-wandb_project = 'experiment-management-topic-modeling'
+wandb_project = 'asset-management-topic-modeling'
+
+path_result = 'Result'
 path_dataset = 'Dataset'
+
+path_challenge = os.path.join(path_result, 'Challenge')
+path_solution = os.path.join(path_result, 'Solution')
+
+path_challenge_model = os.path.join(path_challenge, 'Model')
+if not os.path.exists(path_challenge_model):
+    os.makedirs(path_challenge_model)
+
+path_solution_model = os.path.join(path_solution, 'Model')
+if not os.path.exists(path_solution_model):
+    os.makedirs(path_solution_model)
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"] = "100"
@@ -23,7 +36,7 @@ os.environ["WANDB__SERVICE_WAIT"] = "100"
 # set default sweep configuration
 config_defaults = {
     # Refer to https://www.sbert.net/docs/pretrained_models.html
-    'model_name': 'all-MiniLM-L6-v2',
+    'model_path': 'all-MiniLM-L6-v2',
     'metric_distane': 'manhattan',
     'reduce_frequent_words': True,
     'low_memory': False,
@@ -79,6 +92,8 @@ class TopicModeling:
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
         df = df[df[docs_name].notna()]
         self.docs = df[docs_name].tolist()
+        # Initialize an empty list to store top models
+        self.top_models = []
 
     def __train(self):
         # Initialize a new wandb run
@@ -87,7 +102,7 @@ class TopicModeling:
             run.config.setdefaults(config_defaults)
 
             # Step 1 - Extract embeddings
-            embedding_model = SentenceTransformer(run.config.model_name)
+            embedding_model = SentenceTransformer(run.config.model_path)
 
             # Step 2 - Reduce dimensionality
             umap_model = UMAP(n_components=wandb.config.n_components, metric=run.config.metric_distane,
@@ -175,14 +190,53 @@ class TopicModeling:
                 coherence='c_npmi'
             )
 
-            wandb.log({'CoherenceCV': coherence_cv.get_coherence()})
-            wandb.log({'CoherenceUMASS': coherence_umass.get_coherence()})
-            wandb.log({'CoherenceUCI': coherence_cuci.get_coherence()})
-            wandb.log({'CoherenceNPMI': coherence_cnpmi.get_coherence()})
-            wandb.log(
-                {'Number of Topics': topic_model.get_topic_info().shape[0] - 1})
-            wandb.log(
-                {'Number of Uncategorized': topic_model.get_topic_info().at[0, 'Count']})
+            coherence_cv = coherence_cv.get_coherence()
+            wandb.log({'Coherence CV': coherence_cv})
+            wandb.log({'Coherence UMASS': coherence_umass.get_coherence()})
+            wandb.log({'Coherence UCI': coherence_cuci.get_coherence()})
+            wandb.log({'Coherence NPMI': coherence_cnpmi.get_coherence()})
+            number_topics = topic_model.get_topic_info().shape[0] - 1
+            wandb.log({'Topic Number': number_topics})
+            wandb.log({'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
+
+            # persist top 5 topic models
+
+            if 'Challenge' in self.docs_name:
+                path_model = path_challenge_model
+            else:
+                path_model = path_solution_model
+
+            model_name = f'{self.docs_name}_{run.config.name}'
+            model = {
+                'model_path': os.path.join(path_model, model_name),
+                'model_metrics': {
+                    'number_topics': number_topics,
+                    'coherence_cv': coherence_cv,
+                }
+            }
+
+            # Add the new model to the list if there are less than 5 models
+            if len(self.top_models) < 5:
+                self.top_models.append(model)
+                topic_model.save(model['model_path'])
+            else:
+                # Find the model with the lowest topic number in the list
+                lowest_number_topics_model = min(
+                    self.top_models, key=lambda x: x['model_metrics']['number_topics'])
+                lowest_number_topics = lowest_number_topics_model['model_metrics']['number_topics']
+
+                if number_topics > lowest_number_topics:
+                    # Replace the model with the lowest topic number in the list with the new model
+                    self.top_models.remove(lowest_number_topics_model)
+                    os.remove(lowest_number_topics_model['model_path'])
+                    self.top_models.append(model)
+                    topic_model.save(model['model_path'])
+                elif number_topics == lowest_number_topics and coherence_cv > lowest_number_topics_model['model_metrics']['coherence_cv']:
+                    # Replace the existing model with the new model if they have the same topic number and the new model has a higher coherence value
+                    self.top_models.remove(lowest_number_topics_model)
+                    os.remove(lowest_number_topics_model['model_path'])
+                    self.top_models.append(model)
+                    topic_model.save(model['model_path'])
 
     def sweep(self):
         wandb.login()
