@@ -14,12 +14,18 @@ import pandas as pd
 path_result = 'Result'
 path_dataset = 'Dataset'
 
-name_challenge = 'Challenge_gpt_summary'
-name_solution = 'Solution_gpt_summary'
-
 path_general = os.path.join(path_result, 'General')
 path_challenge = os.path.join(path_result, 'Challenge')
 path_solution = os.path.join(path_result, 'Solution')
+
+path_model_challenge = os.path.join(path_challenge, 'Model')
+path_model_solution = os.path.join(path_solution, 'Model')
+
+model_challenge = 'Challenge_gpt_summary_5y1kc0q0'
+model_solution = 'Solution_gpt_summary_wmng21rs'
+
+column_challenge = ' '.join(model_challenge.split('_')[:-1])
+column_solution = ' '.join(model_solution.split('_')[:-1])
 
 # set default sweep configuration
 config_defaults = {
@@ -49,7 +55,7 @@ config_solution = {
 
 df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
 
-# run best challenge topic model
+# output the best topic model on challenges
 
 df['Challenge_topic'] = -1
 
@@ -57,47 +63,12 @@ indice_challenge = []
 docs_challenge = []
 
 for index, row in df.iterrows():
-    if pd.notna(row[name_challenge]):
+    if pd.notna(row[column_challenge]):
         indice_challenge.append(index)
-        docs_challenge.append(row[name_challenge])
+        docs_challenge.append(row[column_challenge])
 
-# Step 1 - Extract embeddings
-embedding_model = SentenceTransformer(config_defaults['model_name'])
-
-# Step 2 - Reduce dimensionality
-umap_model = UMAP(n_components=config_defaults['n_components'], random_state=config_defaults['random_state'],
-                  metric=config_defaults['metric_distane'], low_memory=config_defaults['low_memory'])
-
-# Step 3 - Cluster reduced embeddings
-samples = int(config_challenge['min_cluster_size']
-                  * config_challenge['min_samples_pct'])
-samples = samples if samples > config_defaults['min_samples'] else config_defaults['min_samples']
-hdbscan_model = HDBSCAN(
-    min_cluster_size=config_challenge['min_cluster_size'], min_samples=samples, prediction_data=config_defaults['prediction_data'])
-
-# Step 4 - Tokenize topics
-vectorizer_model = TfidfVectorizer(
-    ngram_range=(1, config_challenge['ngram_range']))
-
-# Step 5 - Create topic representation
-ctfidf_model = ClassTfidfTransformer(
-    reduce_frequent_words=config_defaults['reduce_frequent_words'])
-
-# Step 6 - (Optional) Fine-tune topic representation
-representation_model = KeyBERTInspired()
-
-# All steps together
-topic_model = BERTopic(
-    embedding_model=embedding_model,
-    umap_model=umap_model,
-    hdbscan_model=hdbscan_model,
-    vectorizer_model=vectorizer_model,
-    ctfidf_model=ctfidf_model,
-    representation_model=representation_model,
-    calculate_probabilities=config_defaults['calculate_probabilities']
-)
-
-topics, probs = topic_model.fit_transform(docs_challenge)
+topic_model = BERTopic.load(model_challenge)
+topics, probs = topic_model.transform(docs_challenge)
 
 df_topics = topic_model.get_topic_info()
 df_topics.to_json(os.path.join(
@@ -150,7 +121,7 @@ for index, row in documents_per_topic.iterrows():
                 f'Topic_{row["Topic"]}'+'.png'), bbox_inches='tight')
     plt.close()
 
-# run best solution topic model
+# output the best topic model on solutions
 
 df['Solution_topic'] = -1
 
@@ -158,47 +129,12 @@ indice_solution = []
 docs_solution = []
 
 for index, row in df.iterrows():
-    if pd.notna(row[name_solution]):
+    if pd.notna(row[column_solution]):
         indice_solution.append(index)
-        docs_solution.append(row[name_solution])
+        docs_solution.append(row[column_solution])
 
-# Step 1 - Extract embeddings
-embedding_model = SentenceTransformer(config_defaults['model_name'])
-
-# Step 2 - Reduce dimensionality
-umap_model = UMAP(n_components=config_defaults['n_components'],
-                  metric=config_defaults['metric_distane'], low_memory=config_defaults['low_memory'])
-
-# Step 3 - Cluster reduced embeddings
-samples = int(config_solution['min_cluster_size']
-                  * config_solution['min_samples_pct'])
-samples = samples if samples > config_defaults['min_samples'] else config_defaults['min_samples']
-hdbscan_model = HDBSCAN(
-    min_cluster_size=config_solution['min_cluster_size'], min_samples=samples, prediction_data=config_defaults['prediction_data'])
-
-# Step 4 - Tokenize topics
-vectorizer_model = TfidfVectorizer(
-    ngram_range=(1, config_solution['ngram_range']))
-
-# Step 5 - Create topic representation
-ctfidf_model = ClassTfidfTransformer(
-    reduce_frequent_words=config_defaults['reduce_frequent_words'])
-
-# Step 6 - (Optional) Fine-tune topic representation
-representation_model = KeyBERTInspired()
-
-# All steps together
-topic_model = BERTopic(
-    embedding_model=embedding_model,
-    umap_model=umap_model,
-    hdbscan_model=hdbscan_model,
-    vectorizer_model=vectorizer_model,
-    ctfidf_model=ctfidf_model,
-    representation_model=representation_model,
-    calculate_probabilities=config_defaults['calculate_probabilities']
-)
-
-topics, probs = topic_model.fit_transform(docs_solution)
+topic_model = BERTopic.load(model_solution)
+topics, probs = topic_model.transform(docs_solution)
 
 df_topics = topic_model.get_topic_info()
 df_topics.to_json(os.path.join(
