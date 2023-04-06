@@ -4,3 +4,5 @@ __pycache__
 .DS_Store
 .venv
 .ipynb_checkpoints
+Result/Challenge/Model
+Result/Solution/Model
