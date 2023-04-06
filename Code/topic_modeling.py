@@ -90,18 +90,19 @@ class TopicModeling:
             embedding_model = SentenceTransformer(run.config.model_name)
 
             # Step 2 - Reduce dimensionality
-            umap_model = UMAP(n_components=wandb.config.n_components, metric=run.config.metric_distane, 
+            umap_model = UMAP(n_components=wandb.config.n_components, metric=run.config.metric_distane,
                               random_state=config_defaults['random_state'], low_memory=config_defaults['low_memory'])
 
             # Step 3 - Cluster reduced embeddings
             samples = int(wandb.config.min_cluster_size *
-                              wandb.config.min_samples_pct)
+                          wandb.config.min_samples_pct)
             samples = samples if samples > run.config.min_samples else run.config.min_samples
             hdbscan_model = HDBSCAN(
                 min_cluster_size=wandb.config.min_cluster_size, min_samples=samples)
 
             # Step 4 - Tokenize topics
-            vectorizer_model = TfidfVectorizer(ngram_range=(1, wandb.config.ngram_range))
+            vectorizer_model = TfidfVectorizer(
+                ngram_range=(1, wandb.config.ngram_range))
 
             # Step 5 - Create topic representation
             ctfidf_model = ClassTfidfTransformer(
@@ -139,7 +140,8 @@ class TopicModeling:
             tokens = [analyzer(doc) for doc in cleaned_docs]
             dictionary = corpora.Dictionary(tokens)
             corpus = [dictionary.doc2bow(token) for token in tokens]
-            topic_words = [[words for words, _ in topic_model.get_topic(topic)] for topic in range(len(set(topics))-1)]
+            topic_words = [[words for words, _ in topic_model.get_topic(
+                topic)] for topic in range(len(set(topics))-1)]
 
             coherence_cv = CoherenceModel(
                 topics=topic_words,
