@@ -30,9 +30,9 @@ config_defaults = {
     'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
+    'random_state': 42,
     'n_components': 5,
     'min_samples': 5,
-    'random_state': 0,
 }
 
 config_challenge = {
