@@ -21,11 +21,11 @@ path_solution = os.path.join(path_result, 'Solution')
 path_model_challenge = os.path.join(path_challenge, 'Model')
 path_model_solution = os.path.join(path_solution, 'Model')
 
-model_challenge = 'Challenge_gpt_summary_5y1kc0q0'
-model_solution = 'Solution_gpt_summary_wmng21rs'
+model_challenge = 'Challenge_gpt_summary_lmzx566h'
+model_solution = 'Solution_gpt_summary_l2jcucaq'
 
-column_challenge = ' '.join(model_challenge.split('_')[:-1])
-column_solution = ' '.join(model_solution.split('_')[:-1])
+column_challenge = '_'.join(model_challenge.split('_')[:-1])
+column_solution = '_'.join(model_solution.split('_')[:-1])
 
 # set default sweep configuration
 config_defaults = {
@@ -67,7 +67,7 @@ for index, row in df.iterrows():
         indice_challenge.append(index)
         docs_challenge.append(row[column_challenge])
 
-topic_model = BERTopic.load(model_challenge)
+topic_model = BERTopic.load(os.path.join(path_model_challenge, model_challenge))
 topics, probs = topic_model.transform(docs_challenge)
 
 df_topics = topic_model.get_topic_info()
@@ -133,7 +133,7 @@ for index, row in df.iterrows():
         indice_solution.append(index)
         docs_solution.append(row[column_solution])
 
-topic_model = BERTopic.load(model_solution)
+topic_model = BERTopic.load(os.path.join(path_model_solution, model_solution))
 topics, probs = topic_model.transform(docs_solution)
 
 df_topics = topic_model.get_topic_info()
