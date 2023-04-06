@@ -29,7 +29,6 @@ if not os.path.exists(path_solution_model):
     os.makedirs(path_solution_model)
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
-os.environ["WANDB_AGENT_MAX_INITIAL_FAILURES"] = "100"
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 os.environ["WANDB__SERVICE_WAIT"] = "100"
 
@@ -87,13 +86,15 @@ config_solutions = {
 class TopicModeling:
     def __init__(self, docs_name):
         self.sweep_defaults = config_challenges if 'Challenge' in docs_name else config_solutions
-        self.sweep_defaults['name'] = docs_name
-
+        
+        # Initialize an empty list to store top models
+        self.top_models = []
+        self.path_model = path_challenge_model if 'Challenge' in docs_name else path_solution_model
+        
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
         df = df[df[docs_name].notna()]
         self.docs = df[docs_name].tolist()
-        # Initialize an empty list to store top models
-        self.top_models = []
+        self.sweep_defaults['name'] = docs_name
 
     def __train(self):
         # Initialize a new wandb run
@@ -201,14 +202,9 @@ class TopicModeling:
 
             # persist top 5 topic models
 
-            if 'Challenge' in self.docs_name:
-                path_model = path_challenge_model
-            else:
-                path_model = path_solution_model
-
-            model_name = f'{self.docs_name}_{run.config.name}'
+            model_name = f'{self.sweep_defaults["name"]}_{run.id}'
             model = {
-                'model_path': os.path.join(path_model, model_name),
+                'model_path': os.path.join(self.path_model, model_name),
                 'model_metrics': {
                     'number_topics': number_topics,
                     'coherence_cv': coherence_cv,

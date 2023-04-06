@@ -3,6 +3,8 @@ version: '3.8'
 services:
   experiment-1:
     image: experiment
+    volumes:
+      - /home/21zz42/Asset-Management-Topic-Modeling/Result:/app/Result
     command: python Code/experiment_1.py
     restart: on-failure
     deploy:
@@ -17,6 +19,8 @@ services:
       dockerfile: ./Dockerfile
   experiment-2:
     image: experiment
+    volumes:
+      - /home/21zz42/Asset-Management-Topic-Modeling/Result:/app/Result
     command: python Code/experiment_2.py
     restart: on-failure
     deploy:
@@ -28,6 +32,8 @@ services:
               capabilities: [gpu]
   experiment-3:
     image: experiment
+    volumes:
+      - /home/21zz42/Asset-Management-Topic-Modeling/Result:/app/Result
     command: python Code/experiment_3.py
     restart: on-failure
     deploy:
@@ -39,6 +45,8 @@ services:
               capabilities: [gpu]
   experiment-4:
     image: experiment
+    volumes:
+      - /home/21zz42/Asset-Management-Topic-Modeling/Result:/app/Result
     command: python Code/experiment_4.py
     restart: on-failure
     deploy:
@@ -50,6 +58,8 @@ services:
               capabilities: [gpu]
   experiment-5:
     image: experiment
+    volumes:
+      - /home/21zz42/Asset-Management-Topic-Modeling/Result:/app/Result
     command: python Code/experiment_5.py
     restart: on-failure
     deploy:
@@ -61,6 +71,8 @@ services:
               capabilities: [gpu]
   experiment-6:
     image: experiment
+    volumes:
+      - /home/21zz42/Asset-Management-Topic-Modeling/Result:/app/Result
     command: python Code/experiment_6.py
     restart: on-failure
     deploy:
