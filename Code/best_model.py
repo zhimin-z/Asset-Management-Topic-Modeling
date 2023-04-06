@@ -28,6 +28,7 @@ config_defaults = {
     'metric_distane': 'manhattan',
     'n_components': 5,
     'min_samples': 5,
+    'random_state': 42,
     'low_memory': False,
     'reduce_frequent_words': True,
     'prediction_data': True,
@@ -64,7 +65,7 @@ for index, row in df.iterrows():
 embedding_model = SentenceTransformer(config_defaults['model_name'])
 
 # Step 2 - Reduce dimensionality
-umap_model = UMAP(n_components=config_defaults['n_components'],
+umap_model = UMAP(n_components=config_defaults['n_components'], random_state=config_defaults['random_state'],
                   metric=config_defaults['metric_distane'], low_memory=config_defaults['low_memory'])
 
 # Step 3 - Cluster reduced embeddings

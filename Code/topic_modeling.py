@@ -28,6 +28,7 @@ config_defaults = {
     'reduce_frequent_words': True,
     'n_components': 5,
     'min_samples': 5,
+    'random_state': 42,
 }
 
 config_challenges = {
@@ -88,7 +89,7 @@ class TopicModeling:
             embedding_model = SentenceTransformer(run.config.model_name)
 
             # Step 2 - Reduce dimensionality
-            umap_model = UMAP(n_components=wandb.config.n_components, metric=run.config.metric_distane)
+            umap_model = UMAP(n_components=wandb.config.n_components, metric=run.config.metric_distane, random_state=config_defaults['random_state'])
 
             # Step 3 - Cluster reduced embeddings
             samples = int(wandb.config.min_cluster_size *
