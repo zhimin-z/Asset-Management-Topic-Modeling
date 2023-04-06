@@ -26,13 +26,13 @@ config_defaults = {
     # Refer to https://www.sbert.net/docs/pretrained_models.html
     'model_name': 'all-MiniLM-L6-v2',
     'metric_distane': 'manhattan',
+    'calculate_probabilities': True,
+    'reduce_frequent_words': True,
+    'prediction_data': True,
+    'low_memory': False,
     'n_components': 5,
     'min_samples': 5,
     'random_state': 0,
-    'low_memory': False,
-    'reduce_frequent_words': True,
-    'prediction_data': True,
-    'calculate_probabilities': True,
 }
 
 config_challenge = {
