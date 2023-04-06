@@ -28,7 +28,7 @@ config_defaults = {
     'reduce_frequent_words': True,
     'n_components': 5,
     'min_samples': 5,
-    'random_state': 42,
+    'random_state': 0,
 }
 
 config_challenges = {

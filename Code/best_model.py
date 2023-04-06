@@ -28,7 +28,7 @@ config_defaults = {
     'metric_distane': 'manhattan',
     'n_components': 5,
     'min_samples': 5,
-    'random_state': 42,
+    'random_state': 0,
     'low_memory': False,
     'reduce_frequent_words': True,
     'prediction_data': True,
