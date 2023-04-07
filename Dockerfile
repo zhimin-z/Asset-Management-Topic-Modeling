@@ -11,10 +11,18 @@ ENV PYTHONUNBUFFERED=1
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
+# create a non-root user named appuser, 
+# give them the password "appuser" put them in the sudo group
+RUN useradd -d /app -m -s /bin/bash appuser && echo "appuser:appuser" | chpasswd && adduser appuser sudo
+
 # Define working directory
 WORKDIR /app
 
-# RUN git config --global safe.directory /app
+# Make the files owned by appuser
+RUN chown -R appuser:appuser /app
+
+# Switch to your new user in the docker image
+USER appuser
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
 CMD ["python", "Code/experiment_1.py"]
