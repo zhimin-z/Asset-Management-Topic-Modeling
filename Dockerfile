@@ -11,10 +11,16 @@ ENV PYTHONUNBUFFERED=1
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
+# Add a /app volume
+VOLUME ["/app"]
+
+# Define working directory
 WORKDIR /app
-COPY . /app
 
 RUN git config --global safe.directory /app
+
+# Expose port
+EXPOSE  8080
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
 CMD ["python", "Code/experiment_1.py"]
