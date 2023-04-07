@@ -14,7 +14,9 @@ RUN python -m pip install -r requirements.txt
 WORKDIR /app
 COPY . /app
 
-RUN git config --global --add safe.directory /app
+RUN chown -R admin:admin /app
+RUN chmod 755 /app
+USER admin
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
 CMD ["python", "Code/experiment_1.py"]
