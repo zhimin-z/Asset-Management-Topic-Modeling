@@ -21,41 +21,12 @@ path_solution = os.path.join(path_result, 'Solution')
 path_model_challenge = os.path.join(path_challenge, 'Model')
 path_model_solution = os.path.join(path_solution, 'Model')
 
-model_challenge = 'Challenge_gpt_summary_lmzx566h'
-model_solution = 'Solution_gpt_summary_l2jcucaq'
-
-column_challenge = '_'.join(model_challenge.split('_')[:-1])
-column_solution = '_'.join(model_solution.split('_')[:-1])
-
-# set default sweep configuration
-config_defaults = {
-    # Refer to https://www.sbert.net/docs/pretrained_models.html
-    'model_name': 'all-MiniLM-L6-v2',
-    'metric_distane': 'manhattan',
-    'calculate_probabilities': True,
-    'reduce_frequent_words': True,
-    'prediction_data': True,
-    'low_memory': False,
-    'random_state': 42,
-    'n_components': 5,
-    'min_samples': 5,
-}
-
-config_challenge = {
-    'min_cluster_size': 30,
-    'min_samples_pct': 0.3,
-    'ngram_range': 2,
-}
-
-config_solution = {
-    'min_cluster_size': 20,
-    'min_samples_pct': 0.2,
-    'ngram_range': 2,
-}
-
 df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
 
 # output the best topic model on challenges
+
+model_challenge = 'Challenge_gpt_summary_lmzx566h'
+column_challenge = '_'.join(model_challenge.split('_')[:-1])
 
 df['Challenge_topic'] = -1
 
@@ -122,6 +93,9 @@ for index, row in documents_per_topic.iterrows():
     plt.close()
 
 # output the best topic model on solutions
+
+model_solution = 'Solution_gpt_summary_l2jcucaq'
+column_solution = '_'.join(model_solution.split('_')[:-1])
 
 df['Solution_topic'] = -1
 
