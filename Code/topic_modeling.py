@@ -88,11 +88,11 @@ config_solutions = {
 class TopicModeling:
     def __init__(self, docs_name):
         self.sweep_defaults = config_challenges if 'Challenge' in docs_name else config_solutions
-        
+
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_challenge_model if 'Challenge' in docs_name else path_solution_model
-        
+
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
         df = df[df[docs_name].notna()]
         self.docs = df[docs_name].tolist()
@@ -115,7 +115,8 @@ class TopicModeling:
             samples = int(wandb.config.min_cluster_size *
                           wandb.config.min_samples_pct)
             samples = samples if samples > run.config.min_samples else run.config.min_samples
-            hdbscan_model = HDBSCAN(min_cluster_size=wandb.config.min_cluster_size, min_samples=samples, prediction_data=run.config.prediction_data)
+            hdbscan_model = HDBSCAN(min_cluster_size=wandb.config.min_cluster_size,
+                                    min_samples=samples, prediction_data=run.config.prediction_data)
 
             # Step 4 - Tokenize topics
             vectorizer_model = TfidfVectorizer(
@@ -200,7 +201,8 @@ class TopicModeling:
             wandb.log({'Coherence NPMI': coherence_cnpmi.get_coherence()})
             number_topics = topic_model.get_topic_info().shape[0] - 1
             wandb.log({'Topic Number': number_topics})
-            wandb.log({'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
+            wandb.log(
+                {'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
 
             # persist top 5 topic models
 

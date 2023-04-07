@@ -1,12 +1,7 @@
-from wordcloud import WordCloud
-from matplotlib import pyplot as plt
-from umap import UMAP
-from hdbscan import HDBSCAN
+
 from bertopic import BERTopic
-from bertopic.representation import KeyBERTInspired
-from sentence_transformers import SentenceTransformer
-from bertopic.vectorizers import ClassTfidfTransformer
-from sklearn.feature_extraction.text import TfidfVectorizer
+from matplotlib import pyplot as plt
+from wordcloud import WordCloud
 
 import os
 import pandas as pd
@@ -38,7 +33,8 @@ for index, row in df.iterrows():
         indice_challenge.append(index)
         docs_challenge.append(row[column_challenge])
 
-topic_model = BERTopic.load(os.path.join(path_model_challenge, model_challenge))
+topic_model = BERTopic.load(os.path.join(
+    path_model_challenge, model_challenge))
 topics, probs = topic_model.transform(docs_challenge)
 
 df_topics = topic_model.get_topic_info()
@@ -65,7 +61,8 @@ fig = topic_model.visualize_hierarchy(hierarchical_topics=hierarchical_topics)
 fig.write_html(os.path.join(
     path_challenge, 'Hierarchical clustering visualization.html'))
 
-embeddings = embedding_model.encode(docs_challenge, show_progress_bar=False)
+embeddings = topic_model.embedding_model.encode(
+    docs_challenge, show_progress_bar=False)
 fig = topic_model.visualize_documents(docs_challenge, embeddings=embeddings)
 fig.write_html(os.path.join(path_challenge, 'Document visualization.html'))
 
@@ -78,8 +75,10 @@ if not os.path.exists(path_wordcloud):
     os.makedirs(path_wordcloud)
 
 # Preprocess Documents
-documents = pd.DataFrame({'Document': docs_challenge, 'Topic': new_topics_challenge})
-documents_per_topic = documents.groupby(['Topic']).agg({'Document': ' '.join}).reset_index()
+documents = pd.DataFrame(
+    {'Document': docs_challenge, 'Topic': new_topics_challenge})
+documents_per_topic = documents.groupby(['Topic']).agg(
+    {'Document': ' '.join}).reset_index()
 
 for index, row in documents_per_topic.iterrows():
     wordcloud = WordCloud(
@@ -134,7 +133,8 @@ fig = topic_model.visualize_hierarchy(hierarchical_topics=hierarchical_topics)
 fig.write_html(os.path.join(
     path_solution, 'Hierarchical clustering visualization.html'))
 
-embeddings = embedding_model.encode(docs_solution, show_progress_bar=False)
+embeddings = topic_model.embedding_model.encode(
+    docs_solution, show_progress_bar=False)
 fig = topic_model.visualize_documents(docs_solution, embeddings=embeddings)
 fig.write_html(os.path.join(path_solution, 'Document visualization.html'))
 
@@ -147,8 +147,10 @@ if not os.path.exists(path_wordcloud):
     os.makedirs(path_wordcloud)
 
 # Preprocess Documents
-documents = pd.DataFrame({'Document': docs_solution, 'Topic': new_topics_solution})
-documents_per_topic = documents.groupby('Topic').agg({'Document': ' '.join}).reset_index()
+documents = pd.DataFrame(
+    {'Document': docs_solution, 'Topic': new_topics_solution})
+documents_per_topic = documents.groupby('Topic').agg(
+    {'Document': ' '.join}).reset_index()
 
 for index, row in documents_per_topic.iterrows():
     wordcloud = WordCloud(
@@ -160,7 +162,7 @@ for index, row in documents_per_topic.iterrows():
     plt.savefig(os.path.join(path_wordcloud,
                 f'Topic_{row["Topic"]}'+'.png'), bbox_inches='tight')
     plt.close()
-    
+
 # persist the document topics
 
 for index, topic in zip(indice_challenge, new_topics_challenge):
