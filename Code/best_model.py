@@ -13,8 +13,8 @@ path_general = os.path.join(path_result, 'General')
 path_challenge = os.path.join(path_result, 'Challenge')
 path_solution = os.path.join(path_result, 'Solution')
 
-path_model_challenge = os.path.join(path_challenge, 'Model2')
-path_model_solution = os.path.join(path_solution, 'Model2')
+path_model_challenge = os.path.join(path_challenge, 'Model')
+path_model_solution = os.path.join(path_solution, 'Model')
 
 df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
 
