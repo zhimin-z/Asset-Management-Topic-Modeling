@@ -49,7 +49,7 @@ config_defaults = {
 config_challenges = {
     "method": "grid",
     "metric": {
-        'name': 'CoherenceCV',
+        'name': 'Coherence CV',
         'goal': 'maximize'
     },
     "parameters": {
@@ -68,7 +68,7 @@ config_challenges = {
 config_solutions = {
     "method": "grid",
     "metric": {
-        'name': 'CoherenceCV',
+        'name': 'Coherence CV',
         'goal': 'maximize'
     },
     "parameters": {

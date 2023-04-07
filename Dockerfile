@@ -14,10 +14,7 @@ RUN python -m pip install -r requirements.txt
 # Define working directory
 WORKDIR /app
 
-RUN git config --global safe.directory /app
-
-# Expose port
-EXPOSE  8080
+# RUN git config --global safe.directory /app
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
 CMD ["python", "Code/experiment_1.py"]
