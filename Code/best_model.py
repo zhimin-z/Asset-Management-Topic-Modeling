@@ -13,14 +13,14 @@ path_general = os.path.join(path_result, 'General')
 path_challenge = os.path.join(path_result, 'Challenge')
 path_solution = os.path.join(path_result, 'Solution')
 
-path_model_challenge = os.path.join(path_challenge, 'Model')
-path_model_solution = os.path.join(path_solution, 'Model')
+path_model_challenge = os.path.join(path_challenge, 'Model2')
+path_model_solution = os.path.join(path_solution, 'Model2')
 
 df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
 
 # output the best topic model on challenges
 
-model_challenge = 'Challenge_gpt_summary_lmzx566h'
+model_challenge = 'Challenge_gpt_summary_btjbh6oz'
 column_challenge = '_'.join(model_challenge.split('_')[:-1])
 
 df['Challenge_topic'] = -1
@@ -61,8 +61,7 @@ fig = topic_model.visualize_hierarchy(hierarchical_topics=hierarchical_topics)
 fig.write_html(os.path.join(
     path_challenge, 'Hierarchical clustering visualization.html'))
 
-embeddings = topic_model.embedding_model.encode(
-    docs_challenge, show_progress_bar=False)
+embeddings = topic_model.embedding_model.embed_documents(docs_challenge)
 fig = topic_model.visualize_documents(docs_challenge, embeddings=embeddings)
 fig.write_html(os.path.join(path_challenge, 'Document visualization.html'))
 
@@ -93,7 +92,7 @@ for index, row in documents_per_topic.iterrows():
 
 # output the best topic model on solutions
 
-model_solution = 'Solution_gpt_summary_l2jcucaq'
+model_solution = 'Solution_gpt_summary_6lbmrzg6'
 column_solution = '_'.join(model_solution.split('_')[:-1])
 
 df['Solution_topic'] = -1
@@ -133,8 +132,7 @@ fig = topic_model.visualize_hierarchy(hierarchical_topics=hierarchical_topics)
 fig.write_html(os.path.join(
     path_solution, 'Hierarchical clustering visualization.html'))
 
-embeddings = topic_model.embedding_model.encode(
-    docs_solution, show_progress_bar=False)
+embeddings = topic_model.embedding_model.embed_documents(docs_solution)
 fig = topic_model.visualize_documents(docs_solution, embeddings=embeddings)
 fig.write_html(os.path.join(path_solution, 'Document visualization.html'))
 
