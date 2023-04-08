@@ -20,7 +20,7 @@ df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
 
 # output the best topic model on challenges
 
-model_challenge = 'Challenge_preprocessed_content_akmh24dt'
+model_challenge = 'Challenge_gpt_summary_6dss4sq4'
 column_challenge = '_'.join(model_challenge.split('_')[:-1])
 
 df['Challenge_topic'] = -1
