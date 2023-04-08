@@ -20,7 +20,7 @@ df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
 
 # output the best topic model on challenges
 
-model_challenge = 'Challenge_gpt_summary_btjbh6oz'
+model_challenge = 'Challenge_preprocessed_content_akmh24dt'
 column_challenge = '_'.join(model_challenge.split('_')[:-1])
 
 df['Challenge_topic'] = -1
@@ -92,7 +92,7 @@ for index, row in documents_per_topic.iterrows():
 
 # output the best topic model on solutions
 
-model_solution = 'Solution_gpt_summary_6lbmrzg6'
+model_solution = 'Solution_gpt_summary_zvuf1veb'
 column_solution = '_'.join(model_solution.split('_')[:-1])
 
 df['Solution_topic'] = -1
