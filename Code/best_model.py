@@ -4,6 +4,7 @@ from matplotlib import pyplot as plt
 from wordcloud import WordCloud
 
 import os
+import pickle
 import pandas as pd
 
 path_result = 'Result'
@@ -40,6 +41,14 @@ topics, probs = topic_model.transform(docs_challenge)
 df_topics = topic_model.get_topic_info()
 df_topics.to_json(os.path.join(
     path_challenge, 'Topic information.json'), indent=4, orient='records')
+
+# persist the topic terms
+topic_terms = []
+for i in range(df_topics.shape[0] - 1):
+    topic_terms.append(topic_model.get_topic(i))
+
+with open(os.path.join(path_challenge, 'Topic terms.pickle'), 'wb') as handle:
+    pickle.dump(topic_terms, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 fig = topic_model.visualize_topics()
 fig.write_html(os.path.join(path_challenge, 'Topic visualization.html'))
@@ -111,6 +120,14 @@ topics, probs = topic_model.transform(docs_solution)
 df_topics = topic_model.get_topic_info()
 df_topics.to_json(os.path.join(
     path_solution, 'Topic information.json'), indent=4, orient='records')
+
+# persist the topic terms
+topic_terms = []
+for i in range(df_topics.shape[0] - 1):
+    topic_terms.append(topic_model.get_topic(i))
+
+with open(os.path.join(path_solution, 'Topic terms.pickle'), 'wb') as handle:
+    pickle.dump(topic_terms, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 fig = topic_model.visualize_topics()
 fig.write_html(os.path.join(path_solution, 'Topic visualization.html'))
