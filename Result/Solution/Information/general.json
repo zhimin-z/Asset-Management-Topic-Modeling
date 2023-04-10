@@ -1,6 +1,6 @@
 [
     {
-        "Solution_topic":-1,
+        "Solution_topic":"-1",
         "Mean_score":1.0182926829,
         "Mean_link_count":1.1253918495,
         "Mean_information_entropy":5.0530837638,
@@ -12,7 +12,7 @@
         "Count_ratio":69.4873178629
     },
     {
-        "Solution_topic":0,
+        "Solution_topic":"0",
         "Mean_score":1.9142857143,
         "Mean_link_count":3.7587719298,
         "Mean_information_entropy":6.2814407718,
@@ -24,7 +24,7 @@
         "Count_ratio":2.460874258
     },
     {
-        "Solution_topic":1,
+        "Solution_topic":"1",
         "Mean_score":0.9661016949,
         "Mean_link_count":1.5894039735,
         "Mean_information_entropy":5.6903580952,
@@ -36,103 +36,7 @@
         "Count_ratio":1.6297895305
     },
     {
-        "Solution_topic":2,
-        "Mean_score":1.358974359,
-        "Mean_link_count":1.4144736842,
-        "Mean_information_entropy":5.652105131,
-        "Mean_readability":10.5392865673,
-        "Mean_sentence_count":29.6381578947,
-        "Mean_word_count":284.2960526316,
-        "Mean_unique_word_count":98.8157894737,
-        "Mean_comment_count":1.0,
-        "Count_ratio":1.6405828386
-    },
-    {
-        "Solution_topic":3,
-        "Mean_score":1.125,
-        "Mean_link_count":1.5748031496,
-        "Mean_information_entropy":5.7408186281,
-        "Mean_readability":9.8748386845,
-        "Mean_sentence_count":20.125984252,
-        "Mean_word_count":208.8346456693,
-        "Mean_unique_word_count":96.7716535433,
-        "Mean_comment_count":0.8,
-        "Count_ratio":1.3707501349
-    },
-    {
-        "Solution_topic":4,
-        "Mean_score":1.2058823529,
-        "Mean_link_count":1.4251207729,
-        "Mean_information_entropy":5.6992445634,
-        "Mean_readability":10.8551745837,
-        "Mean_sentence_count":17.4106280193,
-        "Mean_word_count":194.1111111111,
-        "Mean_unique_word_count":89.2028985507,
-        "Mean_comment_count":0.8368421053,
-        "Count_ratio":2.2342147868
-    },
-    {
-        "Solution_topic":5,
-        "Mean_score":1.5952380952,
-        "Mean_link_count":1.79,
-        "Mean_information_entropy":5.73009486,
-        "Mean_readability":13.7090816906,
-        "Mean_sentence_count":22.05,
-        "Mean_word_count":242.55,
-        "Mean_unique_word_count":96.28,
-        "Mean_comment_count":1.0519480519,
-        "Count_ratio":1.0793308149
-    },
-    {
-        "Solution_topic":6,
-        "Mean_score":1.5882352941,
-        "Mean_link_count":1.0762711864,
-        "Mean_information_entropy":5.5616707863,
-        "Mean_readability":11.012460609,
-        "Mean_sentence_count":21.5762711864,
-        "Mean_word_count":190.6186440678,
-        "Mean_unique_word_count":85.2627118644,
-        "Mean_comment_count":1.012345679,
-        "Count_ratio":1.2736103616
-    },
-    {
-        "Solution_topic":7,
-        "Mean_score":1.8421052632,
-        "Mean_link_count":2.2962962963,
-        "Mean_information_entropy":5.9080162425,
-        "Mean_readability":8.1535757639,
-        "Mean_sentence_count":53.4320987654,
-        "Mean_word_count":449.5432098765,
-        "Mean_unique_word_count":138.049382716,
-        "Mean_comment_count":1.1470588235,
-        "Count_ratio":0.8742579601
-    },
-    {
-        "Solution_topic":8,
-        "Mean_score":0.8510638298,
-        "Mean_link_count":1.2487804878,
-        "Mean_information_entropy":5.5430093668,
-        "Mean_readability":11.3415342062,
-        "Mean_sentence_count":13.1951219512,
-        "Mean_word_count":140.3365853659,
-        "Mean_unique_word_count":73.4975609756,
-        "Mean_comment_count":0.6790123457,
-        "Count_ratio":2.2126281705
-    },
-    {
-        "Solution_topic":9,
-        "Mean_score":1.8620689655,
-        "Mean_link_count":1.8333333333,
-        "Mean_information_entropy":5.7490159651,
-        "Mean_readability":10.1912730658,
-        "Mean_sentence_count":18.1770833333,
-        "Mean_word_count":201.5625,
-        "Mean_unique_word_count":89.6666666667,
-        "Mean_comment_count":1.1298701299,
-        "Count_ratio":1.0361575823
-    },
-    {
-        "Solution_topic":10,
+        "Solution_topic":"10",
         "Mean_score":2.0923076923,
         "Mean_link_count":1.1,
         "Mean_information_entropy":5.414243728,
@@ -144,7 +48,7 @@
         "Count_ratio":0.7555315704
     },
     {
-        "Solution_topic":11,
+        "Solution_topic":"11",
         "Mean_score":1.421875,
         "Mean_link_count":1.8055555556,
         "Mean_information_entropy":5.7158717159,
@@ -156,7 +60,7 @@
         "Count_ratio":0.7771181867
     },
     {
-        "Solution_topic":12,
+        "Solution_topic":"12",
         "Mean_score":2.0714285714,
         "Mean_link_count":1.6304347826,
         "Mean_information_entropy":5.7490980917,
@@ -168,7 +72,7 @@
         "Count_ratio":0.4964921749
     },
     {
-        "Solution_topic":13,
+        "Solution_topic":"13",
         "Mean_score":1.2790697674,
         "Mean_link_count":1.6813186813,
         "Mean_information_entropy":5.827029015,
@@ -180,7 +84,7 @@
         "Count_ratio":0.9821910416
     },
     {
-        "Solution_topic":14,
+        "Solution_topic":"14",
         "Mean_score":1.8095238095,
         "Mean_link_count":1.8703703704,
         "Mean_information_entropy":6.1370167651,
@@ -192,7 +96,7 @@
         "Count_ratio":0.58283864
     },
     {
-        "Solution_topic":15,
+        "Solution_topic":"15",
         "Mean_score":1.1388888889,
         "Mean_link_count":1.8555555556,
         "Mean_information_entropy":5.7740656328,
@@ -204,7 +108,7 @@
         "Count_ratio":0.9713977334
     },
     {
-        "Solution_topic":16,
+        "Solution_topic":"16",
         "Mean_score":1.0869565217,
         "Mean_link_count":0.9791666667,
         "Mean_information_entropy":5.6242423075,
@@ -216,7 +120,7 @@
         "Count_ratio":0.5180787911
     },
     {
-        "Solution_topic":17,
+        "Solution_topic":"17",
         "Mean_score":2.2173913043,
         "Mean_link_count":3.7941176471,
         "Mean_information_entropy":6.1643861697,
@@ -228,7 +132,7 @@
         "Count_ratio":0.7339449541
     },
     {
-        "Solution_topic":18,
+        "Solution_topic":"18",
         "Mean_score":1.5714285714,
         "Mean_link_count":1.95,
         "Mean_information_entropy":5.816186439,
@@ -240,7 +144,7 @@
         "Count_ratio":0.431732326
     },
     {
-        "Solution_topic":19,
+        "Solution_topic":"19",
         "Mean_score":1.2741935484,
         "Mean_link_count":1.5,
         "Mean_information_entropy":5.9246905272,
@@ -252,7 +156,19 @@
         "Count_ratio":0.7771181867
     },
     {
-        "Solution_topic":20,
+        "Solution_topic":"2",
+        "Mean_score":1.358974359,
+        "Mean_link_count":1.4144736842,
+        "Mean_information_entropy":5.652105131,
+        "Mean_readability":10.5392865673,
+        "Mean_sentence_count":29.6381578947,
+        "Mean_word_count":284.2960526316,
+        "Mean_unique_word_count":98.8157894737,
+        "Mean_comment_count":1.0,
+        "Count_ratio":1.6405828386
+    },
+    {
+        "Solution_topic":"20",
         "Mean_score":1.6851851852,
         "Mean_link_count":1.8372093023,
         "Mean_information_entropy":5.6998532968,
@@ -264,7 +180,7 @@
         "Count_ratio":1.3923367512
     },
     {
-        "Solution_topic":21,
+        "Solution_topic":"21",
         "Mean_score":1.25,
         "Mean_link_count":1.1875,
         "Mean_information_entropy":5.8483506796,
@@ -276,7 +192,7 @@
         "Count_ratio":0.6907717215
     },
     {
-        "Solution_topic":22,
+        "Solution_topic":"22",
         "Mean_score":1.3655913978,
         "Mean_link_count":1.9449541284,
         "Mean_information_entropy":5.9516044941,
@@ -288,7 +204,7 @@
         "Count_ratio":1.1764705882
     },
     {
-        "Solution_topic":23,
+        "Solution_topic":"23",
         "Mean_score":1.6842105263,
         "Mean_link_count":1.1052631579,
         "Mean_information_entropy":5.6000568205,
@@ -300,7 +216,7 @@
         "Count_ratio":0.4101457097
     },
     {
-        "Solution_topic":24,
+        "Solution_topic":"24",
         "Mean_score":1.22,
         "Mean_link_count":1.3571428571,
         "Mean_information_entropy":5.7670647656,
@@ -312,7 +228,7 @@
         "Count_ratio":0.6044252563
     },
     {
-        "Solution_topic":25,
+        "Solution_topic":"25",
         "Mean_score":1.1127819549,
         "Mean_link_count":1.1946308725,
         "Mean_information_entropy":5.677981018,
@@ -324,7 +240,7 @@
         "Count_ratio":1.6082029142
     },
     {
-        "Solution_topic":26,
+        "Solution_topic":"26",
         "Mean_score":0.9069767442,
         "Mean_link_count":1.5227272727,
         "Mean_information_entropy":5.8911949722,
@@ -336,7 +252,7 @@
         "Count_ratio":0.4749055586
     },
     {
-        "Solution_topic":27,
+        "Solution_topic":"27",
         "Mean_score":1.8222222222,
         "Mean_link_count":1.3142857143,
         "Mean_information_entropy":5.5575652559,
@@ -348,7 +264,7 @@
         "Count_ratio":0.7555315704
     },
     {
-        "Solution_topic":28,
+        "Solution_topic":"28",
         "Mean_score":1.4583333333,
         "Mean_link_count":1.8269230769,
         "Mean_information_entropy":5.7241646721,
@@ -358,5 +274,89 @@
         "Mean_unique_word_count":90.8269230769,
         "Mean_comment_count":1.0487804878,
         "Count_ratio":0.5612520237
+    },
+    {
+        "Solution_topic":"3",
+        "Mean_score":1.125,
+        "Mean_link_count":1.5748031496,
+        "Mean_information_entropy":5.7408186281,
+        "Mean_readability":9.8748386845,
+        "Mean_sentence_count":20.125984252,
+        "Mean_word_count":208.8346456693,
+        "Mean_unique_word_count":96.7716535433,
+        "Mean_comment_count":0.8,
+        "Count_ratio":1.3707501349
+    },
+    {
+        "Solution_topic":"4",
+        "Mean_score":1.2058823529,
+        "Mean_link_count":1.4251207729,
+        "Mean_information_entropy":5.6992445634,
+        "Mean_readability":10.8551745837,
+        "Mean_sentence_count":17.4106280193,
+        "Mean_word_count":194.1111111111,
+        "Mean_unique_word_count":89.2028985507,
+        "Mean_comment_count":0.8368421053,
+        "Count_ratio":2.2342147868
+    },
+    {
+        "Solution_topic":"5",
+        "Mean_score":1.5952380952,
+        "Mean_link_count":1.79,
+        "Mean_information_entropy":5.73009486,
+        "Mean_readability":13.7090816906,
+        "Mean_sentence_count":22.05,
+        "Mean_word_count":242.55,
+        "Mean_unique_word_count":96.28,
+        "Mean_comment_count":1.0519480519,
+        "Count_ratio":1.0793308149
+    },
+    {
+        "Solution_topic":"6",
+        "Mean_score":1.5882352941,
+        "Mean_link_count":1.0762711864,
+        "Mean_information_entropy":5.5616707863,
+        "Mean_readability":11.012460609,
+        "Mean_sentence_count":21.5762711864,
+        "Mean_word_count":190.6186440678,
+        "Mean_unique_word_count":85.2627118644,
+        "Mean_comment_count":1.012345679,
+        "Count_ratio":1.2736103616
+    },
+    {
+        "Solution_topic":"7",
+        "Mean_score":1.8421052632,
+        "Mean_link_count":2.2962962963,
+        "Mean_information_entropy":5.9080162425,
+        "Mean_readability":8.1535757639,
+        "Mean_sentence_count":53.4320987654,
+        "Mean_word_count":449.5432098765,
+        "Mean_unique_word_count":138.049382716,
+        "Mean_comment_count":1.1470588235,
+        "Count_ratio":0.8742579601
+    },
+    {
+        "Solution_topic":"8",
+        "Mean_score":0.8510638298,
+        "Mean_link_count":1.2487804878,
+        "Mean_information_entropy":5.5430093668,
+        "Mean_readability":11.3415342062,
+        "Mean_sentence_count":13.1951219512,
+        "Mean_word_count":140.3365853659,
+        "Mean_unique_word_count":73.4975609756,
+        "Mean_comment_count":0.6790123457,
+        "Count_ratio":2.2126281705
+    },
+    {
+        "Solution_topic":"9",
+        "Mean_score":1.8620689655,
+        "Mean_link_count":1.8333333333,
+        "Mean_information_entropy":5.7490159651,
+        "Mean_readability":10.1912730658,
+        "Mean_sentence_count":18.1770833333,
+        "Mean_word_count":201.5625,
+        "Mean_unique_word_count":89.6666666667,
+        "Mean_comment_count":1.1298701299,
+        "Count_ratio":1.0361575823
     }
 ]
