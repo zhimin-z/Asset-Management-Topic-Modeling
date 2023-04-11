@@ -2,6 +2,7 @@
     {
         "Topic":0,
         "Count":784,
+        "Solved ratio":0.3354591837,
         "Mean score":0.873221216,
         "Mean favorite count":1.1842105263,
         "Mean follower count":10.0,
@@ -18,6 +19,7 @@
     {
         "Topic":1,
         "Count":547,
+        "Solved ratio":0.3126142596,
         "Mean score":0.8796296296,
         "Mean favorite count":1.2448979592,
         "Mean follower count":11.0234375,
@@ -34,6 +36,7 @@
     {
         "Topic":2,
         "Count":312,
+        "Solved ratio":0.3365384615,
         "Mean score":0.9671052632,
         "Mean favorite count":1.2894736842,
         "Mean follower count":9.2285714286,
@@ -50,6 +53,7 @@
     {
         "Topic":3,
         "Count":374,
+        "Solved ratio":0.2700534759,
         "Mean score":0.8069705094,
         "Mean favorite count":1.2,
         "Mean follower count":12.0909090909,
@@ -66,6 +70,7 @@
     {
         "Topic":4,
         "Count":342,
+        "Solved ratio":0.2251461988,
         "Mean score":1.318452381,
         "Mean favorite count":1.5555555556,
         "Mean follower count":11.1538461538,
@@ -82,6 +87,7 @@
     {
         "Topic":5,
         "Count":257,
+        "Solved ratio":0.2568093385,
         "Mean score":0.7401574803,
         "Mean favorite count":1.1875,
         "Mean follower count":11.6538461538,
@@ -98,6 +104,7 @@
     {
         "Topic":6,
         "Count":171,
+        "Solved ratio":0.2339181287,
         "Mean score":1.2565789474,
         "Mean favorite count":1.2857142857,
         "Mean follower count":9.0,
@@ -114,6 +121,7 @@
     {
         "Topic":7,
         "Count":375,
+        "Solved ratio":0.2933333333,
         "Mean score":0.5961002786,
         "Mean favorite count":1.0,
         "Mean follower count":9.6829268293,
@@ -130,6 +138,7 @@
     {
         "Topic":8,
         "Count":159,
+        "Solved ratio":0.213836478,
         "Mean score":0.641509434,
         "Mean favorite count":1.0909090909,
         "Mean follower count":9.4193548387,
@@ -146,6 +155,7 @@
     {
         "Topic":9,
         "Count":159,
+        "Solved ratio":0.251572327,
         "Mean score":0.5471698113,
         "Mean favorite count":0.8571428571,
         "Mean follower count":6.8333333333,
@@ -162,6 +172,7 @@
     {
         "Topic":10,
         "Count":348,
+        "Solved ratio":0.3965517241,
         "Mean score":0.7433628319,
         "Mean favorite count":1.2105263158,
         "Mean follower count":8.75,
@@ -178,6 +189,7 @@
     {
         "Topic":11,
         "Count":229,
+        "Solved ratio":0.2576419214,
         "Mean score":0.6026785714,
         "Mean favorite count":1.4,
         "Mean follower count":11.4487179487,
@@ -194,6 +206,7 @@
     {
         "Topic":12,
         "Count":120,
+        "Solved ratio":0.2416666667,
         "Mean score":1.019047619,
         "Mean favorite count":1.2941176471,
         "Mean follower count":10.3,
@@ -210,6 +223,7 @@
     {
         "Topic":13,
         "Count":250,
+        "Solved ratio":0.272,
         "Mean score":0.8987854251,
         "Mean favorite count":1.1428571429,
         "Mean follower count":9.0,
@@ -226,6 +240,7 @@
     {
         "Topic":14,
         "Count":140,
+        "Solved ratio":0.1857142857,
         "Mean score":0.9716981132,
         "Mean favorite count":2.0,
         "Mean follower count":29.0625,
@@ -242,6 +257,7 @@
     {
         "Topic":15,
         "Count":207,
+        "Solved ratio":0.2753623188,
         "Mean score":1.0922330097,
         "Mean favorite count":1.8,
         "Mean follower count":9.1379310345,
@@ -258,6 +274,7 @@
     {
         "Topic":16,
         "Count":271,
+        "Solved ratio":0.3468634686,
         "Mean score":1.2,
         "Mean favorite count":1.75,
         "Mean follower count":9.25,
@@ -274,6 +291,7 @@
     {
         "Topic":17,
         "Count":131,
+        "Solved ratio":0.320610687,
         "Mean score":0.8914728682,
         "Mean favorite count":1.3571428571,
         "Mean follower count":10.8333333333,
@@ -290,6 +308,7 @@
     {
         "Topic":18,
         "Count":176,
+        "Solved ratio":0.2670454545,
         "Mean score":0.7413793103,
         "Mean favorite count":1.3529411765,
         "Mean follower count":10.1875,
@@ -306,6 +325,7 @@
     {
         "Topic":19,
         "Count":135,
+        "Solved ratio":0.3333333333,
         "Mean score":0.7258064516,
         "Mean favorite count":0.875,
         "Mean follower count":10.4615384615,
@@ -322,6 +342,7 @@
     {
         "Topic":20,
         "Count":119,
+        "Solved ratio":0.268907563,
         "Mean score":0.8878504673,
         "Mean favorite count":1.0625,
         "Mean follower count":11.6818181818,
@@ -338,6 +359,7 @@
     {
         "Topic":21,
         "Count":136,
+        "Solved ratio":0.3235294118,
         "Mean score":0.6222222222,
         "Mean favorite count":0.875,
         "Mean follower count":10.0243902439,
@@ -354,6 +376,7 @@
     {
         "Topic":22,
         "Count":147,
+        "Solved ratio":0.3333333333,
         "Mean score":0.925170068,
         "Mean favorite count":1.36,
         "Mean follower count":9.2857142857,
@@ -370,6 +393,7 @@
     {
         "Topic":23,
         "Count":87,
+        "Solved ratio":0.275862069,
         "Mean score":0.4482758621,
         "Mean favorite count":1.0,
         "Mean follower count":8.4074074074,
@@ -386,6 +410,7 @@
     {
         "Topic":24,
         "Count":225,
+        "Solved ratio":0.32,
         "Mean score":0.8153153153,
         "Mean favorite count":1.15,
         "Mean follower count":9.2962962963,
@@ -402,6 +427,7 @@
     {
         "Topic":25,
         "Count":86,
+        "Solved ratio":0.2325581395,
         "Mean score":0.6352941176,
         "Mean favorite count":1.3333333333,
         "Mean follower count":11.6923076923,
@@ -418,6 +444,7 @@
     {
         "Topic":26,
         "Count":225,
+        "Solved ratio":0.3733333333,
         "Mean score":0.599078341,
         "Mean favorite count":0.85,
         "Mean follower count":10.7564102564,
@@ -434,6 +461,7 @@
     {
         "Topic":27,
         "Count":100,
+        "Solved ratio":0.26,
         "Mean score":0.5384615385,
         "Mean favorite count":1.0,
         "Mean follower count":11.1034482759,
@@ -450,6 +478,7 @@
     {
         "Topic":28,
         "Count":71,
+        "Solved ratio":0.3521126761,
         "Mean score":0.9577464789,
         "Mean favorite count":1.3333333333,
         "Mean follower count":11.75,
@@ -466,6 +495,7 @@
     {
         "Topic":29,
         "Count":129,
+        "Solved ratio":0.3798449612,
         "Mean score":0.8449612403,
         "Mean favorite count":0.9473684211,
         "Mean follower count":8.65,
@@ -482,6 +512,7 @@
     {
         "Topic":30,
         "Count":99,
+        "Solved ratio":0.2626262626,
         "Mean score":1.1473684211,
         "Mean favorite count":1.2666666667,
         "Mean follower count":9.7142857143,
@@ -498,6 +529,7 @@
     {
         "Topic":31,
         "Count":147,
+        "Solved ratio":0.2380952381,
         "Mean score":0.4789915966,
         "Mean favorite count":1.25,
         "Mean follower count":10.1714285714,
@@ -514,6 +546,7 @@
     {
         "Topic":32,
         "Count":99,
+        "Solved ratio":0.2222222222,
         "Mean score":1.3775510204,
         "Mean favorite count":1.25,
         "Mean follower count":8.5714285714,
@@ -530,6 +563,7 @@
     {
         "Topic":33,
         "Count":113,
+        "Solved ratio":0.2123893805,
         "Mean score":0.9279279279,
         "Mean favorite count":0.9166666667,
         "Mean follower count":9.0,
@@ -546,6 +580,7 @@
     {
         "Topic":34,
         "Count":50,
+        "Solved ratio":0.12,
         "Mean score":0.14,
         "Mean favorite count":1.0,
         "Mean follower count":7.25,
@@ -562,6 +597,7 @@
     {
         "Topic":35,
         "Count":82,
+        "Solved ratio":0.3414634146,
         "Mean score":0.743902439,
         "Mean favorite count":1.0,
         "Mean follower count":12.75,
@@ -578,6 +614,7 @@
     {
         "Topic":36,
         "Count":387,
+        "Solved ratio":0.3178294574,
         "Mean score":0.819843342,
         "Mean favorite count":1.3703703704,
         "Mean follower count":10.7432432432,
@@ -594,6 +631,7 @@
     {
         "Topic":37,
         "Count":160,
+        "Solved ratio":0.24375,
         "Mean score":0.7806451613,
         "Mean favorite count":1.2307692308,
         "Mean follower count":11.5652173913,
@@ -610,6 +648,7 @@
     {
         "Topic":38,
         "Count":313,
+        "Solved ratio":0.2747603834,
         "Mean score":0.5792880259,
         "Mean favorite count":0.9583333333,
         "Mean follower count":9.4024390244,
@@ -626,6 +665,7 @@
     {
         "Topic":39,
         "Count":263,
+        "Solved ratio":0.2813688213,
         "Mean score":0.8862745098,
         "Mean favorite count":1.2702702703,
         "Mean follower count":10.4230769231,
@@ -642,6 +682,7 @@
     {
         "Topic":40,
         "Count":94,
+        "Solved ratio":0.2872340426,
         "Mean score":0.9247311828,
         "Mean favorite count":1.1666666667,
         "Mean follower count":13.0,
@@ -658,6 +699,7 @@
     {
         "Topic":41,
         "Count":299,
+        "Solved ratio":0.2775919732,
         "Mean score":0.6394557823,
         "Mean favorite count":0.9230769231,
         "Mean follower count":9.813559322,
@@ -674,6 +716,7 @@
     {
         "Topic":42,
         "Count":200,
+        "Solved ratio":0.295,
         "Mean score":0.7286432161,
         "Mean favorite count":1.0,
         "Mean follower count":8.4222222222,
@@ -690,6 +733,7 @@
     {
         "Topic":43,
         "Count":147,
+        "Solved ratio":0.3129251701,
         "Mean score":0.9166666667,
         "Mean favorite count":1.1818181818,
         "Mean follower count":8.8571428571,
