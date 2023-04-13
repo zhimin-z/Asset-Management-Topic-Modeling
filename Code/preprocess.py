@@ -168,6 +168,17 @@ del df_questions['Answer_gpt_summary_original']
 del df_questions['Answer_gpt_summary']
 
 df_all = pd.concat([df_issues, df_questions], ignore_index=True)
+
+for index, row in df_all.iterrows():
+    creation_time = row['Challenge_creation_time']
+    closed_time = row['Challenge_closed_time']
+    df_all.at[index, 'Challenge_solved_time'] = (closed_time - creation_time) / pd.Timedelta(hours=1)
+    if pd.notna(row['Challenge_last_edit_time']):
+        creation_time = row['Challenge_last_edit_time']
+    if pd.notna(row['Solution_last_edit_time']):
+        closed_time = row['Solution_last_edit_time']
+    df_all.at[index, 'Challenge_solved_time_adjusted'] = (closed_time - creation_time) / pd.Timedelta(hours=1)
+
 df_all = df_all.reindex(sorted(df_all.columns), axis=1)
 df_all.to_json(os.path.join(path_dataset, 'original.json'),
                indent=4, orient='records')
