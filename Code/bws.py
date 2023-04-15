@@ -39,18 +39,10 @@ def bws_statistic_from_ranks(ranks, n, m):
     return (b_x + b_y) / 2
 
 
-def bws_statistic(x, y):
-    # Get the ranks. The first 0:n-1 are ranks for x, n:end for y.
-    # ranks are 0-based, but we want 1-based
-    rs = np.argsort(np.argsort(np.concatenate([x, y]), kind='stable')) + 1
-
-    return bws_statistic_from_ranks(rs, len(x), len(y))
-
-
 def bws_test_sampled_from_ranks(ranks, n, m, numsamples=10000):
-    rs = ranks.copy()  # Copy since we will shuffle it below.
+    ranks = ranks.copy()  # Copy since we will shuffle it below.
 
-    actual_b = bws_statistic_from_ranks(rs, n, m)
+    b_stats = bws_statistic_from_ranks(ranks, n, m)
 
     # Array to save the b statistics
     samples = np.zeros(numsamples)
@@ -59,30 +51,29 @@ def bws_test_sampled_from_ranks(ranks, n, m, numsamples=10000):
     # Set up for inline sorts.
     ns = np.zeros(n, dtype=np.int64)
     ms = np.zeros(m, dtype=np.int64)
-    np1 = n+1
 
     for i in range(numsamples):
         # Now shuffle the ranks and then ensure they are sorted for each group.
         # Not sure this is actually faster than letting python decide on the copying
         # and gc of intermediate vectors/arrays... ;)
-        np.random.shuffle(rs)
-        ns = rs[:n]
-        ms = rs[np1:]
+        np.random.shuffle(ranks)
+        ns = ranks[:n]
+        ms = ranks[n+1:]
         ns.sort()
         ms.sort()
-        rs[:n] = ns
-        rs[np1:] = ms
+        ranks[:n] = ns
+        ranks[n+1:] = ms
 
         # Now we can calculate the bws again and note if it was larger than before.
-        samples[i] = bws_statistic_from_ranks(rs, n, m)
-        if samples[i] >= actual_b:
+        samples[i] = bws_statistic_from_ranks(ranks, n, m)
+        if samples[i] >= b_stats:
             numlarger += 1
 
     # A larger (or equal) BWS statistic value indicates samples from distributions
     # that are "more apart" and thus that there is a difference between the samples.
     pvalue = numlarger / numsamples
 
-    return actual_b, pvalue
+    return b_stats, pvalue
 
 
 def bws_test_sampled(x, y, numsamples=10000):
@@ -90,5 +81,4 @@ def bws_test_sampled(x, y, numsamples=10000):
     # ranks are 0-based, but we want 1-based
     rs = np.argsort(np.argsort(np.concatenate([x, y]), kind='stable')) + 1
 
-    # call the "bws_test_sampled_from_ranks" function from "FeldtLib"
     return bws_test_sampled_from_ranks(rs, len(x), len(y), numsamples)
