@@ -11,19 +11,40 @@
 #  Statistical Papers, vol. 46, pp. 1-30, Springer Verlag, 2005.
 
 import numpy as np
-from scipy.stats import rankdata
-
-# Test if according to the Baumgartner-Weis-Schindler (BWS) statistic we
-# can reject the hypothesis that the two set of samples x and y are likely to have
-# the same location (mean).
 
 
-def bws_test_sampled(x, y, numsamples=10000):
-    # Get the ranks. The first 1:n are ranks for x, (n+1):(n+m) for y.
-    rs = rankdata(np.concatenate([x, y]))
+def calc_bws_sum(ranks, nm):
+    size = len(ranks)
+    sum = 0
+    for i, r in enumerate(ranks):
+        k = i + 1
+        nom = (r - (nm / size * k)) ** 2
+        denom = k / (size + 1) * (1 - k / (size + 1))
+        sum += nom / denom
+    return sum
 
-    # call the "bws_test_sampled_from_ranks" function from "FeldtLib"
-    return bws_test_sampled_from_ranks(rs, len(x), len(y), numsamples)
+# Calculate the BWS statistic from a set of ranks of n values from one sample
+# and m values from another sample. The first 1:n rank values in ranks are for
+# the first sample and the rest are from the other.
+
+
+def bws_statistic_from_ranks(ranks, n, m):
+    # Pre-calc some values needed in both b calcs.
+    nm = n + m
+
+    # Now calc the two b values
+    b_x = 1 / (m * nm) * calc_bws_sum(ranks[0:n], nm)
+    b_y = 1 / (n * nm) * calc_bws_sum(ranks[n:nm], nm)
+
+    return (b_x + b_y) / 2
+
+
+def bws_statistic(x, y):
+    # Get the ranks. The first 0:n-1 are ranks for x, n:end for y.
+    # ranks are 0-based, but we want 1-based
+    rs = np.argsort(np.argsort(np.concatenate([x, y]), kind='stable')) + 1
+
+    return bws_statistic_from_ranks(rs, len(x), len(y))
 
 
 def bws_test_sampled_from_ranks(ranks, n, m, numsamples=10000):
@@ -61,39 +82,13 @@ def bws_test_sampled_from_ranks(ranks, n, m, numsamples=10000):
     # that are "more apart" and thus that there is a difference between the samples.
     pvalue = numlarger / numsamples
 
-    # , np.mean(samples), np.std(samples))
-    return (actual_b, pvalue, numlarger, numsamples)
+    return actual_b, pvalue
 
 
-def bws_statistic(x, y):
-    # Get the ranks. The first 1:n are ranks for x, (n+1):end for y.
-    rs = rankdata(np.concatenate([x, y]))
+def bws_test_sampled(x, y, numsamples=10000):
+    # Get the ranks. The first 1:n are ranks for x, (n+1):(n+m) for y.
+    # ranks are 0-based, but we want 1-based
+    rs = np.argsort(np.argsort(np.concatenate([x, y]), kind='stable')) + 1
 
-    return bws_statistic_from_ranks(rs, len(x), len(y))
-
-# Calculate the BWS statistic from a set of ranks of n values from one sample
-# and m values from another sample. The first 1:n rank values in ranks are for
-# the first sample and the rest are from the other.
-
-
-def bws_statistic_from_ranks(ranks, n, m):
-    # Pre-calc some values needed in both b calcs.
-    nm = n+m
-    np1 = n + 1
-    mp1 = m + 1
-
-    # Now calc the two b values
-    b_x = (1/n) * (n / (m*nm)) * calc_bws_sum(ranks,   1,  n, n, np1, nm, 0)
-    b_y = (1/m) * (m / (n*nm)) * calc_bws_sum(ranks, np1, nm, m, mp1, nm, n)
-
-    return (b_x + b_y) / 2
-
-
-def calc_bws_sum(ranks, mini, maxi, n, np1, nm, subi=0):
-    sum = 0.0
-    for i in range(mini, maxi+1):
-        k = i - subi
-        nom = (ranks[i] - (nm/n*k)) ** 2
-        denom = (k/np1) * (1 - (k/np1))
-        sum += (nom / denom)
-    return sum
+    # call the "bws_test_sampled_from_ranks" function from "FeldtLib"
+    return bws_test_sampled_from_ranks(rs, len(x), len(y), numsamples)
