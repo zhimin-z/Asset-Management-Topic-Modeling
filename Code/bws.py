@@ -7,15 +7,15 @@
 #
 # The algorithms in this file are based on the definitions of the BWS in the paper:
 #
-#  Markus Neuhäuser, "Exact tests based on the Baumgartner-WeiB-Schindler statistic - A survey",
-#  Statistical Papers, vol. 46, pp. 1-30, Springer Verlag, 2005.
+# Markus Neuhäuser, "Exact tests based on the Baumgartner-WeiB-Schindler statistic - A survey",
+# Statistical Papers, vol. 46, pp. 1-30, Springer Verlag, 2005.
 
 import numpy as np
 
 
-def calc_bws_sum(ranks, nm):
-    size = len(ranks)
+def calculate_bws_sum(ranks, nm):
     sum = 0
+    size = len(ranks)
     for i, r in enumerate(ranks):
         k = i + 1
         nom = (r - (nm / size * k)) ** 2
@@ -23,28 +23,22 @@ def calc_bws_sum(ranks, nm):
         sum += nom / denom
     return sum
 
-# Calculate the BWS statistic from a set of ranks of n values from one sample
-# and m values from another sample. The first 1:n rank values in ranks are for
-# the first sample and the rest are from the other.
-
 
 def bws_statistic_from_ranks(ranks, n, m):
-    # Pre-calc some values needed in both b calcs.
     nm = n + m
+    
+    # Calculate the BWS statistic from a set of ranks of n values from one sample
+    # and m values from another sample.
+    b_x = calculate_bws_sum(ranks[0:n], nm) / (m * nm)
+    b_y = calculate_bws_sum(ranks[n:nm], nm) / (n * nm)
 
-    # Now calc the two b values
-    b_x = 1 / (m * nm) * calc_bws_sum(ranks[0:n], nm)
-    b_y = 1 / (n * nm) * calc_bws_sum(ranks[n:nm], nm)
-
-    return (b_x + b_y) / 2
+    return (b_x + b_y) * 0.5
 
 
 def bws_test_sampled_from_ranks(ranks, n, m, numsamples=10000):
-    ranks = ranks.copy()  # Copy since we will shuffle it below.
-
     b_stats = bws_statistic_from_ranks(ranks, n, m)
 
-    # Array to save the b statistics
+    # Array to save b statistics
     samples = np.zeros(numsamples)
     numlarger = 0
 
@@ -53,9 +47,7 @@ def bws_test_sampled_from_ranks(ranks, n, m, numsamples=10000):
     ms = np.zeros(m, dtype=np.int64)
 
     for i in range(numsamples):
-        # Now shuffle the ranks and then ensure they are sorted for each group.
-        # Not sure this is actually faster than letting python decide on the copying
-        # and gc of intermediate vectors/arrays... ;)
+        # Now shuffle ranks and then ensure they are sorted for each group.
         np.random.shuffle(ranks)
         ns = ranks[:n]
         ms = ranks[n+1:]
@@ -76,8 +68,26 @@ def bws_test_sampled_from_ranks(ranks, n, m, numsamples=10000):
     return b_stats, pvalue
 
 
-def bws_test_sampled(x, y, numsamples=10000):
-    # Get the ranks. The first 1:n are ranks for x, (n+1):(n+m) for y.
+def bws_test(x, y, numsamples=10000):
+    r'''Perform the Baumgartner Weiss Schindler test on two independent samples.
+
+    The Baumgartner Weiss Schindler test is a nonparametric test of 
+    the null hypothesis that the distribution underlying sample `x` 
+    is the same as the distribution underlying sample `y`. Unlike 
+    the Kolmogorv-Smirnov, Wilcoxon, and Cramer-Von Mises tests, 
+    the Baumgartner Weiss Schindler test weights the integral by 
+    the variance of the difference in CDFs, emphasizing the tails of 
+    the distributions, which increases the power of the test for 
+    a lot of applications.
+
+    Parameters
+    ----------
+    x, y : array-like
+        N-d arrays of samples. The arrays must be broadcastable except along
+        the dimension given by `axis`.
+    numsamples : int, optional
+        The number of samples to use in the test. Default is 10000.
+    '''
     # ranks are 0-based, but we want 1-based
     rs = np.argsort(np.argsort(np.concatenate([x, y]), kind='stable')) + 1
 
