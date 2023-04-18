@@ -108,7 +108,7 @@ class TopicModeling:
             embedding_model = SentenceTransformer(run.config.model_name)
 
             # Step 2 - Reduce dimensionality
-            umap_model = UMAP(n_components=wandb.config.n_components, metric=run.config.metric_distane,
+            umap_model = UMAP(n_components=run.config.n_components, metric=run.config.metric_distane,
                               random_state=run.config.random_state, low_memory=run.config.low_memory)
 
             # Step 3 - Cluster reduced embeddings
