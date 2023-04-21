@@ -4,6 +4,8 @@ kaleido==0.2.1
 matplotlib==3.7.1
 openai==0.27.4
 plotly==5.13.1
+seaborn==0.12.2
+shap==0.41.0
 spacy==3.5.1
 statsmodels==0.13.5
 textacy==0.12.0

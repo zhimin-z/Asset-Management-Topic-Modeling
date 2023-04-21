@@ -16,7 +16,6 @@ config_defaults = {
 }
 
 config_sweep = {
-    "name": "XGB Regression (adjusted)",
     "method": "bayes",
     "metric": {
         'name': 'root mean square log error',
@@ -46,22 +45,21 @@ def _train():
         run.config.setdefaults(config_defaults)
         regressor = xgb.XGBRegressor(objective=run.config.objective, max_depth=run.config.max_depth,
                                      n_estimators=wandb.config.n_estimators, eta=wandb.config.eta)
-        scores = cross_val_score(regressor, X, y, cv=run.config.cv)
+        scores = cross_val_score(regressor, df[X], df[y], cv=run.config.cv)
         wandb.log({'root mean square log error': scores.mean()})
 
 
+X = ['Challenge_answer_count', 'Challenge_comment_count', 'Challenge_participation_count', 'Challenge_information_entropy', 'Challenge_link_count', 'Challenge_readability', 'Challenge_score', 'Challenge_sentence_count', 'Challenge_unique_word_count',
+     'Challenge_view_count', 'Challenge_word_count', 'Solution_comment_count', 'Solution_information_entropy', 'Solution_link_count', 'Solution_readability', 'Solution_score', 'Solution_sentence_count', 'Solution_unique_word_count', 'Solution_word_count']
+
+y = 'Challenge_solved_time'
 config_sweep['name'] = 'XGB Regression (original)'
 df = pd.read_json(os.path.join(path_general, 'solved_imputed_original.json'))
-X = df[['Challenge_answer_count', 'Challenge_comment_count', 'Challenge_participation_count', 'Challenge_information_entropy', 'Challenge_link_count', 'Challenge_readability', 'Challenge_score', 'Challenge_sentence_count', 'Challenge_unique_word_count',
-        'Challenge_view_count', 'Challenge_word_count', 'Solution_comment_count', 'Solution_information_entropy', 'Solution_link_count', 'Solution_readability', 'Solution_score', 'Solution_sentence_count', 'Solution_unique_word_count', 'Solution_word_count']]
-y = df['Challenge_solved_time']
 sweep_id = wandb.sweep(config_sweep, project=wandb_project)
 wandb.agent(sweep_id, function=_train, count=count)
 
+y = 'Challenge_adjusted_solved_time'
 config_sweep['name'] = 'XGB Regression (adjusted)'
 df = pd.read_json(os.path.join(path_general, 'solved_imputed_adjusted.json'))
-X = df[['Challenge_answer_count', 'Challenge_comment_count', 'Challenge_participation_count', 'Challenge_information_entropy', 'Challenge_link_count', 'Challenge_readability', 'Challenge_score', 'Challenge_sentence_count', 'Challenge_unique_word_count',
-        'Challenge_view_count', 'Challenge_word_count', 'Solution_comment_count', 'Solution_information_entropy', 'Solution_link_count', 'Solution_readability', 'Solution_score', 'Solution_sentence_count', 'Solution_unique_word_count', 'Solution_word_count']]
-y = df['Challenge_adjusted_solved_time']
 sweep_id = wandb.sweep(config_sweep, project=wandb_project)
 wandb.agent(sweep_id, function=_train, count=count)
