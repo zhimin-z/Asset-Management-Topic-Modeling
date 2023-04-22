@@ -175,12 +175,12 @@ df_all['Challenge_adjusted_solved_time'] = np.nan
 for index, row in df_all.iterrows():
     creation_time = row['Challenge_creation_time']
     closed_time = row['Challenge_closed_time']
-    if closed_time > creation_time:
+    if pd.notna(creation_time) and pd.notna(closed_time) and (closed_time > creation_time):
         df_all.at[index, 'Challenge_solved_time'] = (closed_time - creation_time) / pd.Timedelta(hours=1)
         
     creation_time = row['Challenge_last_edit_time'] if pd.notna(row['Challenge_last_edit_time']) else creation_time
     closed_time = row['Solution_last_edit_time'] if pd.notna(row['Solution_last_edit_time']) else closed_time
-    if closed_time > creation_time:
+    if pd.notna(creation_time) and pd.notna(closed_time) and (closed_time > creation_time):
         df_all.at[index, 'Challenge_adjusted_solved_time'] = (closed_time - creation_time) / pd.Timedelta(hours=1)
 
 df_all = df_all.reindex(sorted(df_all.columns), axis=1)
