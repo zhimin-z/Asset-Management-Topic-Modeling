@@ -11,6 +11,7 @@ os.environ["WANDB__SERVICE_WAIT"] = "100"
 
 config_defaults = {
     'objective': 'reg:squaredlogerror',
+    'tree_method': 'gpu_hist',
     'max_depth': 5,
     'cv': 10,
 }
@@ -40,8 +41,7 @@ wandb.login()
 def _train():
     with wandb.init() as run:
         run.config.setdefaults(config_defaults)
-        regressor = xgb.XGBRegressor(objective=run.config.objective, max_depth=run.config.max_depth,
-                                     n_estimators=wandb.config.n_estimators, eta=wandb.config.eta)
+        regressor = xgb.XGBRegressor(tree_method = run.config.tree_method, objective=run.config.objective, max_depth=run.config.max_depth, n_estimators=wandb.config.n_estimators, eta=wandb.config.eta)
         scores = cross_val_score(regressor, X, y, cv=run.config.cv)
         wandb.log({'root mean square log error': scores.mean()})
 
