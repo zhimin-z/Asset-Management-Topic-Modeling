@@ -32,13 +32,8 @@ config_sweep = {
 }
 
 count = 500
-path_dataset = 'Dataset'
-path_result = 'Result'
-path_general = os.path.join(path_result, 'General')
 wandb_project = 'challenge-solved-time-regression-modeling'
-X = ['Challenge_answer_count', 'Challenge_comment_count', 'Challenge_participation_count', 'Challenge_information_entropy', 'Challenge_link_count', 'Challenge_readability', 'Challenge_score', 'Challenge_sentence_count', 'Challenge_unique_word_count',
-     'Challenge_view_count', 'Challenge_word_count', 'Solution_comment_count', 'Solution_information_entropy', 'Solution_link_count', 'Solution_readability', 'Solution_score', 'Solution_sentence_count', 'Solution_unique_word_count', 'Solution_word_count']
-df = pd.read_json(os.path.join(path_general, 'solved_imputed.json'))
+df = pd.read_json(os.path.join('Result', 'Solution', 'solved_dummy.json'))
 wandb.login()
 
 
@@ -47,18 +42,22 @@ def _train():
         run.config.setdefaults(config_defaults)
         regressor = xgb.XGBRegressor(objective=run.config.objective, max_depth=run.config.max_depth,
                                      n_estimators=wandb.config.n_estimators, eta=wandb.config.eta)
-        scores = cross_val_score(regressor, _df[X], _df[y], cv=run.config.cv)
+        scores = cross_val_score(regressor, X, y, cv=run.config.cv)
         wandb.log({'root mean square log error': scores.mean()})
 
 
-y = 'Challenge_solved_time'
-_df = df[df[y].notna()]
+df_original = df[df['Challenge_solved_time'].notna()]
+y = df_original['Challenge_solved_time']
+df_original.drop(['Challenge_solved_time', 'Challenge_adjusted_solved_time', 'Challenge_link', 'Challenge_topic_macro', 'Solution_topic_macro'], axis=1, inplace=True)
+X = df_original
 config_sweep['name'] = 'XGB Regression (original)'
 sweep_id = wandb.sweep(config_sweep, project=wandb_project)
 wandb.agent(sweep_id, function=_train, count=count)
 
-y = 'Challenge_adjusted_solved_time'
-_df = df[df[y].notna()]
+df_adjusted = df[df['Challenge_adjusted_solved_time'].notna()]
+y = df_adjusted['Challenge_adjusted_solved_time']
+df_adjusted.drop(['Challenge_solved_time', 'Challenge_adjusted_solved_time', 'Challenge_link', 'Challenge_topic_macro', 'Solution_topic_macro'], axis=1, inplace=True)
+X = df_adjusted
 config_sweep['name'] = 'XGB Regression (adjusted)'
 sweep_id = wandb.sweep(config_sweep, project=wandb_project)
 wandb.agent(sweep_id, function=_train, count=count)
