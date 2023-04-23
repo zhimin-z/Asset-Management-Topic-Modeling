@@ -32,7 +32,7 @@ config_sweep = {
 }
 
 count = 500
-wandb_project = 'challenge-solved-time-regression-modeling'
+wandb_project = 'challenge-solution-regression-modeling'
 df = pd.read_json(os.path.join('Result', 'Solution', 'solved_imputed.json'))
 wandb.login()
 
