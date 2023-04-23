@@ -1,6 +1,6 @@
 
-wandb*
-Model*
+wandb
+Model
 __pycache__
 .DS_Store
 .venv
