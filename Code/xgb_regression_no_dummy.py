@@ -50,7 +50,7 @@ df_original = df[df['Challenge_solved_time'].notna()]
 y = df_original['Challenge_solved_time']
 df_original.drop(['Challenge_solved_time', 'Challenge_adjusted_solved_time', 'Challenge_link', 'Challenge_topic_macro', 'Solution_topic_macro', 'Tool', 'Platform'], axis=1, inplace=True)
 X = df_original
-config_sweep['name'] = 'XGB Regression (original)'
+config_sweep['name'] = 'XGB Regression (non-dummy) (original)'
 sweep_id = wandb.sweep(config_sweep, project=wandb_project)
 wandb.agent(sweep_id, function=_train, count=count)
 
@@ -58,6 +58,6 @@ df_adjusted = df[df['Challenge_adjusted_solved_time'].notna()]
 y = df_adjusted['Challenge_adjusted_solved_time']
 df_adjusted.drop(['Challenge_solved_time', 'Challenge_adjusted_solved_time', 'Challenge_link', 'Challenge_topic_macro', 'Solution_topic_macro', 'Tool', 'Platform'], axis=1, inplace=True)
 X = df_adjusted
-config_sweep['name'] = 'XGB Regression (adjusted)'
+config_sweep['name'] = 'XGB Regression (non-dummy) (adjusted)'
 sweep_id = wandb.sweep(config_sweep, project=wandb_project)
 wandb.agent(sweep_id, function=_train, count=count)
