@@ -11,7 +11,7 @@ os.environ["WANDB__SERVICE_WAIT"] = "100"
 
 config_defaults = {
     'objective': 'reg:squaredlogerror',
-    'max_depth': 10,
+    'max_depth': 5,
     'cv': 10,
 }
 
@@ -26,14 +26,14 @@ config_sweep = {
             'values': list(range(500, 1001, 10))
         },
         'eta': {
-            'min': 0.0001, 'max': 0.3
+            'min': 0.01, 'max': 0.3
         },
     },
 }
 
 count = 500
 wandb_project = 'challenge-solved-time-regression-modeling'
-df = pd.read_json(os.path.join('Result', 'Solution', 'solved_dummy.json'))
+df = pd.read_json(os.path.join('Result', 'Solution', 'solved_imputed.json'))
 wandb.login()
 
 
@@ -48,7 +48,7 @@ def _train():
 
 df_original = df[df['Challenge_solved_time'].notna()]
 y = df_original['Challenge_solved_time']
-df_original.drop(['Challenge_solved_time', 'Challenge_adjusted_solved_time', 'Challenge_link', 'Challenge_topic_macro', 'Solution_topic_macro'], axis=1, inplace=True)
+df_original.drop(['Challenge_solved_time', 'Challenge_adjusted_solved_time', 'Challenge_link', 'Challenge_topic_macro', 'Solution_topic_macro', 'Tool', 'Platform'], axis=1, inplace=True)
 X = df_original
 config_sweep['name'] = 'XGB Regression (original)'
 sweep_id = wandb.sweep(config_sweep, project=wandb_project)
@@ -56,7 +56,7 @@ wandb.agent(sweep_id, function=_train, count=count)
 
 df_adjusted = df[df['Challenge_adjusted_solved_time'].notna()]
 y = df_adjusted['Challenge_adjusted_solved_time']
-df_adjusted.drop(['Challenge_solved_time', 'Challenge_adjusted_solved_time', 'Challenge_link', 'Challenge_topic_macro', 'Solution_topic_macro'], axis=1, inplace=True)
+df_adjusted.drop(['Challenge_solved_time', 'Challenge_adjusted_solved_time', 'Challenge_link', 'Challenge_topic_macro', 'Solution_topic_macro', 'Tool', 'Platform'], axis=1, inplace=True)
 X = df_adjusted
 config_sweep['name'] = 'XGB Regression (adjusted)'
 sweep_id = wandb.sweep(config_sweep, project=wandb_project)
