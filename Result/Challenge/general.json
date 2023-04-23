@@ -25,8 +25,8 @@
         "Solution mean comment count":1.2790697674,
         "Challenge mean solved time":318.4791367801,
         "Challenge median solved time":43.2314219444,
-        "Challenge adjusted mean solved time":675.2690565675,
-        "Challenge adjusted median solved time":51.6386430556
+        "Challenge mean adjusted solved time":675.2690565675,
+        "Challenge median adjusted solved time":51.6386430556
     },
     {
         "Challenge topic":"Account Management",
@@ -54,8 +54,8 @@
         "Solution mean comment count":0.2173913043,
         "Challenge mean solved time":348.2212595238,
         "Challenge median solved time":10.5597398611,
-        "Challenge adjusted mean solved time":919.6264149849,
-        "Challenge adjusted median solved time":10.6524075
+        "Challenge mean adjusted solved time":919.6264149849,
+        "Challenge median adjusted solved time":10.6524075
     },
     {
         "Challenge topic":"Apache Spark Configuration",
@@ -83,8 +83,8 @@
         "Solution mean comment count":0.6296296296,
         "Challenge mean solved time":204.351978006,
         "Challenge median solved time":21.0620356945,
-        "Challenge adjusted mean solved time":432.7620739131,
-        "Challenge adjusted median solved time":45.7170236111
+        "Challenge mean adjusted solved time":432.7620739131,
+        "Challenge median adjusted solved time":45.7170236111
     },
     {
         "Challenge topic":"Artifact Management",
@@ -112,8 +112,8 @@
         "Solution mean comment count":1.2608695652,
         "Challenge mean solved time":462.0911602431,
         "Challenge median solved time":47.2822068055,
-        "Challenge adjusted mean solved time":638.6921316155,
-        "Challenge adjusted median solved time":61.7204166667
+        "Challenge mean adjusted solved time":638.6921316155,
+        "Challenge median adjusted solved time":61.7204166667
     },
     {
         "Challenge topic":"Batch Processing",
@@ -139,10 +139,10 @@
         "Solution mean word count":182.7755102041,
         "Solution mean unique word count":85.6530612245,
         "Solution mean comment count":1.5405405405,
-        "Challenge mean solved time":171.8060214835,
-        "Challenge median solved time":10.7241647222,
-        "Challenge adjusted mean solved time":188.7003332977,
-        "Challenge adjusted median solved time":9.3011111111
+        "Challenge mean solved time":175.540934994,
+        "Challenge median solved time":14.4302768056,
+        "Challenge mean adjusted solved time":193.6661315424,
+        "Challenge median adjusted solved time":9.3496458333
     },
     {
         "Challenge topic":"Bucket Access Control",
@@ -168,10 +168,10 @@
         "Solution mean word count":211.8,
         "Solution mean unique word count":94.0666666667,
         "Solution mean comment count":1.5217391304,
-        "Challenge mean solved time":777.0313674074,
-        "Challenge median solved time":11.5363191667,
-        "Challenge adjusted mean solved time":946.9884265657,
-        "Challenge adjusted median solved time":15.3260173611
+        "Challenge mean solved time":806.9171892308,
+        "Challenge median solved time":11.8583429167,
+        "Challenge mean adjusted solved time":992.083113545,
+        "Challenge median adjusted solved time":18.4716680556
     },
     {
         "Challenge topic":"CSV Manipulation",
@@ -199,8 +199,8 @@
         "Solution mean comment count":0.652173913,
         "Challenge mean solved time":149.3555739526,
         "Challenge median solved time":8.2344395833,
-        "Challenge adjusted mean solved time":261.9318633592,
-        "Challenge adjusted median solved time":20.3776283333
+        "Challenge mean adjusted solved time":261.9318633592,
+        "Challenge median adjusted solved time":20.3776283333
     },
     {
         "Challenge topic":"CloudWatch Monitoring",
@@ -228,8 +228,8 @@
         "Solution mean comment count":0.5263157895,
         "Challenge mean solved time":390.4885579514,
         "Challenge median solved time":28.38799125,
-        "Challenge adjusted mean solved time":315.5146511945,
-        "Challenge adjusted median solved time":18.6047469445
+        "Challenge mean adjusted solved time":315.5146511945,
+        "Challenge median adjusted solved time":18.6047469445
     },
     {
         "Challenge topic":"Code Versioning",
@@ -257,8 +257,8 @@
         "Solution mean comment count":1.5744680851,
         "Challenge mean solved time":275.093547829,
         "Challenge median solved time":14.2775602778,
-        "Challenge adjusted mean solved time":272.603363578,
-        "Challenge adjusted median solved time":22.5241808334
+        "Challenge mean adjusted solved time":272.603363578,
+        "Challenge median adjusted solved time":22.5241808334
     },
     {
         "Challenge topic":"Columnar Manipulation",
@@ -286,8 +286,8 @@
         "Solution mean comment count":0.6515151515,
         "Challenge mean solved time":183.581591996,
         "Challenge median solved time":34.4623770834,
-        "Challenge adjusted mean solved time":474.2258521528,
-        "Challenge adjusted median solved time":48.6172336111
+        "Challenge mean adjusted solved time":474.2258521528,
+        "Challenge median adjusted solved time":48.6172336111
     },
     {
         "Challenge topic":"Data Labeling",
@@ -315,8 +315,8 @@
         "Solution mean comment count":0.5185185185,
         "Challenge mean solved time":395.109798468,
         "Challenge median solved time":29.4160616667,
-        "Challenge adjusted mean solved time":527.299937934,
-        "Challenge adjusted median solved time":39.7255030556
+        "Challenge mean adjusted solved time":527.299937934,
+        "Challenge median adjusted solved time":39.7255030556
     },
     {
         "Challenge topic":"Data Storage",
@@ -344,8 +344,8 @@
         "Solution mean comment count":0.6944444444,
         "Challenge mean solved time":250.7803356336,
         "Challenge median solved time":18.6708936111,
-        "Challenge adjusted mean solved time":487.927891189,
-        "Challenge adjusted median solved time":30.7663788889
+        "Challenge mean adjusted solved time":487.927891189,
+        "Challenge median adjusted solved time":30.7663788889
     },
     {
         "Challenge topic":"Data Visualization",
@@ -373,8 +373,8 @@
         "Solution mean comment count":0.3888888889,
         "Challenge mean solved time":343.6820224174,
         "Challenge median solved time":39.6050433333,
-        "Challenge adjusted mean solved time":361.7164916826,
-        "Challenge adjusted median solved time":46.4306352778
+        "Challenge mean adjusted solved time":361.7164916826,
+        "Challenge median adjusted solved time":46.4306352778
     },
     {
         "Challenge topic":"Database Connectivity",
@@ -402,8 +402,8 @@
         "Solution mean comment count":0.4666666667,
         "Challenge mean solved time":450.1252266219,
         "Challenge median solved time":24.9500647222,
-        "Challenge adjusted mean solved time":533.8138128889,
-        "Challenge adjusted median solved time":21.4211194444
+        "Challenge mean adjusted solved time":533.8138128889,
+        "Challenge median adjusted solved time":21.4211194444
     },
     {
         "Challenge topic":"Dataset Versioning",
@@ -431,8 +431,8 @@
         "Solution mean comment count":1.0625,
         "Challenge mean solved time":199.7369593939,
         "Challenge median solved time":8.4690644444,
-        "Challenge adjusted mean solved time":212.6420461243,
-        "Challenge adjusted median solved time":10.1961591667
+        "Challenge mean adjusted solved time":212.6420461243,
+        "Challenge median adjusted solved time":10.1961591667
     },
     {
         "Challenge topic":"Docker Configuration",
@@ -460,8 +460,8 @@
         "Solution mean comment count":0.8295454545,
         "Challenge mean solved time":642.0360772794,
         "Challenge median solved time":45.1005747223,
-        "Challenge adjusted mean solved time":1228.1412885684,
-        "Challenge adjusted median solved time":46.5198344444
+        "Challenge mean adjusted solved time":1228.1412885684,
+        "Challenge median adjusted solved time":46.5198344444
     },
     {
         "Challenge topic":"Endpoint Deployment",
@@ -489,8 +489,8 @@
         "Solution mean comment count":1.0,
         "Challenge mean solved time":369.3205178813,
         "Challenge median solved time":19.931705,
-        "Challenge adjusted mean solved time":758.4896283642,
-        "Challenge adjusted median solved time":18.7375
+        "Challenge mean adjusted solved time":758.4896283642,
+        "Challenge median adjusted solved time":18.7375
     },
     {
         "Challenge topic":"GPU Configuration",
@@ -518,8 +518,8 @@
         "Solution mean comment count":0.5789473684,
         "Challenge mean solved time":578.4063895455,
         "Challenge median solved time":58.57324625,
-        "Challenge adjusted mean solved time":644.9597706284,
-        "Challenge adjusted median solved time":62.4823258333
+        "Challenge mean adjusted solved time":644.9597706284,
+        "Challenge median adjusted solved time":62.4823258333
     },
     {
         "Challenge topic":"Hyperparameter Tuning",
@@ -545,10 +545,10 @@
         "Solution mean word count":184.7523809524,
         "Solution mean unique word count":85.3047619048,
         "Solution mean comment count":0.7808219178,
-        "Challenge mean solved time":271.3835105556,
-        "Challenge median solved time":36.2363944444,
-        "Challenge adjusted mean solved time":648.9467791765,
-        "Challenge adjusted median solved time":41.5038786111
+        "Challenge mean solved time":274.2104221239,
+        "Challenge median solved time":37.6276147222,
+        "Challenge mean adjusted solved time":648.9467791765,
+        "Challenge median adjusted solved time":41.5038786111
     },
     {
         "Challenge topic":"Jupyter Notebook",
@@ -576,8 +576,8 @@
         "Solution mean comment count":0.8387096774,
         "Challenge mean solved time":426.9507221253,
         "Challenge median solved time":13.7880555556,
-        "Challenge adjusted mean solved time":856.1011264715,
-        "Challenge adjusted median solved time":39.2766536111
+        "Challenge mean adjusted solved time":856.1011264715,
+        "Challenge median adjusted solved time":39.2766536111
     },
     {
         "Challenge topic":"Kubernetes Orchestration",
@@ -605,8 +605,8 @@
         "Solution mean comment count":1.0,
         "Challenge mean solved time":389.3961056838,
         "Challenge median solved time":27.1444840277,
-        "Challenge adjusted mean solved time":1220.6725725579,
-        "Challenge adjusted median solved time":41.8662709722
+        "Challenge mean adjusted solved time":1220.6725725579,
+        "Challenge median adjusted solved time":41.8662709722
     },
     {
         "Challenge topic":"Metrics Logging",
@@ -634,8 +634,8 @@
         "Solution mean comment count":0.6785714286,
         "Challenge mean solved time":486.1651588013,
         "Challenge median solved time":42.7521244445,
-        "Challenge adjusted mean solved time":605.2276129372,
-        "Challenge adjusted median solved time":47.8624777778
+        "Challenge mean adjusted solved time":605.2276129372,
+        "Challenge median adjusted solved time":47.8624777778
     },
     {
         "Challenge topic":"Model Evaluation",
@@ -663,8 +663,8 @@
         "Solution mean comment count":0.6233766234,
         "Challenge mean solved time":353.1045914826,
         "Challenge median solved time":19.77049,
-        "Challenge adjusted mean solved time":756.6804009911,
-        "Challenge adjusted median solved time":28.5368802778
+        "Challenge mean adjusted solved time":756.6804009911,
+        "Challenge median adjusted solved time":28.5368802778
     },
     {
         "Challenge topic":"Model Exporting",
@@ -690,10 +690,10 @@
         "Solution mean word count":225.5789473684,
         "Solution mean unique word count":95.4526315789,
         "Solution mean comment count":0.8875,
-        "Challenge mean solved time":228.9299410155,
-        "Challenge median solved time":25.8557936111,
-        "Challenge adjusted mean solved time":785.887091774,
-        "Challenge adjusted median solved time":29.2126773611
+        "Challenge mean solved time":231.4183099396,
+        "Challenge median solved time":26.3764523611,
+        "Challenge mean adjusted solved time":794.9202767369,
+        "Challenge median adjusted solved time":30.2268313889
     },
     {
         "Challenge topic":"Model Inference",
@@ -721,8 +721,8 @@
         "Solution mean comment count":1.5636363636,
         "Challenge mean solved time":127.764613386,
         "Challenge median solved time":31.8721805556,
-        "Challenge adjusted mean solved time":328.3938047327,
-        "Challenge adjusted median solved time":36.3344202778
+        "Challenge mean adjusted solved time":328.3938047327,
+        "Challenge median adjusted solved time":36.3344202778
     },
     {
         "Challenge topic":"Model Registry",
@@ -748,10 +748,10 @@
         "Solution mean word count":195.08,
         "Solution mean unique word count":83.92,
         "Solution mean comment count":1.2647058824,
-        "Challenge mean solved time":351.9679595309,
-        "Challenge median solved time":39.9339302778,
-        "Challenge adjusted mean solved time":587.9061066875,
-        "Challenge adjusted median solved time":46.6951518055
+        "Challenge mean solved time":359.9672313384,
+        "Challenge median solved time":40.0520331945,
+        "Challenge mean adjusted solved time":602.9806222436,
+        "Challenge median adjusted solved time":52.535
     },
     {
         "Challenge topic":"Model Serving",
@@ -779,8 +779,8 @@
         "Solution mean comment count":0.803030303,
         "Challenge mean solved time":511.0303580213,
         "Challenge median solved time":41.2473602778,
-        "Challenge adjusted mean solved time":726.9389262393,
-        "Challenge adjusted median solved time":56.8854483334
+        "Challenge mean adjusted solved time":726.9389262393,
+        "Challenge median adjusted solved time":56.8854483334
     },
     {
         "Challenge topic":"Package Management",
@@ -808,8 +808,8 @@
         "Solution mean comment count":0.9800995025,
         "Challenge mean solved time":586.5198449292,
         "Challenge median solved time":25.1853491667,
-        "Challenge adjusted mean solved time":1221.2581137959,
-        "Challenge adjusted median solved time":32.21595
+        "Challenge mean adjusted solved time":1221.2581137959,
+        "Challenge median adjusted solved time":32.21595
     },
     {
         "Challenge topic":"Pandas Dataframe",
@@ -837,8 +837,8 @@
         "Solution mean comment count":0.84,
         "Challenge mean solved time":146.1042958382,
         "Challenge median solved time":17.6541272222,
-        "Challenge adjusted mean solved time":735.8962256974,
-        "Challenge adjusted median solved time":20.2441541667
+        "Challenge mean adjusted solved time":735.8962256974,
+        "Challenge median adjusted solved time":20.2441541667
     },
     {
         "Challenge topic":"Pipeline Configuration",
@@ -864,10 +864,10 @@
         "Solution mean word count":322.544600939,
         "Solution mean unique word count":120.103286385,
         "Solution mean comment count":0.8740740741,
-        "Challenge mean solved time":293.9108446995,
-        "Challenge median solved time":23.4367558333,
-        "Challenge adjusted mean solved time":432.2524413817,
-        "Challenge adjusted median solved time":31.9663961111
+        "Challenge mean solved time":295.6397320213,
+        "Challenge median solved time":25.3368313889,
+        "Challenge mean adjusted solved time":435.0592754167,
+        "Challenge median adjusted solved time":33.2585388889
     },
     {
         "Challenge topic":"Resource Quota Control",
@@ -895,8 +895,8 @@
         "Solution mean comment count":0.6944444444,
         "Challenge mean solved time":211.2731726957,
         "Challenge median solved time":12.1208140278,
-        "Challenge adjusted mean solved time":217.9931369703,
-        "Challenge adjusted median solved time":11.6196091666
+        "Challenge mean adjusted solved time":217.9931369703,
+        "Challenge median adjusted solved time":11.6196091666
     },
     {
         "Challenge topic":"Role-based Access Control",
@@ -922,10 +922,10 @@
         "Solution mean word count":179.8837209302,
         "Solution mean unique word count":77.976744186,
         "Solution mean comment count":0.9677419355,
-        "Challenge mean solved time":101.3407338492,
-        "Challenge median solved time":24.8024372222,
-        "Challenge adjusted mean solved time":848.8612697673,
-        "Challenge adjusted median solved time":29.6355555556
+        "Challenge mean solved time":103.8124590651,
+        "Challenge median solved time":26.0827755556,
+        "Challenge mean adjusted solved time":872.440749483,
+        "Challenge median adjusted solved time":35.0594444445
     },
     {
         "Challenge topic":"Run Management",
@@ -953,8 +953,8 @@
         "Solution mean comment count":0.7857142857,
         "Challenge mean solved time":275.2147959599,
         "Challenge median solved time":24.1527777778,
-        "Challenge adjusted mean solved time":492.1560878691,
-        "Challenge adjusted median solved time":33.3393108333
+        "Challenge mean adjusted solved time":492.1560878691,
+        "Challenge median adjusted solved time":33.3393108333
     },
     {
         "Challenge topic":"TensorBoard Logging",
@@ -982,8 +982,8 @@
         "Solution mean comment count":1.0,
         "Challenge mean solved time":713.5081654,
         "Challenge median solved time":65.4279266667,
-        "Challenge adjusted mean solved time":733.9013783796,
-        "Challenge adjusted median solved time":60.3869677778
+        "Challenge mean adjusted solved time":733.9013783796,
+        "Challenge median adjusted solved time":60.3869677778
     },
     {
         "Challenge topic":"TensorFlow Configuration",
@@ -1011,8 +1011,8 @@
         "Solution mean comment count":0.6181818182,
         "Challenge mean solved time":582.4283534763,
         "Challenge median solved time":91.9724823611,
-        "Challenge adjusted mean solved time":748.2301382265,
-        "Challenge adjusted median solved time":93.1594822222
+        "Challenge mean adjusted solved time":748.2301382265,
+        "Challenge median adjusted solved time":93.1594822222
     },
     {
         "Challenge topic":"Web Service",
@@ -1038,10 +1038,10 @@
         "Solution mean word count":145.4943820225,
         "Solution mean unique word count":74.8202247191,
         "Solution mean comment count":0.7763157895,
-        "Challenge mean solved time":276.6939892704,
-        "Challenge median solved time":18.2166666667,
-        "Challenge adjusted mean solved time":185.6700294974,
-        "Challenge adjusted median solved time":21.3031752778
+        "Challenge mean solved time":280.0683062128,
+        "Challenge median solved time":18.6245238889,
+        "Challenge mean adjusted solved time":185.6700294974,
+        "Challenge median adjusted solved time":21.3031752778
     },
     {
         "Challenge topic":"YAML Configuration",
@@ -1069,7 +1069,7 @@
         "Solution mean comment count":1.1428571429,
         "Challenge mean solved time":254.4762858333,
         "Challenge median solved time":23.3032630556,
-        "Challenge adjusted mean solved time":274.7559605111,
-        "Challenge adjusted median solved time":24.7979425
+        "Challenge mean adjusted solved time":274.7559605111,
+        "Challenge median adjusted solved time":24.7979425
     }
 ]
