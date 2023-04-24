@@ -37,34 +37,37 @@ wandb_project = 'challenge-solved-time-regression-modeling'
 
 
 class XGBRegression:
-    def __init__(self, adjusted, dummy):
+    def __init__(self, dummy, adjusted):
+        gpu_id = 0
         if dummy:
             df = pd.read_json(os.path.join(
                 'Result', 'Solution', 'solved_dummy.json'))
+            gpu_id += 1
         else:
             df = pd.read_json(os.path.join(
                 'Result', 'Solution', 'solved_imputed.json'))
         if adjusted:
             df = df[df['Challenge_adjusted_solved_time'].notna()]
             self.y = df['Challenge_adjusted_solved_time']
+            gpu_id += 2
         else:
             df = df[df['Challenge_solved_time'].notna()]
             self.y = df['Challenge_solved_time']
-
+        
+        config_defaults['gpu_id'] = gpu_id
         self.X = df.drop(['Challenge_solved_time', 'Challenge_adjusted_solved_time',
                          'Challenge_link', 'Challenge_topic_macro', 'Solution_topic_macro'], axis=1)
         config_sweep['name'] = f'XGB Regression: dummy: {dummy}, adjusted: {adjusted}'
-        self.sweep_defaults = config_sweep
 
     def __train(self):
         with wandb.init() as run:
             run.config.setdefaults(config_defaults)
-            regressor = xgb.XGBRegressor(tree_method=run.config.tree_method, objective=run.config.objective,
+            regressor = xgb.XGBRegressor(tree_method=run.config.tree_method, objective=run.config.objective, gpu_id=run.config.gpu_id,
                                          max_depth=run.config.max_depth, n_estimators=wandb.config.n_estimators, eta=wandb.config.eta)
             scores = cross_val_score(regressor, self.X, self.y, cv=run.config.cv)
             wandb.log({'RMSLE': scores.mean()})
 
     def sweep(self):
         wandb.login()
-        sweep_id = wandb.sweep(self.sweep_defaults, project=wandb_project)
+        sweep_id = wandb.sweep(config_sweep, project=wandb_project)
         wandb.agent(sweep_id, function=self.__train, count=count)
