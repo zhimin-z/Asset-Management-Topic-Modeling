@@ -50,7 +50,7 @@ class XGBRegression:
             config_sweep['name'] = f'XGB Regression: original'
             config_defaults['gpu_id'] = 1
         
-        self.X = df.drop(['Challenge_solved_time', 'Challenge_adjusted_solved_time', 'Challenge_link', 'Challenge_topic_macro', 'Solution_topic_macro', 'Tool', 'Platform'], axis=1)
+        self.X = df.drop(['Challenge_solved_time', 'Challenge_adjusted_solved_time', 'Challenge_topic_macro', 'Solution_topic_macro', 'Tool', 'Platform'], axis=1)
 
     def __train(self):
         with wandb.init() as run:
