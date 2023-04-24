@@ -46,6 +46,7 @@ class XGBRegression:
         else:
             df = pd.read_json(os.path.join(
                 'Result', 'Solution', 'solved_imputed.json'))
+            df = df.drop(['Tool', 'Platform'], axis=1)
         if adjusted:
             df = df[df['Challenge_adjusted_solved_time'].notna()]
             self.y = df['Challenge_adjusted_solved_time']
