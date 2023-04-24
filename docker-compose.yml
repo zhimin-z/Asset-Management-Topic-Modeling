@@ -5,14 +5,14 @@ services:
     image: experiment
     volumes:
       - .:/app
-    command: python Code/experiment_1.py
+    command: python Code/tm_1.py
     restart: on-failure
     deploy:
       resources:
         reservations:
           devices:
             - driver: nvidia
-              device_ids: ["1", "7"]
+              device_ids: ["1"]
               capabilities: [gpu]
     build:
       context: .
@@ -21,7 +21,7 @@ services:
     image: experiment
     volumes:
       - .:/app
-    command: python Code/experiment_2.py
+    command: python Code/tm_2.py
     restart: on-failure
     deploy:
       resources:
@@ -34,7 +34,7 @@ services:
     image: experiment
     volumes:
       - .:/app
-    command: python Code/experiment_3.py
+    command: python Code/tm_3.py
     restart: on-failure
     deploy:
       resources:
@@ -47,7 +47,7 @@ services:
     image: experiment
     volumes:
       - .:/app
-    command: python Code/experiment_4.py
+    command: python Code/tm_4.py
     restart: on-failure
     deploy:
       resources:
@@ -60,7 +60,7 @@ services:
     image: experiment
     volumes:
       - .:/app
-    command: python Code/experiment_5.py
+    command: python Code/tm_5.py
     restart: on-failure
     deploy:
       resources:
@@ -73,7 +73,7 @@ services:
     image: experiment
     volumes:
       - .:/app
-    command: python Code/experiment_6.py
+    command: python Code/tm_6.py
     restart: on-failure
     deploy:
       resources:

@@ -20,4 +20,4 @@ WORKDIR /app
 RUN git config --global --add safe.directory /app
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
-CMD ["python", "Code/experiment_1.py"]
+CMD ["python", "Code/main.py"]
