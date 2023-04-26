@@ -46,7 +46,7 @@ config_defaults = {
     'min_samples': 5,
 }
 
-config_challenges = {
+sweep_defaults = {
     "method": "grid",
     "metric": {
         'name': 'Coherence CV',
@@ -65,29 +65,10 @@ config_challenges = {
     },
 }
 
-config_solutions = {
-    "method": "grid",
-    "metric": {
-        'name': 'Coherence CV',
-        'goal': 'maximize'
-    },
-    "parameters": {
-        'min_samples_pct': {
-            'values': [x / 10.0 for x in range(1, 10, 1)]
-        },
-        'ngram_range': {
-            'values': list(range(1, 4))
-        },
-        'min_cluster_size': {
-            'values': list(range(20, 101, 5))
-        },
-    },
-}
-
 
 class TopicModeling:
     def __init__(self, docs_name):
-        self.sweep_defaults = config_challenges if 'Challenge' in docs_name else config_solutions
+        self.sweep_defaults = sweep_defaults
 
         # Initialize an empty list to store top models
         self.top_models = []
