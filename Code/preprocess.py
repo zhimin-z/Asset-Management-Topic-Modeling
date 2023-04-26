@@ -191,40 +191,40 @@ df_all.to_json(os.path.join(path_dataset, 'original.json'),
 
 import plotly.graph_objects as go
 
-df_all = pd.read_json(os.path.join(path_dataset, 'original.json'))
-df_all['State'] = df_all['Challenge_closed_time'].apply(lambda x: 'closed' if not pd.isna(x) else 'open')
+df = pd.read_json(os.path.join(path_dataset, 'original.json'))
+df['State'] = df['Challenge_closed_time'].apply(lambda x: 'closed' if not pd.isna(x) else 'open')
 
 categories = ['Platform', 'Tool', 'State']
 
-df_all = df_all.groupby(categories).size().reset_index(name='value')
-df_all.to_json(os.path.join(path_general, 'Tool platform state info.json'),
+df_info = df.groupby(categories).size().reset_index(name='value')
+df_info.to_json(os.path.join(path_general, 'Tool platform state info.json'),
                indent=4, orient='records')
 
+labels = {}
 newDf = pd.DataFrame()
-for i in range(len(categories)-1):
-    tempDf = df_all[[categories[i], categories[i+1], 'value']]
+for i in range(len(categories)):
+    labels.update(df[categories[i]].value_counts().to_dict())
+    if i == len(categories)-1:
+        break
+    tempDf = df_info[[categories[i], categories[i+1], 'value']]
     tempDf.columns = ['source', 'target', 'value']
     newDf = pd.concat([newDf, tempDf])
+    
 newDf = newDf.groupby(['source', 'target']).agg({'value': 'sum'}).reset_index()
-
-label = list(np.unique(df_all[categories].values))
-source = newDf['source'].apply(lambda x: label.index(x))
-target = newDf['target'].apply(lambda x: label.index(x))
+source = newDf['source'].apply(lambda x: list(labels).index(x))
+target = newDf['target'].apply(lambda x: list(labels).index(x))
 value = newDf['value']
 
+labels = [f'{k} ({v})' for k, v in labels.items()]
+
 link = dict(source=source, target=target, value=value)
-node = dict(label=label)
+node = dict(label=labels)
 data = go.Sankey(link=link, node=node)
 
 fig = go.Figure(data)
 fig.update_layout(width=1000, height=1000, font_size=20)
 fig.write_image(os.path.join(
     path_general, 'Tool platform state sankey.png'))
-
-df_all = pd.read_json(os.path.join(path_general, 'Tool platform state info.json'))
-df_all = df_all.groupby(['Platform', 'State']).agg({'value': 'sum'}).reset_index()
-df_all.to_json(os.path.join(path_general, 'Platform state info.json'),
-               indent=4, orient='records')
 
 # remove custom stop words from challenges and solutions
 
