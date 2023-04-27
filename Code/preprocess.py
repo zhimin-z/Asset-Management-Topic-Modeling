@@ -42,7 +42,7 @@ for index, row in df_issues.iterrows():
     df_issues.at[index, 'Challenge_original_content'] = row['Issue_original_content']
     df_issues.at[index, 'Challenge_preprocessed_content'] = row['Issue_preprocessed_content']
     df_issues.at[index, 'Challenge_gpt_summary'] = row['Issue_gpt_summary']
-    df_issues.at[index, 'Challenge_creation_time'] = row['Issue_creation_time']
+    df_issues.at[index, 'Challenge_created_time'] = row['Issue_creation_time']
     df_issues.at[index, 'Challenge_answer_count'] = row['Issue_answer_count']
     df_issues.at[index, 'Challenge_score'] = row['Issue_upvote_count'] - row['Issue_downvote_count']
     df_issues.at[index, 'Challenge_closed_time'] = row['Issue_closed_time']
@@ -83,7 +83,7 @@ for index, row in df_questions.iterrows():
     df_questions.at[index, 'Challenge_original_content'] = row['Question_original_content']
     df_questions.at[index, 'Challenge_preprocessed_content'] = row['Question_preprocessed_content']
     df_questions.at[index, 'Challenge_gpt_summary'] = row['Question_gpt_summary']
-    df_questions.at[index, 'Challenge_creation_time'] = row['Question_creation_time']
+    df_questions.at[index, 'Challenge_created_time'] = row['Question_creation_time']
     df_questions.at[index, 'Challenge_answer_count'] = row['Question_answer_count']
     df_questions.at[index, 'Challenge_comment_count'] = row['Question_comment_count']
     df_questions.at[index, 'Challenge_score'] = row['Question_score']
@@ -173,7 +173,7 @@ df_all['Challenge_solved_time'] = np.nan
 df_all['Challenge_adjusted_solved_time'] = np.nan
 
 for index, row in df_all.iterrows():
-    creation_time = row['Challenge_creation_time']
+    creation_time = row['Challenge_created_time']
     closed_time = row['Challenge_closed_time']
     if pd.notna(creation_time) and pd.notna(closed_time) and (closed_time > creation_time):
         df_all.at[index, 'Challenge_solved_time'] = (closed_time - creation_time) / pd.Timedelta(hours=1)
