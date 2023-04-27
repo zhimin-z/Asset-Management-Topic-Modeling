@@ -60,7 +60,7 @@ sweep_defaults = {
             'values': list(range(1, 4))
         },
         'min_cluster_size': {
-            'values': list(range(30, 101, 5))
+            'values': list(range(25, 101, 5))
         },
     },
 }
