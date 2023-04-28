@@ -177,11 +177,13 @@ for index, row in df_all.iterrows():
     closed_time = row['Challenge_closed_time']
     if pd.notna(creation_time) and pd.notna(closed_time) and (closed_time > creation_time):
         df_all.at[index, 'Challenge_solved_time'] = (closed_time - creation_time) / pd.Timedelta(hours=1)
-        
-    creation_time = row['Challenge_last_edit_time'] if pd.notna(row['Challenge_last_edit_time']) else creation_time
-    closed_time = row['Solution_last_edit_time'] if pd.notna(row['Solution_last_edit_time']) else closed_time
+    
+    creation_time = row['Challenge_last_edit_time'] if pd.notna(row['Challenge_last_edit_time']) else row['Challenge_created_time']
+    closed_time = row['Solution_last_edit_time'] if pd.notna(row['Solution_last_edit_time']) else row['Challenge_closed_time']
     if pd.notna(creation_time) and pd.notna(closed_time) and (closed_time > creation_time):
         df_all.at[index, 'Challenge_adjusted_solved_time'] = (closed_time - creation_time) / pd.Timedelta(hours=1)
+    else:
+        df_all.at[index, 'Challenge_adjusted_solved_time'] = df_all.at[index, 'Challenge_solved_time']
         
 df_all['Challenge_comment_count'] = df_all['Challenge_comment_count'].fillna(0)
 df_all['Challenge_participation_count'] = df_all['Challenge_answer_count'] + df_all['Challenge_comment_count']
