@@ -1,0 +1,9 @@
+Challenge topic,Challenge solved rate,Challenge median solved time,Challenge mean solved time,Challenge median adjusted solved time,Challenge mean adjusted solved time,Challenge mean link count,Challenge mean information entropy,Challenge mean readability,Challenge mean sentence count,Challenge mean word count,Challenge mean unique word count
+Code Management,23.38,14.28,275.09,14.83,242.12,0.82,5.93,6.72,30.54,283.24,108.18
+Data Management,28.52,20.74,255.64,21.88,423.77,0.89,6.04,8.2,30.57,275.81,112.13
+Deployment Management,31.03,23.7,332.2,24.78,509.25,0.92,6.11,9.59,33.39,315.98,121.65
+Infrastructure Management,31.34,32.12,526.57,34.58,873.92,1.0,6.09,9.38,40.76,339.3,124.87
+Lifecycle Management,30.11,25.24,297.55,28.08,491.35,0.8,6.0,9.41,31.03,289.95,112.28
+Model Management,30.34,25.86,292.27,29.18,652.0,0.84,6.01,9.0,35.83,296.96,113.85
+Report Management,34.03,44.23,505.09,44.23,597.26,1.09,6.07,9.42,32.89,303.96,118.74
+Security Management,28.28,17.14,357.89,17.04,825.33,0.82,5.88,8.75,27.36,225.33,95.69
