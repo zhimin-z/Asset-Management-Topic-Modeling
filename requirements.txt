@@ -4,7 +4,7 @@ kaleido==0.2.1
 matplotlib==3.7.1
 missingno==0.5.2
 nbformat==5.8.0
-openai==0.27.4
+openai==0.27.6
 plotly==5.14.1
 seaborn==0.12.2
 shap==0.41.0
