@@ -35,6 +35,26 @@ for index, row in df_issues.iterrows():
     df_issues.at[index, 'Solution_preprocessed_content'] = row['Answer_preprocessed_content']
     df_issues.at[index, 'Solution_gpt_summary'] = row['Answer_gpt_summary']
 
+del df_issues['Issue_title']
+del df_issues['Issue_body']
+del df_issues['Issue_link']
+del df_issues['Issue_created_time']
+del df_issues['Issue_answer_count']
+del df_issues['Issue_upvote_count']
+del df_issues['Issue_downvote_count']
+del df_issues['Issue_original_content']
+del df_issues['Issue_preprocessed_content']
+del df_issues['Issue_gpt_summary_original']
+del df_issues['Issue_gpt_summary']
+del df_issues['Issue_closed_time']
+
+del df_issues['Answer_body']
+del df_issues['Answer_list']
+del df_issues['Answer_original_content']
+del df_issues['Answer_preprocessed_content']
+del df_issues['Answer_gpt_summary_original']
+del df_issues['Answer_gpt_summary']
+
 df_questions = pd.read_json(os.path.join(path_dataset, 'questions.json'))
 
 for index, row in df_questions.iterrows():
@@ -60,26 +80,6 @@ for index, row in df_questions.iterrows():
     df_questions.at[index, 'Solution_original_content'] = row['Answer_original_content']
     df_questions.at[index, 'Solution_preprocessed_content'] = row['Answer_preprocessed_content']
     df_questions.at[index, 'Solution_gpt_summary'] = row['Answer_gpt_summary']
-
-del df_issues['Issue_title']
-del df_issues['Issue_body']
-del df_issues['Issue_link']
-del df_issues['Issue_created_time']
-del df_issues['Issue_answer_count']
-del df_issues['Issue_upvote_count']
-del df_issues['Issue_downvote_count']
-del df_issues['Issue_original_content']
-del df_issues['Issue_preprocessed_content']
-del df_issues['Issue_gpt_summary_original']
-del df_issues['Issue_gpt_summary']
-del df_issues['Issue_closed_time']
-
-del df_issues['Answer_body']
-del df_issues['Answer_list']
-del df_issues['Answer_original_content']
-del df_issues['Answer_preprocessed_content']
-del df_issues['Answer_gpt_summary_original']
-del df_issues['Answer_gpt_summary']
 
 del df_questions['Question_title']
 del df_questions['Question_body']
