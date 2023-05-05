@@ -107,9 +107,8 @@ del df_questions['Answer_preprocessed_content']
 del df_questions['Answer_gpt_summary_original']
 del df_questions['Answer_gpt_summary']
 
-df_all = pd.concat([df_issues, df_questions], ignore_index=True)
-df_all = df_all.reindex(sorted(df_all.columns), axis=1)
-df_all.to_json(os.path.join(path_dataset, 'original.json'),
+df = pd.concat([df_issues, df_questions], ignore_index=True)
+df.to_json(os.path.join(path_dataset, 'original.json'),
                indent=4, orient='records')
 
 # Draw sankey diagram of tool and platform
@@ -446,45 +445,45 @@ stop_words_custom = [
     'ye',
 ] 
 
-df_all = pd.read_json(os.path.join(path_dataset, 'original.json'))
+df = pd.read_json(os.path.join(path_dataset, 'original.json'))
 
-for index, row in df_all.iterrows():
+for index, row in df.iterrows():
     Challenge_original_content = remove_stopwords(row['Challenge_original_content'], stopwords=stop_words_custom)
     if len(Challenge_original_content.split()) > 4:
-        df_all.at[index, 'Challenge_original_content'] = Challenge_original_content
+        df.at[index, 'Challenge_original_content'] = Challenge_original_content
     else:
-        df_all.at[index, 'Challenge_original_content'] = np.nan
+        df.at[index, 'Challenge_original_content'] = np.nan
         
     Challenge_preprocessed_content = remove_stopwords(row['Challenge_preprocessed_content'], stopwords=stop_words_custom)
     if len(Challenge_preprocessed_content.split()) > 4:
-        df_all.at[index, 'Challenge_preprocessed_content'] = Challenge_preprocessed_content
+        df.at[index, 'Challenge_preprocessed_content'] = Challenge_preprocessed_content
     else:
-        df_all.at[index, 'Challenge_preprocessed_content'] = np.nan
+        df.at[index, 'Challenge_preprocessed_content'] = np.nan
         
     Challenge_gpt_summary = remove_stopwords(row['Challenge_gpt_summary'], stopwords=stop_words_custom)
     if len(Challenge_gpt_summary.split()) > 4:
-        df_all.at[index, 'Challenge_gpt_summary'] = Challenge_gpt_summary
+        df.at[index, 'Challenge_gpt_summary'] = Challenge_gpt_summary
     else:
-        df_all.at[index, 'Challenge_gpt_summary'] = np.nan
+        df.at[index, 'Challenge_gpt_summary'] = np.nan
 
     if pd.notna(row['Solution_gpt_summary']):
         Solution_original_content = remove_stopwords(row['Solution_original_content'], stopwords=stop_words_custom)
         if len(Solution_original_content.split()) > 4:
-            df_all.at[index, 'Solution_original_content'] = Solution_original_content
+            df.at[index, 'Solution_original_content'] = Solution_original_content
         else:
-            df_all.at[index, 'Solution_original_content'] = np.nan
+            df.at[index, 'Solution_original_content'] = np.nan
 
         Solution_preprocessed_content = remove_stopwords(row['Solution_preprocessed_content'], stopwords=stop_words_custom)
         if len(Solution_preprocessed_content.split()) > 4:
-            df_all.at[index, 'Solution_preprocessed_content'] = Solution_preprocessed_content
+            df.at[index, 'Solution_preprocessed_content'] = Solution_preprocessed_content
         else:
-            df_all.at[index, 'Solution_preprocessed_content'] = np.nan
+            df.at[index, 'Solution_preprocessed_content'] = np.nan
             
         Solution_gpt_summary = remove_stopwords(row['Solution_gpt_summary'], stopwords=stop_words_custom)
         if len(Solution_gpt_summary.split()) > 4:
-            df_all.at[index, 'Solution_gpt_summary'] = Solution_gpt_summary
+            df.at[index, 'Solution_gpt_summary'] = Solution_gpt_summary
         else:
-            df_all.at[index, 'Solution_gpt_summary'] = np.nan
+            df.at[index, 'Solution_gpt_summary'] = np.nan
 
-df_all.to_json(os.path.join(path_dataset, 'preprocessed.json'),
+df.to_json(os.path.join(path_dataset, 'preprocessed.json'),
                indent=4, orient='records')
