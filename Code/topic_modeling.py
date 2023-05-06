@@ -65,9 +65,12 @@ class TopicModeling:
         self.path_model = path_model
 
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
-        df_challenge = df[df['Challenge_' + docs_name].notna()]
-        df_solution = df[df['Solution_' + docs_name].notna()]
-        self.docs = df[df_challenge].tolist() + df[df_solution].tolist()
+        challenge = 'Challenge_' + docs_name
+        solution = 'Solution_' + docs_name
+        docs_challenge = df[df[challenge].notna()][challenge].tolist()
+        docs_solution = df[df[solution].notna()][solution].tolist()
+        self.docs = docs_challenge + docs_solution
+        
         config_sweep['name'] = docs_name
         self.sweep_defaults = config_sweep
 
