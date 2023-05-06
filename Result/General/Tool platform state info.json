@@ -140,7 +140,7 @@
     {
         "Platform":"Gitlab",
         "Tool":"Amazon SageMaker",
-        "State":"open",
+        "State":"closed",
         "value":1
     },
     {

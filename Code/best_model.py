@@ -194,5 +194,5 @@ del df['Solution_original_content']
 del df['Solution_preprocessed_content']
 del df['Solution_gpt_summary']
 
-df.to_json(os.path.join(path_general, 'original.json'),
+df.to_json(os.path.join(path_general, 'topics.json'),
            indent=4, orient='records')
