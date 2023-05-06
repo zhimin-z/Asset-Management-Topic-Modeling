@@ -13,16 +13,14 @@ path_dataset = 'Dataset'
 path_general = os.path.join(path_result, 'General')
 path_challenge = os.path.join(path_result, 'Challenge')
 path_solution = os.path.join(path_result, 'Solution')
+path_model = os.path.join(path_general, 'Model')
 
-path_model_challenge = os.path.join(path_challenge, 'Model')
-path_model_solution = os.path.join(path_solution, 'Model')
+model_name = 'gpt_summary_f0193md1'
 
 df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
 
 # output the best topic model on challenges
-
-model_challenge = 'Challenge_gpt_summary_6dss4sq4'
-column_challenge = '_'.join(model_challenge.split('_')[:-1])
+column_challenge = 'Challenge_' + '_'.join(model_name.split('_')[:-1])
 
 df['Challenge_topic'] = -1
 
@@ -34,8 +32,7 @@ for index, row in df.iterrows():
         indice_challenge.append(index)
         docs_challenge.append(row[column_challenge])
 
-topic_model = BERTopic.load(os.path.join(
-    path_model_challenge, model_challenge))
+topic_model = BERTopic.load(os.path.join(path_model, model_name))
 topics, probs = topic_model.transform(docs_challenge)
 
 df_topics = topic_model.get_topic_info()
@@ -100,9 +97,7 @@ for index, row in documents_per_topic.iterrows():
     plt.close()
 
 # output the best topic model on solutions
-
-model_solution = 'Solution_gpt_summary_zvuf1veb'
-column_solution = '_'.join(model_solution.split('_')[:-1])
+column_solution = 'Solution_' + '_'.join(model_name.split('_')[:-1])
 
 df['Solution_topic'] = -1
 
@@ -113,8 +108,7 @@ for index, row in df.iterrows():
     if pd.notna(row[column_solution]):
         indice_solution.append(index)
         docs_solution.append(row[column_solution])
-
-topic_model = BERTopic.load(os.path.join(path_model_solution, model_solution))
+        
 topics, probs = topic_model.transform(docs_solution)
 
 df_topics = topic_model.get_topic_info()
