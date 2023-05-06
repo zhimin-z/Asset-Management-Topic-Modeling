@@ -36,9 +36,10 @@ config_defaults = {
     'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
-    'min_cluster_size': 30,
+    'min_cluster_size': 50,
     'random_state': 42,
     'n_components': 5,
+    'ngram_range': 2
 }
 
 config_sweep = {
@@ -49,10 +50,7 @@ config_sweep = {
     },
     "parameters": {
         'min_samples': {
-            'values': list(range(1, 30))
-        },
-        'ngram_range': {
-            'values': list(range(1, 3))
+            'values': list(range(1, config_defaults['min_cluster_size']))
         },
     },
 }
@@ -92,7 +90,7 @@ class TopicModeling:
                                     min_samples=wandb.config.min_samples, prediction_data=run.config.prediction_data)
 
             # Step 4 - Tokenize topics
-            vectorizer_model = TfidfVectorizer(ngram_range=(1, wandb.config.ngram_range))
+            vectorizer_model = TfidfVectorizer(ngram_range=(1, run.config.ngram_range))
 
             # Step 5 - Create topic representation
             ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
