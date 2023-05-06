@@ -186,8 +186,8 @@ class TopicModeling:
             
             # Inspect the new model only the topic number is above 20 
             if number_topics > 20:
-                # Add the new model to the list if model number is below 10
-                if len(self.top_models) < 10:
+                # Add the new model to the list if model number is below 5
+                if len(self.top_models) < 5:
                     self.top_models.append(model)
                     topic_model.save(model['model_path'])
                 else:
