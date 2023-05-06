@@ -185,29 +185,24 @@ class TopicModeling:
                     'coherence_cv': coherence_cv,
                 }
             }
-
-            # Add the new model to the list if there are less than 5 models
-            if len(self.top_models) < 5:
-                self.top_models.append(model)
-                topic_model.save(model['model_path'])
-            else:
-                # Find the model with the lowest topic number in the list
-                lowest_number_topics_model = min(
-                    self.top_models, key=lambda x: x['model_metrics']['number_topics'])
-                lowest_number_topics = lowest_number_topics_model['model_metrics']['number_topics']
-
-                if number_topics > lowest_number_topics:
-                    # Replace the model with the lowest topic number in the list with the new model
-                    self.top_models.remove(lowest_number_topics_model)
-                    os.remove(lowest_number_topics_model['model_path'])
+            
+            # Inspect the new model only the topic number is above 20 
+            if number_topics > 20:
+                # Add the new model to the list if model number is below 10
+                if len(self.top_models) < 10:
                     self.top_models.append(model)
                     topic_model.save(model['model_path'])
-                elif number_topics == lowest_number_topics and coherence_cv > lowest_number_topics_model['model_metrics']['coherence_cv']:
-                    # Replace the existing model with the new model if they have the same topic number and the new model has a higher coherence value
-                    self.top_models.remove(lowest_number_topics_model)
-                    os.remove(lowest_number_topics_model['model_path'])
-                    self.top_models.append(model)
-                    topic_model.save(model['model_path'])
+                else:
+                    # Find the model with the lowest topic number in the list
+                    lowest_number_topics_model = min(
+                        self.top_models, key=lambda x: x['model_metrics']['number_topics'])
+                    lowest_number_topics = lowest_number_topics_model['model_metrics']['number_topics']
+                    if coherence_cv > lowest_number_topics_model['model_metrics']['coherence_cv']:
+                        # Replace the model with the lowest topic number in the list with the new model
+                        self.top_models.remove(lowest_number_topics_model)
+                        os.remove(lowest_number_topics_model['model_path'])
+                        self.top_models.append(model)
+                        topic_model.save(model['model_path'])
 
     def sweep(self):
         wandb.login()
