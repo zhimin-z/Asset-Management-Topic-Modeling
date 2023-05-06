@@ -50,7 +50,7 @@ config_sweep = {
     },
     "parameters": {
         'min_samples': {
-            'values': list(range(1, config_defaults['min_cluster_size']))
+            'values': list(range(1, config_defaults['min_cluster_size'] + 1))
         },
     },
 }
