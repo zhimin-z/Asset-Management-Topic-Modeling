@@ -12,6 +12,7 @@ import pandas as pd
 import wandb
 import os
 
+count = 300
 wandb_project = 'asset-management-topic-modeling'
 
 path_result = 'Result'
@@ -41,45 +42,24 @@ config_defaults = {
     'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
+    'min_cluster_size': 30,
     'random_state': 42,
     'n_components': 5,
-    'min_samples': 5,
+    'min_samples': 1,
 }
 
-config_challenges = {
-    "method": "grid",
+config_sweep = {
+    "method": "bayes",
     "metric": {
         'name': 'Coherence CV',
         'goal': 'maximize'
     },
     "parameters": {
         'min_samples_pct': {
-            'values': [x / 10.0 for x in range(1, 10, 1)]
+            'min': 0.03, 'max': 1
         },
         'ngram_range': {
-            'values': list(range(1, 4))
-        },
-        'min_cluster_size': {
-            'values': list(range(30, 101, 5))
-        },
-    },
-}
-
-config_solutions = {
-    "method": "grid",
-    "metric": {
-        'name': 'Coherence CV',
-        'goal': 'maximize'
-    },
-    "parameters": {
-        'min_samples_pct': {
-            'values': [x / 10.0 for x in range(1, 10, 1)]
-        },
-        'ngram_range': {
-            'values': list(range(1, 4))
-        },
-        'min_cluster_size': {
-            'values': list(range(20, 101, 5))
+            'values': list(range(1, 3))
         },
     },
 }
@@ -87,8 +67,6 @@ config_solutions = {
 
 class TopicModeling:
     def __init__(self, docs_name):
-        self.sweep_defaults = config_challenges if 'Challenge' in docs_name else config_solutions
-
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_challenge_model if 'Challenge' in docs_name else path_solution_model
@@ -96,7 +74,8 @@ class TopicModeling:
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
         df = df[df[docs_name].notna()]
         self.docs = df[docs_name].tolist()
-        self.sweep_defaults['name'] = docs_name
+        config_sweep['name'] = docs_name
+        self.sweep_defaults = config_sweep
 
     def __train(self):
         # Initialize a new wandb run
@@ -112,10 +91,10 @@ class TopicModeling:
                               random_state=run.config.random_state, low_memory=run.config.low_memory)
 
             # Step 3 - Cluster reduced embeddings
-            samples = int(wandb.config.min_cluster_size *
+            samples = int(run.config.min_cluster_size *
                           wandb.config.min_samples_pct)
             samples = samples if samples > run.config.min_samples else run.config.min_samples
-            hdbscan_model = HDBSCAN(min_cluster_size=wandb.config.min_cluster_size,
+            hdbscan_model = HDBSCAN(min_cluster_size=run.config.min_cluster_size,
                                     min_samples=samples, prediction_data=run.config.prediction_data)
 
             # Step 4 - Tokenize topics
@@ -241,4 +220,4 @@ class TopicModeling:
     def sweep(self):
         wandb.login()
         sweep_id = wandb.sweep(self.sweep_defaults, project=wandb_project)
-        wandb.agent(sweep_id, function=self.__train)
+        wandb.agent(sweep_id, function=self.__train, count=count)
