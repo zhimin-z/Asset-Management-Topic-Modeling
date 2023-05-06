@@ -15,16 +15,11 @@ import os
 path_result = 'Result'
 path_dataset = 'Dataset'
 
-path_challenge = os.path.join(path_result, 'Challenge')
-path_solution = os.path.join(path_result, 'Solution')
+path_general = os.path.join(path_result, 'General')
 
-path_challenge_model = os.path.join(path_challenge, 'Model')
-if not os.path.exists(path_challenge_model):
-    os.makedirs(path_challenge_model)
-
-path_solution_model = os.path.join(path_solution, 'Model')
-if not os.path.exists(path_solution_model):
-    os.makedirs(path_solution_model)
+path_model = os.path.join(path_general, 'Model')
+if not os.path.exists(path_model):
+    os.makedirs(path_model)
 
 wandb_project = 'asset-management-topic-modeling'
 
@@ -67,11 +62,12 @@ class TopicModeling:
     def __init__(self, docs_name):
         # Initialize an empty list to store top models
         self.top_models = []
-        self.path_model = path_challenge_model if 'Challenge' in docs_name else path_solution_model
+        self.path_model = path_model
 
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
-        df = df[df[docs_name].notna()]
-        self.docs = df[docs_name].tolist()
+        df_challenge = df[df['Challenge_' + docs_name].notna()]
+        df_solution = df[df['Solution_' + docs_name].notna()]
+        self.docs = df[df_challenge].tolist() + df[df_solution].tolist()
         config_sweep['name'] = docs_name
         self.sweep_defaults = config_sweep
 
