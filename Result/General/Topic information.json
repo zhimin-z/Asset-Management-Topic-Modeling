@@ -1,0 +1,147 @@
+[
+    {
+        "Topic":-1,
+        "Count":5615,
+        "Name":"-1_train model_dataset_train job_csv"
+    },
+    {
+        "Topic":0,
+        "Count":1031,
+        "Name":"0_conda instal_instal conda_notebook instal_instal pip"
+    },
+    {
+        "Topic":1,
+        "Count":531,
+        "Name":"1_log metric_metric log_plot log_log plot"
+    },
+    {
+        "Topic":2,
+        "Count":502,
+        "Name":"2_model pipelin_pipelin process_trigger pipelin_task pipelin"
+    },
+    {
+        "Topic":3,
+        "Count":377,
+        "Name":"3_dockerfil train_docker file_dockerfil_docker imag"
+    },
+    {
+        "Topic":4,
+        "Count":377,
+        "Name":"4_role permiss_iam role_role access_execut role"
+    },
+    {
+        "Topic":5,
+        "Count":329,
+        "Name":"5_sweep configur_configur sweep_sweep hyperparamet_sweep config"
+    },
+    {
+        "Topic":6,
+        "Count":286,
+        "Name":"6_save tensorflow_tensorflow model_model tensorflow_deploi tensorflow"
+    },
+    {
+        "Topic":7,
+        "Count":256,
+        "Name":"7_json payload_payload endpoint_payload format_invok endpoint"
+    },
+    {
+        "Topic":8,
+        "Count":244,
+        "Name":"8_model deploy_deploy model_endpoint model_multimodel endpoint"
+    },
+    {
+        "Topic":9,
+        "Count":211,
+        "Name":"9_gpu tensorflow_tensorflow gpu_gpu train_train gpu"
+    },
+    {
+        "Topic":10,
+        "Count":189,
+        "Name":"10_automl forecast_forecast automl_autopilot forecast_data forecast"
+    },
+    {
+        "Topic":11,
+        "Count":168,
+        "Name":"11_artifact log_artifact api_run artifact_artifact store"
+    },
+    {
+        "Topic":12,
+        "Count":138,
+        "Name":"12_autom label_auto label_automat label_dataset label"
+    },
+    {
+        "Topic":13,
+        "Count":137,
+        "Name":"13_file dataset_folder dataset_data directori_data file"
+    },
+    {
+        "Topic":14,
+        "Count":134,
+        "Name":"14_spark pyspark_sparkmag pyspark_spark scala_scala spark"
+    },
+    {
+        "Topic":15,
+        "Count":114,
+        "Name":"15_improv text_improv document_text announc_updat text"
+    },
+    {
+        "Topic":16,
+        "Count":114,
+        "Name":"16_remot configur_execut remot_configur remot_run remot"
+    },
+    {
+        "Topic":17,
+        "Count":82,
+        "Name":"17_import tensorboard_import tensorboardoutputconfig_import tensorflow_run tensorboard"
+    },
+    {
+        "Topic":18,
+        "Count":80,
+        "Name":"18_vision api_cloud vision_vision vision_object detect"
+    },
+    {
+        "Topic":19,
+        "Count":79,
+        "Name":"19_file git_git folder_file gitignor_run git"
+    },
+    {
+        "Topic":20,
+        "Count":79,
+        "Name":"20_endpoint usag_servic limit_sub resourc_level servic"
+    },
+    {
+        "Topic":21,
+        "Count":71,
+        "Name":"21_dataset modul_column dataset_data modul_column categor"
+    },
+    {
+        "Topic":22,
+        "Count":70,
+        "Name":"22_datafram panda_panda datafram_tabulardataset panda_datafram dataset"
+    },
+    {
+        "Topic":23,
+        "Count":63,
+        "Name":"23_model kubernet_deploi kubernet_node kubernet_kubernet servic"
+    },
+    {
+        "Topic":24,
+        "Count":63,
+        "Name":"24_csv format_file csv_column csv_import csv"
+    },
+    {
+        "Topic":25,
+        "Count":63,
+        "Name":"25_forest algorithm_random forest_tree dataset_forest model"
+    },
+    {
+        "Topic":26,
+        "Count":62,
+        "Name":"26_databas connect_databas cloud_data connect_databas data"
+    },
+    {
+        "Topic":27,
+        "Count":54,
+        "Name":"27_model regist_model registri_registermodel step_regist model"
+    }
+]
