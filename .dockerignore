@@ -1,5 +1,5 @@
-**/wandb*
-**/Model*
+**/wandb
+**/Model
 **/__pycache__
 **/.venv
 **/.ipynb
