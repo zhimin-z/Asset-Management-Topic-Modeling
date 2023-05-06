@@ -12,9 +12,6 @@ import pandas as pd
 import wandb
 import os
 
-count = 300
-wandb_project = 'asset-management-topic-modeling'
-
 path_result = 'Result'
 path_dataset = 'Dataset'
 
@@ -28,6 +25,8 @@ if not os.path.exists(path_challenge_model):
 path_solution_model = os.path.join(path_solution, 'Model')
 if not os.path.exists(path_solution_model):
     os.makedirs(path_solution_model)
+
+wandb_project = 'asset-management-topic-modeling'
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
@@ -45,18 +44,17 @@ config_defaults = {
     'min_cluster_size': 30,
     'random_state': 42,
     'n_components': 5,
-    'min_samples': 1,
 }
 
 config_sweep = {
-    "method": "bayes",
+    "method": "grid",
     "metric": {
         'name': 'Coherence CV',
         'goal': 'maximize'
     },
     "parameters": {
-        'min_samples_pct': {
-            'min': 0.03, 'max': 1
+        'min_samples': {
+            'values': list(range(1, 30))
         },
         'ngram_range': {
             'values': list(range(1, 3))
@@ -91,19 +89,14 @@ class TopicModeling:
                               random_state=run.config.random_state, low_memory=run.config.low_memory)
 
             # Step 3 - Cluster reduced embeddings
-            samples = int(run.config.min_cluster_size *
-                          wandb.config.min_samples_pct)
-            samples = samples if samples > run.config.min_samples else run.config.min_samples
             hdbscan_model = HDBSCAN(min_cluster_size=run.config.min_cluster_size,
-                                    min_samples=samples, prediction_data=run.config.prediction_data)
+                                    min_samples=wandb.config.min_samples, prediction_data=run.config.prediction_data)
 
             # Step 4 - Tokenize topics
-            vectorizer_model = TfidfVectorizer(
-                ngram_range=(1, wandb.config.ngram_range))
+            vectorizer_model = TfidfVectorizer(ngram_range=(1, wandb.config.ngram_range))
 
             # Step 5 - Create topic representation
-            ctfidf_model = ClassTfidfTransformer(
-                reduce_frequent_words=run.config.reduce_frequent_words)
+            ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
 
             # Step 6 - Fine-tune topic representation
             representation_model = KeyBERTInspired()
@@ -220,4 +213,4 @@ class TopicModeling:
     def sweep(self):
         wandb.login()
         sweep_id = wandb.sweep(self.sweep_defaults, project=wandb_project)
-        wandb.agent(sweep_id, function=self.__train, count=count)
+        wandb.agent(sweep_id, function=self.__train)
