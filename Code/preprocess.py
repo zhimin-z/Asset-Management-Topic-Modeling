@@ -1,5 +1,4 @@
 import os
-os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 path_dataset = 'Dataset'
 
@@ -58,8 +57,8 @@ del df_issues['Answer_gpt_summary']
 df_questions = pd.read_json(os.path.join(path_dataset, 'questions.json'))
 
 for index, row in df_questions.iterrows():
-    df_questions.at[index, 'Challenge_title'] = ['Question_title']
-    df_questions.at[index, 'Challenge_body'] = ['Question_body']
+    df_questions.at[index, 'Challenge_title'] = row['Question_title']
+    df_questions.at[index, 'Challenge_body'] = row['Question_body']
     df_questions.at[index, 'Challenge_link'] = row['Question_link']
     df_questions.at[index, 'Challenge_original_content'] = row['Question_original_content']
     df_questions.at[index, 'Challenge_preprocessed_content'] = row['Question_preprocessed_content']
