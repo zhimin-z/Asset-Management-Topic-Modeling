@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   experiment-1:
+    user: "${UID}:${GID}"
     image: experiment
     volumes:
       - .:/app
@@ -18,6 +19,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
   experiment-2:
+    user: "${UID}:${GID}"
     image: experiment
     volumes:
       - .:/app
@@ -31,6 +33,7 @@ services:
               device_ids: ["2"]
               capabilities: [gpu]
   experiment-3:
+    user: "${UID}:${GID}"
     image: experiment
     volumes:
       - .:/app
