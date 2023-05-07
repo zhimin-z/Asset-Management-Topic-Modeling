@@ -89,8 +89,8 @@ documents_per_topic = documents.groupby(['Topic']).agg(
 
 for index, row in documents_per_topic.iterrows():
     wordcloud = WordCloud(
-        width=800, height=800, background_color='white', min_font_size=10).generate(row['Document'])
-    plt.figure(figsize=(8, 8), facecolor=None)
+        width=1000, height=1000, background_color='white', min_font_size=10).generate(row['Document'])
+    plt.figure(figsize=(10, 10), facecolor=None)
     plt.imshow(wordcloud)
     plt.axis("off")
     plt.tight_layout(pad=0)
