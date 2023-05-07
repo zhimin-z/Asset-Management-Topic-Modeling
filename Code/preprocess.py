@@ -156,6 +156,7 @@ stop_words_custom = [
     'abl',
     'acknowledg',
     'actual',
+    'ad',
     'addition',
     'admit',
     'advis',
@@ -177,10 +178,12 @@ stop_words_custom = [
     'assum',
     'astonish',
     'attempt',
+    'avail',
     'aw',
     'awesom',
     'azur',
     'bad',
+    'basic',
     # 'begin',
     'behavior',
     'behaviour',
@@ -206,6 +209,7 @@ stop_words_custom = [
     'consid',
     'contain',
     'content',
+    'continu',
     'correct',
     'correctli',
     'correspond',
@@ -216,6 +220,7 @@ stop_words_custom = [
     'deep',
     'demand',
     'demo',
+    'deni',
     'depict',
     'describ',
     'despit',
@@ -229,6 +234,7 @@ stop_words_custom = [
     'discuss',
     'distinguish',
     'easi',
+    'east',
     'effect',
     'emerg',
     'encount',
@@ -239,33 +245,45 @@ stop_words_custom = [
     'especi',
     'exampl',
     'excit',
+    'exist',
     'expect',
     'experi',
     'eventu',
     'databrick',
+    'def',
     'domo',
+    'dont',
     'face',
     'fact',
     'fascin',
     'fail',
     'failur',
     'fairli',
+    'fals',
+    'far',
     'favorit',
     'favourit',
     'feel',
     'find',
+    'fine',
     'firstli',
     'fix',
+    'float',
     'follow',
     'form',
     'gcp',
     'get',
+    'give',
     'given',
+    'go',
     'good',
     'googl',
+    'got',
     'guarante',
+    'handl',
     'happen',
     'hard',
+    'have',
     'hear',
     'hei',
     'hello',
@@ -280,9 +298,11 @@ stop_words_custom = [
     'indic',
     'info',
     'inform',
+    'inner',
     'inquiri',
     'insight',
     'instead',
+    'int',
     'interest',
     'invalid',
     'investig',
@@ -297,7 +317,9 @@ stop_words_custom = [
     'learn',
     'let',
     'like',
+    'long',
     'look',
+    'lot',
     'machin',
     'make',
     'main',
@@ -305,6 +327,7 @@ stop_words_custom = [
     'manag',
     'manner',
     'marvel',
+    'max',
     'mean',
     'meaning',
     'meaningfulli',
@@ -313,16 +336,20 @@ stop_words_custom = [
     'mention',
     'method',
     'microsoft',
+    'min',
     'mind',
     'mistak',
     'mistakenli',
     # 'multipl',
+    'name',
     'near',
     'necessari',
     'need',
     'new',
     'non',
+    'north',
     'notice',
+    'number',
     'obtain',
     'occas',
     'occasion',
@@ -344,6 +371,7 @@ stop_words_custom = [
     'permit',
     'person',
     'perspect',
+    'place',
     'point',
     'pointless',
     'possibl',
@@ -358,7 +386,9 @@ stop_words_custom = [
     'python',
     # 'pytorch',
     'question',
+    'real',
     'realize',
+    'recent',
     'recognize',
     'recommend',
     'refer',
@@ -377,11 +407,14 @@ stop_words_custom = [
     'secondli',
     'seek',
     'seen',
+    'self',
     'shall',
     'shan',
     'shock',
     'shouldn',
+    'show',
     'similar',
+    'simpl',
     'situat',
     # 'sklearn',
     'snippet',
@@ -390,11 +423,13 @@ stop_words_custom = [
     'solv',
     'sound',
     # 'sourc',
+    'south',
     'special',
     'specif',
     # 'start',
     'startl',
     'strang',
+    'string',
     'struggl',
     'stun',
     'succe',
@@ -406,14 +441,18 @@ stop_words_custom = [
     'suspect',
     'take',
     'talk',
+    'tell',
     # 'tensorflow',
     'thank',
+    'thing',
     'think',
     'thirdli',
     'thought',
     'tool',
     'topic',
+    'total',
     # 'transformers',
+    'true',
     'truth',
     'try',
     'unabl',
@@ -430,7 +469,9 @@ stop_words_custom = [
     'wai',
     'want',
     'weird',
+    'west',
     'will',
+    'word',
     'worst',
     'won',
     'wonder',
@@ -441,44 +482,45 @@ stop_words_custom = [
     'wrongli',
     'xgboost',
     'ye',
+    'zero',
 ] 
 
 df = pd.read_json(os.path.join(path_dataset, 'original.json'))
 
 for index, row in df.iterrows():
     Challenge_original_content = remove_stopwords(row['Challenge_original_content'], stopwords=stop_words_custom)
-    if len(Challenge_original_content.split()) > 4:
+    if len(Challenge_original_content.split()) > 3:
         df.at[index, 'Challenge_original_content'] = Challenge_original_content
     else:
         df.at[index, 'Challenge_original_content'] = np.nan
         
     Challenge_preprocessed_content = remove_stopwords(row['Challenge_preprocessed_content'], stopwords=stop_words_custom)
-    if len(Challenge_preprocessed_content.split()) > 4:
+    if len(Challenge_preprocessed_content.split()) > 3:
         df.at[index, 'Challenge_preprocessed_content'] = Challenge_preprocessed_content
     else:
         df.at[index, 'Challenge_preprocessed_content'] = np.nan
         
     Challenge_gpt_summary = remove_stopwords(row['Challenge_gpt_summary'], stopwords=stop_words_custom)
-    if len(Challenge_gpt_summary.split()) > 4:
+    if len(Challenge_gpt_summary.split()) > 3:
         df.at[index, 'Challenge_gpt_summary'] = Challenge_gpt_summary
     else:
         df.at[index, 'Challenge_gpt_summary'] = np.nan
 
     if pd.notna(row['Solution_gpt_summary']):
         Solution_original_content = remove_stopwords(row['Solution_original_content'], stopwords=stop_words_custom)
-        if len(Solution_original_content.split()) > 4:
+        if len(Solution_original_content.split()) > 3:
             df.at[index, 'Solution_original_content'] = Solution_original_content
         else:
             df.at[index, 'Solution_original_content'] = np.nan
 
         Solution_preprocessed_content = remove_stopwords(row['Solution_preprocessed_content'], stopwords=stop_words_custom)
-        if len(Solution_preprocessed_content.split()) > 4:
+        if len(Solution_preprocessed_content.split()) > 3:
             df.at[index, 'Solution_preprocessed_content'] = Solution_preprocessed_content
         else:
             df.at[index, 'Solution_preprocessed_content'] = np.nan
             
         Solution_gpt_summary = remove_stopwords(row['Solution_gpt_summary'], stopwords=stop_words_custom)
-        if len(Solution_gpt_summary.split()) > 4:
+        if len(Solution_gpt_summary.split()) > 3:
             df.at[index, 'Solution_gpt_summary'] = Solution_gpt_summary
         else:
             df.at[index, 'Solution_gpt_summary'] = np.nan
