@@ -15,7 +15,7 @@ path_challenge = os.path.join(path_result, 'Challenge')
 path_solution = os.path.join(path_result, 'Solution')
 path_model = os.path.join(path_general, 'Model')
 
-model_name = 'gpt_summary_f0193md1'
+model_name = 'preprocessed_content_j7vecmqw'
 
 df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
 
@@ -113,13 +113,13 @@ for index, topic in zip(indice_challenge, topics_new[:len(docs_challenge)]):
 for index, topic in zip(indice_solution, topics_new[len(docs_challenge):]):
     df.at[index, 'Solution_topic'] = topic
 
-del df['Challenge_original_content']
-del df['Challenge_preprocessed_content']
-del df['Challenge_gpt_summary']
+# del df['Challenge_original_content']
+# del df['Challenge_preprocessed_content']
+# del df['Challenge_gpt_summary']
 
-del df['Solution_original_content']
-del df['Solution_preprocessed_content']
-del df['Solution_gpt_summary']
+# del df['Solution_original_content']
+# del df['Solution_preprocessed_content']
+# del df['Solution_gpt_summary']
 
 df.to_json(os.path.join(path_general, 'topics.json'),
            indent=4, orient='records')
