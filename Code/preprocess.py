@@ -399,6 +399,7 @@ stop_words_custom = [
     'result',
     'right',
     'rightli',
+    'satisfi',
     'saw',
     'scenario',
     # 'scikit',
