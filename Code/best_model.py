@@ -40,24 +40,20 @@ for index, row in df.iterrows():
         
 docs = docs_challenge + docs_solution
 topic_model = BERTopic.load(os.path.join(path_model, model_name))
+topic_number = topic_model.get_topic_info().shape[0] - 1
 topics, probs = topic_model.transform(docs)
-
-df_topics = topic_model.get_topic_info()
-df_topics.to_json(os.path.join(
-    path_general, 'Topic information.json'), indent=4, orient='records')
 
 # persist the topic terms
 with open(os.path.join(path_general, 'Topic terms.pickle'), 'wb') as handle:
     topic_terms = []
-    for i in range(df_topics.shape[0] - 1):
+    for i in range(topic_number):
         topic_terms.append(topic_model.get_topic(i))
     pickle.dump(topic_terms, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 fig = topic_model.visualize_topics()
 fig.write_html(os.path.join(path_general, 'Topic visualization.html'))
 
-fig = topic_model.visualize_barchart(
-    top_n_topics=df_topics.shape[0]-1, n_words=10)
+fig = topic_model.visualize_barchart(top_n_topics=topic_number, n_words=10)
 fig.write_html(os.path.join(path_general, 'Term visualization.html'))
 
 fig = topic_model.visualize_heatmap()
