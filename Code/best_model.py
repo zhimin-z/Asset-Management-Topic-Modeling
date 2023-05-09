@@ -109,13 +109,13 @@ for index, topic in zip(indice_challenge, topics_new[:len(docs_challenge)]):
 for index, topic in zip(indice_solution, topics_new[len(docs_challenge):]):
     df.at[index, 'Solution_topic'] = topic
 
-# del df['Challenge_original_content']
-# del df['Challenge_preprocessed_content']
-# del df['Challenge_gpt_summary']
+del df['Challenge_original_content']
+del df['Challenge_preprocessed_content']
+del df['Challenge_gpt_summary']
 
-# del df['Solution_original_content']
-# del df['Solution_preprocessed_content']
-# del df['Solution_gpt_summary']
+del df['Solution_original_content']
+del df['Solution_preprocessed_content']
+del df['Solution_gpt_summary']
 
 df.to_json(os.path.join(path_general, 'topics.json'),
            indent=4, orient='records')
