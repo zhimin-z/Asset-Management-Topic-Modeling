@@ -82,6 +82,12 @@ for index, row in df_questions.iterrows():
     df_questions.at[index, 'Challenge_last_edit_time'] = row['Question_last_edit_time']
     df_questions.at[index, 'Challenge_view_count'] = row['Question_view_count']
     
+    df_questions.at[index, 'Poster_created_time'] = row['Poster_created_time']
+    df_questions.at[index, 'Poster_age'] = row['Poster_age']
+    df_questions.at[index, 'Poster_location'] = row['Poster_location']
+    df_questions.at[index, 'Poster_reputation'] = row['Poster_reputation']
+    df_questions.at[index, 'Poster_views'] = row['Poster_views']
+    
     df_questions.at[index, 'Solution_body'] = row['Answer_body']
     df_questions.at[index, 'Solution_comment_count'] = row['Answer_comment_count']
     df_questions.at[index, 'Solution_last_edit_time'] = row['Answer_last_edit_time']
@@ -89,11 +95,19 @@ for index, row in df_questions.iterrows():
     df_questions.at[index, 'Solution_original_content'] = row['Answer_original_content']
     df_questions.at[index, 'Solution_preprocessed_content'] = row['Answer_preprocessed_content']
     df_questions.at[index, 'Solution_gpt_summary'] = row['Answer_gpt_summary']
+    
+    df_questions.at[index, 'Answerer_created_time'] = row['Answerer_created_time']
+    df_questions.at[index, 'Answerer_age'] = row['Answerer_age']
+    df_questions.at[index, 'Answerer_location'] = row['Answerer_location']
+    df_questions.at[index, 'Answerer_reputation'] = row['Answerer_reputation']
+    df_questions.at[index, 'Answerer_views'] = row['Answerer_views']
+    df_questions.at[index, 'Challenge_self_solved'] = row['Poster_id'] == row['Answerer_id']
 
 del df_questions['Question_title']
 del df_questions['Question_body']
 del df_questions['Question_link']
 del df_questions['Question_created_time']
+del df_questions['Question_last_edit_time']
 del df_questions['Question_answer_count']
 del df_questions['Question_comment_count']
 del df_questions['Question_score']
@@ -104,7 +118,9 @@ del df_questions['Question_gpt_summary']
 del df_questions['Question_closed_time']
 del df_questions['Question_view_count']
 del df_questions['Question_favorite_count']
-del df_questions['Question_last_edit_time']
+
+del df_questions['Poster_id']
+del df_questions['Answerer_id']
 
 del df_questions['Answer_body']
 del df_questions['Answer_comment_count']
