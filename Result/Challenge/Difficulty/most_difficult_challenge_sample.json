@@ -1283,7 +1283,7 @@
         "Challenge_sentence_count":4,
         "Challenge_solved_time":8.4703228499,
         "Challenge_title":"error: no kind \"TrainingJob\" is registered for version \"sagemaker.aws.amazon.com\/v1\" in scheme \"k8s.io\/kubectl\/pkg\/scheme\/scheme.go:28\"",
-        "Challenge_topic":"Kubernetes Service",
+        "Challenge_topic":"Kubernetes Deployment",
         "Challenge_topic_macro":"Service Management",
         "Challenge_view_count":null,
         "Challenge_word_count":23,
@@ -1296,7 +1296,7 @@
         "Solution_reading_time":6.49,
         "Solution_score":0.0,
         "Solution_sentence_count":3.0,
-        "Solution_topic":"Kubernetes Service",
+        "Solution_topic":"Kubernetes Deployment",
         "Solution_topic_macro":"Service Management",
         "Solution_word_count":60.0,
         "Tool":"Amazon SageMaker"
@@ -1632,7 +1632,7 @@
         "Solution_reading_time":403.18,
         "Solution_score":0.0,
         "Solution_sentence_count":227.0,
-        "Solution_topic":"Kubernetes Service",
+        "Solution_topic":"Kubernetes Deployment",
         "Solution_topic_macro":"Service Management",
         "Solution_word_count":2188.0,
         "Tool":"Amazon SageMaker"
