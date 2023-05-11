@@ -246,7 +246,7 @@
         "Solution_reading_time":11.41,
         "Solution_score":0.0,
         "Solution_sentence_count":4.0,
-        "Solution_topic":"JSON Payload",
+        "Solution_topic":"REST Payload",
         "Solution_topic_macro":"Service Management",
         "Solution_word_count":62.0,
         "Tool":"Amazon SageMaker"
@@ -569,7 +569,7 @@
         "Challenge_sentence_count":18,
         "Challenge_solved_time":8.9986356291,
         "Challenge_title":"Inside lambda function - Blazing text algorithm invoke endpoint doesn't support the input content type",
-        "Challenge_topic":"JSON Payload",
+        "Challenge_topic":"REST Payload",
         "Challenge_topic_macro":"Service Management",
         "Challenge_view_count":493.0,
         "Challenge_word_count":305,
@@ -582,7 +582,7 @@
         "Solution_reading_time":12.21,
         "Solution_score":0.0,
         "Solution_sentence_count":5.0,
-        "Solution_topic":"JSON Payload",
+        "Solution_topic":"REST Payload",
         "Solution_topic_macro":"Service Management",
         "Solution_word_count":103.0,
         "Tool":"Amazon SageMaker"
@@ -1871,7 +1871,7 @@
         "Challenge_sentence_count":10,
         "Challenge_solved_time":8.3007384939,
         "Challenge_title":"How to pass data to an endpoint",
-        "Challenge_topic":"JSON Payload",
+        "Challenge_topic":"REST Payload",
         "Challenge_topic_macro":"Service Management",
         "Challenge_view_count":277.0,
         "Challenge_word_count":201,
@@ -1884,7 +1884,7 @@
         "Solution_reading_time":13.16,
         "Solution_score":0.0,
         "Solution_sentence_count":11.0,
-        "Solution_topic":"JSON Payload",
+        "Solution_topic":"REST Payload",
         "Solution_topic_macro":"Service Management",
         "Solution_word_count":143.0,
         "Tool":"Amazon SageMaker"
@@ -2808,7 +2808,7 @@
         "Solution_reading_time":22.27,
         "Solution_score":0.0,
         "Solution_sentence_count":16.0,
-        "Solution_topic":"JSON Payload",
+        "Solution_topic":"REST Payload",
         "Solution_topic_macro":"Service Management",
         "Solution_word_count":201.0,
         "Tool":"Amazon SageMaker"
@@ -2934,7 +2934,7 @@
         "Solution_reading_time":3.0,
         "Solution_score":1.0,
         "Solution_sentence_count":2.0,
-        "Solution_topic":"JSON Payload",
+        "Solution_topic":"REST Payload",
         "Solution_topic_macro":"Service Management",
         "Solution_word_count":47.0,
         "Tool":"Azure Machine Learning"
