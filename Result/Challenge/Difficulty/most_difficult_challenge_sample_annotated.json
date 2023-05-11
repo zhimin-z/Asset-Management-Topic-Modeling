@@ -633,7 +633,7 @@
             "The workable solution just appears that late."
           ],
           [
-            "The poster forgets to accept the answer."
+            "The poster forgets to accept the solution."
           ]
         ]
       }
@@ -1221,7 +1221,7 @@
             "The poster accepts its own solution."
           ],
           [
-            "The poster forgets to accept the answer."
+            "The poster forgets to accept the solution."
           ]
         ]
       }
@@ -1746,7 +1746,7 @@
             "The workable solution just appears that late."
           ],
           [
-            "The poster forgets to accept the answer."
+            "The poster forgets to accept the solution."
           ],
           [
             "The poster accepts its own solution."
@@ -4260,7 +4260,7 @@
       {
         "taxonomy": [
           [
-            "The poster forgets to accept the answer."
+            "The poster forgets to accept the solution."
           ]
         ]
       }
@@ -4617,7 +4617,7 @@
       {
         "taxonomy": [
           [
-            "The poster forgets to accept the answer."
+            "The poster forgets to accept the solution."
           ]
         ]
       }
