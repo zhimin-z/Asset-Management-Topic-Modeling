@@ -7,7 +7,6 @@ nbformat==5.8.0
 openai==0.27.6
 plotly==5.14.1
 seaborn==0.12.2
-shap==0.41.0
 statsmodels==0.13.5
 textstat==0.7.3
 wandb==0.15.0
