@@ -22,6 +22,14 @@ if not os.path.exists(path_model):
     os.makedirs(path_model)
 
 wandb_project = 'asset-management-topic-modeling'
+tool_no_accepted_answer = {
+    'Domino', 
+    'DVC', 
+    'Guild AI"', 
+    'MLflow', 
+    'Polyaxon', 
+    'SigOpt'
+}
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
@@ -61,17 +69,19 @@ class TopicModeling:
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
-
-        df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
-        challenge = 'Challenge_' + docs_name
-        #solution = 'Solution_' + docs_name
-        docs_challenge = df[df[challenge].notna()][challenge].tolist()
-        # docs_solution = df[df[solution].notna()][solution].tolist()
-        self.docs = docs_challenge #+ docs_solution
         
         config_sweep['name'] = docs_name
         self.sweep_defaults = config_sweep
+        
+        df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
+        
+        if 'Solution' in docs_name:
+            config_defaults['min_cluster_size'] = 5
+            df = df[~df['Tool'].isin(tool_no_accepted_answer)]
+        
+        self.docs = df[df[docs_name].notna()][docs_name].tolist()
 
+        
     def __train(self):
         # Initialize a new wandb run
         with wandb.init() as run:
