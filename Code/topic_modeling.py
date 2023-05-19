@@ -56,11 +56,6 @@ config_sweep = {
         'name': 'Coherence CV',
         'goal': 'maximize'
     },
-    "parameters": {
-        'min_samples': {
-            'values': list(range(1, config_defaults['min_cluster_size'] + 1))
-        },
-    },
 }
 
 
@@ -70,9 +65,6 @@ class TopicModeling:
         self.top_models = []
         self.path_model = path_model
         
-        config_sweep['name'] = docs_name
-        self.sweep_defaults = config_sweep
-        
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
         
         if 'Solution' in docs_name:
@@ -80,7 +72,13 @@ class TopicModeling:
             df = df[~df['Tool'].isin(tool_no_accepted_answer)]
         
         self.docs = df[df[docs_name].notna()][docs_name].tolist()
-
+        
+        config_sweep['name'] = docs_name
+        config_sweep['parameters'] = {
+            'min_samples': {
+                'values': list(range(1, config_defaults['min_cluster_size'] + 1))
+                },
+            }
         
     def __train(self):
         # Initialize a new wandb run
@@ -185,7 +183,7 @@ class TopicModeling:
 
             # persist top 5 topic models
 
-            model_name = f'{self.sweep_defaults["name"]}_{run.id}'
+            model_name = f'{config_sweep["name"]}_{run.id}'
             model = {
                 'model_path': os.path.join(self.path_model, model_name),
                 'model_metrics': {
@@ -214,5 +212,5 @@ class TopicModeling:
 
     def sweep(self):
         wandb.login()
-        sweep_id = wandb.sweep(self.sweep_defaults, project=wandb_project)
+        sweep_id = wandb.sweep(config_sweep, project=wandb_project)
         wandb.agent(sweep_id, function=self.__train)
