@@ -36,7 +36,7 @@ config_defaults = {
     'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
-    'min_cluster_size': 50,
+    'min_cluster_size': 30,
     'random_state': 42,
     'n_components': 5,
     'ngram_range': 2
@@ -64,10 +64,10 @@ class TopicModeling:
 
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
         challenge = 'Challenge_' + docs_name
-        solution = 'Solution_' + docs_name
+        #solution = 'Solution_' + docs_name
         docs_challenge = df[df[challenge].notna()][challenge].tolist()
-        docs_solution = df[df[solution].notna()][solution].tolist()
-        self.docs = docs_challenge + docs_solution
+        # docs_solution = df[df[solution].notna()][solution].tolist()
+        self.docs = docs_challenge #+ docs_solution
         
         config_sweep['name'] = docs_name
         self.sweep_defaults = config_sweep
