@@ -14,7 +14,7 @@ path_general = os.path.join(path_result, 'General')
 path_solution = os.path.join(path_result, 'Solution')
 path_model = os.path.join(path_general, 'Model')
 
-model_name = 'Solution_gpt_summary_wbfyjfgn'
+model_name = 'Solution_gpt_summary_yt3oddwj'
 
 df = pd.read_json(os.path.join(path_general, 'topics.json'))
 
