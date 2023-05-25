@@ -291,55 +291,67 @@
         "Platform":"Tool-specific",
         "Tool":"Amazon SageMaker",
         "State":"closed",
-        "value":167
+        "value":202
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Amazon SageMaker",
         "State":"open",
-        "value":361
+        "value":555
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Azure Machine Learning",
         "State":"closed",
-        "value":342
+        "value":422
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Azure Machine Learning",
         "State":"open",
-        "value":1086
+        "value":1394
     },
     {
         "Platform":"Tool-specific",
         "Tool":"DVC",
         "State":"open",
-        "value":348
+        "value":383
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Domino",
         "State":"open",
-        "value":13
+        "value":4
+    },
+    {
+        "Platform":"Tool-specific",
+        "Tool":"Guild AI",
+        "State":"closed",
+        "value":3
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Guild AI",
         "State":"open",
-        "value":118
+        "value":119
     },
     {
         "Platform":"Tool-specific",
         "Tool":"MLflow",
         "State":"open",
-        "value":279
+        "value":300
+    },
+    {
+        "Platform":"Tool-specific",
+        "Tool":"Polyaxon",
+        "State":"closed",
+        "value":29
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Polyaxon",
         "State":"open",
-        "value":41
+        "value":13
     },
     {
         "Platform":"Tool-specific",
@@ -351,24 +363,24 @@
         "Platform":"Tool-specific",
         "Tool":"Vertex AI",
         "State":"closed",
-        "value":26
+        "value":79
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Vertex AI",
         "State":"open",
-        "value":259
+        "value":499
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Weights & Biases",
         "State":"closed",
-        "value":117
+        "value":138
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Weights & Biases",
         "State":"open",
-        "value":617
+        "value":727
     }
 ]

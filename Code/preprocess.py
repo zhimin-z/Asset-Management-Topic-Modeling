@@ -36,9 +36,9 @@ for index, row in df_issues.iterrows():
 
     df_issues.at[index, 'Solution_body'] = row['Answer_body']
     df_issues.at[index, 'Solution_score_count'] = row['Answer_score_count']
-    df_issues.at[index, 'Solution_original_content'] = row['Answer_original_content']
-    df_issues.at[index, 'Solution_preprocessed_content'] = row['Answer_preprocessed_content']
-    df_issues.at[index, 'Solution_gpt_summary'] = row['Answer_gpt_summary']
+    # df_issues.at[index, 'Solution_original_content'] = row['Answer_original_content']
+    # df_issues.at[index, 'Solution_preprocessed_content'] = row['Answer_preprocessed_content']
+    # df_issues.at[index, 'Solution_gpt_summary'] = row['Answer_gpt_summary']
 
 del df_issues['Issue_title']
 del df_issues['Issue_body']
@@ -59,10 +59,10 @@ del df_issues['Issue_repo_contributor_count']
 
 del df_issues['Answer_body']
 del df_issues['Answer_score_count']
-del df_issues['Answer_original_content']
-del df_issues['Answer_preprocessed_content']
-del df_issues['Answer_gpt_summary_original']
-del df_issues['Answer_gpt_summary']
+# del df_issues['Answer_original_content']
+# del df_issues['Answer_preprocessed_content']
+# del df_issues['Answer_gpt_summary_original']
+# del df_issues['Answer_gpt_summary']
 
 df_questions = pd.read_json(os.path.join(path_dataset, 'questions.json'))
 
@@ -83,23 +83,13 @@ for index, row in df_questions.iterrows():
     df_questions.at[index, 'Challenge_view_count'] = row['Question_view_count']
     df_questions.at[index, 'Challenge_self_resolution'] = row['Question_self_resolution']
     
-    df_questions.at[index, 'Poster_created_time'] = row['Poster_created_time']
-    df_questions.at[index, 'Poster_location'] = row['Poster_location']
-    df_questions.at[index, 'Poster_reputation_count'] = row['Poster_reputation_count']
-    df_questions.at[index, 'Poster_view_count'] = row['Poster_view_count']
-    
     df_questions.at[index, 'Solution_body'] = row['Answer_body']
     df_questions.at[index, 'Solution_comment_count'] = row['Answer_comment_count']
     df_questions.at[index, 'Solution_last_edit_time'] = row['Answer_last_edit_time']
     df_questions.at[index, 'Solution_score_count'] = row['Answer_score_count']
-    df_questions.at[index, 'Solution_original_content'] = row['Answer_original_content']
-    df_questions.at[index, 'Solution_preprocessed_content'] = row['Answer_preprocessed_content']
-    df_questions.at[index, 'Solution_gpt_summary'] = row['Answer_gpt_summary']
-    
-    df_questions.at[index, 'Answerer_created_time'] = row['Answerer_created_time']
-    df_questions.at[index, 'Answerer_location'] = row['Answerer_location']
-    df_questions.at[index, 'Answerer_reputation_count'] = row['Answerer_reputation_count']
-    df_questions.at[index, 'Answerer_view_count'] = row['Answerer_view_count']
+    # df_questions.at[index, 'Solution_original_content'] = row['Answer_original_content']
+    # df_questions.at[index, 'Solution_preprocessed_content'] = row['Answer_preprocessed_content']
+    # df_questions.at[index, 'Solution_gpt_summary'] = row['Answer_gpt_summary']
 
 del df_questions['Question_title']
 del df_questions['Question_body']
@@ -122,10 +112,10 @@ del df_questions['Answer_body']
 del df_questions['Answer_comment_count']
 del df_questions['Answer_last_edit_time']
 del df_questions['Answer_score_count']
-del df_questions['Answer_original_content']
-del df_questions['Answer_preprocessed_content']
-del df_questions['Answer_gpt_summary_original']
-del df_questions['Answer_gpt_summary']
+# del df_questions['Answer_original_content']
+# del df_questions['Answer_preprocessed_content']
+# del df_questions['Answer_gpt_summary_original']
+# del df_questions['Answer_gpt_summary']
 
 df = pd.concat([df_issues, df_questions], ignore_index=True)
 df.to_json(os.path.join(path_dataset, 'original.json'),
@@ -529,24 +519,24 @@ for index, row in df.iterrows():
     else:
         df.at[index, 'Challenge_gpt_summary'] = np.nan
 
-    if pd.notna(row['Solution_gpt_summary']):
-        Solution_original_content = remove_stopwords(row['Solution_original_content'], stopwords=stop_words_custom)
-        if len(Solution_original_content.split()) > 3:
-            df.at[index, 'Solution_original_content'] = Solution_original_content
-        else:
-            df.at[index, 'Solution_original_content'] = np.nan
+    # if pd.notna(row['Solution_gpt_summary']):
+    #     Solution_original_content = remove_stopwords(row['Solution_original_content'], stopwords=stop_words_custom)
+    #     if len(Solution_original_content.split()) > 3:
+    #         df.at[index, 'Solution_original_content'] = Solution_original_content
+    #     else:
+    #         df.at[index, 'Solution_original_content'] = np.nan
 
-        Solution_preprocessed_content = remove_stopwords(row['Solution_preprocessed_content'], stopwords=stop_words_custom)
-        if len(Solution_preprocessed_content.split()) > 3:
-            df.at[index, 'Solution_preprocessed_content'] = Solution_preprocessed_content
-        else:
-            df.at[index, 'Solution_preprocessed_content'] = np.nan
+    #     Solution_preprocessed_content = remove_stopwords(row['Solution_preprocessed_content'], stopwords=stop_words_custom)
+    #     if len(Solution_preprocessed_content.split()) > 3:
+    #         df.at[index, 'Solution_preprocessed_content'] = Solution_preprocessed_content
+    #     else:
+    #         df.at[index, 'Solution_preprocessed_content'] = np.nan
             
-        Solution_gpt_summary = remove_stopwords(row['Solution_gpt_summary'], stopwords=stop_words_custom)
-        if len(Solution_gpt_summary.split()) > 3:
-            df.at[index, 'Solution_gpt_summary'] = Solution_gpt_summary
-        else:
-            df.at[index, 'Solution_gpt_summary'] = np.nan
+    #     Solution_gpt_summary = remove_stopwords(row['Solution_gpt_summary'], stopwords=stop_words_custom)
+    #     if len(Solution_gpt_summary.split()) > 3:
+    #         df.at[index, 'Solution_gpt_summary'] = Solution_gpt_summary
+    #     else:
+    #         df.at[index, 'Solution_gpt_summary'] = np.nan
 
 df.to_json(os.path.join(path_dataset, 'preprocessed.json'),
                indent=4, orient='records')
