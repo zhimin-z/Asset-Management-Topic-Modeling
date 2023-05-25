@@ -14,7 +14,7 @@ path_general = os.path.join(path_result, 'General')
 path_challenge = os.path.join(path_result, 'Challenge')
 path_model = os.path.join(path_general, 'Model')
 
-model_name = 'Challenge_gpt_summary_xekm52qk'
+model_name = 'Challenge_gpt_summary_qdqvs8o3'
 
 df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
 
