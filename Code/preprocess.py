@@ -35,7 +35,6 @@ for index, row in df_issues.iterrows():
     df_issues.at[index, 'Challenge_repo_contributor_count'] = row['Issue_repo_contributor_count']
 
     df_issues.at[index, 'Solution_body'] = row['Answer_body']
-    df_issues.at[index, 'Solution_score_count'] = row['Answer_score_count']
     # df_issues.at[index, 'Solution_original_content'] = row['Answer_original_content']
     # df_issues.at[index, 'Solution_preprocessed_content'] = row['Answer_preprocessed_content']
     # df_issues.at[index, 'Solution_gpt_summary'] = row['Answer_gpt_summary']
@@ -58,7 +57,6 @@ del df_issues['Issue_repo_fork_count']
 del df_issues['Issue_repo_contributor_count']
 
 del df_issues['Answer_body']
-del df_issues['Answer_score_count']
 # del df_issues['Answer_original_content']
 # del df_issues['Answer_preprocessed_content']
 # del df_issues['Answer_gpt_summary_original']

@@ -3,7 +3,7 @@
         "Platform":"Github",
         "Tool":"Amazon SageMaker",
         "State":"closed",
-        "value":61
+        "value":62
     },
     {
         "Platform":"Github",
@@ -117,7 +117,7 @@
         "Platform":"Github",
         "Tool":"Vertex AI",
         "State":"closed",
-        "value":8
+        "value":7
     },
     {
         "Platform":"Github",
@@ -291,31 +291,31 @@
         "Platform":"Tool-specific",
         "Tool":"Amazon SageMaker",
         "State":"closed",
-        "value":202
+        "value":203
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Amazon SageMaker",
         "State":"open",
-        "value":555
+        "value":564
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Azure Machine Learning",
         "State":"closed",
-        "value":422
+        "value":425
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Azure Machine Learning",
         "State":"open",
-        "value":1394
+        "value":1417
     },
     {
         "Platform":"Tool-specific",
         "Tool":"DVC",
         "State":"open",
-        "value":383
+        "value":388
     },
     {
         "Platform":"Tool-specific",
@@ -327,13 +327,13 @@
         "Platform":"Tool-specific",
         "Tool":"Guild AI",
         "State":"closed",
-        "value":3
+        "value":4
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Guild AI",
         "State":"open",
-        "value":119
+        "value":118
     },
     {
         "Platform":"Tool-specific",
@@ -363,24 +363,24 @@
         "Platform":"Tool-specific",
         "Tool":"Vertex AI",
         "State":"closed",
-        "value":79
+        "value":104
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Vertex AI",
         "State":"open",
-        "value":499
+        "value":511
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Weights & Biases",
         "State":"closed",
-        "value":138
+        "value":140
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Weights & Biases",
         "State":"open",
-        "value":727
+        "value":735
     }
 ]
