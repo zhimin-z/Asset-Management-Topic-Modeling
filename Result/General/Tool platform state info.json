@@ -321,7 +321,7 @@
         "Platform":"Tool-specific",
         "Tool":"Domino",
         "State":"open",
-        "value":4
+        "value":14
     },
     {
         "Platform":"Tool-specific",
@@ -363,7 +363,7 @@
         "Platform":"Tool-specific",
         "Tool":"Vertex AI",
         "State":"closed",
-        "value":104
+        "value":83
     },
     {
         "Platform":"Tool-specific",
