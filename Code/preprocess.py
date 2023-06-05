@@ -36,10 +36,10 @@ for index, row in df_issues.iterrows():
     df_issues.at[index, 'Challenge_repo_contributor_count'] = row['Issue_repo_contributor_count']
     df_issues.at[index, 'Challenge_self_closed'] = row['Issue_self_closed']
 
-    df_issues.at[index, 'Solution_body'] = row['Comment_body']
-    # df_issues.at[index, 'Solution_original_content'] = row['Answer_original_content']
-    # df_issues.at[index, 'Solution_preprocessed_content'] = row['Answer_preprocessed_content']
-    # df_issues.at[index, 'Solution_gpt_summary'] = row['Answer_gpt_summary']
+    df_issues.at[index, 'Discussion_body'] = row['Comment_body']
+    # df_issues.at[index, 'Discussion_original_content'] = row['Comment_original_content']
+    # df_issues.at[index, 'Discussion_preprocessed_content'] = row['Comment_preprocessed_content']
+    # df_issues.at[index, 'Discussion_gpt_summary'] = row['Comment_gpt_summary']
 
 del df_issues['Issue_title']
 del df_issues['Issue_body']
@@ -60,10 +60,10 @@ del df_issues['Issue_repo_contributor_count']
 del df_issues['Issue_self_closed']
 
 del df_issues['Comment_body']
-# del df_issues['Answer_original_content']
-# del df_issues['Answer_preprocessed_content']
-# del df_issues['Answer_gpt_summary_original']
-# del df_issues['Answer_gpt_summary']
+# del df_issues['Comment_original_content']
+# del df_issues['Comment_preprocessed_content']
+# del df_issues['Comment_gpt_summary_original']
+# del df_issues['Comment_gpt_summary']
 
 df_questions = pd.read_json(os.path.join(path_dataset, 'questions.json'))
 
