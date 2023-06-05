@@ -3,13 +3,13 @@
         "Platform":"Github",
         "Tool":"Amazon SageMaker",
         "State":"closed",
-        "value":59
+        "value":57
     },
     {
         "Platform":"Github",
         "Tool":"Amazon SageMaker",
         "State":"open",
-        "value":14
+        "value":13
     },
     {
         "Platform":"Github",
@@ -21,19 +21,13 @@
         "Platform":"Github",
         "Tool":"Azure Machine Learning",
         "State":"open",
-        "value":23
+        "value":22
     },
     {
         "Platform":"Github",
         "Tool":"ClearML",
         "State":"closed",
         "value":2
-    },
-    {
-        "Platform":"Github",
-        "Tool":"ClearML",
-        "State":"open",
-        "value":1
     },
     {
         "Platform":"Github",
@@ -51,7 +45,7 @@
         "Platform":"Github",
         "Tool":"DVC",
         "State":"closed",
-        "value":21
+        "value":19
     },
     {
         "Platform":"Github",
@@ -69,25 +63,25 @@
         "Platform":"Github",
         "Tool":"Kedro",
         "State":"open",
-        "value":4
+        "value":3
     },
     {
         "Platform":"Github",
         "Tool":"MLflow",
         "State":"closed",
-        "value":92
+        "value":90
     },
     {
         "Platform":"Github",
         "Tool":"MLflow",
         "State":"open",
-        "value":18
+        "value":17
     },
     {
         "Platform":"Github",
         "Tool":"Neptune",
         "State":"closed",
-        "value":12
+        "value":11
     },
     {
         "Platform":"Github",
@@ -105,7 +99,7 @@
         "Platform":"Github",
         "Tool":"SigOpt",
         "State":"closed",
-        "value":2
+        "value":1
     },
     {
         "Platform":"Github",
@@ -117,7 +111,7 @@
         "Platform":"Github",
         "Tool":"Vertex AI",
         "State":"closed",
-        "value":5
+        "value":6
     },
     {
         "Platform":"Github",
@@ -147,43 +141,43 @@
         "Platform":"Stack Overflow",
         "Tool":"Amazon SageMaker",
         "State":"closed",
-        "value":680
+        "value":675
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"Amazon SageMaker",
         "State":"open",
-        "value":1393
+        "value":1350
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"Azure Machine Learning",
         "State":"closed",
-        "value":542
+        "value":527
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"Azure Machine Learning",
         "State":"open",
-        "value":841
+        "value":832
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"ClearML",
         "State":"closed",
-        "value":20
+        "value":18
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"ClearML",
         "State":"open",
-        "value":16
+        "value":18
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"Comet",
         "State":"closed",
-        "value":4
+        "value":3
     },
     {
         "Platform":"Stack Overflow",
@@ -201,31 +195,31 @@
         "Platform":"Stack Overflow",
         "Tool":"DVC",
         "State":"open",
-        "value":40
+        "value":39
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"Kedro",
         "State":"closed",
-        "value":60
+        "value":58
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"Kedro",
         "State":"open",
-        "value":86
+        "value":85
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"MLflow",
         "State":"closed",
-        "value":125
+        "value":115
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"MLflow",
         "State":"open",
-        "value":404
+        "value":398
     },
     {
         "Platform":"Stack Overflow",
@@ -255,67 +249,67 @@
         "Platform":"Stack Overflow",
         "Tool":"Sacred",
         "State":"closed",
-        "value":7
+        "value":6
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"Sacred",
         "State":"open",
-        "value":3
+        "value":2
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"Vertex AI",
         "State":"closed",
-        "value":102
+        "value":99
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"Vertex AI",
         "State":"open",
-        "value":210
+        "value":195
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"Weights & Biases",
         "State":"closed",
-        "value":20
+        "value":22
     },
     {
         "Platform":"Stack Overflow",
         "Tool":"Weights & Biases",
         "State":"open",
-        "value":53
+        "value":48
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Amazon SageMaker",
         "State":"closed",
-        "value":177
+        "value":175
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Amazon SageMaker",
         "State":"open",
-        "value":501
+        "value":495
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Azure Machine Learning",
         "State":"closed",
-        "value":352
+        "value":346
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Azure Machine Learning",
         "State":"open",
-        "value":1211
+        "value":1196
     },
     {
         "Platform":"Tool-specific",
         "Tool":"DVC",
         "State":"open",
-        "value":382
+        "value":372
     },
     {
         "Platform":"Tool-specific",
@@ -333,54 +327,54 @@
         "Platform":"Tool-specific",
         "Tool":"Guild AI",
         "State":"open",
-        "value":117
+        "value":111
     },
     {
         "Platform":"Tool-specific",
         "Tool":"MLflow",
         "State":"open",
-        "value":237
+        "value":252
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Polyaxon",
         "State":"closed",
-        "value":28
+        "value":29
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Polyaxon",
-        "State":"open",
-        "value":8
-    },
-    {
-        "Platform":"Tool-specific",
-        "Tool":"SigOpt",
         "State":"open",
         "value":10
     },
     {
         "Platform":"Tool-specific",
+        "Tool":"SigOpt",
+        "State":"open",
+        "value":11
+    },
+    {
+        "Platform":"Tool-specific",
         "Tool":"Vertex AI",
         "State":"closed",
-        "value":39
+        "value":43
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Vertex AI",
         "State":"open",
-        "value":217
+        "value":227
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Weights & Biases",
         "State":"closed",
-        "value":126
+        "value":124
     },
     {
         "Platform":"Tool-specific",
         "Tool":"Weights & Biases",
         "State":"open",
-        "value":647
+        "value":645
     }
 ]
