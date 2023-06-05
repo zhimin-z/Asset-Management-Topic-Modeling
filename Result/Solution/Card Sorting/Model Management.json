@@ -27,8 +27,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":42.8373255556,
         "Challenge_title":"Facing problem in deplying pyhton application from github- unable to load tensorflow saved model in AZURE.",
@@ -56,7 +56,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":82.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"saved model not found"
     },
     {
         "Answerer_created_time":null,
@@ -86,8 +88,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":76.9123686111,
         "Challenge_title":"Train machine learning model using reserved instance",
@@ -115,7 +117,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":124.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"speed up training process"
     },
     {
         "Answerer_created_time":1405457120427,
@@ -145,8 +149,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":4.1808158334,
         "Challenge_title":"How to make prediction after model registration in azure?",
@@ -174,7 +178,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":75.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing predict attribute"
     },
     {
         "Answerer_created_time":1619177157943,
@@ -204,8 +210,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":50,
         "Challenge_solved_time":396.3547583334,
         "Challenge_title":"GCP Vertex Pipeline - Why kfp.v2.dsl.Output as function arguments work without being provided?",
@@ -233,7 +239,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":16.0,
         "Solution_word_count":180.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing mandatory arguments"
     },
     {
         "Answerer_created_time":1561143508792,
@@ -263,8 +271,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":1.8544463889,
         "Challenge_title":"Trains: Can I reset the status of a task? (from 'Aborted' back to 'Running')",
@@ -292,7 +300,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":14.0,
         "Solution_word_count":219.0,
-        "Tool":"ClearML"
+        "Tool":"ClearML",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"training status stuck"
     },
     {
         "Answerer_created_time":1253986272627,
@@ -322,8 +332,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":37.0426969444,
         "Challenge_title":"How to load a training set in AWS SageMaker to build a model?",
@@ -351,7 +361,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":27.0,
         "Solution_word_count":275.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"upload training set"
     },
     {
         "Answerer_created_time":1244808478036,
@@ -381,8 +393,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":12.2807027778,
         "Challenge_title":"Train an already trained model in Sagemaker and Huggingface without re-initialising",
@@ -410,7 +422,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":91.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"access and train model"
     },
     {
         "Answerer_created_time":null,
@@ -440,8 +454,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":32.0736591667,
         "Challenge_title":"TensorFlow 2.2.0 update for the tensorflow estimator for Azure ML, or disable horovod?",
@@ -469,7 +483,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":50.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"TensorFlow 2.2 support"
     },
     {
         "Answerer_created_time":null,
@@ -499,8 +515,8 @@
         "Challenge_repo_issue_count":90.0,
         "Challenge_repo_star_count":6.0,
         "Challenge_repo_watch_count":2.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":1,
         "Challenge_solved_time":167.4691666667,
         "Challenge_title":"Resolve DVC Bad request with Minio",
@@ -528,7 +544,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"whitespace in config file"
     },
     {
         "Answerer_created_time":1437986390372,
@@ -558,8 +576,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":32,
         "Challenge_solved_time":47.7787952778,
         "Challenge_title":"import custom python module in azure ml deployment environment",
@@ -587,7 +605,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":132.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to import module"
     },
     {
         "Answerer_created_time":1333391842272,
@@ -617,8 +637,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":8.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":8,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":10042.9761819444,
         "Challenge_title":"Pros and Cons of Amazon SageMaker VS. Amazon EMR, for deploying TensorFlow-based deep learning models?",
@@ -646,7 +666,9 @@
         "Solution_score_count":10.0,
         "Solution_sentence_count":11.0,
         "Solution_word_count":229.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"compare SageMaker and EMR"
     },
     {
         "Answerer_created_time":null,
@@ -676,8 +698,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":4.4033333333,
         "Challenge_title":"SageMaker MXNet local mode not working",
@@ -705,7 +727,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":84.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"OSError error"
     },
     {
         "Answerer_created_time":1589293508567,
@@ -735,8 +759,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":0.0,
         "Challenge_title":"AzureML Model Register",
@@ -764,7 +788,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":33.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"model_path not found"
     },
     {
         "Answerer_created_time":null,
@@ -794,8 +820,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":75.75,
         "Challenge_title":"exporting a google autoML translate model",
@@ -823,7 +849,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":55.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"download and export model"
     },
     {
         "Answerer_created_time":1405457120427,
@@ -853,8 +881,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":3.4073972222,
         "Challenge_title":"where are registered models in azure machine learning",
@@ -882,7 +910,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":19.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"model not found in UI"
     },
     {
         "Answerer_created_time":null,
@@ -912,8 +942,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":199.5710802778,
         "Challenge_title":"Azure ML: ID column for joining data returns \"No. Of unique values ... is greater than allowed\"",
@@ -941,7 +971,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":52.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unique value limit exceeded"
     },
     {
         "Answerer_created_time":1542628542703,
@@ -971,8 +1003,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":43.2314219444,
         "Challenge_title":"Invoking an endpoint in AWS with a multidimensional array",
@@ -1000,7 +1032,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":38.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unsupported media type"
     },
     {
         "Answerer_created_time":null,
@@ -1030,8 +1064,8 @@
         "Challenge_repo_issue_count":1906.0,
         "Challenge_repo_star_count":3704.0,
         "Challenge_repo_watch_count":2001.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":795.3458333333,
         "Challenge_title":"Azure Machine Learning error: Can not use 'XGBoostClassifier'",
@@ -1059,7 +1093,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"ImportError"
     },
     {
         "Answerer_created_time":null,
@@ -1089,8 +1125,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":27.2427933334,
         "Challenge_title":"Remove multiple runs at the same time",
@@ -1118,7 +1154,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":1.0,
         "Solution_word_count":11.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"delete multiple experiments"
     },
     {
         "Answerer_created_time":1561143508792,
@@ -1148,8 +1186,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":0.1789469444,
         "Challenge_title":"Tracking separate train\/test processes with Trains",
@@ -1177,7 +1215,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":15.0,
         "Solution_word_count":202.0,
-        "Tool":"ClearML"
+        "Tool":"ClearML",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"track train\/test processes"
     },
     {
         "Answerer_created_time":1253986272627,
@@ -1207,8 +1247,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":46.0150619444,
         "Challenge_title":"Custom sagemaker container for training, write forecast to AWS RDS, on a daily basis",
@@ -1236,7 +1276,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":92.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"overcome SageMaker challenges"
     },
     {
         "Answerer_created_time":1458100127643,
@@ -1266,8 +1308,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":6.1298294445,
         "Challenge_title":"how to deploy a xgboost model on amazon sagemaker?",
@@ -1295,7 +1337,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":31.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"deploy locally trained model"
     },
     {
         "Answerer_created_time":null,
@@ -1325,8 +1369,8 @@
         "Challenge_repo_issue_count":88.0,
         "Challenge_repo_star_count":17.0,
         "Challenge_repo_watch_count":3.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":1.9119444444,
         "Challenge_title":"[BUG] Weights & Biases logging does not differentiate between modes",
@@ -1354,7 +1398,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"checkpoints not uploading"
     },
     {
         "Answerer_created_time":null,
@@ -1384,8 +1430,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":30.8515688889,
         "Challenge_title":"How to export tresained models to ECR as container image",
@@ -1413,7 +1459,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":11.0,
         "Solution_word_count":163.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"export model as container image"
     },
     {
         "Answerer_created_time":1341441916656,
@@ -1443,8 +1491,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":21,
         "Challenge_solved_time":304.8033369444,
         "Challenge_title":"How to train SageMaker BlazingText model using multiple channels",
@@ -1472,7 +1520,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":207.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to train with multiple channels"
     },
     {
         "Answerer_created_time":1367741264647,
@@ -1502,8 +1552,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":1.3759711111,
         "Challenge_title":"Load estimator from model artifact in s3 bucket aws",
@@ -1531,7 +1581,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":42.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"load estimator from S3"
     },
     {
         "Answerer_created_time":1421803794992,
@@ -1561,8 +1613,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":9.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":9,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":33,
         "Challenge_solved_time":16.7299083334,
         "Challenge_title":"AWS Sagemaker - ClientError: Data download failed",
@@ -1590,7 +1642,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":22.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"illegal character sub-sequence"
     },
     {
         "Answerer_created_time":1432655047272,
@@ -1620,8 +1674,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":11.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":11,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":264.5982422222,
         "Challenge_title":"How to Curl an Amazon Sagemaker Endpoint",
@@ -1649,7 +1703,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":28.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"use curl for Sagemaker POST request"
     },
     {
         "Answerer_created_time":1593662684510,
@@ -1679,8 +1735,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":141.7277916667,
         "Challenge_title":"TensorFlow Serving vs. TensorFlow Inference (container type for SageMaker model)",
@@ -1708,7 +1764,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":50.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incorrect container image"
     },
     {
         "Answerer_created_time":null,
@@ -1738,8 +1796,8 @@
         "Challenge_repo_issue_count":5827.0,
         "Challenge_repo_star_count":5419.0,
         "Challenge_repo_watch_count":122.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":17,
         "Challenge_solved_time":229.9927777778,
         "Challenge_title":"error creating a triton deployment mlflow plugin",
@@ -1767,7 +1825,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"model loading failure"
     },
     {
         "Answerer_created_time":1588516515763,
@@ -1797,8 +1857,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":6.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":6,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":0.2190208333,
         "Challenge_title":"How to load trained model in amazon sagemaker?",
@@ -1826,7 +1886,9 @@
         "Solution_score_count":8.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":128.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"load trained model"
     },
     {
         "Answerer_created_time":1405457120427,
@@ -1856,8 +1918,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":23.8645480556,
         "Challenge_title":"Strange algorithm selection when using Azure AutoML with XBoostClassifier on categorial data",
@@ -1885,7 +1947,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":21.0,
         "Solution_word_count":250.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"strange algorithm selection"
     },
     {
         "Answerer_created_time":null,
@@ -1915,8 +1979,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":8.4330788889,
         "Challenge_title":"How to get Model ID of the Latest Version registered in Azure Machine Learning Service Model Registry using az ml cli?",
@@ -1944,7 +2008,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":30.0,
         "Solution_word_count":344.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"download ML model"
     },
     {
         "Answerer_created_time":1460437080990,
@@ -1974,8 +2040,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":0.7767452778,
         "Challenge_title":"Upload Saved ML Model in R (local) to Azure Machine Learning Studio",
@@ -2003,7 +2069,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":15.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to upload model"
     },
     {
         "Answerer_created_time":1389887039672,
@@ -2033,8 +2101,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":58.3565702778,
         "Challenge_title":"Can SageMaker Training have training data in NVMe volumes on compatible instances?",
@@ -2062,7 +2130,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":79.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"using NVMe volumes for training data"
     },
     {
         "Answerer_created_time":1363541433296,
@@ -2092,8 +2162,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":22,
         "Challenge_solved_time":79.6270055556,
         "Challenge_title":"SageMaker failed to extract model data archive tar.gz for container when deploying",
@@ -2121,7 +2191,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":120.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"invalid model archive"
     },
     {
         "Answerer_created_time":1428432018420,
@@ -2151,8 +2223,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":45.3193069444,
         "Challenge_title":"SageMaker Tensorflow - how to write my serving_input_fn()",
@@ -2180,7 +2252,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":68.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error in serving_input_fn()"
     },
     {
         "Answerer_created_time":null,
@@ -2210,8 +2284,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":0.8001691667,
         "Challenge_title":"Change in Machine Learning Designer",
@@ -2239,7 +2313,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":91.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing modules"
     },
     {
         "Answerer_created_time":null,
@@ -2269,8 +2345,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":22.7411330556,
         "Challenge_title":"Easiest way to load the best model checkpoint after training w\/ pytorch lightning",
@@ -2298,7 +2374,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":6.0,
         "Solution_word_count":91.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"retrieve checkpoint directory path"
     },
     {
         "Answerer_created_time":null,
@@ -2328,8 +2406,8 @@
         "Challenge_repo_issue_count":414.0,
         "Challenge_repo_star_count":145.0,
         "Challenge_repo_watch_count":7.0,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":27,
         "Challenge_solved_time":220.4830555556,
         "Challenge_title":"kedro-mlflow CLI is unavailable inside a Kedro project",
@@ -2357,7 +2435,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Kedro"
+        "Tool":"Kedro",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"cannot load saved model"
     },
     {
         "Answerer_created_time":null,
@@ -2387,8 +2467,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":19,
         "Challenge_solved_time":7.1856155556,
         "Challenge_title":"Azure Machine Learning Services - AutoMl - Error running experiment.submit: \"\/anaconda\/envs\/azureml_py36\/lib\/libxgboost.so: undefined symbol: XGDMatrixSetDenseInfo\"",
@@ -2416,7 +2496,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":18.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"Xgboost error"
     },
     {
         "Answerer_created_time":1606724007903,
@@ -2446,8 +2528,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":35,
         "Challenge_solved_time":63.0485838889,
         "Challenge_title":"GCP AI Platform API - Object Detection Metrics at Class Level (Python)",
@@ -2475,7 +2557,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":51.0,
         "Solution_word_count":407.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to access model metrics"
     },
     {
         "Answerer_created_time":1620154324507,
@@ -2505,8 +2589,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":83.6134972223,
         "Challenge_title":"Specify signature name on Vertex AI Predict",
@@ -2534,7 +2618,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":96.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to specify signature name"
     },
     {
         "Answerer_created_time":1583123749267,
@@ -2564,8 +2650,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":45.4293536111,
         "Challenge_title":"Having issues reading S3 bucket when transitioning a tensorflow model from local machine to AWS SageMaker",
@@ -2593,7 +2679,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":54.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to read S3 bucket"
     },
     {
         "Answerer_created_time":1452222077950,
@@ -2623,8 +2711,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":12.8401833334,
         "Challenge_title":"How could I save dataset from ipython notebook in Azure ML Studio?",
@@ -2652,7 +2740,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":23.0,
         "Solution_word_count":258.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"maximum request length exceeded"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -2682,8 +2772,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":40.1701361111,
         "Challenge_title":"SageMaker Model Registry Sharing",
@@ -2711,7 +2801,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":107.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"share model registry"
     },
     {
         "Answerer_created_time":null,
@@ -2741,8 +2833,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":85.3072222222,
         "Challenge_title":"How databrick save ml model into Azure Storage Container?",
@@ -2770,7 +2862,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":20.0,
         "Solution_word_count":231.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"model not saved in container"
     },
     {
         "Answerer_created_time":null,
@@ -2800,8 +2894,8 @@
         "Challenge_repo_issue_count":561.0,
         "Challenge_repo_star_count":31.0,
         "Challenge_repo_watch_count":41.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":0.3547222222,
         "Challenge_title":"vertex AI endpoint prediction error, 4 DEADLINE_EXCEEDED: Deadline exceeded",
@@ -2829,7 +2923,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"bug in sectioning"
     },
     {
         "Answerer_created_time":1613062428296,
@@ -2859,8 +2955,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":1.09315,
         "Challenge_title":"Kedro Data Modelling",
@@ -2888,7 +2984,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":37.0,
         "Solution_word_count":668.0,
-        "Tool":"Kedro"
+        "Tool":"Kedro",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"Kedro data modeling best practices"
     },
     {
         "Answerer_created_time":1562055808543,
@@ -2918,8 +3016,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":68,
         "Challenge_solved_time":0.9593686111,
         "Challenge_title":"ValueError: no SavedModel bundles found! when trying to deploy a TF2.0 model to SageMaker",
@@ -2947,7 +3045,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":46.0,
         "Solution_word_count":244.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"\"no SavedModel bundles found!\" error"
     },
     {
         "Answerer_created_time":null,
@@ -2977,8 +3077,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":162.8144655556,
         "Challenge_title":"ValidationException: The data points should have at least 50 rows for a valid regression or classification task with cv 5.",
@@ -3006,7 +3106,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":56.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"ValidationException with regression model"
     },
     {
         "Answerer_created_time":1251699930780,
@@ -3036,8 +3138,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":20,
         "Challenge_solved_time":33.9835508333,
         "Challenge_title":"Vertex AI custom prediction vs Google Kubernetes Engine",
@@ -3065,7 +3167,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":46.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"limitations of custom prediction container"
     },
     {
         "Answerer_created_time":1388815483776,
@@ -3095,8 +3199,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":468.7179647222,
         "Challenge_title":"MLflow - Serving model by reference to model registry",
@@ -3124,7 +3228,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":42.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incorrect URI format"
     },
     {
         "Answerer_created_time":1416346350292,
@@ -3154,8 +3260,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":63,
         "Challenge_solved_time":31.6211416667,
         "Challenge_title":"Save images from sagemaker training",
@@ -3183,7 +3289,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":80.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to save images"
     },
     {
         "Answerer_created_time":1525393797416,
@@ -3213,8 +3321,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":30,
         "Challenge_solved_time":0.4764786111,
         "Challenge_title":"Unable to serve an mlflow model locally",
@@ -3242,7 +3350,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":92.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"FileNotFoundError"
     },
     {
         "Answerer_created_time":1646242327867,
@@ -3272,8 +3382,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":98.4473672222,
         "Challenge_title":"AWS Quicksight - question about creating a calculated field using if else and custom aggregation",
@@ -3301,7 +3411,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":52.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"aggregation errors"
     },
     {
         "Answerer_created_time":null,
@@ -3331,8 +3443,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":0.2939025,
         "Challenge_title":"Does compute cluster & Endpoints costs if we dont delete after use ?",
@@ -3360,7 +3472,9 @@
         "Solution_score_count":9.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":75.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"cost of unused clusters"
     },
     {
         "Answerer_created_time":1390559330112,
@@ -3390,8 +3504,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":1183.9241880556,
         "Challenge_title":"Can sagemaker's linear learner be used for multiclass classification?",
@@ -3419,7 +3533,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":21.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"multiclass classification with linear learner"
     },
     {
         "Answerer_created_time":null,
@@ -3449,8 +3565,8 @@
         "Challenge_repo_issue_count":2794.0,
         "Challenge_repo_star_count":3760.0,
         "Challenge_repo_watch_count":44.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":1114.6180555556,
         "Challenge_title":"aim convert mlflow --experiment fails for experiment id, works for experiment name",
@@ -3478,7 +3594,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"etag conflict error"
     },
     {
         "Answerer_created_time":1448314895790,
@@ -3508,8 +3626,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":15.0059675,
         "Challenge_title":"SageMaker AWS Binary Text Classification",
@@ -3537,7 +3655,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":46.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"binary classification with TFidf"
     },
     {
         "Answerer_created_time":1619163566860,
@@ -3567,8 +3687,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":6.9030891667,
         "Challenge_title":"Cost of deploying a TensorFlow model in GCP?",
@@ -3596,7 +3716,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":243.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"cost estimation for deployment"
     },
     {
         "Answerer_created_time":1392296244356,
@@ -3626,8 +3748,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":25.0366127778,
         "Challenge_title":"Wandb website for Huggingface Trainer shows plots and logs only for the first model",
@@ -3655,7 +3777,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":40.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"website only shows first model"
     },
     {
         "Answerer_created_time":null,
@@ -3685,8 +3809,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":2.6086344444,
         "Challenge_title":"SDK features mapping",
@@ -3714,7 +3838,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":24.0,
         "Solution_word_count":197.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"map SDK V1 to V2"
     },
     {
         "Answerer_created_time":1533910280492,
@@ -3744,8 +3870,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":469.4681766667,
         "Challenge_title":"How to interpret the Throughput metric for Semantic Segmentation?",
@@ -3773,7 +3899,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":42.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"interpret throughput metric"
     },
     {
         "Answerer_created_time":1523264005616,
@@ -3803,8 +3931,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":1.0014597222,
         "Challenge_title":"SageMaker deploy custom script",
@@ -3832,7 +3960,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":111.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"limited space in Lambda"
     },
     {
         "Answerer_created_time":1226984969400,
@@ -3862,8 +3992,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":26,
         "Challenge_solved_time":164.8632505556,
         "Challenge_title":"SageMaker Managed Spot Training with Object Detection algorithm",
@@ -3891,7 +4021,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":49.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error with MaxWaitTimeInSeconds"
     },
     {
         "Answerer_created_time":1393524211332,
@@ -3921,8 +4053,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":47,
         "Challenge_solved_time":609.6229966667,
         "Challenge_title":"Procedural Generation of Feature Columns for use with Sagemaker Tensorflow Instance",
@@ -3950,7 +4082,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":45.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"define feature columns in estimator_fn"
     },
     {
         "Answerer_created_time":1553882107003,
@@ -3980,8 +4114,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":257.5221927778,
         "Challenge_title":"Sagemaker Processing doesn't upload",
@@ -4009,7 +4143,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":49.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"invalid bucket name"
     },
     {
         "Answerer_created_time":null,
@@ -4039,8 +4175,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":40.3672083333,
         "Challenge_title":"API Management - Can you import from Swagger JSON that requires HTTP Header records?",
@@ -4068,7 +4204,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":11.0,
         "Solution_word_count":151.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to specify headers"
     },
     {
         "Answerer_created_time":1411546424280,
@@ -4098,8 +4236,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":4477.9070705556,
         "Challenge_title":"Failed precondition: Table not initialized. on deployed universal sentence encoder from aws sagemaker",
@@ -4127,7 +4265,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":78.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"failed prediction with saved model"
     },
     {
         "Answerer_created_time":1513074641863,
@@ -4157,8 +4297,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":79,
         "Challenge_solved_time":22.7947866667,
         "Challenge_title":"Making predictions with Azure Machine learning with new data that contains headers (like pd.Dataframe)",
@@ -4186,7 +4326,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":36.0,
         "Solution_word_count":293.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to make predictions"
     },
     {
         "Answerer_created_time":1416346350292,
@@ -4216,8 +4358,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":23.4807313889,
         "Challenge_title":"upload image dataset to S3 sagemaker",
@@ -4245,7 +4387,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":102.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"upload image dataset to S3"
     },
     {
         "Answerer_created_time":1253986272627,
@@ -4275,8 +4419,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":27,
         "Challenge_solved_time":105.0398277778,
         "Challenge_title":"Sagemaker \"Could not find model data\" when trying to deploy my model",
@@ -4304,7 +4448,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":55.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing model data"
     },
     {
         "Answerer_created_time":1416193017423,
@@ -4334,8 +4480,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":24.3919611111,
         "Challenge_title":"How can I use a list of files as the training set on Sagemaker with Tensorflow?",
@@ -4363,7 +4509,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":86.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"train with subset of images"
     },
     {
         "Answerer_created_time":1551797759387,
@@ -4393,8 +4541,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":170.3002713889,
         "Challenge_title":"Vertex AI model batch prediction failed with internal error",
@@ -4422,7 +4570,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":89.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"internal error on batch prediction"
     },
     {
         "Answerer_created_time":1508924024027,
@@ -4452,8 +4602,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":504.0913175,
         "Challenge_title":"How to retrieve the model signature from the MLflow Model Registry",
@@ -4481,7 +4631,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":41.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to access model signature"
     },
     {
         "Answerer_created_time":1426694564423,
@@ -4511,8 +4663,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":147.1668483334,
         "Challenge_title":"Is AWS Sage Maker Auto Pilot suitable for NLP?",
@@ -4540,7 +4692,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":68.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"suitability for NLP"
     },
     {
         "Answerer_created_time":1584379010350,
@@ -4570,8 +4724,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":18.4716680556,
         "Challenge_title":"AWS CreateDeviceFleet operation fail because \"the account id does not have ownership on bucket\"",
@@ -4599,7 +4753,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":55.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"ownership validation error"
     },
     {
         "Answerer_created_time":null,
@@ -4629,8 +4785,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":9.5907397222,
         "Challenge_title":"How to access to the featurized dataset in Automated ML",
@@ -4658,7 +4814,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":25.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"access featurized dataset"
     },
     {
         "Answerer_created_time":1374169767267,
@@ -4688,8 +4846,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":7.0366380556,
         "Challenge_title":"Invoking SageMaker Endpoint for PyTorch Model",
@@ -4717,7 +4875,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":109.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"tensor index error"
     },
     {
         "Answerer_created_time":1352206833663,
@@ -4747,8 +4907,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":28.8670294445,
         "Challenge_title":"How do I create a Sagemaker training job with my own Tensorflow code without having to build a container?",
@@ -4776,7 +4936,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":50.0,
         "Solution_word_count":546.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"use own Tensorflow code"
     },
     {
         "Answerer_created_time":1627043269590,
@@ -4806,8 +4968,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":3.6767725,
         "Challenge_title":"Accessing an Azure ML Model Registry from another Azure ML Workspace",
@@ -4835,7 +4997,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":116.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"access model registry from another workspace"
     },
     {
         "Answerer_created_time":null,
@@ -4865,8 +5029,8 @@
         "Challenge_repo_issue_count":1763.0,
         "Challenge_repo_star_count":145.0,
         "Challenge_repo_watch_count":15.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":992.0369444444,
         "Challenge_title":"Getting an error from `aws_sagemaker_notebook_instance` table. Please see the detail below.",
@@ -4894,7 +5058,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incorrect regex in bucket name"
     },
     {
         "Answerer_created_time":1428454496052,
@@ -4924,8 +5090,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":94.0638861111,
         "Challenge_title":"How to generate Recordio from Java object",
@@ -4953,7 +5119,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":43.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"serialize Java objects"
     },
     {
         "Answerer_created_time":null,
@@ -4983,8 +5151,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":21.5095830556,
         "Challenge_title":"Can you give me an example of a draw with Infer.net",
@@ -5012,7 +5180,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":12.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"example for E-sports Bo 2 or football"
     },
     {
         "Answerer_created_time":1554186784008,
@@ -5042,8 +5212,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":4.7284872222,
         "Challenge_title":"Models registered in workspace do not show up in Designer (preview)",
@@ -5071,7 +5241,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":63.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"model not showing up"
     },
     {
         "Answerer_created_time":1354669077990,
@@ -5101,8 +5273,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":35,
         "Challenge_solved_time":210.1167805556,
         "Challenge_title":"Adding a {serve} metagraph to existing Tensorflow model",
@@ -5130,7 +5302,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":32.0,
         "Solution_word_count":327.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"meta graph def not found"
     },
     {
         "Answerer_created_time":1598606826112,
@@ -5160,8 +5334,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":222.6413147222,
         "Challenge_title":"Getting KeyError : 'callable_inputs' when trying to save a TF model in S3 bucket",
@@ -5189,7 +5363,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":15.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"KeyError in saving model"
     },
     {
         "Answerer_created_time":null,
@@ -5219,8 +5395,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":1.1106713889,
         "Challenge_title":"Images Segmentation using Azure",
@@ -5248,7 +5424,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":60.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"image segmentation training"
     },
     {
         "Answerer_created_time":1424453610300,
@@ -5278,8 +5456,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":133.7906688889,
         "Challenge_title":"Azure Machine Learning Prediction - Input and Outputs",
@@ -5307,7 +5485,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":26.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unexpected input request"
     },
     {
         "Answerer_created_time":1631803441500,
@@ -5337,8 +5517,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":23.1295969444,
         "Challenge_title":"Why do I get 'google.cloud.aiplatform.constants' has no attribute 'SUPPORTED_REGIONS error for Vertex AI init?",
@@ -5366,7 +5546,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":76.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"attribute error"
     },
     {
         "Answerer_created_time":1530092504712,
@@ -5396,8 +5578,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":0.5786791667,
         "Challenge_title":"How to catalog datasets & models by S3 URI, but keep a local copy?",
@@ -5425,7 +5607,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":227.0,
-        "Tool":"Kedro"
+        "Tool":"Kedro",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"mirror Kedro files"
     },
     {
         "Answerer_created_time":1384343462316,
@@ -5455,8 +5639,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":26,
         "Challenge_solved_time":48.2131977778,
         "Challenge_title":"How do I specify mlflow MLproject with zero parameters?",
@@ -5484,7 +5668,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":43.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error with zero parameters"
     },
     {
         "Answerer_created_time":null,
@@ -5514,8 +5700,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":21.8707033333,
         "Challenge_title":"How to download mlflow model artifacts from Azure Databricks workspace to local directory?",
@@ -5543,7 +5729,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":139.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"download model artifacts directly"
     },
     {
         "Answerer_created_time":1424453610300,
@@ -5573,8 +5761,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":11.9719969444,
         "Challenge_title":"Azure machine learning predict order for customer",
@@ -5602,7 +5790,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":34.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"classification and prediction guidance"
     },
     {
         "Answerer_created_time":null,
@@ -5632,8 +5822,8 @@
         "Challenge_repo_issue_count":1927.0,
         "Challenge_repo_star_count":15795.0,
         "Challenge_repo_watch_count":264.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":27,
         "Challenge_solved_time":4.3669444444,
         "Challenge_title":"[BUG] Update test documentation to connect AzureML with GitHub actions",
@@ -5661,7 +5851,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"test process does not fail"
     },
     {
         "Answerer_created_time":1221810788500,
@@ -5691,8 +5883,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":380.8509777778,
         "Challenge_title":"Serve online learning models with mlflow",
@@ -5720,7 +5912,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":120.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"continuous model updating"
     },
     {
         "Answerer_created_time":1253986272627,
@@ -5750,8 +5944,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":17.5084694445,
         "Challenge_title":"Where do I store my model's training data, artifacts, etc?",
@@ -5779,7 +5973,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":88.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"store training data"
     },
     {
         "Answerer_created_time":1244808478036,
@@ -5809,8 +6005,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":18.9520191667,
         "Challenge_title":"Train Amazon SageMaker object detection model on local PC",
@@ -5838,7 +6034,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":79.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"local training for SageMaker"
     },
     {
         "Answerer_created_time":1450242937020,
@@ -5868,8 +6066,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":0.2286694444,
         "Challenge_title":"Cannot run huge Python program",
@@ -5897,7 +6095,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":21.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"alternative to Pycharm IDE"
     },
     {
         "Answerer_created_time":1528629350990,
@@ -5927,8 +6127,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":31,
         "Challenge_solved_time":121.4413405556,
         "Challenge_title":"How to make inference to a keras model hosted on AWS SageMaker via AWS Lambda function?",
@@ -5956,7 +6156,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":17.0,
         "Solution_word_count":106.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"attribute error"
     },
     {
         "Answerer_created_time":1416346350292,
@@ -5986,8 +6188,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":19.3580833334,
         "Challenge_title":"Reloading from checkpoing during AWS Sagemaker Training",
@@ -6015,7 +6217,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":66.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"testing checkpoint mechanism"
     },
     {
         "Answerer_created_time":1544390307847,
@@ -6045,8 +6249,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":270.3311944445,
         "Challenge_title":"SageMaker Ground Truth with TensorFlow",
@@ -6074,7 +6278,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":41.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"use SageMaker Ground Truth with TensorFlow Script Mode"
     },
     {
         "Answerer_created_time":null,
@@ -6104,8 +6310,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":0.4538275,
         "Challenge_title":"What is the Learning path to Became a data scientist?",
@@ -6133,7 +6339,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":51.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"learning paths and certification"
     },
     {
         "Answerer_created_time":1426694564423,
@@ -6163,8 +6371,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":25.8557936111,
         "Challenge_title":"Sagemaker export and load model to memory",
@@ -6192,7 +6400,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":82.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"load Sagemaker model without docker"
     },
     {
         "Answerer_created_time":1416648155470,
@@ -6222,8 +6432,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":27.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":27,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":null,
         "Challenge_title":"How to use SageMaker Estimator for model training and saving",
@@ -6251,7 +6461,9 @@
         "Solution_score_count":65.0,
         "Solution_sentence_count":201.0,
         "Solution_word_count":2374.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"inadequate documentation"
     },
     {
         "Answerer_created_time":null,
@@ -6281,8 +6493,8 @@
         "Challenge_repo_issue_count":933.0,
         "Challenge_repo_star_count":5.0,
         "Challenge_repo_watch_count":8.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":1124.7847222222,
         "Challenge_title":"All MLflow experiments are visible for any user",
@@ -6310,7 +6522,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"model not found"
     },
     {
         "Answerer_created_time":1446631384107,
@@ -6340,8 +6554,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":7.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":7,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":1272.6109538889,
         "Challenge_title":"How to register model from the Azure ML Pipeline Script step",
@@ -6369,7 +6583,9 @@
         "Solution_score_count":14.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":88.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"cannot locate model path"
     },
     {
         "Answerer_created_time":1250158552416,
@@ -6399,8 +6615,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":6.8599055556,
         "Challenge_title":"Azure machine learning studio get access to the file in upload zip file",
@@ -6428,7 +6644,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":43.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"access file path in zip"
     },
     {
         "Answerer_created_time":1259808393296,
@@ -6458,8 +6676,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":4.5641338889,
         "Challenge_title":"Model generated by AWS autopilot",
@@ -6487,7 +6705,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":108.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"use Autopilot model offline"
     },
     {
         "Answerer_created_time":1426694564423,
@@ -6517,8 +6737,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":26,
         "Challenge_solved_time":112.0486916667,
         "Challenge_title":"Unable to open pickled Sagemaker XGBoost model",
@@ -6546,7 +6766,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":68.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"attribute error"
     },
     {
         "Answerer_created_time":1425802890212,
@@ -6576,8 +6798,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":27,
         "Challenge_solved_time":14.3147588889,
         "Challenge_title":"Azure ML: Getting Error 503: NoMoreResources to any web service API even when I only make 1 request",
@@ -6605,7 +6827,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":93.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error 503"
     },
     {
         "Answerer_created_time":1444147981107,
@@ -6635,8 +6859,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":126.5392991667,
         "Challenge_title":"Web service input into SQL query into R in Azure ML",
@@ -6664,7 +6888,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":29.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unexpected input parameter"
     },
     {
         "Answerer_created_time":1334762714136,
@@ -6694,8 +6920,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":23.5139827778,
         "Challenge_title":"Include additional scripts when deploying a Azure ML experimentation service",
@@ -6723,7 +6949,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":52.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"include data transformation script"
     },
     {
         "Answerer_created_time":1458100127643,
@@ -6753,8 +6981,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":18.8037608333,
         "Challenge_title":"Feature Importance for XGBoost in Sagemaker",
@@ -6782,7 +7010,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":83.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"interpret XGBoost model"
     },
     {
         "Answerer_created_time":1535695625688,
@@ -6812,8 +7042,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":64,
         "Challenge_solved_time":355.6374158334,
         "Challenge_title":"Sagemaker and Tensorflow model not saved",
@@ -6841,7 +7071,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":61.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing model in bucket"
     },
     {
         "Answerer_created_time":1416346350292,
@@ -6871,8 +7103,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":3.3754333334,
         "Challenge_title":"Change model file save location on AWS SageMaker Training Job",
@@ -6900,7 +7132,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":62.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"output file not found"
     },
     {
         "Answerer_created_time":null,
@@ -6930,8 +7164,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":1.0104277778,
         "Challenge_title":"GPT-3 access",
@@ -6959,7 +7193,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":54.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"access GPT-3"
     },
     {
         "Answerer_created_time":1399995590030,
@@ -6989,8 +7225,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":6.4294858333,
         "Challenge_title":"How to tell the learner type of machine learning models",
@@ -7018,7 +7254,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":65.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"different learner types"
     },
     {
         "Answerer_created_time":1656670919183,
@@ -7048,8 +7286,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":76.5733497222,
         "Challenge_title":"How to get image classification prediction from GCP AIPlatform in ruby?",
@@ -7077,7 +7315,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":55.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"invalid payload error"
     },
     {
         "Answerer_created_time":1254829817772,
@@ -7107,8 +7347,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":23,
         "Challenge_solved_time":211.9353638889,
         "Challenge_title":"How to correctly write a sagemaker tensorflow input_handler() that returns a numpy array?",
@@ -7136,7 +7376,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":8.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incorrect return type"
     },
     {
         "Answerer_created_time":1566789105747,
@@ -7166,8 +7408,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":21.2319291667,
         "Challenge_title":"Where can I find the Performance Metrics generated by SageMaker Debugger\/Profiler?",
@@ -7195,7 +7437,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":71.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"locate performance metrics"
     },
     {
         "Answerer_created_time":null,
@@ -7225,8 +7469,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":7.6225,
         "Challenge_title":"How to checkpoint SageMaker model artifact during a training job?",
@@ -7254,7 +7498,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":188.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"checkpoint model artifact"
     },
     {
         "Answerer_created_time":null,
@@ -7284,8 +7530,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":308.1150516667,
         "Challenge_title":"Model Monitor Capture data - EndpointOutput Encoding is BASE64",
@@ -7313,7 +7559,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":47.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"BASE64 encoding error"
     },
     {
         "Answerer_created_time":1374162232292,
@@ -7343,8 +7591,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":17,
         "Challenge_solved_time":43.46481,
         "Challenge_title":"AzureML: \"Train Matchbox Recommender\" is not working and does not descibe the error",
@@ -7372,7 +7620,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":54.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error creating experiment"
     },
     {
         "Answerer_created_time":1512770138847,
@@ -7402,8 +7652,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":7.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":7,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":23.7093202778,
         "Challenge_title":"How to save models trained locally in Amazon SageMaker?",
@@ -7431,7 +7681,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":79.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to save trained model"
     },
     {
         "Answerer_created_time":1462822911288,
@@ -7461,8 +7713,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":46.9211463889,
         "Challenge_title":"What should I do when H2O AutoML returns \"H2OFrame is empty\"?",
@@ -7490,7 +7742,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":45.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"empty H2OFrame"
     },
     {
         "Answerer_created_time":null,
@@ -7520,8 +7774,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":217.8333333333,
         "Challenge_title":"Should I custom split my image data?",
@@ -7549,7 +7803,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":127.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"custom vs AutoML split"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -7579,8 +7835,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":17.2939833333,
         "Challenge_title":"sagemaker horizontally scaling tensorflow (keras) model",
@@ -7608,7 +7864,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":41.0,
         "Solution_word_count":853.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"scaling TensorFlow model"
     },
     {
         "Answerer_created_time":1342709052703,
@@ -7638,8 +7896,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":19,
         "Challenge_solved_time":25.8006916667,
         "Challenge_title":"How to bulk test the Sagemaker Object detection model with a .mat dataset or S3 folder of images?",
@@ -7667,7 +7925,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":99.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"apply model to multiple pictures"
     },
     {
         "Answerer_created_time":null,
@@ -7697,8 +7957,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":52.1266738889,
         "Challenge_title":"ML Pickle file size Azure Machine Learning Service",
@@ -7726,7 +7986,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":83.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"ML pickle model restrictions"
     },
     {
         "Answerer_created_time":1369156710532,
@@ -7756,8 +8018,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":2.8227241667,
         "Challenge_title":"saving trained models in optuna to a variable",
@@ -7785,7 +8047,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":82.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"save best models as variable"
     },
     {
         "Answerer_created_time":null,
@@ -7815,8 +8079,8 @@
         "Challenge_repo_issue_count":216.0,
         "Challenge_repo_star_count":146.0,
         "Challenge_repo_watch_count":10.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":4770.0555555556,
         "Challenge_title":"error: no kind \"TrainingJob\" is registered for version \"sagemaker.aws.amazon.com\/v1\" in scheme \"k8s.io\/kubectl\/pkg\/scheme\/scheme.go:28\"",
@@ -7844,7 +8108,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"failed validation check"
     },
     {
         "Answerer_created_time":null,
@@ -7874,8 +8140,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":64.0951252778,
         "Challenge_title":"Can SageMaker notebook jobs access studio storage?",
@@ -7903,7 +8169,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":67.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"no access to files"
     },
     {
         "Answerer_created_time":1424453610300,
@@ -7933,8 +8201,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":36.3344202778,
         "Challenge_title":"Feature weightage from Azure Machine Learning Deployed Web Service",
@@ -7962,7 +8230,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":32.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"feature weight in prediction"
     },
     {
         "Answerer_created_time":1405457120427,
@@ -7992,8 +8262,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":1.5530666667,
         "Challenge_title":"Azure Machine Learning Studio designer - \"create new version\" unexpected when registering a data set",
@@ -8021,7 +8291,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":15.0,
         "Solution_word_count":165.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unexpected keyword argument"
     },
     {
         "Answerer_created_time":1321893442023,
@@ -8051,8 +8323,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":367.2256972222,
         "Challenge_title":"Tensorflow - Checkpoints not saving to Sagemaker Notebook Instance",
@@ -8080,7 +8352,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":32.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to save checkpoints"
     },
     {
         "Answerer_created_time":1626973229036,
@@ -8110,8 +8384,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":19,
         "Challenge_solved_time":31.5143888889,
         "Challenge_title":"How to infer a tensorflow pre trained deployed model with an image?",
@@ -8139,7 +8413,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":77.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unsupported media type"
     },
     {
         "Answerer_created_time":1357263005087,
@@ -8169,8 +8445,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":5.9137519445,
         "Challenge_title":"Install graphiz on AWS Sagemaker",
@@ -8198,7 +8474,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":59.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing graphviz installation"
     },
     {
         "Answerer_created_time":1528790837107,
@@ -8228,8 +8506,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":208.4337880556,
         "Challenge_title":"Azure ML - Train a model on segments of the data-set",
@@ -8257,7 +8535,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":14.0,
         "Solution_word_count":220.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"train one model for multiple businesses"
     },
     {
         "Answerer_created_time":1280527017200,
@@ -8287,8 +8567,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":98.7025555556,
         "Challenge_title":"Re-hosting a trained model on AWS SageMaker",
@@ -8316,7 +8596,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":38.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"recreate inference endpoint"
     },
     {
         "Answerer_created_time":null,
@@ -8346,8 +8628,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":9.8427261111,
         "Challenge_title":"Azure AutoML Featurisation Error",
@@ -8375,7 +8657,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":13.0,
         "Solution_word_count":180.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"invalid featurizationconfig argument"
     },
     {
         "Answerer_created_time":null,
@@ -8405,8 +8689,8 @@
         "Challenge_repo_issue_count":414.0,
         "Challenge_repo_star_count":145.0,
         "Challenge_repo_watch_count":7.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":34,
         "Challenge_solved_time":0.935,
         "Challenge_title":"TypeError in _generate_kedro_command when debugging run in VSCode",
@@ -8434,7 +8718,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Kedro"
+        "Tool":"Kedro",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incompatible plugin version"
     },
     {
         "Answerer_created_time":null,
@@ -8464,8 +8750,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":15.4171983334,
         "Challenge_title":"Pathway for code free predictive modeling",
@@ -8493,7 +8779,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":68.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"efficient code-free modeling path"
     },
     {
         "Answerer_created_time":null,
@@ -8523,8 +8811,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":4.7084425,
         "Challenge_title":"Deep learning training on Azure steps and tutorial",
@@ -8552,7 +8840,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":54.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"deep learning training guidance"
     },
     {
         "Answerer_created_time":1342709052703,
@@ -8582,8 +8872,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":16.1329663889,
         "Challenge_title":"Is it possible to deploy a already trained Keras to Sagemaker?",
@@ -8611,7 +8901,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":40.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"deploy Keras model to Sagemaker"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -8641,8 +8933,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":30,
         "Challenge_solved_time":13.4696980556,
         "Challenge_title":"How to invoke Sagemaker XGBoost endpoint post model creation?",
@@ -8670,7 +8962,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":16.0,
         "Solution_word_count":196.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error replacing predictor"
     },
     {
         "Answerer_created_time":null,
@@ -8700,8 +8994,8 @@
         "Challenge_repo_issue_count":2335.0,
         "Challenge_repo_star_count":1110.0,
         "Challenge_repo_watch_count":2708.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":29.7938888889,
         "Challenge_title":"ImportError: cannot import name 'json' from 'itsdangerous' (\/azureml-envs\/azureml_9560a2159e2635db8931fa24bcadb555\/lib\/python3.7\/site-packages\/itsdangerous\/__init__.py)",
@@ -8729,7 +9023,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"bug in test documentation update"
     },
     {
         "Answerer_created_time":1589738451347,
@@ -8759,8 +9055,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":41,
         "Challenge_solved_time":116.7587313889,
         "Challenge_title":"joblib.dump() fails when saving model to temporary data store in AMLS",
@@ -8788,7 +9084,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":38.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unauthorized operation"
     },
     {
         "Answerer_created_time":1478712810887,
@@ -8818,8 +9116,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":5.5186163889,
         "Challenge_title":"Understanding classification results",
@@ -8847,7 +9145,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":32.0,
         "Solution_word_count":368.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"understand classification results"
     },
     {
         "Answerer_created_time":1426694564423,
@@ -8877,8 +9177,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":13.6488463889,
         "Challenge_title":"How to explicitly set sagemaker autopilot's validation set?",
@@ -8906,7 +9206,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":18.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"set validation set manually"
     },
     {
         "Answerer_created_time":null,
@@ -8936,8 +9238,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":58.8322222222,
         "Challenge_title":"Can I use SageMaker Autopilot for my time-series modeling?",
@@ -8965,7 +9267,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":80.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"time series algorithm alternative"
     },
     {
         "Answerer_created_time":1253986272627,
@@ -8995,8 +9299,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":139.8431305556,
         "Challenge_title":"AWS Sagemaker vs ECS for model hosting",
@@ -9024,7 +9328,9 @@
         "Solution_score_count":7.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":196.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"compare ECS and Sagemaker"
     },
     {
         "Answerer_created_time":1505653015243,
@@ -9054,8 +9360,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":0.1140905556,
         "Challenge_title":"How to find the path to blob?",
@@ -9083,7 +9389,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":44.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"find blob storage path"
     },
     {
         "Answerer_created_time":1565022238448,
@@ -9113,8 +9421,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":46,
         "Challenge_solved_time":6.0927694445,
         "Challenge_title":"Registering and downloading a fastText .bin model fails with Azure Machine Learning Service",
@@ -9142,7 +9450,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":100.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"download error"
     },
     {
         "Answerer_created_time":1480786532470,
@@ -9172,8 +9482,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":2016.3332602778,
         "Challenge_title":"Deploy pre-trained tensorflow model on the aws sagemaker - ModelError: An error occurred (ModelError) when calling the InvokeEndpoint operation",
@@ -9201,7 +9511,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":29.0,
         "Solution_word_count":271.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"ModelError with Conv2D operation"
     },
     {
         "Answerer_created_time":null,
@@ -9231,8 +9543,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":214.3601405556,
         "Challenge_title":"AutoML : TensorFlowDNN and TensorFlowLinearRegressor are blacklisted by default",
@@ -9260,6 +9572,8 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":25.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"models blacklisted"
     }
 ]

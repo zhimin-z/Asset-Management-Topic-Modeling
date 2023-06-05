@@ -27,8 +27,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":15.3868036111,
         "Challenge_title":"Azure ML- Execute Python Script -Datatime.date not working",
@@ -56,7 +56,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":26.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"conversion table not implemented"
     },
     {
         "Answerer_created_time":null,
@@ -86,8 +88,8 @@
         "Challenge_repo_issue_count":2059.0,
         "Challenge_repo_star_count":290.0,
         "Challenge_repo_watch_count":36.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":6.2444444444,
         "Challenge_title":"Run and debug experiments locally - azureML.CLI Compatibility Mode for CLI v1 - cannot find",
@@ -115,7 +117,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"failed request error"
     },
     {
         "Answerer_created_time":null,
@@ -145,8 +149,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":31.4527527778,
         "Challenge_title":"azure cosmos db as a datastore in ml",
@@ -174,7 +178,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":77.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"register Cosmos DB as datastore"
     },
     {
         "Answerer_created_time":null,
@@ -204,8 +210,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":26,
         "Challenge_solved_time":83.6952572222,
         "Challenge_title":"AzureML Error on Linux: \"Unable to retrieve .NET dependencies. Please make sure you are connected ...\"",
@@ -233,7 +239,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":13.0,
         "Solution_word_count":148.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to retrieve .NET dependencies"
     },
     {
         "Answerer_created_time":null,
@@ -263,8 +271,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":93.5734752778,
         "Challenge_title":"Error when Visualizing Dataset in Microsoft Azure Machine Learning Studio",
@@ -292,7 +300,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":82.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to visualize dataset"
     },
     {
         "Answerer_created_time":null,
@@ -322,8 +332,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":107.1936713889,
         "Challenge_title":"Wandb assertion errror",
@@ -351,7 +361,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":4.0,
         "Solution_word_count":44.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"assertion error on remote device"
     },
     {
         "Answerer_created_time":null,
@@ -381,8 +393,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":0.0900975,
         "Challenge_title":"ML Batch Endpoint, using datastore to access an external data storage",
@@ -410,7 +422,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":21.0,
         "Solution_word_count":318.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"authentication for compute cluster"
     },
     {
         "Answerer_created_time":null,
@@ -440,8 +454,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":20,
         "Challenge_solved_time":7.7363491667,
         "Challenge_title":"Azure ML workspace blob structure \/ Can I safely delete these blobs?",
@@ -469,7 +483,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":134.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"understand workspace folder structure"
     },
     {
         "Answerer_created_time":null,
@@ -499,8 +515,8 @@
         "Challenge_repo_issue_count":145.0,
         "Challenge_repo_star_count":369.0,
         "Challenge_repo_watch_count":9.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":3.7161111111,
         "Challenge_title":"Markdown in dvc install prompt isn't rendered as markdown",
@@ -528,7 +544,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"read-only file system"
     },
     {
         "Answerer_created_time":1367453125248,
@@ -558,8 +576,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":5.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":5,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":111.6252991667,
         "Challenge_title":"Transfer from ADLS2 to Compute Target very slow Azure Machine Learning",
@@ -587,7 +605,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":150.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"slow download speed"
     },
     {
         "Answerer_created_time":1475181309096,
@@ -617,8 +637,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":20.4124608333,
         "Challenge_title":"AWS SageMaker is not authorized to perform: ecr:CreateRepository on resource: *",
@@ -646,7 +666,9 @@
         "Solution_score_count":5.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":25.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"AccessDeniedException error"
     },
     {
         "Answerer_created_time":null,
@@ -676,8 +698,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":3.3700394444,
         "Challenge_title":"Will SQL Server enable  sp_execute_external_script to work with a previously installed Anaconda3",
@@ -705,7 +727,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":85.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to install R\/Java"
     },
     {
         "Answerer_created_time":null,
@@ -735,8 +759,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":23.5220988889,
         "Challenge_title":"Permission error while finishing auto ml run",
@@ -764,7 +788,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":42.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"permission error"
     },
     {
         "Answerer_created_time":null,
@@ -794,8 +820,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":1.1574388889,
         "Challenge_title":"Access to Azure subscription for users",
@@ -823,7 +849,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":11.0,
         "Solution_word_count":152.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"access issues"
     },
     {
         "Answerer_created_time":1640731722280,
@@ -853,8 +881,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":0.0418091667,
         "Challenge_title":"I can not install \"git-lfs\" on aws sagemaker notebook instance",
@@ -882,7 +910,9 @@
         "Solution_score_count":6.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":26.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to install git-lfs"
     },
     {
         "Answerer_created_time":1527065173880,
@@ -912,8 +942,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":62.1080711111,
         "Challenge_title":"Azure Machine Learning - Use personal container registry",
@@ -941,7 +971,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":109.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"403 error with container registry"
     },
     {
         "Answerer_created_time":null,
@@ -971,8 +1003,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":723.7180555556,
         "Challenge_title":"SageMaker Studio projects in VpcOnly mode without internet access",
@@ -1000,7 +1032,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":14.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to list project templates"
     },
     {
         "Answerer_created_time":null,
@@ -1030,8 +1064,8 @@
         "Challenge_repo_issue_count":210.0,
         "Challenge_repo_star_count":8.0,
         "Challenge_repo_watch_count":6.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":290,
         "Challenge_solved_time":511.6538888889,
         "Challenge_title":"Error when starting new experiment in mlflow",
@@ -1059,7 +1093,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"hardcoded bucket name"
     },
     {
         "Answerer_created_time":1565289301123,
@@ -1089,8 +1125,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":3325.3867527778,
         "Challenge_title":"Data sources in Azure Machine Learning Services",
@@ -1118,7 +1154,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":61.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"data source options"
     },
     {
         "Answerer_created_time":1324988509368,
@@ -1148,8 +1186,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":70.3087380556,
         "Challenge_title":"Amazon Sagemaker. AccessDeniedException when calling the InvokeEndpoint operation",
@@ -1177,7 +1215,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":56.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"AccessDeniedException error"
     },
     {
         "Answerer_created_time":1298484007147,
@@ -1207,8 +1247,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":17,
         "Challenge_solved_time":119.2915472222,
         "Challenge_title":"prevent access to s3 buckets for sagemaker users",
@@ -1236,7 +1276,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":46.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unrestricted S3 access"
     },
     {
         "Answerer_created_time":null,
@@ -1266,8 +1308,8 @@
         "Challenge_repo_issue_count":493.0,
         "Challenge_repo_star_count":546.0,
         "Challenge_repo_watch_count":33.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":216.3194444444,
         "Challenge_title":"[BUG] Neptune ML Export widget throwing error",
@@ -1295,7 +1337,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Neptune"
+        "Tool":"Neptune",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"SSL connection error"
     },
     {
         "Answerer_created_time":1359113510580,
@@ -1325,8 +1369,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":1.0578722222,
         "Challenge_title":"Azure Data Lake Storage Gen2 (ADLS Gen2) as a data source for Kedro pipeline",
@@ -1354,7 +1398,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":103.0,
-        "Tool":"Kedro"
+        "Tool":"Kedro",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"use ADLS Gen2 in Kedro"
     },
     {
         "Answerer_created_time":1401427814950,
@@ -1384,8 +1430,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":39,
         "Challenge_solved_time":1.2482080556,
         "Challenge_title":"How to save data to remote mongoDB via ssh tunnel? (connection refused)",
@@ -1413,7 +1459,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":113.0,
-        "Tool":"Sacred"
+        "Tool":"Sacred",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"connection refused"
     },
     {
         "Answerer_created_time":null,
@@ -1443,8 +1491,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":10.6412836111,
         "Challenge_title":"Can Sagemaker Git Repositories use ssh secrets (no name and password)?",
@@ -1472,7 +1520,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":17.0,
         "Solution_word_count":335.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"ssh secrets for Sagemaker Git Repositories"
     },
     {
         "Answerer_created_time":null,
@@ -1502,8 +1552,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":55.8666666667,
         "Challenge_title":"Mount gcsfuse in gcloud ai custom-jobs local-run",
@@ -1531,7 +1581,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":90.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"access mounted bucket locally"
     },
     {
         "Answerer_created_time":null,
@@ -1561,8 +1613,8 @@
         "Challenge_repo_issue_count":95.0,
         "Challenge_repo_star_count":2.0,
         "Challenge_repo_watch_count":1.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":94.8744444444,
         "Challenge_title":"data loading bug with dvc",
@@ -1590,7 +1642,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incomplete folder name"
     },
     {
         "Answerer_created_time":1342713532568,
@@ -1620,8 +1674,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":4.4646297222,
         "Challenge_title":"DVC Shared Windows Directory Setup",
@@ -1649,7 +1703,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":160.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"unify DVC URL"
     },
     {
         "Answerer_created_time":1507661294190,
@@ -1679,8 +1735,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":28.2785163889,
         "Challenge_title":"Add Security groups in Amazon SageMaker for distributed training jobs",
@@ -1708,7 +1764,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":132.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"security group rules for SageMaker"
     },
     {
         "Answerer_created_time":1250347954880,
@@ -1738,8 +1796,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":5.8410222222,
         "Challenge_title":"How to merge data (CSV) files from multiple branches (Git and DVC)?",
@@ -1767,7 +1825,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":82.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"merge prediction CSV files"
     },
     {
         "Answerer_created_time":1435524174732,
@@ -1797,8 +1857,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":19.1911183333,
         "Challenge_title":"Amazon Sage Maker: How to authenticate AWS SageMaker End-Point Request",
@@ -1826,7 +1886,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":19.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"signature mismatch error"
     },
     {
         "Answerer_created_time":null,
@@ -1856,8 +1918,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":15.64844,
         "Challenge_title":"Mount AML dataset on Windows",
@@ -1885,7 +1947,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":46.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"mount AML dataset on Windows"
     },
     {
         "Answerer_created_time":1370074627432,
@@ -1915,8 +1979,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":1.4685594445,
         "Challenge_title":"AWS SageMaker: PermissionError: Access Denied - Reading data from S3 bucket",
@@ -1944,7 +2008,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":54.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"PermissionError while reading data"
     },
     {
         "Answerer_created_time":1561143508792,
@@ -1974,8 +2040,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":2.5863166667,
         "Challenge_title":"How to manage datasets in ClearML Web UI?",
@@ -2003,7 +2069,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":90.0,
-        "Tool":"ClearML"
+        "Tool":"ClearML",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing feature store"
     },
     {
         "Answerer_created_time":null,
@@ -2033,8 +2101,8 @@
         "Challenge_repo_issue_count":493.0,
         "Challenge_repo_star_count":546.0,
         "Challenge_repo_watch_count":33.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":29.6355555556,
         "Challenge_title":"Configuration options not being set correctly when using CN region Neptune endpoint as host",
@@ -2062,7 +2130,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Neptune"
+        "Tool":"Neptune",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing documentation"
     },
     {
         "Answerer_created_time":1423640080283,
@@ -2092,8 +2162,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":0.8004613889,
         "Challenge_title":"Why is the field \"compute target\" for data drift monitoring in Azure ML studio still blank whereas I have a compute instance?",
@@ -2121,7 +2191,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":35.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"empty compute target dropdown"
     },
     {
         "Answerer_created_time":1522870754323,
@@ -2151,8 +2223,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":405.5357452778,
         "Challenge_title":"How give azure machine learning dataset path in an inference script?",
@@ -2180,7 +2252,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":61.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incorrect dataset path"
     },
     {
         "Answerer_created_time":null,
@@ -2210,8 +2284,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":66.3502777778,
         "Challenge_title":"Sagemaker taking an unexpectedly long time to download training data",
@@ -2239,7 +2313,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":79.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"slow download speed"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -2269,8 +2345,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":18.4475338889,
         "Challenge_title":"How to read AWS S3 images from Sagemaker for processing",
@@ -2298,7 +2374,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":63.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"challenges in reading images"
     },
     {
         "Answerer_created_time":null,
@@ -2328,8 +2406,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":0.9089091667,
         "Challenge_title":"Why is the field \"compute target\" for data drift monitoring in ML studio still blank whereas I have a compute instance?",
@@ -2357,7 +2435,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":21.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"empty compute target dropdown"
     },
     {
         "Answerer_created_time":1342713532568,
@@ -2387,8 +2467,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":1.6038955556,
         "Challenge_title":"SSH automation in jenkins",
@@ -2416,7 +2496,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":29.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"SSH automation permission denied error"
     },
     {
         "Answerer_created_time":1385461358920,
@@ -2446,8 +2528,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":8.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":8,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":2.8375658334,
         "Challenge_title":"How to remotely connect to GCP ML Engine\/AWS Sagemaker managed notebooks?",
@@ -2475,7 +2557,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":125.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"remote connection to ML platforms"
     },
     {
         "Answerer_created_time":1589738451347,
@@ -2505,8 +2589,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":4.0186147222,
         "Challenge_title":"Trouble connecting to AMLS web service on AKS using Python requests",
@@ -2534,7 +2618,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":60.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to connect to web service"
     },
     {
         "Answerer_created_time":null,
@@ -2564,8 +2650,8 @@
         "Challenge_repo_issue_count":2975.0,
         "Challenge_repo_star_count":7363.0,
         "Challenge_repo_watch_count":128.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":66,
         "Challenge_solved_time":72.28,
         "Challenge_title":"[BUG]: MLflow server integration",
@@ -2593,7 +2679,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"FileNotFoundError"
     },
     {
         "Answerer_created_time":null,
@@ -2623,8 +2711,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":6.0041666667,
         "Challenge_title":"Which connection method when using SageMaker Notebook through VPC Interface Endpoint?",
@@ -2652,7 +2740,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":55.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"connect to SageMaker via VPC"
     },
     {
         "Answerer_created_time":1550779047856,
@@ -2682,8 +2772,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":4555.2605505556,
         "Challenge_title":"GCP Vertex AI Service Agent access to GCR image Error",
@@ -2711,7 +2801,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":66.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"access denied to GCR image"
     },
     {
         "Answerer_created_time":null,
@@ -2741,8 +2833,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":58.1621369444,
         "Challenge_title":"Read data from CDM folder",
@@ -2770,7 +2862,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":73.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"read CDM folder data"
     },
     {
         "Answerer_created_time":1500629225150,
@@ -2800,8 +2894,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":1.3348075,
         "Challenge_title":"How to create an aws sagemaker project using terraform?",
@@ -2829,7 +2923,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":21.0,
         "Solution_word_count":270.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"undeclared managed resource"
     },
     {
         "Answerer_created_time":null,
@@ -2859,8 +2955,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":137.3216258333,
         "Challenge_title":"Access to study group",
@@ -2888,7 +2984,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":2.0,
         "Solution_word_count":11.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"help with hf-fastai2 content"
     },
     {
         "Answerer_created_time":1454844135036,
@@ -2918,8 +3016,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":151.4778616667,
         "Challenge_title":"Continuous Training in Sagemaker",
@@ -2947,7 +3045,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":63.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"automate continuous training"
     },
     {
         "Answerer_created_time":null,
@@ -2977,8 +3077,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":0.7209733333,
         "Challenge_title":"What is the fundamental idea of missing value cleanse?",
@@ -3006,7 +3106,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":18.0,
         "Solution_word_count":294.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"missing value cleanse"
     },
     {
         "Answerer_created_time":null,
@@ -3036,8 +3138,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":24.0520611111,
         "Challenge_title":"Connect Azure ML with Snowflake using Private endpoint?",
@@ -3065,7 +3167,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":103.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"connect to Snowflake with Private endpoints"
     },
     {
         "Answerer_created_time":1426694564423,
@@ -3095,8 +3199,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":18,
         "Challenge_solved_time":1.0024183334,
         "Challenge_title":"Sagemaker KMeans Built-In - List of files csv as input",
@@ -3124,7 +3228,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":84.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"use multiple CSV files"
     },
     {
         "Answerer_created_time":1388584380832,
@@ -3154,8 +3260,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":47,
         "Challenge_solved_time":157.3425175,
         "Challenge_title":"MLflow remote execution on databricks from windows creates an invalid dbfs path",
@@ -3183,7 +3289,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":69.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"invalid DBFS path"
     },
     {
         "Answerer_created_time":1649289661367,
@@ -3213,8 +3321,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":200.3805083333,
         "Challenge_title":"Unable to see VIEWS in SageMaker UI",
@@ -3242,7 +3350,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":19.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing data views"
     },
     {
         "Answerer_created_time":1516367794196,
@@ -3272,8 +3382,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":45,
         "Challenge_solved_time":1007.2110877778,
         "Challenge_title":"How can I connect mlflow server via nginx ssl authentication?",
@@ -3301,7 +3411,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":26.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"SSL certificate verification error"
     },
     {
         "Answerer_created_time":1523192621643,
@@ -3331,8 +3443,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":4.4849386111,
         "Challenge_title":"'create' is misspelled or not recognized by the system on az ml dataset create",
@@ -3360,7 +3472,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":72.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unrecognized command. The error message indicates that the system is not recognizing the command 'create"
     },
     {
         "Answerer_created_time":null,
@@ -3390,8 +3504,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":70.4262202778,
         "Challenge_title":"How to retrieve the `group` and `job_type` of a resumed run?",
@@ -3419,7 +3533,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":7.0,
         "Solution_word_count":113.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"empty group and job_type values"
     },
     {
         "Answerer_created_time":1373651649052,
@@ -3449,8 +3565,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":25,
         "Challenge_solved_time":1490.2182730556,
         "Challenge_title":"AzureML create dataset from datastore with multiple files - path not valid",
@@ -3478,7 +3594,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":84.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"create dataset with multiple files"
     },
     {
         "Answerer_created_time":null,
@@ -3508,8 +3626,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":92.8743952778,
         "Challenge_title":"Data gateway issue server cannot be reached",
@@ -3537,7 +3655,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":16.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"server installation error"
     },
     {
         "Answerer_created_time":1250347954880,
@@ -3567,8 +3687,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":12.1803666667,
         "Challenge_title":"DVC connect to Min.IO to access S3",
@@ -3596,7 +3716,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":153.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"connect DVC to Min.IO"
     },
     {
         "Answerer_created_time":1427753565560,
@@ -3626,8 +3748,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":101.7854555556,
         "Challenge_title":"Grant Azure Machine Learning access to SQL Server on Virtual Machine with ACL",
@@ -3655,7 +3777,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":31.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"restricted access to SQL Server"
     },
     {
         "Answerer_created_time":1491421190663,
@@ -3685,8 +3809,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":24.9500647222,
         "Challenge_title":"SQLAlchemy Oracle - InvalidRequestError: could not retrieve isolation level",
@@ -3714,7 +3838,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":9.0,
-        "Tool":"Kedro"
+        "Tool":"Kedro",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"table not found"
     },
     {
         "Answerer_created_time":null,
@@ -3744,8 +3870,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":0.3294444444,
         "Challenge_title":"How do I achieve the least-access secure networking for SageMaker Training on Amazon FSx for Lustre?",
@@ -3773,7 +3899,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":116.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"secure network configuration"
     },
     {
         "Answerer_created_time":1344510903550,
@@ -3803,8 +3931,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":27,
         "Challenge_solved_time":3240.783885,
         "Challenge_title":"How to import the pickle file if sacred failed to connect to MongoDB",
@@ -3832,7 +3960,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":57.0,
-        "Tool":"Sacred"
+        "Tool":"Sacred",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"failed to write to MongoDB"
     },
     {
         "Answerer_created_time":1645519217332,
@@ -3862,8 +3992,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":23,
         "Challenge_solved_time":166.2650213889,
         "Challenge_title":"Store user attributes in Optuna Sweeper plugin for Hydra",
@@ -3891,7 +4021,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":52.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"store additional trial information"
     },
     {
         "Answerer_created_time":1286692213960,
@@ -3921,8 +4053,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":1559.6549622222,
         "Challenge_title":"Best way to import MongoDB data in Azure Machine Learning",
@@ -3950,7 +4082,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":31.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"challenges in data import"
     },
     {
         "Answerer_created_time":1365101584443,
@@ -3980,8 +4114,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":1.3893213889,
         "Challenge_title":"How to append stepfunction execution id to SageMaker job names?",
@@ -4009,7 +4143,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":31.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incorrect job name format"
     },
     {
         "Answerer_created_time":null,
@@ -4039,8 +4175,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":3.1427777778,
         "Challenge_title":"Sagemaker Studio - create domain error",
@@ -4068,7 +4204,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":91.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"policy limitation"
     },
     {
         "Answerer_created_time":1593579580856,
@@ -4098,8 +4236,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":0.8406536111,
         "Challenge_title":"Unable to upload data using sagemaker_session.upload_data in s3 bucket that I created, it is getting stored in default s3 bucket",
@@ -4127,7 +4265,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":18.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"data stored in wrong bucket"
     },
     {
         "Answerer_created_time":1491898605956,
@@ -4157,8 +4297,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":545.9161877778,
         "Challenge_title":"Change AWS SageMaker LogGroup Prefix?",
@@ -4186,7 +4326,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":18.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"limit resource access"
     },
     {
         "Answerer_created_time":null,
@@ -4216,8 +4358,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":0.5504083334,
         "Challenge_title":"Azure Machine Learning (and cognitive services) is not supported in Region \"Germany\"?",
@@ -4245,7 +4387,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":48.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"availability in Germany"
     },
     {
         "Answerer_created_time":1657058369727,
@@ -4275,8 +4419,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":2.87014,
         "Challenge_title":"Sagemaker API online feature store creation not using given kms key",
@@ -4304,7 +4448,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":69.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incorrect bucket key used"
     },
     {
         "Answerer_created_time":1270568377790,
@@ -4334,8 +4480,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":3.2605191667,
         "Challenge_title":"Set custom environment variables in AWS",
@@ -4363,7 +4509,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":62.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"secure API keys"
     },
     {
         "Answerer_created_time":1276294622427,
@@ -4393,8 +4541,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":33,
         "Challenge_solved_time":135.0612036111,
         "Challenge_title":"comprehend.start_topics_detection_job Fails with Silent Error?",
@@ -4422,7 +4570,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":33.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"datetime not serializable"
     },
     {
         "Answerer_created_time":1450057717008,
@@ -4452,8 +4602,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":21.4211194444,
         "Challenge_title":"Is it secure to pass the DB query to AzureML as a global parameter?",
@@ -4481,7 +4631,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":80.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"security of passing query"
     },
     {
         "Answerer_created_time":null,
@@ -4511,8 +4663,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":371.2785480556,
         "Challenge_title":"Forgot password in local",
@@ -4540,7 +4692,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":6.0,
         "Solution_word_count":69.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"forgotten password"
     },
     {
         "Answerer_created_time":null,
@@ -4570,8 +4724,8 @@
         "Challenge_repo_issue_count":1906.0,
         "Challenge_repo_star_count":3704.0,
         "Challenge_repo_watch_count":2001.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":4111.2283333333,
         "Challenge_title":"Azureml Automl \"Error: Null\" Vague Error",
@@ -4599,7 +4753,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"invalid status code"
     },
     {
         "Answerer_created_time":1440323757107,
@@ -4629,8 +4785,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":5.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":5,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":1.0847583334,
         "Challenge_title":"Installation DVC on MinIO storage",
@@ -4658,7 +4814,9 @@
         "Solution_score_count":6.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":204.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"install DVC on MinIO"
     },
     {
         "Answerer_created_time":1253986272627,
@@ -4688,8 +4846,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":111.9549286111,
         "Challenge_title":"Load csv into S3 from local",
@@ -4717,7 +4875,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":56.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"load CSV to S3 bucket"
     },
     {
         "Answerer_created_time":1443426419048,
@@ -4747,8 +4907,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":7.5235611111,
         "Challenge_title":"Need more than 2 datasets for \u201cExecute R Script\u201d module in \u201cAzure Machine Learning Studio\u201d",
@@ -4776,7 +4936,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":26.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"import third dataset"
     },
     {
         "Answerer_created_time":null,
@@ -4806,8 +4968,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":3.9460580556,
         "Challenge_title":"Problems connecting to workspace using Azure Machine Learning SDK for Python",
@@ -4835,7 +4997,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":33.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"access issue"
     },
     {
         "Answerer_created_time":1565289301123,
@@ -4865,8 +5029,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":1547.3938463889,
         "Challenge_title":"Access data on AML datastore from training script",
@@ -4894,7 +5058,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":36.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"access data from datastore"
     },
     {
         "Answerer_created_time":null,
@@ -4924,8 +5090,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":0.0855555556,
         "Challenge_title":"I would like to configure Polyaxon in a way to avoid asking data-scientists to configure pre-emptible node-pools or request TPUs on their own",
@@ -4953,7 +5119,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":156.0,
-        "Tool":"Polyaxon"
+        "Tool":"Polyaxon",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"challenges in configuration"
     },
     {
         "Answerer_created_time":null,
@@ -4983,8 +5151,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":33.9291283333,
         "Challenge_title":"How To Connect To Managed Instance from Machine Learning Studio",
@@ -5012,7 +5180,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":162.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"ML does not support Managed Instances"
     },
     {
         "Answerer_created_time":1645475560783,
@@ -5042,8 +5212,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":32.7005666667,
         "Challenge_title":"What inference can be made out of Baseline drift distance in data quality monitoring sagemaker?",
@@ -5071,7 +5241,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":65.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"calculate baseline drift distance"
     },
     {
         "Answerer_created_time":1435766573232,
@@ -5101,8 +5273,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":62,
         "Challenge_solved_time":8.8384416667,
         "Challenge_title":"Using Azure Storage libraries in AzureML - Custom python library",
@@ -5130,7 +5302,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":90.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"connection timeouts"
     },
     {
         "Answerer_created_time":null,
@@ -5160,8 +5334,8 @@
         "Challenge_repo_issue_count":1268.0,
         "Challenge_repo_star_count":2244.0,
         "Challenge_repo_watch_count":30.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":23.5547222222,
         "Challenge_title":"MLFlow NameError",
@@ -5189,7 +5363,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unrestricted project access"
     },
     {
         "Answerer_created_time":1574678086832,
@@ -5219,8 +5395,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":6.4474319444,
         "Challenge_title":"Running MLFlow on GCP VM",
@@ -5248,7 +5424,9 @@
         "Solution_score_count":5.0,
         "Solution_sentence_count":29.0,
         "Solution_word_count":297.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to access MLFlow UI"
     },
     {
         "Answerer_created_time":1417158887760,
@@ -5278,8 +5456,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":0.7564702778,
         "Challenge_title":"AWS S3 bucket write error",
@@ -5307,7 +5485,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":49.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"access denied error"
     },
     {
         "Answerer_created_time":1429262032907,
@@ -5337,8 +5517,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":0.3111347222,
         "Challenge_title":"Which IAM roles and policies should I delete to not being charged by AWS?",
@@ -5366,7 +5546,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":55.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"avoid AWS charges"
     },
     {
         "Answerer_created_time":1653511725307,
@@ -5396,8 +5578,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":42.8019997222,
         "Challenge_title":"Access denied for aws public sagemaker xgboost registry",
@@ -5425,7 +5607,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":11.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"access denied"
     },
     {
         "Answerer_created_time":1254957460063,
@@ -5455,8 +5639,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":20,
         "Challenge_solved_time":9.3749269445,
         "Challenge_title":"Azure Machine Learning Studio - Import from Cosmos Db",
@@ -5484,7 +5668,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":132.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"outdated guide and parameters"
     },
     {
         "Answerer_created_time":1280505139752,
@@ -5514,8 +5700,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":629.7427361111,
         "Challenge_title":"Azure ML Tabular Dataset : missing 1 required positional argument: 'stream_column'",
@@ -5543,7 +5729,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":97.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing positional argument"
     },
     {
         "Answerer_created_time":1221810788500,
@@ -5573,8 +5761,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":1.5172702778,
         "Challenge_title":"How to connect to MLFlow tracking server that has auth?",
@@ -5602,7 +5790,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":50.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"authentication error"
     },
     {
         "Answerer_created_time":1600124498003,
@@ -5632,8 +5822,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":110.7464591667,
         "Challenge_title":"What would stop credentials from validation on a ClearML server?",
@@ -5661,7 +5851,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":51.0,
-        "Tool":"ClearML"
+        "Tool":"ClearML",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"LoginError with error 400"
     },
     {
         "Answerer_created_time":1512770138847,
@@ -5691,8 +5883,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":47,
         "Challenge_solved_time":14.1516683334,
         "Challenge_title":"Sagemaker Training Job Not Uploading\/Saving Training Model to S3 Output Path",
@@ -5720,7 +5912,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":79.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"model not saved"
     },
     {
         "Answerer_created_time":null,
@@ -5750,8 +5944,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":0.1077063889,
         "Challenge_title":"problems secure connection",
@@ -5779,7 +5973,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":36.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"communication security issue"
     },
     {
         "Answerer_created_time":1432829415467,
@@ -5809,8 +6005,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":674.1436052778,
         "Challenge_title":"Error:1411809D:SSL routines - When trying to make https call from inside R module in AzureML",
@@ -5838,7 +6034,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":107.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"SSL routine error"
     },
     {
         "Answerer_created_time":1313736279736,
@@ -5868,8 +6066,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":2.7258369444,
         "Challenge_title":"Mixing shell variables and python variables in IPython '!command'",
@@ -5897,7 +6095,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":20.0,
         "Solution_word_count":160.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"issue with mixing variables"
     },
     {
         "Answerer_created_time":null,
@@ -5927,8 +6127,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":2.7385794444,
         "Challenge_title":"Stuck on Azure AI Fundamentals course",
@@ -5956,7 +6156,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":39.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to access administrative access"
     },
     {
         "Answerer_created_time":1512520584492,
@@ -5986,8 +6188,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":7347.4097222222,
         "Challenge_title":"Get local workspace in azureml",
@@ -6015,7 +6217,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":55.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to get workspace context"
     },
     {
         "Answerer_created_time":1534058291092,
@@ -6045,8 +6249,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":55.4162013889,
         "Challenge_title":"How to create Sagemaker studio project using aws cdk",
@@ -6074,7 +6278,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":120.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to create project"
     },
     {
         "Answerer_created_time":1355002392776,
@@ -6104,8 +6310,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":18,
         "Challenge_solved_time":1320.8344933333,
         "Challenge_title":"Failed to pull existing files from SSH DVC Remote",
@@ -6133,7 +6339,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":30.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to pull file"
     },
     {
         "Answerer_created_time":1442422586352,
@@ -6163,8 +6371,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":2.0320580556,
         "Challenge_title":"Terraform - Cannot include the given value in a string template: string required",
@@ -6192,7 +6400,9 @@
         "Solution_score_count":5.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":85.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"permission constraint error"
     },
     {
         "Answerer_created_time":null,
@@ -6222,8 +6432,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":110.2481841667,
         "Challenge_title":"Importing Data in Azure ML Studio Experiment",
@@ -6251,7 +6461,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":73.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error 0030 in data import"
     },
     {
         "Answerer_created_time":1546969667040,
@@ -6281,8 +6493,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":0.3501991667,
         "Challenge_title":"IAM Roles for Sagemaker?",
@@ -6310,7 +6522,9 @@
         "Solution_score_count":5.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":222.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"AccessDeniedException error"
     },
     {
         "Answerer_created_time":null,
@@ -6340,8 +6554,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":9.3446652778,
         "Challenge_title":"SageMaker Experiments Deletion Help Needed",
@@ -6369,7 +6583,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":98.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"delete experiments in SageMaker"
     },
     {
         "Answerer_created_time":1554186784008,
@@ -6399,8 +6615,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":3.316835,
         "Challenge_title":"Connection timeout in AzureML studio",
@@ -6428,7 +6644,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":49.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"connection timeout"
     },
     {
         "Answerer_created_time":null,
@@ -6458,8 +6676,8 @@
         "Challenge_repo_issue_count":148.0,
         "Challenge_repo_star_count":11.0,
         "Challenge_repo_watch_count":14.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":790.3911111111,
         "Challenge_title":"[Bug] highlight incorrect field in screenshot of importing Sagemaker workspace",
@@ -6487,7 +6705,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"UNKNOWN status bug"
     },
     {
         "Answerer_created_time":null,
@@ -6517,8 +6737,8 @@
         "Challenge_repo_issue_count":1528.0,
         "Challenge_repo_star_count":4764.0,
         "Challenge_repo_watch_count":83.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":142.7236111111,
         "Challenge_title":"Have accelerate for  Distributed Training: Data Parallelism feature working on AWS Sagemaker yet?",
@@ -6546,7 +6766,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incorrect access method"
     },
     {
         "Answerer_created_time":1394547235287,
@@ -6576,8 +6798,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":1.5022872222,
         "Challenge_title":"dvc gc and files in remote cache",
@@ -6605,7 +6827,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":86.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"clarify \"dvc gc\" command"
     },
     {
         "Answerer_created_time":1589293508567,
@@ -6635,8 +6859,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":0.0,
         "Challenge_title":"'MSIAuthentication' object has no attribute 'get_token'",
@@ -6664,7 +6888,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":66.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"attribute error"
     },
     {
         "Answerer_created_time":1508517418056,
@@ -6694,8 +6920,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":3.9598897222,
         "Challenge_title":"How can I access the Workspace object from a training script in AzureML?",
@@ -6723,7 +6949,9 @@
         "Solution_score_count":12.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":12.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"access Workspace object"
     },
     {
         "Answerer_created_time":null,
@@ -6753,8 +6981,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":19.6539680556,
         "Challenge_title":"AzureML Notebooks: how to access data from an experiment",
@@ -6782,7 +7010,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":16.0,
         "Solution_word_count":177.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"access cloud file system"
     },
     {
         "Answerer_created_time":null,
@@ -6812,8 +7042,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":69.30036,
         "Challenge_title":"Automate machine learning model on Azure portal failed",
@@ -6841,7 +7071,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":56.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"lack of authorization"
     },
     {
         "Answerer_created_time":null,
@@ -6871,8 +7103,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":21.5217911111,
         "Challenge_title":"Wandb sync confusing personal project for team project",
@@ -6900,7 +7132,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":5.0,
         "Solution_word_count":70.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"creating new project"
     },
     {
         "Answerer_created_time":1427953176670,
@@ -6930,8 +7164,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":5.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":5,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":14.9208969444,
         "Challenge_title":"Git bash command prompt hanging when running dvc push to DAGsHub",
@@ -6959,7 +7193,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":211.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"hanging DVC push"
     },
     {
         "Answerer_created_time":1366363157040,
@@ -6989,8 +7225,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":121,
         "Challenge_solved_time":27.6616763889,
         "Challenge_title":"Azure Text Analytics using C# giving errors",
@@ -7018,7 +7254,9 @@
         "Solution_score_count":6.0,
         "Solution_sentence_count":101.0,
         "Solution_word_count":900.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"403 error with Text Analytics"
     },
     {
         "Answerer_created_time":null,
@@ -7048,8 +7286,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":0.1038888889,
         "Challenge_title":"How to debug my init git container",
@@ -7077,7 +7315,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":80.0,
-        "Tool":"Polyaxon"
+        "Tool":"Polyaxon",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"failed cloning process"
     },
     {
         "Answerer_created_time":1395431574432,
@@ -7107,8 +7347,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":2.3479152778,
         "Challenge_title":"AWS SageMaker Access Denied",
@@ -7136,7 +7376,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":33.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"AccessDeniedException error"
     },
     {
         "Answerer_created_time":1614873430827,
@@ -7166,8 +7408,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":1.1176513889,
         "Challenge_title":"Data Version Control with Google Drive Remote: \"googleapiclient.errors.UnknownApiNameOrVersion: name: drive version: v2\"",
@@ -7195,7 +7437,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":36.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"UnknownApiNameOrVersion error"
     },
     {
         "Answerer_created_time":1481732617127,
@@ -7225,8 +7469,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":1.3378227778,
         "Challenge_title":"Kedro can not find SQL Server table",
@@ -7254,7 +7498,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":34.0,
-        "Tool":"Kedro"
+        "Tool":"Kedro",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"table not found"
     },
     {
         "Answerer_created_time":1518533097007,
@@ -7284,8 +7530,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":0.0,
         "Challenge_title":"how SageMaker to access s3 bucket data",
@@ -7313,7 +7559,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":90.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"FileNotFoundError"
     },
     {
         "Answerer_created_time":1561143508792,
@@ -7343,8 +7591,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":1.5463091667,
         "Challenge_title":"ClearML SSH port forwarding fileserver not available in WEB Ui",
@@ -7372,7 +7620,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":159.0,
-        "Tool":"ClearML"
+        "Tool":"ClearML",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to see debug samples"
     },
     {
         "Answerer_created_time":1361156607787,
@@ -7402,8 +7652,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":0.3461716667,
         "Challenge_title":"Remove JSON object via AWS Update* API to prevent Terraform from recreating the resource",
@@ -7431,7 +7681,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":26.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"Terraform plan replacement"
     },
     {
         "Answerer_created_time":1288196087392,
@@ -7461,8 +7713,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":24,
         "Challenge_solved_time":2.8863794445,
         "Challenge_title":"AuthenticationException when creating Azure ML Dataset from Azure Data Lake Gen2 Datastore",
@@ -7490,7 +7742,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":53.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"AuthenticationException error"
     },
     {
         "Answerer_created_time":1411212343683,
@@ -7520,8 +7774,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":1.5132372222,
         "Challenge_title":"Training data in S3 in AWS Sagemaker",
@@ -7549,7 +7803,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":45.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"exception with S3 access"
     },
     {
         "Answerer_created_time":1351080779276,
@@ -7579,8 +7835,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":0.0,
         "Challenge_title":"How to construct a \"text\/csv\" payload when invoking a sagemaker endpoint",
@@ -7608,7 +7864,9 @@
         "Solution_score_count":7.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":75.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"construct CSV payload"
     },
     {
         "Answerer_created_time":null,
@@ -7638,8 +7896,8 @@
         "Challenge_repo_issue_count":66.0,
         "Challenge_repo_star_count":1.0,
         "Challenge_repo_watch_count":1.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":1,
         "Challenge_solved_time":0.4325,
         "Challenge_title":"Missing params field for evaluate stage in dvc.yaml",
@@ -7667,7 +7925,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to view results"
     },
     {
         "Answerer_created_time":null,
@@ -7697,8 +7957,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":0.2032822222,
         "Challenge_title":"Moving resources across the regions",
@@ -7726,7 +7986,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":32.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"service not available in region"
     },
     {
         "Answerer_created_time":1631803441500,
@@ -7756,8 +8018,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":28.3038852778,
         "Challenge_title":"Can Vertex AI model monitoring job send a pubsub message instead of email?",
@@ -7785,7 +8047,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":13.0,
         "Solution_word_count":155.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"send Pubsub message"
     },
     {
         "Answerer_created_time":1517578984080,
@@ -7815,8 +8079,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":13.3432825,
         "Challenge_title":"Is it possible to predict in sagemaker without using s3",
@@ -7844,7 +8108,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":89.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"deploy .pkl file"
     },
     {
         "Answerer_created_time":null,
@@ -7874,8 +8140,8 @@
         "Challenge_repo_issue_count":1906.0,
         "Challenge_repo_star_count":3704.0,
         "Challenge_repo_watch_count":2001.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":91.9480555556,
         "Challenge_title":"Azure ML Run docker command to pull public image failed ",
@@ -7903,7 +8169,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"authorization permission mismatch"
     },
     {
         "Answerer_created_time":1308292969430,
@@ -7933,8 +8201,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":2443.6834486111,
         "Challenge_title":"Version management in SageMaker",
@@ -7962,7 +8230,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":13.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"version management challenges"
     },
     {
         "Answerer_created_time":1416648155470,
@@ -7992,8 +8262,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":33,
         "Challenge_solved_time":65.5128019444,
         "Challenge_title":"AWS - Cannot access RedShift endpoint from the SageMaker Studio",
@@ -8021,7 +8291,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":80.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to access endpoint"
     },
     {
         "Answerer_created_time":1587438027383,
@@ -8051,8 +8323,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":7.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":7,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":21,
         "Challenge_solved_time":11.0345638889,
         "Challenge_title":"How to connect AMLS to ADLS Gen 2?",
@@ -8080,7 +8352,9 @@
         "Solution_score_count":9.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":66.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"authentication issue"
     },
     {
         "Answerer_created_time":null,
@@ -8110,8 +8384,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":20.56922,
         "Challenge_title":"Secrets automatically created in key vault",
@@ -8139,7 +8413,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":39.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"automatic secret generation"
     },
     {
         "Answerer_created_time":1646907459852,
@@ -8169,8 +8445,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":51.3389041667,
         "Challenge_title":"How to transfer a csv file from notebook folder to a datastore",
@@ -8198,7 +8474,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":73.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"file transfer error"
     },
     {
         "Answerer_created_time":1550902509267,
@@ -8228,8 +8506,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":17.0441908334,
         "Challenge_title":"MLflow Experiments Tracking : local (dev tools - vscode) to databricks workspace",
@@ -8257,7 +8535,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":46.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to create MLflow experiments"
     },
     {
         "Answerer_created_time":1522634496792,
@@ -8287,8 +8567,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":26.5148555556,
         "Challenge_title":"How to load an experiment in azureml?",
@@ -8316,7 +8596,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":14.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"no cache found"
     },
     {
         "Answerer_created_time":null,
@@ -8346,8 +8628,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":0.2942933334,
         "Challenge_title":"Code: AuthorizationFailed",
@@ -8375,7 +8657,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":46.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"AuthorizationFailed error"
     },
     {
         "Answerer_created_time":null,
@@ -8405,8 +8689,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":31.5278255556,
         "Challenge_title":"Outgoing mail for sagemaker labeling job",
@@ -8434,7 +8718,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":75.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"mail not sent"
     },
     {
         "Answerer_created_time":1436432728608,
@@ -8464,8 +8750,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":20,
         "Challenge_solved_time":142.5591269445,
         "Challenge_title":"Azure: importing not already existing packages in 'src'",
@@ -8493,7 +8779,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":69.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing zip file"
     },
     {
         "Answerer_created_time":null,
@@ -8523,8 +8811,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":0.9927311111,
         "Challenge_title":"How to automate sagemaker batch transform?",
@@ -8552,7 +8840,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":29.0,
         "Solution_word_count":479.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"automate Sagemaker batch transform"
     },
     {
         "Answerer_created_time":1597855076910,
@@ -8582,8 +8872,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":0.3015636111,
         "Challenge_title":"AWS SageMaker (with internet disabled) unable to connect to STS",
@@ -8611,7 +8901,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":18.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to connect to STS"
     },
     {
         "Answerer_created_time":1367338176003,
@@ -8641,8 +8933,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":0.2575638889,
         "Challenge_title":"Render hyperlink in pandas df in jupyterlab",
@@ -8670,7 +8962,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":11.0,
         "Solution_word_count":75.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unclickable hyperlink"
     },
     {
         "Answerer_created_time":1250347954880,
@@ -8700,8 +8994,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":2.7001211111,
         "Challenge_title":"Multiple users in DVC",
@@ -8729,7 +9023,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":160.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"multiple DVC accounts"
     },
     {
         "Answerer_created_time":1255292583096,
@@ -8759,8 +9055,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":0.1888275,
         "Challenge_title":"Converting Azure \"classic\" storage accounts",
@@ -8788,6 +9084,8 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":149.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"change storage account association"
     }
 ]

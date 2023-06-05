@@ -27,8 +27,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":22,
         "Challenge_solved_time":20.1458463889,
         "Challenge_title":"How to pass arguments to scoring file when deploying a Model in AzureML",
@@ -56,7 +56,9 @@
         "Solution_score_count":-2.0,
         "Solution_sentence_count":15.0,
         "Solution_word_count":89.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to pass arguments"
     },
     {
         "Answerer_created_time":1492331396980,
@@ -86,8 +88,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":68.49111,
         "Challenge_title":"How to modify the input\/output schema for an Azure deployment service?",
@@ -115,7 +117,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":123.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"modify input\/output schema"
     },
     {
         "Answerer_created_time":null,
@@ -145,8 +149,8 @@
         "Challenge_repo_issue_count":1457.0,
         "Challenge_repo_star_count":3685.0,
         "Challenge_repo_watch_count":60.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":2751.6177777778,
         "Challenge_title":"Getting Errors with wandb sweeps ",
@@ -174,7 +178,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"difficulty comparing runs"
     },
     {
         "Answerer_created_time":null,
@@ -204,8 +210,8 @@
         "Challenge_repo_issue_count":154.0,
         "Challenge_repo_star_count":12.0,
         "Challenge_repo_watch_count":4.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":624.1202777778,
         "Challenge_title":"wandb entity is hardcoded",
@@ -233,7 +239,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"use tensorboard and wandb"
     },
     {
         "Answerer_created_time":null,
@@ -263,8 +271,8 @@
         "Challenge_repo_issue_count":124.0,
         "Challenge_repo_star_count":95.0,
         "Challenge_repo_watch_count":3.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":1.3086111111,
         "Challenge_title":"wrong wandb dataset file name",
@@ -292,7 +300,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"conflicts and communication error"
     },
     {
         "Answerer_created_time":null,
@@ -322,8 +332,8 @@
         "Challenge_repo_issue_count":2975.0,
         "Challenge_repo_star_count":7363.0,
         "Challenge_repo_watch_count":128.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":28.55,
         "Challenge_title":"mlflow ui doesn't show any models",
@@ -351,7 +361,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"metrics not logged"
     },
     {
         "Answerer_created_time":1565215898703,
@@ -381,8 +393,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":7.4180927778,
         "Challenge_title":"Deploy Notebook VM via ARM Template?",
@@ -410,7 +422,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":13.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"deploy AML Notebook VM"
     },
     {
         "Answerer_created_time":null,
@@ -440,8 +454,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":21,
         "Challenge_solved_time":13.5233052778,
         "Challenge_title":"Azure Machine Learning: I cannot find experiment's user logs located in logs\/user folder",
@@ -469,7 +483,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":74.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to locate user logs"
     },
     {
         "Answerer_created_time":1369156710532,
@@ -499,8 +515,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":708.9712822222,
         "Challenge_title":"How to set a minimum number of epoch in Optuna SuccessiveHalvingPruner()?",
@@ -528,7 +544,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":44.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"adjust pruning parameter"
     },
     {
         "Answerer_created_time":1303910479480,
@@ -558,8 +576,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":3788.8637213889,
         "Challenge_title":"Continue stopped run in MLflow",
@@ -587,7 +605,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":40.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"continue logging on spot instances"
     },
     {
         "Answerer_created_time":null,
@@ -617,8 +637,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":39,
         "Challenge_solved_time":46.1277094445,
         "Challenge_title":"Wandb integration using class and sweep running twice under the same name",
@@ -646,7 +666,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":7.0,
         "Solution_word_count":60.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"sweep runs twice"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -676,8 +698,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":49.0995572222,
         "Challenge_title":"Does Sagemaker pass any data other than the model itself between training and prediction steps?",
@@ -705,7 +727,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":113.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"access training data"
     },
     {
         "Answerer_created_time":1392296244356,
@@ -735,8 +759,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":37,
         "Challenge_solved_time":58.1877575,
         "Challenge_title":"Hyperparam search on huggingface with optuna fails with wandb error",
@@ -764,7 +788,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":23.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"Wandb error during hyperparameter search"
     },
     {
         "Answerer_created_time":1587507179987,
@@ -794,8 +820,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":71.1763591667,
         "Challenge_title":"AWS Sagemaker + AWS Lambda",
@@ -823,7 +849,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":34.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"endpoint not found"
     },
     {
         "Answerer_created_time":1334762714136,
@@ -853,8 +881,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":8.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":8,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":31.6572594445,
         "Challenge_title":"Azure Machine Learning Request Response latency",
@@ -882,7 +910,9 @@
         "Solution_score_count":8.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":218.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"slow API-call"
     },
     {
         "Answerer_created_time":1468179475927,
@@ -912,8 +942,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":6.9159072222,
         "Challenge_title":"AzureML: experiment working for a subset and not for the whole dataset",
@@ -941,7 +971,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":11.0,
         "Solution_word_count":211.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"out of memory issue"
     },
     {
         "Answerer_created_time":1243547542743,
@@ -971,8 +1003,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":5.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":5,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":193.0081575,
         "Challenge_title":"Jupyter notebook kernel dies when creating dummy variables with pandas",
@@ -1000,7 +1032,9 @@
         "Solution_score_count":8.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":109.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"kernel dies when creating dummy column"
     },
     {
         "Answerer_created_time":null,
@@ -1030,8 +1064,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":0.2472222222,
         "Challenge_title":"Can I limit the type of instances that data scientists can launch for training jobs in SageMaker?",
@@ -1059,7 +1093,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":64.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"restrict instance types"
     },
     {
         "Answerer_created_time":1224733422316,
@@ -1089,8 +1125,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":80.3919036111,
         "Challenge_title":"AWS sagemaker model monitor- ImportError: cannot import name 'ModelQualityMonitor'",
@@ -1118,7 +1154,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":88.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"ImportError message"
     },
     {
         "Answerer_created_time":1253986272627,
@@ -1148,8 +1186,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":39,
         "Challenge_solved_time":40.5325261111,
         "Challenge_title":"SageMaker: ClientError: .lst file missing in the train_lst channel. (customized image classification)",
@@ -1177,7 +1215,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":16.0,
         "Solution_word_count":240.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing .lst file"
     },
     {
         "Answerer_created_time":null,
@@ -1207,8 +1247,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":11.6668433334,
         "Challenge_title":"machine learning algorithms questions",
@@ -1236,7 +1276,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":15.0,
         "Solution_word_count":265.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"k-means limitations and example"
     },
     {
         "Answerer_created_time":1646907459852,
@@ -1266,8 +1308,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":0.8982075,
         "Challenge_title":"Error while defining sampling algorithm in hyper parameter tuning using random sampling - Version V1",
@@ -1295,7 +1337,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":67.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error in hyperparameter tuning"
     },
     {
         "Answerer_created_time":null,
@@ -1325,8 +1369,8 @@
         "Challenge_repo_issue_count":15116.0,
         "Challenge_repo_star_count":23576.0,
         "Challenge_repo_watch_count":234.0,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":31,
         "Challenge_solved_time":2840.7811111111,
         "Challenge_title":"Upgrading from 1.2.4 to 1.3.1 causes the pytorch comet logger to produce multiple experiments.",
@@ -1354,7 +1398,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Comet"
+        "Tool":"Comet",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"import order issue"
     },
     {
         "Answerer_created_time":null,
@@ -1384,8 +1430,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":2.4997222222,
         "Challenge_title":"Does Community UI has Admin dashboard?",
@@ -1413,7 +1459,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":6.0,
-        "Tool":"Polyaxon"
+        "Tool":"Polyaxon",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing admin dashboard"
     },
     {
         "Answerer_created_time":null,
@@ -1443,8 +1491,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":11.0410916667,
         "Challenge_title":"memory outage while running module",
@@ -1472,7 +1520,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":102.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"memory outage error"
     },
     {
         "Answerer_created_time":1546969667040,
@@ -1502,8 +1552,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":2.2880941667,
         "Challenge_title":"Getting Out of Memory error when using Image Classification in Sage Maker",
@@ -1531,7 +1581,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":135.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"out of memory error"
     },
     {
         "Answerer_created_time":null,
@@ -1561,8 +1613,8 @@
         "Challenge_repo_issue_count":295.0,
         "Challenge_repo_star_count":242.0,
         "Challenge_repo_watch_count":36.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":4170.7175,
         "Challenge_title":"ResourceLimitExceeded for ml.m4.xlarge when running SageMaker studio demo in a new AWS account",
@@ -1590,7 +1642,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"service limit exceeded"
     },
     {
         "Answerer_created_time":1517548787092,
@@ -1620,8 +1674,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":328.67735,
         "Challenge_title":"How do I specify nodeSelector while deploying an Azure ML model to an AKS Cluster?",
@@ -1649,7 +1703,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":102.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"deploy to specific nodepool"
     },
     {
         "Answerer_created_time":null,
@@ -1679,8 +1735,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":28.0968075,
         "Challenge_title":"Azure ML Studio is bugged out and can not create a Microsoft ticket under MSDN. Need a few suggestions",
@@ -1708,7 +1764,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":34.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incorrect kernel default"
     },
     {
         "Answerer_created_time":null,
@@ -1738,8 +1796,8 @@
         "Challenge_repo_issue_count":962.0,
         "Challenge_repo_star_count":176.0,
         "Challenge_repo_watch_count":9.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":167,
         "Challenge_solved_time":1.6669444444,
         "Challenge_title":"[BUG]: Unable to Start DFP Production MLFlow Server",
@@ -1767,7 +1825,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"modified parameters not logged"
     },
     {
         "Answerer_created_time":null,
@@ -1797,8 +1857,8 @@
         "Challenge_repo_issue_count":15116.0,
         "Challenge_repo_star_count":23576.0,
         "Challenge_repo_watch_count":234.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":20,
         "Challenge_solved_time":936.1641666667,
         "Challenge_title":"External MLFlow logging failures cause training job to fail",
@@ -1826,7 +1886,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"inconsistent behavior"
     },
     {
         "Answerer_created_time":null,
@@ -1856,8 +1918,8 @@
         "Challenge_repo_issue_count":1880.0,
         "Challenge_repo_star_count":588.0,
         "Challenge_repo_watch_count":30.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":66,
         "Challenge_solved_time":243.16,
         "Challenge_title":"Can not add AzureML extention on openshift cluster ",
@@ -1885,7 +1947,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"conflicting parameters"
     },
     {
         "Answerer_created_time":1310482059760,
@@ -1915,8 +1979,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":5.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":5,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":265.4097633333,
         "Challenge_title":"Sagemaker usage of EC2 instances",
@@ -1944,7 +2008,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":44.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"monitor EC2 usage"
     },
     {
         "Answerer_created_time":null,
@@ -1974,8 +2040,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":7.88302,
         "Challenge_title":"Rerun a deleted run in wandb sweep",
@@ -2003,7 +2069,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":4.0,
         "Solution_word_count":51.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"rerun deleted runs"
     },
     {
         "Answerer_created_time":null,
@@ -2033,8 +2101,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":3.0937622222,
         "Challenge_title":"Azure for students showing no usage despite using it",
@@ -2062,7 +2130,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":57.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"no usage shown"
     },
     {
         "Answerer_created_time":1565528932887,
@@ -2092,8 +2162,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":15.6350583334,
         "Challenge_title":"How to pass in the model name during init in Azure Machine Learning Service?",
@@ -2121,7 +2191,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":40.0,
         "Solution_word_count":476.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to pass parameter in init() method"
     },
     {
         "Answerer_created_time":1350376620496,
@@ -2151,8 +2223,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":0.0204122222,
         "Challenge_title":"Azure ML free trial: how to submit pipeline?",
@@ -2180,7 +2252,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":23.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"invalid compute target"
     },
     {
         "Answerer_created_time":1458983415440,
@@ -2210,8 +2284,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":30.66359,
         "Challenge_title":"HuggingFace Trainer() cannot report to wandb",
@@ -2239,7 +2313,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":50.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unsupported reporting tool"
     },
     {
         "Answerer_created_time":null,
@@ -2269,8 +2345,8 @@
         "Challenge_repo_issue_count":2115.0,
         "Challenge_repo_star_count":3927.0,
         "Challenge_repo_watch_count":244.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":19.5733333333,
         "Challenge_title":"Bug Report: NeptuneConfig import failing - Flask",
@@ -2298,7 +2374,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Neptune"
+        "Tool":"Neptune",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"export error"
     },
     {
         "Answerer_created_time":null,
@@ -2328,8 +2406,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":17.8672141667,
         "Challenge_title":"Sweep from existing runs not showing up in parallel coordinates, is this intended or a bug?",
@@ -2357,7 +2435,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":3.0,
         "Solution_word_count":35.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"empty Parallel Coordinates panel"
     },
     {
         "Answerer_created_time":1224733422316,
@@ -2387,8 +2467,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":null,
         "Challenge_title":"Amazon SageMaker hyperparameter tuning error for built-in algorithm using the Python SDK",
@@ -2416,7 +2496,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":43.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"additional hyperparameters not allowed"
     },
     {
         "Answerer_created_time":1415722650716,
@@ -2446,8 +2528,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":4.0573761111,
         "Challenge_title":"How can I register in Azure ML Service a machine learning model trained locally?",
@@ -2475,7 +2557,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":42.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"register large model without run object"
     },
     {
         "Answerer_created_time":null,
@@ -2505,8 +2589,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":22,
         "Challenge_solved_time":1.2754447222,
         "Challenge_title":"Wandb automatically logeed into the wrong user -- why?",
@@ -2534,7 +2618,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":18.0,
         "Solution_word_count":158.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"wrong API key login"
     },
     {
         "Answerer_created_time":null,
@@ -2564,8 +2650,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":7.1870847222,
         "Challenge_title":"Difference in processing time between Azure Machine Learning Studio and Azure Machine Learning Studio (classic)",
@@ -2593,7 +2679,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":16.0,
         "Solution_word_count":188.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"slow processing time"
     },
     {
         "Answerer_created_time":null,
@@ -2623,8 +2711,8 @@
         "Challenge_repo_issue_count":222.0,
         "Challenge_repo_star_count":57.0,
         "Challenge_repo_watch_count":4.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":19,
         "Challenge_solved_time":1225.01,
         "Challenge_title":"kedro airflow plugins: ValueError Pipeline input(s) not found in the DataCatalog",
@@ -2652,7 +2740,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Kedro"
+        "Tool":"Kedro",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"mlflow fails silently"
     },
     {
         "Answerer_created_time":null,
@@ -2682,8 +2772,8 @@
         "Challenge_repo_issue_count":11.0,
         "Challenge_repo_star_count":23.0,
         "Challenge_repo_watch_count":2.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":112.1258333333,
         "Challenge_title":"Improve mlflow logging for population",
@@ -2711,7 +2801,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"inconsistency with log_metrics method"
     },
     {
         "Answerer_created_time":1492048364132,
@@ -2741,8 +2833,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":19,
         "Challenge_solved_time":2.9043861111,
         "Challenge_title":"Should I run forecast predictive model with AWS lambda or sagemaker?",
@@ -2770,7 +2862,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":16.0,
         "Solution_word_count":246.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"deploy forecasting model on AWS"
     },
     {
         "Answerer_created_time":1513106638900,
@@ -2800,8 +2894,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":345.5749230556,
         "Challenge_title":"SageMaker Estimator.fit() didn't pass the 'train' input to the Training instance",
@@ -2829,7 +2923,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":56.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"input not passed to training instance"
     },
     {
         "Answerer_created_time":null,
@@ -2859,8 +2955,8 @@
         "Challenge_repo_issue_count":47.0,
         "Challenge_repo_star_count":6.0,
         "Challenge_repo_watch_count":4.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":50.4269444444,
         "Challenge_title":"Remove data\/ and wandb\/ directories and rewrite history",
@@ -2888,7 +2984,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"config not saved"
     },
     {
         "Answerer_created_time":null,
@@ -2918,8 +3016,8 @@
         "Challenge_repo_issue_count":19.0,
         "Challenge_repo_star_count":92.0,
         "Challenge_repo_watch_count":11.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":142.5483333333,
         "Challenge_title":"Chapter 7 `mlflow run . --experiement-name=psystock_data_pipelines` fails - BUGFIX",
@@ -2947,7 +3045,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"failed status update"
     },
     {
         "Answerer_created_time":1410333105327,
@@ -2977,8 +3077,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":124,
         "Challenge_solved_time":1.4210444445,
         "Challenge_title":"How to change the directory of mlflow logs?",
@@ -3006,7 +3106,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":68.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"change log directory"
     },
     {
         "Answerer_created_time":1463745452883,
@@ -3036,8 +3138,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":2.2081222222,
         "Challenge_title":"How do I get tensorboard to work with sagemaker studio?",
@@ -3065,7 +3167,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":24.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error code 500"
     },
     {
         "Answerer_created_time":null,
@@ -3095,8 +3199,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":26,
         "Challenge_solved_time":5.2082036111,
         "Challenge_title":"Endpoint fails with the model generated by Automated ML",
@@ -3124,7 +3228,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":52.0,
         "Solution_word_count":408.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"502 Bad Gateway error"
     },
     {
         "Answerer_created_time":1480087531307,
@@ -3154,8 +3260,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":0.9993705556,
         "Challenge_title":"R code on Azure Machine Learning is slow compared to local execution time",
@@ -3183,7 +3289,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":64.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"resource allocation details"
     },
     {
         "Answerer_created_time":1661172608640,
@@ -3213,8 +3321,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":22.9405238889,
         "Challenge_title":"Is there any way to log 'git hash' in hydra?",
@@ -3242,7 +3350,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":51.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"difficulty logging git hash"
     },
     {
         "Answerer_created_time":1619163566860,
@@ -3272,8 +3382,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":284.8203583334,
         "Challenge_title":"Vertex AI Endpoints scales to 0 before increasing number of replicas",
@@ -3301,7 +3411,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":20.0,
         "Solution_word_count":283.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"scaling issue with Vertex AI"
     },
     {
         "Answerer_created_time":1606724007903,
@@ -3331,8 +3443,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":34.3028483334,
         "Challenge_title":"Could google cloud platform vertextAI running code on backend without output?",
@@ -3360,7 +3472,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":30.0,
         "Solution_word_count":255.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unstable internet connection"
     },
     {
         "Answerer_created_time":null,
@@ -3390,8 +3504,8 @@
         "Challenge_repo_issue_count":9548.0,
         "Challenge_repo_star_count":3200.0,
         "Challenge_repo_watch_count":103.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":36,
         "Challenge_solved_time":280.5022222222,
         "Challenge_title":"Sagemaker Custom Training Job Error: Unable to locate botocore.credentials",
@@ -3419,7 +3533,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"undefined hyperparameters"
     },
     {
         "Answerer_created_time":null,
@@ -3449,8 +3565,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":1.6481894444,
         "Challenge_title":"No options for setting no public IP address flag for Compute options in ARM\/Bicep templates",
@@ -3478,7 +3594,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":23.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing flag option"
     },
     {
         "Answerer_created_time":null,
@@ -3508,8 +3626,8 @@
         "Challenge_repo_issue_count":1925.0,
         "Challenge_repo_star_count":745.0,
         "Challenge_repo_watch_count":38.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":36,
         "Challenge_solved_time":170.435,
         "Challenge_title":"Vertex AI - Endpoint Call with JSON - Invalid JSON payload received",
@@ -3537,7 +3655,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"data type mismatch"
     },
     {
         "Answerer_created_time":1498252453503,
@@ -3567,8 +3687,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":23,
         "Challenge_solved_time":110.3800541667,
         "Challenge_title":"Sagemaker Hyperparameter Optimization XGBoost",
@@ -3596,7 +3716,9 @@
         "Solution_score_count":5.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":49.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"attribute error"
     },
     {
         "Answerer_created_time":null,
@@ -3626,8 +3748,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":13.2693258333,
         "Challenge_title":"Loosen azureml-dataprep requirements to cloudpickle<=2.0.0",
@@ -3655,7 +3777,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":134.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"update dependency"
     },
     {
         "Answerer_created_time":1484748258356,
@@ -3685,8 +3809,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":248.2981122222,
         "Challenge_title":"GCP cannot create Managed Notebook on Vertex AI",
@@ -3714,7 +3838,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":34.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"quota limit error"
     },
     {
         "Answerer_created_time":null,
@@ -3744,8 +3870,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":6.7904747222,
         "Challenge_title":"Adding tags cause internal server error",
@@ -3773,7 +3899,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":3.0,
         "Solution_word_count":29.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"internal server error"
     },
     {
         "Answerer_created_time":1324808381143,
@@ -3803,8 +3931,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":2203.8220902778,
         "Challenge_title":"SageMaker TF 2.3 distributed training",
@@ -3832,7 +3960,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":33.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"module not found"
     },
     {
         "Answerer_created_time":null,
@@ -3862,8 +3992,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":0.1396913889,
         "Challenge_title":"how to set Quota at resource group level?",
@@ -3891,7 +4021,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":94.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to find resource details"
     },
     {
         "Answerer_created_time":1231865173143,
@@ -3921,8 +4053,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":17,
         "Challenge_solved_time":1.7628275,
         "Challenge_title":"MLFlow and Hydra causing crash when used together",
@@ -3950,7 +4082,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":16.0,
         "Solution_word_count":200.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"program crashes"
     },
     {
         "Answerer_created_time":null,
@@ -3980,8 +4114,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":0.3288888889,
         "Challenge_title":"Anybody ever successfully ran multi-node gradient boosting on Amazon SageMaker?",
@@ -4009,7 +4143,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":20.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"multi-node gradient boosting"
     },
     {
         "Answerer_created_time":null,
@@ -4039,8 +4175,8 @@
         "Challenge_repo_issue_count":9548.0,
         "Challenge_repo_star_count":3200.0,
         "Challenge_repo_watch_count":103.0,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":11971.2836111111,
         "Challenge_title":"[bug] Unhandled SageMaker training job status 'stopped' causing infinite loop",
@@ -4068,7 +4204,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unexpected keyword argument"
     },
     {
         "Answerer_created_time":null,
@@ -4098,8 +4236,8 @@
         "Challenge_repo_issue_count":15116.0,
         "Challenge_repo_star_count":23576.0,
         "Challenge_repo_watch_count":234.0,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":73.1380555556,
         "Challenge_title":"Test metrics are no longer pushed to Comet.ML (and perhaps others)",
@@ -4127,7 +4265,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Comet"
+        "Tool":"Comet",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"deprecated API"
     },
     {
         "Answerer_created_time":1569996433956,
@@ -4157,8 +4297,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":18.9970552778,
         "Challenge_title":"How to sample parameters without duplicates in optuna?",
@@ -4186,7 +4326,9 @@
         "Solution_score_count":10.0,
         "Solution_sentence_count":17.0,
         "Solution_word_count":149.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"avoid duplicate parameter sampling"
     },
     {
         "Answerer_created_time":1532464254552,
@@ -4216,8 +4358,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":6.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":6,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":932.2583227778,
         "Challenge_title":"AWS Sagemaker ClientError: Unable to initialize the algorithm",
@@ -4245,7 +4387,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":36.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"validation error in input data"
     },
     {
         "Answerer_created_time":1566583092316,
@@ -4275,8 +4419,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":25.3582683333,
         "Challenge_title":"Missing module tensorflow on iPython azure machine learning (Classic)",
@@ -4304,7 +4448,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":54.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing module error"
     },
     {
         "Answerer_created_time":null,
@@ -4334,8 +4480,8 @@
         "Challenge_repo_issue_count":506.0,
         "Challenge_repo_star_count":2692.0,
         "Challenge_repo_watch_count":24.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":210,
         "Challenge_solved_time":26.0741666667,
         "Challenge_title":"wandb logger not working",
@@ -4363,7 +4509,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"wandb login issue"
     },
     {
         "Answerer_created_time":1393576024047,
@@ -4393,8 +4541,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":33,
         "Challenge_solved_time":5397.5394436111,
         "Challenge_title":"how can i use tensorboard with aws sagemaker tensorflow?",
@@ -4422,7 +4570,9 @@
         "Solution_score_count":5.0,
         "Solution_sentence_count":13.0,
         "Solution_word_count":114.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"TensorBoard not supported"
     },
     {
         "Answerer_created_time":null,
@@ -4452,8 +4602,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":20.1061447222,
         "Challenge_title":"Collect results from sweep",
@@ -4481,7 +4631,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":7.0,
         "Solution_word_count":91.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"automate hyper-parameter results"
     },
     {
         "Answerer_created_time":null,
@@ -4511,8 +4663,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":4.8680555556,
         "Challenge_title":"Parallel training",
@@ -4540,7 +4692,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":163.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"parallel model training"
     },
     {
         "Answerer_created_time":1221528724667,
@@ -4570,8 +4724,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":182.4722333334,
         "Challenge_title":"How to delete worker task templates in AWS Augmented AI?",
@@ -4599,7 +4753,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":14.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"delete worker task templates"
     },
     {
         "Answerer_created_time":1554186784008,
@@ -4629,8 +4785,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":250.3602452778,
         "Challenge_title":"How can I remove the wrapper around the input when using Inference Schema",
@@ -4658,7 +4814,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":39.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unwanted data wrapper"
     },
     {
         "Answerer_created_time":1619174589310,
@@ -4688,8 +4846,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":20,
         "Challenge_solved_time":254.5180547222,
         "Challenge_title":"Google Cloud Vertex AI with Golang: rpc error: code = Unimplemented desc = unexpected HTTP status code received from server: 404 (Not Found)",
@@ -4717,7 +4875,9 @@
         "Solution_score_count":5.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":43.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unexpected HTTP status code"
     },
     {
         "Answerer_created_time":null,
@@ -4747,8 +4907,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":8.2721991667,
         "Challenge_title":"Training Personalizer",
@@ -4776,7 +4936,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":95.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"Personalizer metrics"
     },
     {
         "Answerer_created_time":null,
@@ -4806,8 +4968,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":0.1086111111,
         "Challenge_title":"How can I start a Tensorboard for the top 5 experiments",
@@ -4835,7 +4997,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":55.0,
-        "Tool":"Polyaxon"
+        "Tool":"Polyaxon",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"compare top experiments"
     },
     {
         "Answerer_created_time":1531218624572,
@@ -4865,8 +5029,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":78.4838436111,
         "Challenge_title":"Making hyperparameters add up to 1 when fine tuning using Optuna",
@@ -4894,7 +5058,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":25.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"hyperparameters sum issue"
     },
     {
         "Answerer_created_time":null,
@@ -4924,8 +5090,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":11.9617827778,
         "Challenge_title":"How to early stop bad runs in sweeps to save time",
@@ -4953,7 +5119,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":9.0,
         "Solution_word_count":90.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"stop bad runs"
     },
     {
         "Answerer_created_time":null,
@@ -4983,8 +5151,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":24.3012636111,
         "Challenge_title":"How to install python package in hardware accelerated GPU spark pool ?",
@@ -5012,7 +5180,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":18.0,
         "Solution_word_count":213.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"disabled package installation"
     },
     {
         "Answerer_created_time":1416346350292,
@@ -5042,8 +5212,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":1508.9167047222,
         "Challenge_title":"AWS Eventbridge Events (Sagemaker training job status change) fired multiple times with the same payload",
@@ -5071,7 +5241,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":80.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"duplicate event rule firing"
     },
     {
         "Answerer_created_time":null,
@@ -5101,8 +5273,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":247.7520736111,
         "Challenge_title":"Can't associate sweeps with project",
@@ -5130,7 +5302,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":1.0,
         "Solution_word_count":9.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"uncategorized sweeps"
     },
     {
         "Answerer_created_time":1433841188323,
@@ -5160,8 +5334,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":18,
         "Challenge_solved_time":20.4471097222,
         "Challenge_title":"Adding python modules to AzureML workspace",
@@ -5189,7 +5363,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":140.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"install python module on Azure ML Studio"
     },
     {
         "Answerer_created_time":1376999872723,
@@ -5219,8 +5395,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":35,
         "Challenge_solved_time":9.7019583334,
         "Challenge_title":"Azure ML Batch Run - Single Output",
@@ -5248,7 +5424,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":45.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"single output issue"
     },
     {
         "Answerer_created_time":1509012479112,
@@ -5278,8 +5456,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":11.9663136111,
         "Challenge_title":"How to hyperparametrize Amazon SageMaker Training Jobs Console",
@@ -5307,7 +5485,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":21.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"set up hyperparameters"
     },
     {
         "Answerer_created_time":null,
@@ -5337,8 +5517,8 @@
         "Challenge_repo_issue_count":15116.0,
         "Challenge_repo_star_count":23576.0,
         "Challenge_repo_watch_count":234.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":35,
         "Challenge_solved_time":3324.4138888889,
         "Challenge_title":"CometLogger can modify logged metrics in-place ",
@@ -5366,7 +5546,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Comet"
+        "Tool":"Comet",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"logger behavior bug"
     },
     {
         "Answerer_created_time":null,
@@ -5396,8 +5578,8 @@
         "Challenge_repo_issue_count":548.0,
         "Challenge_repo_star_count":63.0,
         "Challenge_repo_watch_count":5.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":126,
         "Challenge_solved_time":166.3613888889,
         "Challenge_title":"WandB fails when config is too large",
@@ -5425,7 +5607,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"config too large"
     },
     {
         "Answerer_created_time":1373018880576,
@@ -5455,8 +5639,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":7.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":7,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":17.1053752778,
         "Challenge_title":"AWS Sagemaker Deploy fails",
@@ -5484,7 +5668,9 @@
         "Solution_score_count":7.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":13.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"exceeded endpoint usage limit"
     },
     {
         "Answerer_created_time":null,
@@ -5514,8 +5700,8 @@
         "Challenge_repo_issue_count":1906.0,
         "Challenge_repo_star_count":3704.0,
         "Challenge_repo_watch_count":2001.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":3154.2575,
         "Challenge_title":"BUG: Versioning not enabled when pulling data from SQL DB\/DW into Azure ML datasets",
@@ -5543,7 +5729,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"sporadic internal server error"
     },
     {
         "Answerer_created_time":null,
@@ -5573,8 +5761,8 @@
         "Challenge_repo_issue_count":10524.0,
         "Challenge_repo_star_count":39099.0,
         "Challenge_repo_watch_count":350.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":40,
         "Challenge_solved_time":1232.805,
         "Challenge_title":"Comet Bug: Unable to train on Window 11",
@@ -5602,7 +5790,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Comet"
+        "Tool":"Comet",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"logging issue"
     },
     {
         "Answerer_created_time":1621392911643,
@@ -5632,8 +5822,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":27,
         "Challenge_solved_time":2073.4166358333,
         "Challenge_title":"How to specify source directory and entry point for a SageMaker training job using Boto3 SDK? The use case is start training via Lambda call",
@@ -5661,7 +5851,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":71.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to specify source directory and entry point"
     },
     {
         "Answerer_created_time":null,
@@ -5691,8 +5883,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":3566.0353452778,
         "Challenge_title":"How do I check my current SageMaker service quotas?",
@@ -5720,7 +5912,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":42.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"check SageMaker quotas"
     },
     {
         "Answerer_created_time":null,
@@ -5750,8 +5944,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":3.1297805556,
         "Challenge_title":"How to pass environment variables in sagemaker tuner job",
@@ -5779,7 +5973,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":13.0,
         "Solution_word_count":211.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to pass environment variables"
     },
     {
         "Answerer_created_time":null,
@@ -5809,8 +6005,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":117.0207547222,
         "Challenge_title":"The debug-internal.log file is too large (>500MB)",
@@ -5838,7 +6034,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":5.0,
         "Solution_word_count":62.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"large debug log files"
     },
     {
         "Answerer_created_time":1576948018896,
@@ -5868,8 +6066,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":0.1342122222,
         "Challenge_title":"Sagemaker Endpoint returning strange error",
@@ -5897,7 +6095,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":18.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"endpoint errors"
     },
     {
         "Answerer_created_time":1646907459852,
@@ -5927,8 +6127,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":688.1130463889,
         "Challenge_title":"Logging and Fetching Run Parameters in AzureML",
@@ -5956,7 +6156,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":55.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"log parameters with AzureML"
     },
     {
         "Answerer_created_time":null,
@@ -5986,8 +6188,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":57,
         "Challenge_solved_time":82.4554527778,
         "Challenge_title":"NameError when trying to run an ScriptRunConfig in Azure Machine Learning",
@@ -6015,7 +6217,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":11.0,
         "Solution_word_count":106.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"NameError in ScriptRunConfig"
     },
     {
         "Answerer_created_time":null,
@@ -6045,8 +6249,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":25,
         "Challenge_solved_time":63.8910877778,
         "Challenge_title":"Could not add summary columns for display in Table",
@@ -6074,7 +6278,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":3.0,
         "Solution_word_count":42.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to add step metric columns"
     },
     {
         "Answerer_created_time":null,
@@ -6104,8 +6310,8 @@
         "Challenge_repo_issue_count":1270.0,
         "Challenge_repo_star_count":755.0,
         "Challenge_repo_watch_count":8.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":360.0336111111,
         "Challenge_title":"Exception in backtest with `aggregate_metrics=True` when using `WandbLogger`",
@@ -6133,7 +6339,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"config too large"
     },
     {
         "Answerer_created_time":1250158552416,
@@ -6163,8 +6371,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":35.8714972222,
         "Challenge_title":"Add model description when registering model after hyperdrive successful run",
@@ -6192,7 +6400,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":96.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"add model description"
     },
     {
         "Answerer_created_time":null,
@@ -6222,8 +6432,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":0.0222222222,
         "Challenge_title":"How to persist custom job runs table",
@@ -6251,7 +6461,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":17.0,
-        "Tool":"Polyaxon"
+        "Tool":"Polyaxon",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"save display preferences"
     },
     {
         "Answerer_created_time":null,
@@ -6281,8 +6493,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":19,
         "Challenge_solved_time":201.2384813889,
         "Challenge_title":"How can I extract params from sweep and add them into name of wandb.init()",
@@ -6310,7 +6522,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":9.0,
         "Solution_word_count":123.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to access params"
     },
     {
         "Answerer_created_time":1244808478036,
@@ -6340,8 +6554,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":27,
         "Challenge_solved_time":53.8060766667,
         "Challenge_title":"Impossible to invoke endpoint with sagemaker",
@@ -6369,7 +6583,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":62.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"invalid parameter error"
     },
     {
         "Answerer_created_time":1626973229036,
@@ -6399,8 +6615,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":13.3565036111,
         "Challenge_title":"How to deploy AWS using CDK, sagemaker?",
@@ -6428,7 +6644,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":126.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error in pytest"
     },
     {
         "Answerer_created_time":1523298968403,
@@ -6458,8 +6676,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":140.9113833333,
         "Challenge_title":"How can I specify content_type in a training job of XGBoost from Sagemaker in Python?",
@@ -6487,7 +6705,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":19.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error parsing hyperparameters"
     },
     {
         "Answerer_created_time":null,
@@ -6517,8 +6737,8 @@
         "Challenge_repo_issue_count":15116.0,
         "Challenge_repo_star_count":23576.0,
         "Challenge_repo_watch_count":234.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":755.2722222222,
         "Challenge_title":"Must manually import `comet_ml` before `CometLogger` to avoid import error",
@@ -6546,7 +6766,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Comet"
+        "Tool":"Comet",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error with CometLogger"
     },
     {
         "Answerer_created_time":1606374398152,
@@ -6576,8 +6798,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":336.329535,
         "Challenge_title":"Real-time Data Pre-processing in Lambda for SageMaker Endpoint",
@@ -6605,7 +6827,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":43.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"need to preprocess data"
     },
     {
         "Answerer_created_time":null,
@@ -6635,8 +6859,8 @@
         "Challenge_repo_issue_count":728.0,
         "Challenge_repo_star_count":337.0,
         "Challenge_repo_watch_count":21.0,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":316.8641666667,
         "Challenge_title":"dbx deploy fails due to mlflow experiment not found",
@@ -6664,7 +6888,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing mlruns folder"
     },
     {
         "Answerer_created_time":1623879163643,
@@ -6694,8 +6920,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":14.6592575,
         "Challenge_title":"SageMaker: PipelineModel and Hyperparameter Tuning",
@@ -6723,7 +6949,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":66.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"distribute tuning parameters"
     },
     {
         "Answerer_created_time":null,
@@ -6753,8 +6981,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":93.1594822222,
         "Challenge_title":"Help with Inference Script for Amazon Sagemaker Neo Compiled Models",
@@ -6782,7 +7010,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":94.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"errors with `jetson_tx2` device"
     },
     {
         "Answerer_created_time":null,
@@ -6812,8 +7042,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":17,
         "Challenge_solved_time":100.1738869445,
         "Challenge_title":"With TB SummaryWriter only getting sys logs, no log_scalar shows up",
@@ -6841,7 +7071,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":10.0,
         "Solution_word_count":64.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"writer.log_scalar not recorded"
     },
     {
         "Answerer_created_time":1424791933163,
@@ -6871,8 +7103,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":40.1334377778,
         "Challenge_title":"Why does the Optuna CSV file only display 1 item per parameter when I have multiple?",
@@ -6900,7 +7132,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":68.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"display best settings"
     },
     {
         "Answerer_created_time":1397589101936,
@@ -6930,8 +7164,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":10.2489016667,
         "Challenge_title":"Optuna lightgbm integration giving categorical features error",
@@ -6959,7 +7193,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":48.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"overridden categorical_column"
     },
     {
         "Answerer_created_time":1565129860212,
@@ -6989,8 +7225,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":4.1136852778,
         "Challenge_title":"How to get status of Azure machine learning service pipeline run using Rest Api?",
@@ -7018,7 +7254,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":36.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"monitor pipeline status"
     },
     {
         "Answerer_created_time":1341441916656,
@@ -7048,8 +7286,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":21.6879675,
         "Challenge_title":"Customer Error: Additional hyperparameters are not allowed - Image classification training- Sagemaker",
@@ -7077,7 +7315,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":17.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unexpected hyperparameter"
     },
     {
         "Answerer_created_time":1324351066392,
@@ -7107,8 +7347,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":64.6627088889,
         "Challenge_title":"How can I match my local azure automl python sdk version to the remote version?",
@@ -7136,7 +7376,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":66.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"version mismatch"
     },
     {
         "Answerer_created_time":null,
@@ -7166,8 +7408,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":6.6325675,
         "Challenge_title":"Does AutoML support optimizing convolutional neural network over the number of layers and pool layer parameters?",
@@ -7195,7 +7437,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":25.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"optimize CNN with AutoML"
     },
     {
         "Answerer_created_time":null,
@@ -7225,8 +7469,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":0.4928227778,
         "Challenge_title":"Understanding define_metric parameters",
@@ -7254,7 +7498,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":13.0,
         "Solution_word_count":148.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"clarify define_metric function"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -7284,8 +7530,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":5.6782083333,
         "Challenge_title":"Returning nearest neighbors from SKLearn model deployed in AWS SageMaker",
@@ -7313,7 +7559,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":51.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing predict method"
     },
     {
         "Answerer_created_time":null,
@@ -7343,8 +7591,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":20,
         "Challenge_solved_time":64.1534905556,
         "Challenge_title":"Using Wandb with HParams on TF",
@@ -7372,7 +7620,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":3.0,
         "Solution_word_count":37.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to create unique job"
     },
     {
         "Answerer_created_time":null,
@@ -7402,8 +7652,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":133.3984755556,
         "Challenge_title":"Without ECR being enabled in AWS account at Organization Level, what's the impact to SageMaker Studio?",
@@ -7431,7 +7681,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":60.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"impact of disabling ECR service"
     },
     {
         "Answerer_created_time":null,
@@ -7461,8 +7713,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":1.1705477778,
         "Challenge_title":"Allow unlimited failed runs",
@@ -7490,7 +7742,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":2.0,
         "Solution_word_count":13.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"handle cuda memory errors"
     },
     {
         "Answerer_created_time":1527682322812,
@@ -7520,8 +7774,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":32.3063211111,
         "Challenge_title":"Tracking SageMaker Estimator with MLFlow",
@@ -7549,7 +7803,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":13.0,
         "Solution_word_count":145.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing log_model function"
     },
     {
         "Answerer_created_time":1556182989007,
@@ -7579,8 +7835,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":5.0310547222,
         "Challenge_title":"Best parameters of an Optuna multi-objective optimization",
@@ -7608,7 +7864,9 @@
         "Solution_score_count":6.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":115.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"runtime error"
     },
     {
         "Answerer_created_time":1416075035300,
@@ -7638,8 +7896,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":19,
         "Challenge_solved_time":6.5771875,
         "Challenge_title":"When using the optuna plugin for hydra, can I import the search space from another config file?",
@@ -7667,7 +7925,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":130.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error importing YAML file"
     },
     {
         "Answerer_created_time":1634305425288,
@@ -7697,8 +7957,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":120,
         "Challenge_solved_time":13.9341619445,
         "Challenge_title":"Why optuna stuck at trial 2(trial_id=3) after it has calculated all hyperparameters?",
@@ -7726,7 +7986,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":151.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"stuck at trial 2"
     },
     {
         "Answerer_created_time":null,
@@ -7756,8 +8018,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":388.0879419444,
         "Challenge_title":"Archive runs",
@@ -7785,7 +8047,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":3.0,
         "Solution_word_count":27.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"add archive feature"
     },
     {
         "Answerer_created_time":null,
@@ -7815,8 +8079,8 @@
         "Challenge_repo_issue_count":5827.0,
         "Challenge_repo_star_count":5419.0,
         "Challenge_repo_watch_count":122.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":29,
         "Challenge_solved_time":745.5772222222,
         "Challenge_title":"Input to the script for publishing models to mlflow is overly particular with inputs",
@@ -7844,7 +8108,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"nested runs in dashboard"
     },
     {
         "Answerer_created_time":null,
@@ -7874,8 +8140,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":7.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":7,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":314.0,
         "Challenge_title":"Receiving quota error when trying to use bison chat model in Vertex AI",
@@ -7903,7 +8169,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":36.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"quota exceeded"
     },
     {
         "Answerer_created_time":1624867238152,
@@ -7933,8 +8201,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":30,
         "Challenge_solved_time":474.0723155556,
         "Challenge_title":"Optuna hyperparameter search not reproducible with interrupted \/ resumed studies",
@@ -7962,7 +8230,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":91.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"non-reproducible hyperparameter search"
     },
     {
         "Answerer_created_time":1592311727163,
@@ -7992,8 +8262,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":23,
         "Challenge_solved_time":138.6078019445,
         "Challenge_title":"AWS Sagemaker Multi-Model Endpoint with Scikit Learn: UnexpectedStatusException whilst using a training script",
@@ -8021,7 +8291,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":55.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"UnexpectedStatusException"
     },
     {
         "Answerer_created_time":1274693802127,
@@ -8051,8 +8323,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":19,
         "Challenge_solved_time":93.8230269445,
         "Challenge_title":"Azure ML Online Endpoint deployment DriverFileNotFound Error",
@@ -8080,7 +8352,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":132.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing driver file"
     },
     {
         "Answerer_created_time":null,
@@ -8110,8 +8384,8 @@
         "Challenge_repo_issue_count":1270.0,
         "Challenge_repo_star_count":755.0,
         "Challenge_repo_watch_count":8.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":46.9786111111,
         "Challenge_title":"[BUG] Wandb Logger does not work unless pytorch is installed ",
@@ -8139,7 +8413,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"compatibility issue"
     },
     {
         "Answerer_created_time":1553609947192,
@@ -8169,8 +8445,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":142,
         "Challenge_solved_time":221.1726347222,
         "Challenge_title":"Sagemaker Endpoint BrokenPipeError at DeepAR Prediction",
@@ -8198,7 +8474,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":13.0,
         "Solution_word_count":119.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"broken pipe error"
     },
     {
         "Answerer_created_time":1424453610300,
@@ -8228,8 +8506,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":5.6297925,
         "Challenge_title":"How are date features utilized in Microsoft Azure Machine Studio",
@@ -8257,7 +8535,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":35.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"derive date time features"
     },
     {
         "Answerer_created_time":null,
@@ -8287,8 +8567,8 @@
         "Challenge_repo_issue_count":493.0,
         "Challenge_repo_star_count":546.0,
         "Challenge_repo_watch_count":33.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":10230.7861111111,
         "Challenge_title":"[BUG] Graph tab doesn't render in Amazon SageMaker Studio - Jupyter Lab",
@@ -8316,7 +8596,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"input shape error"
     },
     {
         "Answerer_created_time":null,
@@ -8346,8 +8628,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":0.0147222222,
         "Challenge_title":"Is there a way to have the logs from a polyaxon run viewable via the cloud UI?",
@@ -8375,7 +8657,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":60.0,
-        "Tool":"Polyaxon"
+        "Tool":"Polyaxon",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"save\/access Polyaxon logs"
     },
     {
         "Answerer_created_time":1405457120427,
@@ -8405,8 +8689,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":18,
         "Challenge_solved_time":0.2453072222,
         "Challenge_title":"Log metrics in PythonScriptStep",
@@ -8434,7 +8718,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":71.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to import logger"
     },
     {
         "Answerer_created_time":null,
@@ -8464,8 +8750,8 @@
         "Challenge_repo_issue_count":274.0,
         "Challenge_repo_star_count":13.0,
         "Challenge_repo_watch_count":7.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":8.1033333333,
         "Challenge_title":"Show lightgbm logs in the logs in AzureML",
@@ -8493,7 +8779,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"CUDA error 46"
     },
     {
         "Answerer_created_time":null,
@@ -8523,8 +8811,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":1.213155,
         "Challenge_title":"How to enable logging of each trial separately?",
@@ -8552,7 +8840,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":25.0,
         "Solution_word_count":211.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incorrect logging"
     },
     {
         "Answerer_created_time":1437078651387,
@@ -8582,8 +8872,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":22,
         "Challenge_solved_time":98.136745,
         "Challenge_title":"View train error metrics for Hugging Face Sagemaker model",
@@ -8611,7 +8901,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":63.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to view training metrics"
     },
     {
         "Answerer_created_time":1428499037932,
@@ -8641,8 +8933,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":1.1770155556,
         "Challenge_title":"How to get a graph with the best performing runs via Sweeps (Weights & Biases)?",
@@ -8670,7 +8962,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":87.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"create graph of top runs"
     },
     {
         "Answerer_created_time":null,
@@ -8700,8 +8994,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":1.2063763889,
         "Challenge_title":"Why does PowerBI not see my custom Azure AI model?",
@@ -8729,7 +9023,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":30.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"empty pop-up window"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -8759,8 +9055,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":7.9018069444,
         "Challenge_title":"Clienterror: An error occured when calling the CreateModel operation",
@@ -8788,7 +9084,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":13.0,
         "Solution_word_count":150.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"model data not found"
     },
     {
         "Answerer_created_time":1428654714763,
@@ -8818,8 +9116,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":3.3385175,
         "Challenge_title":"PowerShell Get request with body",
@@ -8847,7 +9145,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":82.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"failed PowerShell request"
     },
     {
         "Answerer_created_time":1253986272627,
@@ -8877,8 +9177,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":20.1381897222,
         "Challenge_title":"AWS Sagemaker | region specific security credentials for endpoint",
@@ -8906,7 +9206,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":163.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to create region-specific security credentials"
     },
     {
         "Answerer_created_time":1424453610300,
@@ -8936,8 +9238,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":18,
         "Challenge_solved_time":6.3089888889,
         "Challenge_title":"Bad Request Response from Azure Machine Learning",
@@ -8965,7 +9267,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":11.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"bad request with decimal values"
     },
     {
         "Answerer_created_time":1621409485092,
@@ -8995,8 +9299,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":3.7756897222,
         "Challenge_title":"How to get list of compute instance size under Azure Machine Learning and Azure Databricks?",
@@ -9024,7 +9328,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":13.0,
         "Solution_word_count":183.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to query compute instances"
     },
     {
         "Answerer_created_time":1421238326280,
@@ -9054,8 +9360,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":0.6647769444,
         "Challenge_title":"How to run tensorboard for tensorflow in AWS Sagemaker?",
@@ -9083,7 +9389,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":62.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"issues with Tensorboard visualization"
     },
     {
         "Answerer_created_time":1340284487940,
@@ -9113,8 +9421,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":150.7931819444,
         "Challenge_title":"AWS SageMaker: CapacityError: Unable to provision requested ML compute capacity.",
@@ -9142,7 +9450,9 @@
         "Solution_score_count":5.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":83.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"CapacityError on SageMaker"
     },
     {
         "Answerer_created_time":1531218624572,
@@ -9172,8 +9482,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":16.6869011111,
         "Challenge_title":"Force one specific set of parameters into the sampled batch",
@@ -9201,7 +9511,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":29.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"force specific parameters"
     },
     {
         "Answerer_created_time":null,
@@ -9231,8 +9543,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":27,
         "Challenge_solved_time":116.0143763889,
         "Challenge_title":"Multi-level nesting in yaml for sweeps",
@@ -9260,7 +9572,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":15.0,
         "Solution_word_count":159.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"invalid hyperparameter configuration"
     },
     {
         "Answerer_created_time":1225669466307,
@@ -9290,8 +9604,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":0.1705583334,
         "Challenge_title":"C# async\/await to F# using Azure ML example",
@@ -9319,7 +9633,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":16.0,
         "Solution_word_count":156.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"translate C# to F#"
     },
     {
         "Answerer_created_time":1501350003092,
@@ -9349,8 +9665,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":32.1489905556,
         "Challenge_title":"When calling a SageMaker deploy_endpoint function with an a1.small instance, I'm given an error that I can't open a m5.xlarge instance",
@@ -9378,7 +9694,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":50.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"service limit reached"
     },
     {
         "Answerer_created_time":1662621266503,
@@ -9408,8 +9726,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":0.6069663889,
         "Challenge_title":"SageMaker Distributed Training in Local Mode (inside Notebook Instances)",
@@ -9437,7 +9755,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":26.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"test SageMaker in local mode"
     },
     {
         "Answerer_created_time":1639972620503,
@@ -9467,8 +9787,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":14.8662555556,
         "Challenge_title":"How do parallel trials in GCP Vertex AI work?",
@@ -9496,7 +9816,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":113.0,
-        "Tool":"Vertex AI"
+        "Tool":"Vertex AI",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"parallel trials in GCP Vertex AI"
     },
     {
         "Answerer_created_time":1436184843608,
@@ -9526,8 +9848,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":0.4063402778,
         "Challenge_title":"Test multiple algorithms in one experiment",
@@ -9555,7 +9877,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":138.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"test multiple algorithms"
     },
     {
         "Answerer_created_time":null,
@@ -9585,8 +9909,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":58.3609763889,
         "Challenge_title":"Using sweeps for custom data generator in keras",
@@ -9614,7 +9938,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":10.0,
         "Solution_word_count":102.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"use sweeps for augmentation"
     },
     {
         "Answerer_created_time":1476780098123,
@@ -9644,8 +9970,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":13.8667347222,
         "Challenge_title":"AWS Sagemaker inference endpoint not utilizing all vCPUs",
@@ -9673,7 +9999,9 @@
         "Solution_score_count":5.0,
         "Solution_sentence_count":55.0,
         "Solution_word_count":599.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"CPU utilization maxed out"
     },
     {
         "Answerer_created_time":null,
@@ -9703,8 +10031,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":8.8905811111,
         "Challenge_title":"Form recognizer to report on missing information in (near) real-time",
@@ -9732,7 +10060,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":13.0,
         "Solution_word_count":292.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"screening tool for applications"
     },
     {
         "Answerer_created_time":null,
@@ -9762,8 +10092,8 @@
         "Challenge_repo_issue_count":102.0,
         "Challenge_repo_star_count":29.0,
         "Challenge_repo_watch_count":2.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":28.0155555556,
         "Challenge_title":"In random agent script wandb full episode data logging skips a few steps",
@@ -9791,7 +10121,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"skipped logging steps"
     },
     {
         "Answerer_created_time":null,
@@ -9821,8 +10153,8 @@
         "Challenge_repo_issue_count":621.0,
         "Challenge_repo_star_count":38.0,
         "Challenge_repo_watch_count":2.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":267.6955555556,
         "Challenge_title":"Warning when training mlflow-pytorch 2.0.0",
@@ -9850,7 +10182,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incorrect release fetched"
     },
     {
         "Answerer_created_time":null,
@@ -9880,8 +10214,8 @@
         "Challenge_repo_issue_count":2975.0,
         "Challenge_repo_star_count":7363.0,
         "Challenge_repo_watch_count":128.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":73,
         "Challenge_solved_time":560.8433333333,
         "Challenge_title":"[BUG]: Runs recorded in MLflow nests all recursively when [full] installed",
@@ -9909,7 +10243,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to create probabilities"
     },
     {
         "Answerer_created_time":1530826195963,
@@ -9939,8 +10275,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":4541.7529547222,
         "Challenge_title":"Sagemaker Hyperparameter Tuning Job Mechanism",
@@ -9968,7 +10304,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":70.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"AWS Sagemaker HPO mechanism"
     },
     {
         "Answerer_created_time":1561143508792,
@@ -9998,8 +10336,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":7.9073555556,
         "Challenge_title":"ClearML multiple tasks in single script changes logged value names",
@@ -10027,7 +10365,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":8.0,
         "Solution_word_count":135.0,
-        "Tool":"ClearML"
+        "Tool":"ClearML",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incomparable logged values"
     },
     {
         "Answerer_created_time":null,
@@ -10057,8 +10397,8 @@
         "Challenge_repo_issue_count":548.0,
         "Challenge_repo_star_count":63.0,
         "Challenge_repo_watch_count":5.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":41,
         "Challenge_solved_time":24.1527777778,
         "Challenge_title":"Running train_model from examples after install needs directory \"wandb\"",
@@ -10086,7 +10426,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing directory"
     },
     {
         "Answerer_created_time":1558310526776,
@@ -10116,8 +10458,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":60,
         "Challenge_solved_time":75.2934369445,
         "Challenge_title":"How do I deploy a pre trained sklearn model on AWS sagemaker? (Endpoint stuck on creating)",
@@ -10145,7 +10487,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":60.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"endpoint creation stuck"
     },
     {
         "Answerer_created_time":1369156710532,
@@ -10175,8 +10519,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":25.8737591667,
         "Challenge_title":"\"do something\" when Optuna finds new best parameters",
@@ -10204,7 +10548,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":1.0,
         "Solution_word_count":22.0,
-        "Tool":"Optuna"
+        "Tool":"Optuna",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"failed to save parameters"
     },
     {
         "Answerer_created_time":1253986272627,
@@ -10234,8 +10580,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":16,
         "Challenge_solved_time":127.0472208333,
         "Challenge_title":"AWS Sagemaker custom user algorithms: how to take advantage of extra instances",
@@ -10263,7 +10609,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":11.0,
         "Solution_word_count":249.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"no speedup with increased instance count"
     },
     {
         "Answerer_created_time":null,
@@ -10293,8 +10641,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":15,
         "Challenge_solved_time":377.9588433334,
         "Challenge_title":"Workflow for running an ensemble of experiments with different initial conditions",
@@ -10322,7 +10670,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":8.0,
         "Solution_word_count":104.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"run multiple experiments"
     },
     {
         "Answerer_created_time":1491898605956,
@@ -10352,8 +10702,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":18.2316369445,
         "Challenge_title":"Hyperparameter tuning job In Sagemaker with cross valdiation",
@@ -10381,7 +10731,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":18.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"use cross validation"
     },
     {
         "Answerer_created_time":1646907459852,
@@ -10411,8 +10763,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":14.2479583334,
         "Challenge_title":"parameters error in azure ML designer in evaluation metrics in regression model",
@@ -10440,7 +10792,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":29.0,
         "Solution_word_count":189.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"error in evaluation metrics"
     },
     {
         "Answerer_created_time":1491467888608,
@@ -10470,8 +10824,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":27,
         "Challenge_solved_time":4.4438166667,
         "Challenge_title":"What is the meaning of 'config = wandb.config'?",
@@ -10499,7 +10853,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":33.0,
         "Solution_word_count":255.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"wandb config explanation"
     },
     {
         "Answerer_created_time":1538275960603,
@@ -10529,8 +10885,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":9.2060972223,
         "Challenge_title":"Azure Machine Learning Compute quota?",
@@ -10558,7 +10914,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":52.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"find current quota values"
     },
     {
         "Answerer_created_time":1442334437952,
@@ -10588,8 +10946,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":0.1509027778,
         "Challenge_title":"Failed to parse column picker rules - azure ML designer",
@@ -10617,7 +10975,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":65.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"failed to parse column picker rules"
     },
     {
         "Answerer_created_time":null,
@@ -10647,8 +11007,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":39.8393819445,
         "Challenge_title":"Wandb.watch with pytorch not logging anything",
@@ -10676,7 +11036,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":12.0,
         "Solution_word_count":107.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"wandb.watch not logging"
     },
     {
         "Answerer_created_time":null,
@@ -10706,8 +11068,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":2,
         "Challenge_solved_time":9.8547805556,
         "Challenge_title":"Can I manually cancel a run in a sweep?",
@@ -10735,7 +11097,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":14.0,
         "Solution_word_count":115.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"cancel sweep run"
     },
     {
         "Answerer_created_time":null,
@@ -10765,8 +11129,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":5.5084697222,
         "Challenge_title":"How do I upload code to WandB every time I run it",
@@ -10794,7 +11158,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":10.0,
         "Solution_word_count":122.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"upload code to WandB"
     },
     {
         "Answerer_created_time":null,
@@ -10824,8 +11190,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":49.2027833334,
         "Challenge_title":"Replacement for Azure ML Classic Excel Add In",
@@ -10853,7 +11219,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":70.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"replacement for Excel add-in"
     },
     {
         "Answerer_created_time":null,
@@ -10883,8 +11251,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":579.0058813889,
         "Challenge_title":"How to log the learning rate with pytorch lightning when using a scheduler?",
@@ -10912,7 +11280,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":6.0,
         "Solution_word_count":104.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"log learning rate"
     },
     {
         "Answerer_created_time":1539831335196,
@@ -10942,8 +11312,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":30,
         "Challenge_solved_time":870.7459847222,
         "Challenge_title":"Can't use Keras CSVLogger callbacks in Sagemaker script mode. It fails to write the log file on S3 ( error - No such file or directory )",
@@ -10971,7 +11341,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":221.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"CSVLogger fails to write"
     },
     {
         "Answerer_created_time":null,
@@ -11001,8 +11373,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":12.5540683334,
         "Challenge_title":"Remote run model unable to be saved",
@@ -11030,7 +11402,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":34.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"attribute error"
     },
     {
         "Answerer_created_time":null,
@@ -11060,8 +11434,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":85.1185105556,
         "Challenge_title":"Update offline run before syncing",
@@ -11089,7 +11463,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":4.0,
         "Solution_word_count":64.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"script crash and offset in epoch numbers"
     },
     {
         "Answerer_created_time":1468179475927,
@@ -11119,8 +11495,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":459.9672919444,
         "Challenge_title":"Recommendations without ratings (Azure ML)",
@@ -11148,7 +11524,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":199.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"transform data for recommendations"
     },
     {
         "Answerer_created_time":1646907459852,
@@ -11178,8 +11556,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":688.1130463889,
         "Challenge_title":"Logging and Fetching Run Parameters in AzureML",
@@ -11207,7 +11585,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":55.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"log parameters with AzureML"
     },
     {
         "Answerer_created_time":1579718832727,
@@ -11237,8 +11617,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":9.2664777778,
         "Challenge_title":"How can I throw an exception from within an MLflow project?",
@@ -11266,7 +11646,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":63.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"ExecutionException raised"
     },
     {
         "Answerer_created_time":null,
@@ -11296,8 +11678,8 @@
         "Challenge_repo_issue_count":2975.0,
         "Challenge_repo_star_count":7363.0,
         "Challenge_repo_watch_count":128.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":14,
         "Challenge_solved_time":60.5666666667,
         "Challenge_title":"[BUG]: Runs recorded in MLflow nests all recursively",
@@ -11325,6 +11707,8 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"models not visible"
     }
 ]

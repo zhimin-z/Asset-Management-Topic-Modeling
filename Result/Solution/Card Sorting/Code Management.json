@@ -27,8 +27,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":11.5141666667,
         "Challenge_title":"S3 Dataset versioning with SageMaker?",
@@ -56,7 +56,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":81.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"track S3 datasets"
     },
     {
         "Answerer_created_time":1405882600928,
@@ -86,8 +88,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":0.4960861111,
         "Challenge_title":"Data versioning of \"Hello_World\" tutorial",
@@ -115,7 +117,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":78.0,
-        "Tool":"Kedro"
+        "Tool":"Kedro",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"versioning error"
     },
     {
         "Answerer_created_time":1614882423070,
@@ -145,8 +149,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":13,
         "Challenge_solved_time":10.1961591667,
         "Challenge_title":"How to access local files from AzureML File Share?",
@@ -174,7 +178,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":36.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to access local files"
     },
     {
         "Answerer_created_time":1250347954880,
@@ -204,8 +210,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":5.2541386111,
         "Challenge_title":"\"dvc push\" after several local commits",
@@ -233,7 +239,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":86.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"push data from all local commits"
     },
     {
         "Answerer_created_time":1305851487736,
@@ -263,8 +271,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":12.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":12,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":7,
         "Challenge_solved_time":5.3460952778,
         "Challenge_title":"How to use different remotes for different folders?",
@@ -292,7 +300,9 @@
         "Solution_score_count":13.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":112.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"separate data and models"
     },
     {
         "Answerer_created_time":1305851487736,
@@ -322,8 +332,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":12,
         "Challenge_solved_time":32.0906019444,
         "Challenge_title":"How does one add individual files with DVC?",
@@ -351,7 +361,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":12.0,
         "Solution_word_count":89.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"add data incrementally in DVC"
     },
     {
         "Answerer_created_time":1250347954880,
@@ -381,8 +393,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":76,
         "Challenge_solved_time":105.6016441667,
         "Challenge_title":"Error with DVC on Google Colab - dvc.scm.CloneError: Failed to clone repo",
@@ -410,7 +422,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":10.0,
         "Solution_word_count":99.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"failed to clone repo"
     },
     {
         "Answerer_created_time":null,
@@ -440,8 +454,8 @@
         "Challenge_repo_issue_count":458.0,
         "Challenge_repo_star_count":21.0,
         "Challenge_repo_watch_count":15.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":64.6766666667,
         "Challenge_title":"dvc tries to launch updater using asv script",
@@ -469,7 +483,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"inconvenient branch switching. \n\nExplanation: The text mentions an issue that is causing inconvenience when"
     },
     {
         "Answerer_created_time":null,
@@ -499,8 +515,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":2183.8986427778,
         "Challenge_title":"How can we connect a Sagemaker Studio user to a gitlab repo within a private VPN?",
@@ -528,7 +544,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":32.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"connect Sagemaker Studio to private gitlab repo"
     },
     {
         "Answerer_created_time":1662022756172,
@@ -558,8 +576,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":1.4693894444,
         "Challenge_title":"DVC shows files not tracked in source control in visual studio code",
@@ -587,7 +605,9 @@
         "Solution_score_count":3.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":45.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"files not tracked"
     },
     {
         "Answerer_created_time":1614873430827,
@@ -617,8 +637,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":11,
         "Challenge_solved_time":0.3104436111,
         "Challenge_title":"DVC Files Incomplete",
@@ -646,7 +666,9 @@
         "Solution_score_count":2.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":60.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"DVC-file format error"
     },
     {
         "Answerer_created_time":1221810788500,
@@ -676,8 +698,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":10.1112130556,
         "Challenge_title":"mlflow run git-uri clone to specific directory",
@@ -705,7 +727,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":75.0,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to set directory"
     },
     {
         "Answerer_created_time":1620132280447,
@@ -735,8 +759,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":3.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":3,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":13.6342236111,
         "Challenge_title":"Corrupted dvc.lock",
@@ -764,7 +788,9 @@
         "Solution_score_count":4.0,
         "Solution_sentence_count":5.0,
         "Solution_word_count":39.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"corrupted lockfile"
     },
     {
         "Answerer_created_time":null,
@@ -794,8 +820,8 @@
         "Challenge_repo_issue_count":204.0,
         "Challenge_repo_star_count":16.0,
         "Challenge_repo_watch_count":13.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":0.4736111111,
         "Challenge_title":"example-get-started is broken with latest DVC",
@@ -823,7 +849,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incorrect root directory"
     },
     {
         "Answerer_created_time":null,
@@ -853,8 +881,8 @@
         "Challenge_repo_issue_count":925.0,
         "Challenge_repo_star_count":5573.0,
         "Challenge_repo_watch_count":118.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":25,
         "Challenge_solved_time":64.4975,
         "Challenge_title":"Test set metrics overwrite validation set metrics in TensorBoard and are rejected for logging by Weights and Biases (W&B)",
@@ -882,7 +910,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unconfigured API key"
     },
     {
         "Answerer_created_time":null,
@@ -912,8 +942,8 @@
         "Challenge_repo_issue_count":5537.0,
         "Challenge_repo_star_count":16.0,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":1102.8986563889,
         "Challenge_title":"[Sorts] Add sagemaker dependencies",
@@ -941,7 +971,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"incomplete dependency tree"
     },
     {
         "Answerer_created_time":null,
@@ -971,8 +1003,8 @@
         "Challenge_repo_issue_count":2975.0,
         "Challenge_repo_star_count":7363.0,
         "Challenge_repo_watch_count":128.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":24.5525,
         "Challenge_title":"Compare models MLFlowException",
@@ -1000,7 +1032,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"MLflow"
+        "Tool":"MLflow",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"deployment issues"
     },
     {
         "Answerer_created_time":null,
@@ -1030,8 +1064,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":4.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":4,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":485.9309611111,
         "Challenge_title":"[Feature Request] W&B badge or shield for GitHub repositories",
@@ -1059,7 +1093,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":7.0,
         "Solution_word_count":73.0,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"request for W&B badge"
     },
     {
         "Answerer_created_time":null,
@@ -1089,8 +1125,8 @@
         "Challenge_repo_issue_count":660.0,
         "Challenge_repo_star_count":1465.0,
         "Challenge_repo_watch_count":21.0,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":4,
         "Challenge_solved_time":124.4336111111,
         "Challenge_title":"Wandb Run stalling",
@@ -1118,7 +1154,9 @@
         "Solution_score_count":null,
         "Solution_sentence_count":null,
         "Solution_word_count":null,
-        "Tool":"Weights & Biases"
+        "Tool":"Weights & Biases",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unwanted directory in history"
     },
     {
         "Answerer_created_time":1631019482980,
@@ -1148,8 +1186,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":1.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":1,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":23,
         "Challenge_solved_time":25.0813055556,
         "Challenge_title":"ERROR: Cannot add 'folder-path', because it is overlapping with other DVC tracked output:",
@@ -1177,7 +1215,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":2.0,
         "Solution_word_count":27.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"overlapping DVC tracked output"
     },
     {
         "Answerer_created_time":null,
@@ -1207,8 +1247,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":7.3909094444,
         "Challenge_title":"FileNotFoundError: [Errno 2] No such file or directory: '\/home\/ec2-user\/anaconda3\/envs\/python3\/lib\/python3.8\/site-packages\/sagemaker\/image_uri_config\/catboost.json'",
@@ -1236,7 +1276,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":9.0,
         "Solution_word_count":116.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"FileNotFoundError"
     },
     {
         "Answerer_created_time":1424548126510,
@@ -1266,8 +1308,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":0.365185,
         "Challenge_title":"Sagemaker instance does automatic cd at startup",
@@ -1295,7 +1337,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":31.0,
-        "Tool":"Amazon SageMaker"
+        "Tool":"Amazon SageMaker",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"failed \"cd\" command"
     },
     {
         "Answerer_created_time":null,
@@ -1325,8 +1369,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":3,
         "Challenge_solved_time":0.2386394444,
         "Challenge_title":"Azure machine learning samples 404",
@@ -1354,7 +1398,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":7.0,
         "Solution_word_count":89.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"broken link"
     },
     {
         "Answerer_created_time":1510527902860,
@@ -1384,8 +1430,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":2.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":2,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":9,
         "Challenge_solved_time":140.7067080556,
         "Challenge_title":"Kedro install fail to install, but few attempt later it is successful",
@@ -1413,7 +1459,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":17.0,
         "Solution_word_count":296.0,
-        "Tool":"Kedro"
+        "Tool":"Kedro",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"installation failure"
     },
     {
         "Answerer_created_time":1541523185320,
@@ -1443,8 +1491,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":27.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":27,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":5,
         "Challenge_solved_time":1.5810183334,
         "Challenge_title":"Difference between git-lfs and dvc",
@@ -1472,7 +1520,9 @@
         "Solution_score_count":10.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":42.0,
-        "Tool":"DVC"
+        "Tool":"DVC",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"compare git-lfs and dvc"
     },
     {
         "Answerer_created_time":1294388296987,
@@ -1502,8 +1552,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":0.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":0,
         "Challenge_sentence_count":8,
         "Challenge_solved_time":1.2159166667,
         "Challenge_title":"Azure ML, DevOps: Switching between branches keeps some files from another branch",
@@ -1531,7 +1581,9 @@
         "Solution_score_count":1.0,
         "Solution_sentence_count":6.0,
         "Solution_word_count":74.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"files not being ignored"
     },
     {
         "Answerer_created_time":1646219230528,
@@ -1561,8 +1613,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":10,
         "Challenge_solved_time":3670.8803794444,
         "Challenge_title":"What are valid Azure ML Workspace connection argument options?",
@@ -1590,7 +1642,9 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":4.0,
         "Solution_word_count":64.0,
-        "Tool":"Azure Machine Learning"
+        "Tool":"Azure Machine Learning",
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"trouble connecting to repository"
     },
     {
         "Answerer_created_time":1314097464768,
@@ -1620,8 +1674,8 @@
         "Challenge_repo_issue_count":null,
         "Challenge_repo_star_count":null,
         "Challenge_repo_watch_count":null,
-        "Challenge_score_count":0.0,
-        "Challenge_self_closed":1.0,
+        "Challenge_score_count":0,
+        "Challenge_self_closed":1,
         "Challenge_sentence_count":6,
         "Challenge_solved_time":2442.9987888889,
         "Challenge_title":"Can I make Neptune talk to git?",
@@ -1649,6 +1703,8 @@
         "Solution_score_count":0.0,
         "Solution_sentence_count":3.0,
         "Solution_word_count":14.0,
-        "Tool":"Neptune"
+        "Tool":"Neptune",
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"git-aware Neptune tracker"
     }
 ]
