@@ -68,26 +68,26 @@ fig.write_html(os.path.join(path_challenge, 'Document visualization.html'))
 topics_new = topic_model.reduce_outliers(
     docs, topics, probabilities=probs, strategy="probabilities")
 
-path_wordcloud = os.path.join(path_challenge, 'Wordcloud')
-if not os.path.exists(path_wordcloud):
-    os.makedirs(path_wordcloud)
+# path_wordcloud = os.path.join(path_challenge, 'Wordcloud')
+# if not os.path.exists(path_wordcloud):
+#     os.makedirs(path_wordcloud)
 
-# Preprocess Documents
-documents = pd.DataFrame(
-    {'Document': docs, 'Topic': topics_new})
-documents_per_topic = documents.groupby(['Topic']).agg(
-    {'Document': ' '.join}).reset_index()
+# # Preprocess Documents
+# documents = pd.DataFrame(
+#     {'Document': docs, 'Topic': topics_new})
+# documents_per_topic = documents.groupby(['Topic']).agg(
+#     {'Document': ' '.join}).reset_index()
 
-for index, row in documents_per_topic.iterrows():
-    wordcloud = WordCloud(
-        width=1000, height=1000, background_color='white', min_font_size=10).generate(row['Document'])
-    plt.figure(figsize=(10, 10), facecolor=None)
-    plt.imshow(wordcloud)
-    plt.axis("off")
-    plt.tight_layout(pad=0)
-    plt.savefig(os.path.join(path_wordcloud,
-                f'Topic_{row["Topic"]}'+'.png'), bbox_inches='tight')
-    plt.close()
+# for index, row in documents_per_topic.iterrows():
+#     wordcloud = WordCloud(
+#         width=1000, height=1000, background_color='white', min_font_size=10).generate(row['Document'])
+#     plt.figure(figsize=(10, 10), facecolor=None)
+#     plt.imshow(wordcloud)
+#     plt.axis("off")
+#     plt.tight_layout(pad=0)
+#     plt.savefig(os.path.join(path_wordcloud,
+#                 f'Topic_{row["Topic"]}'+'.png'), bbox_inches='tight')
+#     plt.close()
 
 # persist the document topics
 
