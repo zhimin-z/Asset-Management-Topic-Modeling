@@ -51,10 +51,6 @@ fig = topic_model.visualize_heatmap()
 fig.write_html(os.path.join(
     path_challenge, 'Topic similarity visualization.html'))
 
-fig = topic_model.visualize_term_rank()
-fig.write_html(os.path.join(
-    path_challenge, 'Term score decline visualization.html'))
-
 # hierarchical_topics = topic_model.hierarchical_topics(docs)
 # fig = topic_model.visualize_hierarchy(hierarchical_topics=hierarchical_topics)
 # fig.write_html(os.path.join(
