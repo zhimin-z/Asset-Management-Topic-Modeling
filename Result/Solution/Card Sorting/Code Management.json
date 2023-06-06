@@ -58,7 +58,7 @@
         "Solution_word_count":81.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"track S3 datasets"
+        "Challenge_summary":"track S3 dataset versions"
     },
     {
         "Answerer_created_time":1405882600928,
@@ -119,7 +119,7 @@
         "Solution_word_count":78.0,
         "Tool":"Kedro",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"versioning error"
+        "Challenge_summary":"versioning error for CSVDataSet"
     },
     {
         "Answerer_created_time":1614882423070,
@@ -240,8 +240,8 @@
         "Solution_sentence_count":7.0,
         "Solution_word_count":86.0,
         "Tool":"DVC",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"push data from all local commits"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"only pushes latest commit"
     },
     {
         "Answerer_created_time":1305851487736,
@@ -302,7 +302,7 @@
         "Solution_word_count":112.0,
         "Tool":"DVC",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"separate data and models"
+        "Challenge_summary":"use different remotes for folders"
     },
     {
         "Answerer_created_time":1305851487736,
@@ -363,7 +363,7 @@
         "Solution_word_count":89.0,
         "Tool":"DVC",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"add data incrementally in DVC"
+        "Challenge_summary":"incrementally add data in DVC"
     },
     {
         "Answerer_created_time":1250347954880,
@@ -485,7 +485,7 @@
         "Solution_word_count":null,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"inconvenient branch switching. \n\nExplanation: The text mentions an issue that is causing inconvenience when"
+        "Challenge_summary":"inconvenient branch switching"
     },
     {
         "Answerer_created_time":null,
@@ -546,7 +546,7 @@
         "Solution_word_count":32.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"connect Sagemaker Studio to private gitlab repo"
+        "Challenge_summary":"connect Sagemaker to private repo"
     },
     {
         "Answerer_created_time":1662022756172,
@@ -607,7 +607,7 @@
         "Solution_word_count":45.0,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"files not tracked"
+        "Challenge_summary":"untracked files in VScode"
     },
     {
         "Answerer_created_time":1614873430827,
@@ -851,7 +851,7 @@
         "Solution_word_count":null,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"incorrect root directory"
+        "Challenge_summary":"incorrect root directory detection"
     },
     {
         "Answerer_created_time":null,
@@ -912,7 +912,7 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unconfigured API key"
+        "Challenge_summary":"unconfigured wandb API key"
     },
     {
         "Answerer_created_time":null,
@@ -1034,7 +1034,7 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"deployment issues"
+        "Challenge_summary":"deployment issues with MLflow"
     },
     {
         "Answerer_created_time":null,
@@ -1156,7 +1156,7 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unwanted directory in history"
+        "Challenge_summary":"untracked directory slipped through"
     },
     {
         "Answerer_created_time":1631019482980,
@@ -1278,7 +1278,7 @@
         "Solution_word_count":116.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"FileNotFoundError"
+        "Challenge_summary":"FileNotFoundError retrieving image URI"
     },
     {
         "Answerer_created_time":1424548126510,
@@ -1400,7 +1400,7 @@
         "Solution_word_count":89.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"broken link"
+        "Challenge_summary":"cannot access samples link"
     },
     {
         "Answerer_created_time":1510527902860,
@@ -1461,7 +1461,7 @@
         "Solution_word_count":296.0,
         "Tool":"Kedro",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"installation failure"
+        "Challenge_summary":"failed installation attempts"
     },
     {
         "Answerer_created_time":1541523185320,
@@ -1583,7 +1583,7 @@
         "Solution_word_count":74.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"files not being ignored"
+        "Challenge_summary":"files not ignored in branch switch"
     },
     {
         "Answerer_created_time":1646219230528,
@@ -1643,8 +1643,8 @@
         "Solution_sentence_count":4.0,
         "Solution_word_count":64.0,
         "Tool":"Azure Machine Learning",
-        "Challenge_type":"anomaly",
-        "Challenge_summary":"trouble connecting to repository"
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"connect to Azure DevOps repository"
     },
     {
         "Answerer_created_time":1314097464768,
@@ -1705,6 +1705,6 @@
         "Solution_word_count":14.0,
         "Tool":"Neptune",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"git-aware Neptune tracker"
+        "Challenge_summary":"make Neptune git-aware"
     }
 ]

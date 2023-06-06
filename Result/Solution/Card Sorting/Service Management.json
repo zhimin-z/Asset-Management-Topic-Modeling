@@ -119,7 +119,7 @@
         "Solution_word_count":75.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"ConnectionResetError"
+        "Challenge_summary":"ConnectionResetError with large JSON"
     },
     {
         "Answerer_created_time":1294155598400,
@@ -180,7 +180,7 @@
         "Solution_word_count":34.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"request signature error"
+        "Challenge_summary":"error with request signature"
     },
     {
         "Answerer_created_time":null,
@@ -363,7 +363,7 @@
         "Solution_word_count":93.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"unified security checklist"
+        "Challenge_summary":"unified Azure security checklist"
     },
     {
         "Answerer_created_time":1435766573232,
@@ -485,7 +485,7 @@
         "Solution_word_count":79.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to open ML Studio"
+        "Challenge_summary":"unable to close pop-up message"
     },
     {
         "Answerer_created_time":null,
@@ -546,7 +546,7 @@
         "Solution_word_count":56.0,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"authentication failure"
+        "Challenge_summary":"explicit authentication fails"
     },
     {
         "Answerer_created_time":1421596186347,
@@ -607,7 +607,7 @@
         "Solution_word_count":134.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"compare endpoint types"
+        "Challenge_summary":"compare multi-model and multi-container endpoints"
     },
     {
         "Answerer_created_time":null,
@@ -790,7 +790,7 @@
         "Solution_word_count":54.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error in non-default endpoint"
+        "Challenge_summary":"missing token for update resource"
     },
     {
         "Answerer_created_time":null,
@@ -851,7 +851,7 @@
         "Solution_word_count":34.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"support for Model Monitor"
+        "Challenge_summary":"SageMaker Model Monitor support"
     },
     {
         "Answerer_created_time":null,
@@ -912,7 +912,7 @@
         "Solution_word_count":81.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"call all variants"
+        "Challenge_summary":"call all model variants"
     },
     {
         "Answerer_created_time":1517578984080,
@@ -1034,7 +1034,7 @@
         "Solution_word_count":19.0,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"TypeError in deploying model"
+        "Challenge_summary":"TypeError in GetModelRequest"
     },
     {
         "Answerer_created_time":1300443398976,
@@ -1095,7 +1095,7 @@
         "Solution_word_count":30.0,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"deployment error"
+        "Challenge_summary":"incorrect response shape"
     },
     {
         "Answerer_created_time":null,
@@ -1217,7 +1217,7 @@
         "Solution_word_count":69.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"failed readiness probe"
+        "Challenge_summary":"readiness probe failed"
     },
     {
         "Answerer_created_time":1254957460063,
@@ -1278,7 +1278,7 @@
         "Solution_word_count":87.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing dropdown and input box"
+        "Challenge_summary":"missing Price Plan dropdown"
     },
     {
         "Answerer_created_time":null,
@@ -1400,7 +1400,7 @@
         "Solution_word_count":219.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"model deployment questions"
+        "Challenge_summary":"deploy model to Azure ML"
     },
     {
         "Answerer_created_time":null,
@@ -1461,7 +1461,7 @@
         "Solution_word_count":117.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"deploy SageMaker to IoT Greengrass"
+        "Challenge_summary":"deploy SageMaker model to different account"
     },
     {
         "Answerer_created_time":1512770138847,
@@ -1522,7 +1522,7 @@
         "Solution_word_count":33.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"attribute error"
+        "Challenge_summary":"attribute error in deployment"
     },
     {
         "Answerer_created_time":1520413126203,
@@ -1583,7 +1583,7 @@
         "Solution_word_count":104.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"authentication key usage"
+        "Challenge_summary":"authentication key questions"
     },
     {
         "Answerer_created_time":1405457120427,
@@ -1644,7 +1644,7 @@
         "Solution_word_count":107.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"deployment failure"
+        "Challenge_summary":"deployment fails with error"
     },
     {
         "Answerer_created_time":1464811778510,
@@ -1705,7 +1705,7 @@
         "Solution_word_count":12.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"model monitoring without endpoint"
+        "Challenge_summary":"monitor model without endpoint"
     },
     {
         "Answerer_created_time":1337759214688,
@@ -1766,7 +1766,7 @@
         "Solution_word_count":36.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"validation error"
+        "Challenge_summary":"validation error in API call"
     },
     {
         "Answerer_created_time":1467005064900,
@@ -1949,7 +1949,7 @@
         "Solution_word_count":15.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"deployment failure"
+        "Challenge_summary":"deployment failure, container crash"
     },
     {
         "Answerer_created_time":1426694564423,
@@ -2132,7 +2132,7 @@
         "Solution_word_count":37.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"training error"
+        "Challenge_summary":"training error in Sagemaker"
     },
     {
         "Answerer_created_time":1434295027120,
@@ -2315,7 +2315,7 @@
         "Solution_word_count":64.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"hosting multiple models"
+        "Challenge_summary":"host multiple models on one endpoint"
     },
     {
         "Answerer_created_time":1452696930640,
@@ -2437,7 +2437,7 @@
         "Solution_word_count":61.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"inconsistent results"
+        "Challenge_summary":"inconsistent results from input"
     },
     {
         "Answerer_created_time":1467451434136,
@@ -2559,7 +2559,7 @@
         "Solution_word_count":87.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"access multiple models"
+        "Challenge_summary":"access multiple models from endpoint"
     },
     {
         "Answerer_created_time":1446238644288,
@@ -2620,7 +2620,7 @@
         "Solution_word_count":67.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"share Regex entities"
+        "Challenge_summary":"share Regex entities between models"
     },
     {
         "Answerer_created_time":1296602388823,
@@ -2742,7 +2742,7 @@
         "Solution_word_count":82.0,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"pipeline created in wrong region"
+        "Challenge_summary":"pipeline created in US"
     },
     {
         "Answerer_created_time":1619163566860,
@@ -2802,8 +2802,8 @@
         "Solution_sentence_count":18.0,
         "Solution_word_count":191.0,
         "Tool":"Vertex AI",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"run voting algorithm on multiple models"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to run voting algorithm"
     },
     {
         "Answerer_created_time":1554186784008,
@@ -2864,7 +2864,7 @@
         "Solution_word_count":17.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"file not found"
+        "Challenge_summary":"file not found error"
     },
     {
         "Answerer_created_time":1577817693600,
@@ -2986,7 +2986,7 @@
         "Solution_word_count":110.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"neural network transparency"
+        "Challenge_summary":"avoid black box model"
     },
     {
         "Answerer_created_time":1424453610300,
@@ -3047,7 +3047,7 @@
         "Solution_word_count":12.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"difficulty passing parameters"
+        "Challenge_summary":"challenges passing parameters"
     },
     {
         "Answerer_created_time":null,
@@ -3108,7 +3108,7 @@
         "Solution_word_count":27.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"SageMaker Canvas and S3 region"
+        "Challenge_summary":"matching SageMaker and S3 regions"
     },
     {
         "Answerer_created_time":1254957460063,
@@ -3169,7 +3169,7 @@
         "Solution_word_count":48.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unrecognized command"
+        "Challenge_summary":"unrecognized PowerShell command"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -3230,7 +3230,7 @@
         "Solution_word_count":66.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"handling long-running Lambda function"
+        "Challenge_summary":"pass JSON to SageMaker"
     },
     {
         "Answerer_created_time":1460437080990,
@@ -3291,7 +3291,7 @@
         "Solution_word_count":34.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"time series modeling and prediction"
+        "Challenge_summary":"time series for multiple persons"
     },
     {
         "Answerer_created_time":1565376125572,
@@ -3474,7 +3474,7 @@
         "Solution_word_count":85.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"service deletion error"
+        "Challenge_summary":"existing service name conflict"
     },
     {
         "Answerer_created_time":1426694564423,
@@ -3535,7 +3535,7 @@
         "Solution_word_count":56.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"create lambda function"
+        "Challenge_summary":"create lambda function for prediction"
     },
     {
         "Answerer_created_time":1605283363407,
@@ -3595,8 +3595,8 @@
         "Solution_sentence_count":21.0,
         "Solution_word_count":297.0,
         "Tool":"Amazon SageMaker",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"deploy SageMaker endpoint"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"difficulty deploying SageMaker endpoint"
     },
     {
         "Answerer_created_time":1435766573232,
@@ -3718,7 +3718,7 @@
         "Solution_word_count":74.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"CORS enabled"
+        "Challenge_summary":"CORS enabled for service"
     },
     {
         "Answerer_created_time":null,
@@ -3779,7 +3779,7 @@
         "Solution_word_count":171.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"ML Studio deprecation date"
+        "Challenge_summary":"ML Studio deprecation timeline"
     },
     {
         "Answerer_created_time":null,
@@ -3840,7 +3840,7 @@
         "Solution_word_count":280.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"submit AutoML job without required roles"
+        "Challenge_summary":"submit AutoML job without roles"
     },
     {
         "Answerer_created_time":1395422283667,
@@ -3901,7 +3901,7 @@
         "Solution_word_count":62.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unsupported media type"
+        "Challenge_summary":"415 error on JSON request"
     },
     {
         "Answerer_created_time":1504757520827,
@@ -3962,7 +3962,7 @@
         "Solution_word_count":111.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"deploying duplicate service"
+        "Challenge_summary":"deploying existing service"
     },
     {
         "Answerer_created_time":1500629225150,
@@ -4084,7 +4084,7 @@
         "Solution_word_count":75.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"no schema file available"
+        "Challenge_summary":"missing schema file"
     },
     {
         "Answerer_created_time":1626973229036,
@@ -4206,7 +4206,7 @@
         "Solution_word_count":62.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"pass environment variables in Json parameter"
+        "Challenge_summary":"populate Json parameter"
     },
     {
         "Answerer_created_time":null,
@@ -4267,7 +4267,7 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"security vulnerability"
+        "Challenge_summary":"unvalidated URL creation"
     },
     {
         "Answerer_created_time":1432829415467,
@@ -4389,7 +4389,7 @@
         "Solution_word_count":95.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"compatibility issues"
+        "Challenge_summary":"compatibility issues in Lambda"
     },
     {
         "Answerer_created_time":1606378353316,
@@ -4450,7 +4450,7 @@
         "Solution_word_count":59.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"deployment error"
+        "Challenge_summary":"formatting JSON parameter error"
     },
     {
         "Answerer_created_time":null,
@@ -4511,7 +4511,7 @@
         "Solution_word_count":32.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"stuck deployment"
+        "Challenge_summary":"deployment stuck in transition"
     },
     {
         "Answerer_created_time":1524658535683,
@@ -4572,7 +4572,7 @@
         "Solution_word_count":49.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to create multiple endpoints"
+        "Challenge_summary":"unable to use SelectColumnsTransform"
     },
     {
         "Answerer_created_time":1273856732636,
@@ -4694,7 +4694,7 @@
         "Solution_word_count":95.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"consume endpoint in Excel"
+        "Challenge_summary":"consume AutoML in Excel"
     },
     {
         "Answerer_created_time":1416346350292,
@@ -4755,7 +4755,7 @@
         "Solution_word_count":46.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unsupported media type"
+        "Challenge_summary":"unsupported media type error"
     },
     {
         "Answerer_created_time":1227171471292,
@@ -4938,7 +4938,7 @@
         "Solution_word_count":127.0,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unsupported resource type"
+        "Challenge_summary":"unsupported dedicated resources"
     },
     {
         "Answerer_created_time":1342685175156,
@@ -5182,7 +5182,7 @@
         "Solution_word_count":54.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unauthorized response"
+        "Challenge_summary":"401 unauthorized response"
     },
     {
         "Answerer_created_time":null,
@@ -5243,7 +5243,7 @@
         "Solution_word_count":69.0,
         "Tool":"Vertex AI",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"using own servers for webhooks"
+        "Challenge_summary":"use own servers for webhooks"
     },
     {
         "Answerer_created_time":1608712056580,
@@ -5303,8 +5303,8 @@
         "Solution_sentence_count":2.0,
         "Solution_word_count":33.0,
         "Tool":"Vertex AI",
-        "Challenge_type":"anomaly",
-        "Challenge_summary":"empty output file"
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"understand Vertex AI documentation"
     },
     {
         "Answerer_created_time":1645475560783,
@@ -5364,8 +5364,8 @@
         "Solution_sentence_count":10.0,
         "Solution_word_count":99.0,
         "Tool":"Amazon SageMaker",
-        "Challenge_type":"anomaly",
-        "Challenge_summary":"image size too large"
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"determine image size"
     },
     {
         "Answerer_created_time":null,
@@ -5548,7 +5548,7 @@
         "Solution_word_count":56.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"understanding input\/output functions"
+        "Challenge_summary":"understand Sagemaker script functions"
     },
     {
         "Answerer_created_time":1491898605956,
@@ -5609,7 +5609,7 @@
         "Solution_word_count":145.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"debug and upload script"
+        "Challenge_summary":"debug data processing implementation"
     },
     {
         "Answerer_created_time":1340833876128,
@@ -5670,7 +5670,7 @@
         "Solution_word_count":107.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"authentication error"
+        "Challenge_summary":"unauthorized\/forbidden error"
     },
     {
         "Answerer_created_time":1406731060412,
@@ -5731,7 +5731,7 @@
         "Solution_word_count":67.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"SageMaker REST API"
+        "Challenge_summary":"SageMaker REST API and API Gateway"
     },
     {
         "Answerer_created_time":1443426419048,
@@ -5792,7 +5792,7 @@
         "Solution_word_count":24.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"incorrect output type"
+        "Challenge_summary":"incorrect web service output type"
     },
     {
         "Answerer_created_time":1342685175156,
@@ -5852,8 +5852,8 @@
         "Solution_sentence_count":3.0,
         "Solution_word_count":48.0,
         "Tool":"Azure Machine Learning",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"use Scoring URI"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unclear usage of Scoring URI"
     },
     {
         "Answerer_created_time":null,
@@ -5914,7 +5914,7 @@
         "Solution_word_count":44.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"automate model retraining and updating"
+        "Challenge_summary":"automate ML Designer update pipeline"
     },
     {
         "Answerer_created_time":null,
@@ -6036,7 +6036,7 @@
         "Solution_word_count":82.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"Batch Transform error"
+        "Challenge_summary":"Batch Transform fails with large CSV files"
     },
     {
         "Answerer_created_time":null,
@@ -6402,7 +6402,7 @@
         "Solution_word_count":30.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error setting array element"
+        "Challenge_summary":"415 error on SageMaker endpoint"
     },
     {
         "Answerer_created_time":1302088276340,
@@ -6585,7 +6585,7 @@
         "Solution_word_count":34.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"TimeoutError when testing service"
+        "Challenge_summary":"TimeoutError on webservice"
     },
     {
         "Answerer_created_time":1539125320752,
@@ -6645,8 +6645,8 @@
         "Solution_sentence_count":11.0,
         "Solution_word_count":100.0,
         "Tool":"Amazon SageMaker",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"specify serving code"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"challenges with serving code"
     },
     {
         "Answerer_created_time":null,
@@ -6707,7 +6707,7 @@
         "Solution_word_count":36.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"re-annotate and use a2i"
+        "Challenge_summary":"incremental learning with a2i"
     },
     {
         "Answerer_created_time":1554186784008,
@@ -6768,7 +6768,7 @@
         "Solution_word_count":33.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"alias endpoint URL"
+        "Challenge_summary":"alias AzureML endpoint"
     },
     {
         "Answerer_created_time":1582182357612,
@@ -6829,7 +6829,7 @@
         "Solution_word_count":42.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"stuck at Transitioning state"
+        "Challenge_summary":"stuck in Transitioning state"
     },
     {
         "Answerer_created_time":1606724007903,
@@ -6890,7 +6890,7 @@
         "Solution_word_count":136.0,
         "Tool":"Vertex AI",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"connect to Vertex AI"
+        "Challenge_summary":"connect Vertex AI with .Net"
     },
     {
         "Answerer_created_time":null,
@@ -6951,7 +6951,7 @@
         "Solution_word_count":67.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"train and deploy in Greengrass"
+        "Challenge_summary":"train models in Greengrass"
     },
     {
         "Answerer_created_time":1439246522636,
@@ -7012,7 +7012,7 @@
         "Solution_word_count":88.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"internal error"
+        "Challenge_summary":"internal error, HTTP 500"
     },
     {
         "Answerer_created_time":1263294862568,
@@ -7073,7 +7073,7 @@
         "Solution_word_count":46.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"parameter validation failed"
+        "Challenge_summary":"invalid parameter type"
     },
     {
         "Answerer_created_time":null,
@@ -7134,7 +7134,7 @@
         "Solution_word_count":44.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"configure endpoint response"
+        "Challenge_summary":"configure endpoint response format"
     },
     {
         "Answerer_created_time":null,
@@ -7195,7 +7195,7 @@
         "Solution_word_count":22.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"access OpenAI service"
+        "Challenge_summary":"access Azure OpenAI service"
     },
     {
         "Answerer_created_time":1567512169150,
@@ -7256,7 +7256,7 @@
         "Solution_word_count":304.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"deployment errors"
+        "Challenge_summary":"pod deployment errors"
     },
     {
         "Answerer_created_time":1360013608220,
@@ -7317,7 +7317,7 @@
         "Solution_word_count":120.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error calling deployed model"
+        "Challenge_summary":"502 and BadGateway errors"
     },
     {
         "Answerer_created_time":null,
@@ -7561,7 +7561,7 @@
         "Solution_word_count":19.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"ACI deployment target"
+        "Challenge_summary":"deploy ACI Webservice location"
     },
     {
         "Answerer_created_time":1559910246180,
@@ -7622,7 +7622,7 @@
         "Solution_word_count":219.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"maximum timeout limit"
+        "Challenge_summary":"timeout limit in API Gateway"
     },
     {
         "Answerer_created_time":null,
@@ -7744,7 +7744,7 @@
         "Solution_word_count":21.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"endpoint stuck in transitioning state"
+        "Challenge_summary":"endpoint stuck in transition"
     },
     {
         "Answerer_created_time":null,
@@ -7805,7 +7805,7 @@
         "Solution_word_count":23.0,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing caller_id"
+        "Challenge_summary":"missing caller_id in webhook response"
     },
     {
         "Answerer_created_time":null,
@@ -7866,7 +7866,7 @@
         "Solution_word_count":null,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"disruptive login prompt"
+        "Challenge_summary":"double login prompt"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -7926,8 +7926,8 @@
         "Solution_sentence_count":11.0,
         "Solution_word_count":116.0,
         "Tool":"Amazon SageMaker",
-        "Challenge_type":"anomaly",
-        "Challenge_summary":"error loading model"
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"limitations of MultiModel Endpoint"
     },
     {
         "Answerer_created_time":1285219808283,
@@ -7988,7 +7988,7 @@
         "Solution_word_count":75.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"no schema file available"
+        "Challenge_summary":"missing schema file"
     },
     {
         "Answerer_created_time":null,
@@ -8110,7 +8110,7 @@
         "Solution_word_count":47.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"HTTP 500 error"
+        "Challenge_summary":"HTTP 500 error in publishing"
     },
     {
         "Answerer_created_time":1485822323507,
@@ -8232,7 +8232,7 @@
         "Solution_word_count":69.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"endpoint setup error"
+        "Challenge_summary":"service unavailable error"
     },
     {
         "Answerer_created_time":null,
@@ -8293,7 +8293,7 @@
         "Solution_word_count":204.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"manage Sagemaker resources"
+        "Challenge_summary":"manage Sagemaker Endpoint in CloudFormation"
     },
     {
         "Answerer_created_time":1626973229036,
@@ -8354,7 +8354,7 @@
         "Solution_word_count":56.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"JSON decode error"
+        "Challenge_summary":"JSON decode error in input_fn"
     },
     {
         "Answerer_created_time":null,
@@ -8415,7 +8415,7 @@
         "Solution_word_count":52.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"purpose of exposed URL"
+        "Challenge_summary":"validate SageMaker endpoint URL"
     },
     {
         "Answerer_created_time":1440024011336,
@@ -8537,7 +8537,7 @@
         "Solution_word_count":114.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"send array to web service"
+        "Challenge_summary":"send array to Azure ML web service"
     },
     {
         "Answerer_created_time":1405457120427,
@@ -8842,6 +8842,6 @@
         "Solution_word_count":63.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unknown parameter"
+        "Challenge_summary":"unknown parameter error"
     }
 ]

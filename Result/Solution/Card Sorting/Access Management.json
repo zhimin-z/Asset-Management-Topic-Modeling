@@ -119,7 +119,7 @@
         "Solution_word_count":null,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"failed request error"
+        "Challenge_summary":"failed request to URL"
     },
     {
         "Answerer_created_time":null,
@@ -302,7 +302,7 @@
         "Solution_word_count":82.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to visualize dataset"
+        "Challenge_summary":"dataset cannot be visualized"
     },
     {
         "Answerer_created_time":null,
@@ -423,8 +423,8 @@
         "Solution_sentence_count":21.0,
         "Solution_word_count":318.0,
         "Tool":"Azure Machine Learning",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"authentication for compute cluster"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"authorization error for external storage"
     },
     {
         "Answerer_created_time":null,
@@ -607,7 +607,7 @@
         "Solution_word_count":150.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"slow download speed"
+        "Challenge_summary":"slow dataset download"
     },
     {
         "Answerer_created_time":1475181309096,
@@ -729,7 +729,7 @@
         "Solution_word_count":85.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to install R\/Java"
+        "Challenge_summary":"FIPS causing installation failure"
     },
     {
         "Answerer_created_time":null,
@@ -790,7 +790,7 @@
         "Solution_word_count":42.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"permission error"
+        "Challenge_summary":"permission error in Automated ML"
     },
     {
         "Answerer_created_time":null,
@@ -851,7 +851,7 @@
         "Solution_word_count":152.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"access issues"
+        "Challenge_summary":"limited subscription visibility"
     },
     {
         "Answerer_created_time":1640731722280,
@@ -973,7 +973,7 @@
         "Solution_word_count":109.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"403 error with container registry"
+        "Challenge_summary":"InternalServerError with 403 error"
     },
     {
         "Answerer_created_time":null,
@@ -1034,7 +1034,7 @@
         "Solution_word_count":14.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to list project templates"
+        "Challenge_summary":"empty project template list"
     },
     {
         "Answerer_created_time":null,
@@ -1156,7 +1156,7 @@
         "Solution_word_count":61.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"data source options"
+        "Challenge_summary":"import data sources"
     },
     {
         "Answerer_created_time":1324988509368,
@@ -1461,7 +1461,7 @@
         "Solution_word_count":113.0,
         "Tool":"Sacred",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"connection refused"
+        "Challenge_summary":"connection refused to MongoDB"
     },
     {
         "Answerer_created_time":null,
@@ -1522,7 +1522,7 @@
         "Solution_word_count":335.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"ssh secrets for Sagemaker Git Repositories"
+        "Challenge_summary":"use ssh secrets in Sagemaker Git Repositories"
     },
     {
         "Answerer_created_time":null,
@@ -1644,7 +1644,7 @@
         "Solution_word_count":null,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"incomplete folder name"
+        "Challenge_summary":"truncated folder name"
     },
     {
         "Answerer_created_time":1342713532568,
@@ -1705,7 +1705,7 @@
         "Solution_word_count":160.0,
         "Tool":"DVC",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"unify DVC URL"
+        "Challenge_summary":"same URL for Windows\/Linux"
     },
     {
         "Answerer_created_time":1507661294190,
@@ -1766,7 +1766,7 @@
         "Solution_word_count":132.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"security group rules for SageMaker"
+        "Challenge_summary":"minimum security group rules"
     },
     {
         "Answerer_created_time":1250347954880,
@@ -2010,7 +2010,7 @@
         "Solution_word_count":54.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"PermissionError while reading data"
+        "Challenge_summary":"PermissionError accessing encrypted S3"
     },
     {
         "Answerer_created_time":1561143508792,
@@ -2132,7 +2132,7 @@
         "Solution_word_count":null,
         "Tool":"Neptune",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing documentation"
+        "Challenge_summary":"missing Neptune connection details"
     },
     {
         "Answerer_created_time":1423640080283,
@@ -2315,7 +2315,7 @@
         "Solution_word_count":79.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"slow download speed"
+        "Challenge_summary":"slow data download"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -2376,7 +2376,7 @@
         "Solution_word_count":63.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"challenges in reading images"
+        "Challenge_summary":"challenges in reading S3 images"
     },
     {
         "Answerer_created_time":null,
@@ -2498,7 +2498,7 @@
         "Solution_word_count":29.0,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"SSH automation permission denied error"
+        "Challenge_summary":"SSH automation permission denied"
     },
     {
         "Answerer_created_time":1385461358920,
@@ -2559,7 +2559,7 @@
         "Solution_word_count":125.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"remote connection to ML platforms"
+        "Challenge_summary":"connect to GCP\/AWS notebooks"
     },
     {
         "Answerer_created_time":1589738451347,
@@ -2620,7 +2620,7 @@
         "Solution_word_count":60.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to connect to web service"
+        "Challenge_summary":"connection issue with AMLS web service"
     },
     {
         "Answerer_created_time":null,
@@ -2681,7 +2681,7 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"FileNotFoundError"
+        "Challenge_summary":"FileNotFoundError on mlflow ui"
     },
     {
         "Answerer_created_time":null,
@@ -2864,7 +2864,7 @@
         "Solution_word_count":73.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"read CDM folder data"
+        "Challenge_summary":"read CDM folder in AML"
     },
     {
         "Answerer_created_time":1500629225150,
@@ -2925,7 +2925,7 @@
         "Solution_word_count":270.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"undeclared managed resource"
+        "Challenge_summary":"missing managed resource declaration"
     },
     {
         "Answerer_created_time":null,
@@ -3047,7 +3047,7 @@
         "Solution_word_count":63.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"automate continuous training"
+        "Challenge_summary":"automate training on S3 update"
     },
     {
         "Answerer_created_time":null,
@@ -3108,7 +3108,7 @@
         "Solution_word_count":294.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"missing value cleanse"
+        "Challenge_summary":"missing value cleanse best practice"
     },
     {
         "Answerer_created_time":null,
@@ -3169,7 +3169,7 @@
         "Solution_word_count":103.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"connect to Snowflake with Private endpoints"
+        "Challenge_summary":"connect Azure ML to Snowflake"
     },
     {
         "Answerer_created_time":1426694564423,
@@ -3474,7 +3474,7 @@
         "Solution_word_count":72.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unrecognized command. The error message indicates that the system is not recognizing the command 'create"
+        "Challenge_summary":"unrecognized command"
     },
     {
         "Answerer_created_time":null,
@@ -3840,7 +3840,7 @@
         "Solution_word_count":9.0,
         "Tool":"Kedro",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"table not found"
+        "Challenge_summary":"table not found error"
     },
     {
         "Answerer_created_time":null,
@@ -3901,7 +3901,7 @@
         "Solution_word_count":116.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"secure network configuration"
+        "Challenge_summary":"secure network for SageMaker"
     },
     {
         "Answerer_created_time":1344510903550,
@@ -3961,8 +3961,8 @@
         "Solution_sentence_count":7.0,
         "Solution_word_count":57.0,
         "Tool":"Sacred",
-        "Challenge_type":"anomaly",
-        "Challenge_summary":"failed to write to MongoDB"
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"import pickle to MongoDB"
     },
     {
         "Answerer_created_time":1645519217332,
@@ -4023,7 +4023,7 @@
         "Solution_word_count":52.0,
         "Tool":"Optuna",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"store additional trial information"
+        "Challenge_summary":"store additional info in Optuna trial"
     },
     {
         "Answerer_created_time":1286692213960,
@@ -4083,8 +4083,8 @@
         "Solution_sentence_count":3.0,
         "Solution_word_count":31.0,
         "Tool":"Azure Machine Learning",
-        "Challenge_type":"anomaly",
-        "Challenge_summary":"challenges in data import"
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"export data from MongoDB"
     },
     {
         "Answerer_created_time":1365101584443,
@@ -4206,7 +4206,7 @@
         "Solution_word_count":91.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"policy limitation"
+        "Challenge_summary":"policy limitation on domain creation"
     },
     {
         "Answerer_created_time":1593579580856,
@@ -4267,7 +4267,7 @@
         "Solution_word_count":18.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"data stored in wrong bucket"
+        "Challenge_summary":"data uploaded to default bucket"
     },
     {
         "Answerer_created_time":1491898605956,
@@ -4450,7 +4450,7 @@
         "Solution_word_count":69.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"incorrect bucket key used"
+        "Challenge_summary":"default bucket key used"
     },
     {
         "Answerer_created_time":1270568377790,
@@ -4511,7 +4511,7 @@
         "Solution_word_count":62.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"secure API keys"
+        "Challenge_summary":"securely store API keys"
     },
     {
         "Answerer_created_time":1276294622427,
@@ -4633,7 +4633,7 @@
         "Solution_word_count":80.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"security of passing query"
+        "Challenge_summary":"security of passing query parameter"
     },
     {
         "Answerer_created_time":null,
@@ -4937,8 +4937,8 @@
         "Solution_sentence_count":2.0,
         "Solution_word_count":26.0,
         "Tool":"Azure Machine Learning",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"import third dataset"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to connect to Azure SQL"
     },
     {
         "Answerer_created_time":null,
@@ -4999,7 +4999,7 @@
         "Solution_word_count":33.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"access issue"
+        "Challenge_summary":"access issue with subscription"
     },
     {
         "Answerer_created_time":1565289301123,
@@ -5121,7 +5121,7 @@
         "Solution_word_count":156.0,
         "Tool":"Polyaxon",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"challenges in configuration"
+        "Challenge_summary":"inelegant configuration process"
     },
     {
         "Answerer_created_time":null,
@@ -5182,7 +5182,7 @@
         "Solution_word_count":162.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"ML does not support Managed Instances"
+        "Challenge_summary":"cannot connect to Managed Instance"
     },
     {
         "Answerer_created_time":1645475560783,
@@ -5304,7 +5304,7 @@
         "Solution_word_count":90.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"connection timeouts"
+        "Challenge_summary":"connection timeouts when importing libraries"
     },
     {
         "Answerer_created_time":null,
@@ -5425,8 +5425,8 @@
         "Solution_sentence_count":29.0,
         "Solution_word_count":297.0,
         "Tool":"MLflow",
-        "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to access MLFlow UI"
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"run MLFlow on VM"
     },
     {
         "Answerer_created_time":1417158887760,
@@ -5487,7 +5487,7 @@
         "Solution_word_count":49.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"access denied error"
+        "Challenge_summary":"Access Denied error"
     },
     {
         "Answerer_created_time":1429262032907,
@@ -5548,7 +5548,7 @@
         "Solution_word_count":55.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"avoid AWS charges"
+        "Challenge_summary":"delete IAM roles and policies, stop Jupyter server"
     },
     {
         "Answerer_created_time":1653511725307,
@@ -5609,7 +5609,7 @@
         "Solution_word_count":11.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"access denied"
+        "Challenge_summary":"access denied to xgboost image"
     },
     {
         "Answerer_created_time":1254957460063,
@@ -5670,7 +5670,7 @@
         "Solution_word_count":132.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"outdated guide and parameters"
+        "Challenge_summary":"outdated guide, connection error"
     },
     {
         "Answerer_created_time":1280505139752,
@@ -5792,7 +5792,7 @@
         "Solution_word_count":50.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"authentication error"
+        "Challenge_summary":"unable to log in"
     },
     {
         "Answerer_created_time":1600124498003,
@@ -5914,7 +5914,7 @@
         "Solution_word_count":79.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"model not saved"
+        "Challenge_summary":"model not saved to S3"
     },
     {
         "Answerer_created_time":null,
@@ -5975,7 +5975,7 @@
         "Solution_word_count":36.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"communication security issue"
+        "Challenge_summary":"insecure communication"
     },
     {
         "Answerer_created_time":1432829415467,
@@ -6036,7 +6036,7 @@
         "Solution_word_count":107.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"SSL routine error"
+        "Challenge_summary":"SSL error downloading files"
     },
     {
         "Answerer_created_time":1313736279736,
@@ -6097,7 +6097,7 @@
         "Solution_word_count":160.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"issue with mixing variables"
+        "Challenge_summary":"mixing shell and Python variables"
     },
     {
         "Answerer_created_time":null,
@@ -6158,7 +6158,7 @@
         "Solution_word_count":39.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to access administrative access"
+        "Challenge_summary":"unable to find administrative access"
     },
     {
         "Answerer_created_time":1512520584492,
@@ -6280,7 +6280,7 @@
         "Solution_word_count":120.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to create project"
+        "Challenge_summary":"cannot create Sagemaker project"
     },
     {
         "Answerer_created_time":1355002392776,
@@ -6402,7 +6402,7 @@
         "Solution_word_count":85.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"permission constraint error"
+        "Challenge_summary":"permission error in Terraform"
     },
     {
         "Answerer_created_time":null,
@@ -6585,7 +6585,7 @@
         "Solution_word_count":98.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"delete experiments in SageMaker"
+        "Challenge_summary":"delete SageMaker experiments"
     },
     {
         "Answerer_created_time":1554186784008,
@@ -6646,7 +6646,7 @@
         "Solution_word_count":49.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"connection timeout"
+        "Challenge_summary":"connection timeout error"
     },
     {
         "Answerer_created_time":null,
@@ -6707,7 +6707,7 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"UNKNOWN status bug"
+        "Challenge_summary":"UNKNOWN status after stopping workspace"
     },
     {
         "Answerer_created_time":null,
@@ -6829,7 +6829,7 @@
         "Solution_word_count":86.0,
         "Tool":"DVC",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"clarify \"dvc gc\" command"
+        "Challenge_summary":"clarify \"dvc gc -r\""
     },
     {
         "Answerer_created_time":1589293508567,
@@ -6890,7 +6890,7 @@
         "Solution_word_count":66.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"attribute error"
+        "Challenge_summary":"attribute error in authentication"
     },
     {
         "Answerer_created_time":1508517418056,
@@ -6950,8 +6950,8 @@
         "Solution_sentence_count":3.0,
         "Solution_word_count":12.0,
         "Tool":"Azure Machine Learning",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"access Workspace object"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"unable to access Workspace object"
     },
     {
         "Answerer_created_time":null,
@@ -7012,7 +7012,7 @@
         "Solution_word_count":177.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"access cloud file system"
+        "Challenge_summary":"access cloud file system data"
     },
     {
         "Answerer_created_time":null,
@@ -7073,7 +7073,7 @@
         "Solution_word_count":56.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"lack of authorization"
+        "Challenge_summary":"lack of authorization for resources"
     },
     {
         "Answerer_created_time":null,
@@ -7134,7 +7134,7 @@
         "Solution_word_count":70.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"creating new project"
+        "Challenge_summary":"sync creates new project"
     },
     {
         "Answerer_created_time":1427953176670,
@@ -7195,7 +7195,7 @@
         "Solution_word_count":211.0,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"hanging DVC push"
+        "Challenge_summary":"hangs on DVC push"
     },
     {
         "Answerer_created_time":1366363157040,
@@ -7439,7 +7439,7 @@
         "Solution_word_count":36.0,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"UnknownApiNameOrVersion error"
+        "Challenge_summary":"unknown Google Drive API version error"
     },
     {
         "Answerer_created_time":1481732617127,
@@ -7500,7 +7500,7 @@
         "Solution_word_count":34.0,
         "Tool":"Kedro",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"table not found"
+        "Challenge_summary":"table not found error"
     },
     {
         "Answerer_created_time":1518533097007,
@@ -7561,7 +7561,7 @@
         "Solution_word_count":90.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"FileNotFoundError"
+        "Challenge_summary":"FileNotFoundError accessing S3"
     },
     {
         "Answerer_created_time":1561143508792,
@@ -7622,7 +7622,7 @@
         "Solution_word_count":159.0,
         "Tool":"ClearML",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to see debug samples"
+        "Challenge_summary":"debug samples not visible"
     },
     {
         "Answerer_created_time":1361156607787,
@@ -7683,7 +7683,7 @@
         "Solution_word_count":26.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"Terraform plan replacement"
+        "Challenge_summary":"Terraform wants to replace domain"
     },
     {
         "Answerer_created_time":1288196087392,
@@ -7805,7 +7805,7 @@
         "Solution_word_count":45.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"exception with S3 access"
+        "Challenge_summary":"exception with S3 iterator"
     },
     {
         "Answerer_created_time":1351080779276,
@@ -7866,7 +7866,7 @@
         "Solution_word_count":75.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"construct CSV payload"
+        "Challenge_summary":"construct csv payload for Sagemaker"
     },
     {
         "Answerer_created_time":null,
@@ -7927,7 +7927,7 @@
         "Solution_word_count":null,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to view results"
+        "Challenge_summary":"unable to use dvc pull"
     },
     {
         "Answerer_created_time":null,
@@ -7988,7 +7988,7 @@
         "Solution_word_count":32.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"service not available in region"
+        "Challenge_summary":"unable to use ML in Germany"
     },
     {
         "Answerer_created_time":1631803441500,
@@ -8049,7 +8049,7 @@
         "Solution_word_count":155.0,
         "Tool":"Vertex AI",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"send Pubsub message"
+        "Challenge_summary":"send Pubsub message instead"
     },
     {
         "Answerer_created_time":1517578984080,
@@ -8110,7 +8110,7 @@
         "Solution_word_count":89.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"deploy .pkl file"
+        "Challenge_summary":"alternative to loading data into s3"
     },
     {
         "Answerer_created_time":null,
@@ -8231,8 +8231,8 @@
         "Solution_sentence_count":2.0,
         "Solution_word_count":13.0,
         "Tool":"Amazon SageMaker",
-        "Challenge_type":"anomaly",
-        "Challenge_summary":"version management challenges"
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"link AWS credentials for version control"
     },
     {
         "Answerer_created_time":1416648155470,
@@ -8293,7 +8293,7 @@
         "Solution_word_count":80.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to access endpoint"
+        "Challenge_summary":"unable to access RedShift"
     },
     {
         "Answerer_created_time":1587438027383,
@@ -8354,7 +8354,7 @@
         "Solution_word_count":66.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"authentication issue"
+        "Challenge_summary":"authentication issue with dataset registration"
     },
     {
         "Answerer_created_time":null,
@@ -8476,7 +8476,7 @@
         "Solution_word_count":73.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"file transfer error"
+        "Challenge_summary":"error transferring csv file"
     },
     {
         "Answerer_created_time":1550902509267,
@@ -8598,7 +8598,7 @@
         "Solution_word_count":14.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"no cache found"
+        "Challenge_summary":"no cache found error"
     },
     {
         "Answerer_created_time":null,
@@ -8720,7 +8720,7 @@
         "Solution_word_count":75.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"mail not sent"
+        "Challenge_summary":"mail not sent with private team"
     },
     {
         "Answerer_created_time":1436432728608,
@@ -8964,7 +8964,7 @@
         "Solution_word_count":75.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unclickable hyperlink"
+        "Challenge_summary":"un-clickable hyperlink"
     },
     {
         "Answerer_created_time":1250347954880,
@@ -9025,7 +9025,7 @@
         "Solution_word_count":160.0,
         "Tool":"DVC",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"multiple DVC accounts"
+        "Challenge_summary":"use DVC with multiple accounts"
     },
     {
         "Answerer_created_time":1255292583096,
@@ -9086,6 +9086,6 @@
         "Solution_word_count":149.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"change storage account association"
+        "Challenge_summary":"convert\/classic to not-classic storage"
     }
 ]

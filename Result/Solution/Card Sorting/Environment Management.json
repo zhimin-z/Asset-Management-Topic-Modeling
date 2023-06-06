@@ -58,7 +58,7 @@
         "Solution_word_count":121.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"ignored installation"
+        "Challenge_summary":"ignored libgl1 installation"
     },
     {
         "Answerer_created_time":1420765480790,
@@ -119,7 +119,7 @@
         "Solution_word_count":8.0,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"calling wrong python version"
+        "Challenge_summary":"wrong python version called"
     },
     {
         "Answerer_created_time":1639972620503,
@@ -363,7 +363,7 @@
         "Solution_word_count":null,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"import error"
+        "Challenge_summary":"import error for Dataset"
     },
     {
         "Answerer_created_time":1418276189383,
@@ -424,7 +424,7 @@
         "Solution_word_count":78.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"permission denied error"
+        "Challenge_summary":"permission denied installing xvfb"
     },
     {
         "Answerer_created_time":1341161196310,
@@ -485,7 +485,7 @@
         "Solution_word_count":33.0,
         "Tool":"Kedro",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"uninstallation issue"
+        "Challenge_summary":"unable to uninstall terminado"
     },
     {
         "Answerer_created_time":null,
@@ -546,7 +546,7 @@
         "Solution_word_count":148.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"failed TCP\/IP connection"
+        "Challenge_summary":"TCP\/IP connection failed"
     },
     {
         "Answerer_created_time":null,
@@ -607,7 +607,7 @@
         "Solution_word_count":41.0,
         "Tool":"Polyaxon",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"default behavior issue"
+        "Challenge_summary":"Kaniko Dockerfile location"
     },
     {
         "Answerer_created_time":null,
@@ -668,7 +668,7 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"failed tests in pipeline"
+        "Challenge_summary":"pipeline error, failed tests"
     },
     {
         "Answerer_created_time":1646907459852,
@@ -729,7 +729,7 @@
         "Solution_word_count":139.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"yml syntax clarification"
+        "Challenge_summary":"understand yml syntax"
     },
     {
         "Answerer_created_time":null,
@@ -790,7 +790,7 @@
         "Solution_word_count":52.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"KeyError"
+        "Challenge_summary":"KeyError in wandb sync"
     },
     {
         "Answerer_created_time":1244808478036,
@@ -911,8 +911,8 @@
         "Solution_sentence_count":4.0,
         "Solution_word_count":62.0,
         "Tool":"Amazon SageMaker",
-        "Challenge_type":"anomaly",
-        "Challenge_summary":"incorrect CPU count in terminal"
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"open terminal on correct instance"
     },
     {
         "Answerer_created_time":null,
@@ -973,7 +973,7 @@
         "Solution_word_count":96.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"adjust hardware configuration"
+        "Challenge_summary":"select hardware for SageMaker"
     },
     {
         "Answerer_created_time":1433841188323,
@@ -1034,7 +1034,7 @@
         "Solution_word_count":192.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"module not found"
+        "Challenge_summary":"import error with pyxdameraulevenshtein"
     },
     {
         "Answerer_created_time":1469978721363,
@@ -1217,7 +1217,7 @@
         "Solution_word_count":37.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"package hash mismatch"
+        "Challenge_summary":"hash mismatch during installation"
     },
     {
         "Answerer_created_time":1474967309676,
@@ -1278,7 +1278,7 @@
         "Solution_word_count":19.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"installation failure"
+        "Challenge_summary":"installation failure with HTTP errors"
     },
     {
         "Answerer_created_time":null,
@@ -1338,8 +1338,8 @@
         "Solution_sentence_count":null,
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"configure AWS CLI"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"ValueError in AWS CLI configuration"
     },
     {
         "Answerer_created_time":1588516515763,
@@ -1400,7 +1400,7 @@
         "Solution_word_count":30.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"package version not updating"
+        "Challenge_summary":"pandas version not updating"
     },
     {
         "Answerer_created_time":1263294862568,
@@ -1461,7 +1461,7 @@
         "Solution_word_count":254.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"deploy Jupyter project on Sagemaker"
+        "Challenge_summary":"connect to RDS from Sagemaker"
     },
     {
         "Answerer_created_time":1327302732867,
@@ -1583,7 +1583,7 @@
         "Solution_word_count":184.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"instance creation failed"
+        "Challenge_summary":"instance creation failed unexpectedly"
     },
     {
         "Answerer_created_time":1433746746023,
@@ -1644,7 +1644,7 @@
         "Solution_word_count":135.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"installation failure"
+        "Challenge_summary":"indefinite installation progress"
     },
     {
         "Answerer_created_time":1318047784840,
@@ -1766,7 +1766,7 @@
         "Solution_word_count":19.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"upgrade failure"
+        "Challenge_summary":"failed upgrade with pip"
     },
     {
         "Answerer_created_time":null,
@@ -1827,7 +1827,7 @@
         "Solution_word_count":null,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"multiple issues encountered"
+        "Challenge_summary":"multiple issues with DVC"
     },
     {
         "Answerer_created_time":1466260908296,
@@ -1888,7 +1888,7 @@
         "Solution_word_count":119.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"difference between null and empty results"
+        "Challenge_summary":"difference between null and empty"
     },
     {
         "Answerer_created_time":null,
@@ -2071,7 +2071,7 @@
         "Solution_word_count":247.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"simpler R example"
+        "Challenge_summary":"simpler R job example"
     },
     {
         "Answerer_created_time":1480951171328,
@@ -2193,7 +2193,7 @@
         "Solution_word_count":12.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing module error"
+        "Challenge_summary":"missing azureml.core module"
     },
     {
         "Answerer_created_time":null,
@@ -2315,7 +2315,7 @@
         "Solution_word_count":215.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"installation errors"
+        "Challenge_summary":"installation errors and permission problem"
     },
     {
         "Answerer_created_time":null,
@@ -2437,7 +2437,7 @@
         "Solution_word_count":32.0,
         "Tool":"Kedro",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"undefined catalog"
+        "Challenge_summary":"undefined catalog error"
     },
     {
         "Answerer_created_time":1583491811220,
@@ -2498,7 +2498,7 @@
         "Solution_word_count":112.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"main not found"
+        "Challenge_summary":"missing main entry point"
     },
     {
         "Answerer_created_time":null,
@@ -2559,7 +2559,7 @@
         "Solution_word_count":66.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing GIT options"
+        "Challenge_summary":"missing GIT options in JupyterLab"
     },
     {
         "Answerer_created_time":1536318818623,
@@ -2620,7 +2620,7 @@
         "Solution_word_count":17.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing module 'ruamel'"
+        "Challenge_summary":"ModuleNotFoundError: 'ruamel'"
     },
     {
         "Answerer_created_time":null,
@@ -2742,7 +2742,7 @@
         "Solution_word_count":64.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"import failure"
+        "Challenge_summary":"import failure for xgboost"
     },
     {
         "Answerer_created_time":null,
@@ -2803,7 +2803,7 @@
         "Solution_word_count":61.0,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"import error"
+        "Challenge_summary":"import error with aiplatform"
     },
     {
         "Answerer_created_time":1239374952692,
@@ -2925,7 +2925,7 @@
         "Solution_word_count":63.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"add OpenAPI to AzureML on AKS"
+        "Challenge_summary":"add OpenAPI to AzureML AKS"
     },
     {
         "Answerer_created_time":1370286859500,
@@ -2986,7 +2986,7 @@
         "Solution_word_count":163.0,
         "Tool":"Sacred",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"package not found"
+        "Challenge_summary":"PackageNotFoundError during installation"
     },
     {
         "Answerer_created_time":null,
@@ -3047,7 +3047,7 @@
         "Solution_word_count":null,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"broken links"
+        "Challenge_summary":"broken links in notebook"
     },
     {
         "Answerer_created_time":1517548787092,
@@ -3108,7 +3108,7 @@
         "Solution_word_count":114.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"terminal disconnection"
+        "Challenge_summary":"reconnecting terminal message"
     },
     {
         "Answerer_created_time":null,
@@ -3169,7 +3169,7 @@
         "Solution_word_count":82.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"Ipython kernel dying"
+        "Challenge_summary":"Ipython kernel keeps dying"
     },
     {
         "Answerer_created_time":1426694564423,
@@ -3230,7 +3230,7 @@
         "Solution_word_count":27.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"installation errors"
+        "Challenge_summary":"installation error with scikit-surprise"
     },
     {
         "Answerer_created_time":1550902509267,
@@ -3291,7 +3291,7 @@
         "Solution_word_count":66.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"dependency failure"
+        "Challenge_summary":"dependency failure for AutoML model"
     },
     {
         "Answerer_created_time":null,
@@ -3352,7 +3352,7 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"issues with kfp compilation"
+        "Challenge_summary":"compiling kfp issue"
     },
     {
         "Answerer_created_time":null,
@@ -3413,7 +3413,7 @@
         "Solution_word_count":97.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"algorithm research details"
+        "Challenge_summary":"find algorithm research details"
     },
     {
         "Answerer_created_time":null,
@@ -3535,7 +3535,7 @@
         "Solution_word_count":40.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"module not found"
+        "Challenge_summary":"import error with sklearn"
     },
     {
         "Answerer_created_time":1221810788500,
@@ -3596,7 +3596,7 @@
         "Solution_word_count":41.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"connection refused"
+        "Challenge_summary":"connection refused error"
     },
     {
         "Answerer_created_time":null,
@@ -3657,7 +3657,7 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unregistered training job"
+        "Challenge_summary":"unregistered TrainingJob version"
     },
     {
         "Answerer_created_time":null,
@@ -3779,7 +3779,7 @@
         "Solution_word_count":206.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"connection error"
+        "Challenge_summary":"connection error with tracking server"
     },
     {
         "Answerer_created_time":null,
@@ -4022,8 +4022,8 @@
         "Solution_sentence_count":5.0,
         "Solution_word_count":66.0,
         "Tool":"Azure Machine Learning",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"locate run button"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"missing run button"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -4084,7 +4084,7 @@
         "Solution_word_count":196.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"trigger Jupyter Notebook on Sagemaker"
+        "Challenge_summary":"trigger Jupyter Notebook on Sagemaker with Lambda"
     },
     {
         "Answerer_created_time":1641102333407,
@@ -4206,7 +4206,7 @@
         "Solution_word_count":177.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unsupported inference format"
+        "Challenge_summary":"unsupported RecordIO format"
     },
     {
         "Answerer_created_time":null,
@@ -4267,7 +4267,7 @@
         "Solution_word_count":488.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"determine instance status"
+        "Challenge_summary":"determine frozen status"
     },
     {
         "Answerer_created_time":null,
@@ -4328,7 +4328,7 @@
         "Solution_word_count":null,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"installation error"
+        "Challenge_summary":"installation error with ruamel.yaml"
     },
     {
         "Answerer_created_time":1554186784008,
@@ -4511,7 +4511,7 @@
         "Solution_word_count":491.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"installation error"
+        "Challenge_summary":"import error with fbprophet"
     },
     {
         "Answerer_created_time":null,
@@ -4572,7 +4572,7 @@
         "Solution_word_count":null,
         "Tool":"Kedro",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"UI command not using options"
+        "Challenge_summary":"incorrect MLflow UI port"
     },
     {
         "Answerer_created_time":1511812251067,
@@ -4816,7 +4816,7 @@
         "Solution_word_count":19.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"map additional port"
+        "Challenge_summary":"map additional exposed port"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -4877,7 +4877,7 @@
         "Solution_word_count":122.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"auto-close Jupyter on Sagemaker"
+        "Challenge_summary":"automatically close Sagemaker Notebook"
     },
     {
         "Answerer_created_time":1431525955023,
@@ -4938,7 +4938,7 @@
         "Solution_word_count":144.0,
         "Tool":"MLflow",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"change default experiment"
+        "Challenge_summary":"change tracked experiment in mlflow"
     },
     {
         "Answerer_created_time":null,
@@ -4999,7 +4999,7 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"broken pip install"
+        "Challenge_summary":"pip install breaks on SageMaker"
     },
     {
         "Answerer_created_time":null,
@@ -5060,7 +5060,7 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"security issue"
+        "Challenge_summary":"experiments visible to all users"
     },
     {
         "Answerer_created_time":null,
@@ -5243,7 +5243,7 @@
         "Solution_word_count":191.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing module"
+        "Challenge_summary":"missing 'azureml.api' module"
     },
     {
         "Answerer_created_time":null,
@@ -5303,8 +5303,8 @@
         "Solution_sentence_count":6.0,
         "Solution_word_count":73.0,
         "Tool":"Vertex AI",
-        "Challenge_type":"anomaly",
-        "Challenge_summary":"restricted access to link"
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"share JupyterLab link"
     },
     {
         "Answerer_created_time":null,
@@ -5365,7 +5365,7 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"failed experiment conversion"
+        "Challenge_summary":"failed experiment conversion by ID"
     },
     {
         "Answerer_created_time":null,
@@ -5487,7 +5487,7 @@
         "Solution_word_count":null,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"remove unsupported reference"
+        "Challenge_summary":"unsupported preview version"
     },
     {
         "Answerer_created_time":null,
@@ -5548,7 +5548,7 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"failed to mount study"
+        "Challenge_summary":"study fails to mount"
     },
     {
         "Answerer_created_time":1334762714136,
@@ -5731,7 +5731,7 @@
         "Solution_word_count":79.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to install extension"
+        "Challenge_summary":"unable to install toc2 extension"
     },
     {
         "Answerer_created_time":null,
@@ -5792,7 +5792,7 @@
         "Solution_word_count":null,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"module not found"
+        "Challenge_summary":"ModuleNotFoundError in sample notebook"
     },
     {
         "Answerer_created_time":1290013527427,
@@ -5853,7 +5853,7 @@
         "Solution_word_count":17.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"segfault error"
+        "Challenge_summary":"segfault error in htop"
     },
     {
         "Answerer_created_time":null,
@@ -5913,8 +5913,8 @@
         "Solution_sentence_count":2.0,
         "Solution_word_count":21.0,
         "Tool":"Amazon SageMaker",
-        "Challenge_type":"anomaly",
-        "Challenge_summary":"package import error"
+        "Challenge_type":"inquiry",
+        "Challenge_summary":"install package in SageMaker"
     },
     {
         "Answerer_created_time":1646907459852,
@@ -5975,7 +5975,7 @@
         "Solution_word_count":94.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"BAD_REQUEST error"
+        "Challenge_summary":"BAD_REQUEST error in mlflow"
     },
     {
         "Answerer_created_time":1631092954063,
@@ -6157,8 +6157,8 @@
         "Solution_sentence_count":6.0,
         "Solution_word_count":92.0,
         "Tool":"Amazon SageMaker",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"pass docker run arguments"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"difficulty passing docker arguments"
     },
     {
         "Answerer_created_time":1428454496052,
@@ -6341,7 +6341,7 @@
         "Solution_word_count":35.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing CPU and memory usage"
+        "Challenge_summary":"missing CPU\/memory usage"
     },
     {
         "Answerer_created_time":1416346350292,
@@ -6402,7 +6402,7 @@
         "Solution_word_count":227.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"saving code progress"
+        "Challenge_summary":"save code in Sagemaker"
     },
     {
         "Answerer_created_time":1362580980910,
@@ -6524,7 +6524,7 @@
         "Solution_word_count":80.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing module 'fcntl'"
+        "Challenge_summary":"missing 'fcntl' module"
     },
     {
         "Answerer_created_time":1361339272692,
@@ -6646,7 +6646,7 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to access root user"
+        "Challenge_summary":"no root access"
     },
     {
         "Answerer_created_time":null,
@@ -6890,7 +6890,7 @@
         "Solution_word_count":179.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"advantages of SageMaker Jupyter instance"
+        "Challenge_summary":"advantages of SageMaker Jupyter"
     },
     {
         "Answerer_created_time":1426694564423,
@@ -6951,7 +6951,7 @@
         "Solution_word_count":59.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"access GPU in inference"
+        "Challenge_summary":"GPU access in inference"
     },
     {
         "Answerer_created_time":null,
@@ -7012,7 +7012,7 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"query error"
+        "Challenge_summary":"query error on Steampipe"
     },
     {
         "Answerer_created_time":null,
@@ -7073,7 +7073,7 @@
         "Solution_word_count":79.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"authentication issue"
+        "Challenge_summary":"authentication issue with ACR"
     },
     {
         "Answerer_created_time":1606724007903,
@@ -7134,7 +7134,7 @@
         "Solution_word_count":111.0,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"TypeError in code"
+        "Challenge_summary":"TypeError constructing Explanation object"
     },
     {
         "Answerer_created_time":null,
@@ -7256,7 +7256,7 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"installation failed"
+        "Challenge_summary":"installation failed with AttributeError"
     },
     {
         "Answerer_created_time":null,
@@ -7317,7 +7317,7 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"confusing error message"
+        "Challenge_summary":"null object error"
     },
     {
         "Answerer_created_time":1622117284230,
@@ -7378,7 +7378,7 @@
         "Solution_word_count":126.0,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"package installation error"
+        "Challenge_summary":"library not on PATH"
     },
     {
         "Answerer_created_time":null,
@@ -7439,7 +7439,7 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"internal server error"
+        "Challenge_summary":"500 internal server error"
     },
     {
         "Answerer_created_time":1518706063680,
@@ -7500,7 +7500,7 @@
         "Solution_word_count":72.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"specify PIP_EXTRA_INDEX_URL"
+        "Challenge_summary":"specify PIP_EXTRA_INDEX_URL in AzureML"
     },
     {
         "Answerer_created_time":1561143508792,
@@ -7561,7 +7561,7 @@
         "Solution_word_count":93.0,
         "Tool":"ClearML",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"permission denied"
+        "Challenge_summary":"permission denied in S3 access"
     },
     {
         "Answerer_created_time":null,
@@ -7622,7 +7622,7 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"module not found"
+        "Challenge_summary":"module not found on server"
     },
     {
         "Answerer_created_time":1476806455803,
@@ -7683,7 +7683,7 @@
         "Solution_word_count":9.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"404 error"
+        "Challenge_summary":"404 error updating model"
     },
     {
         "Answerer_created_time":1244808478036,
@@ -7805,7 +7805,7 @@
         "Solution_word_count":213.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unclear instructions on updating image"
+        "Challenge_summary":"unclear update instructions"
     },
     {
         "Answerer_created_time":null,
@@ -7866,7 +7866,7 @@
         "Solution_word_count":null,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"invalid environment name"
+        "Challenge_summary":"invalid environment name prefix"
     },
     {
         "Answerer_created_time":1500385674112,
@@ -7927,7 +7927,7 @@
         "Solution_word_count":48.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing module"
+        "Challenge_summary":"module not found"
     },
     {
         "Answerer_created_time":1294730361590,
@@ -7988,7 +7988,7 @@
         "Solution_word_count":127.0,
         "Tool":"Kedro",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"AttributeError in Kedro"
+        "Challenge_summary":"AttributeError in Kedro catalog"
     },
     {
         "Answerer_created_time":null,
@@ -8110,7 +8110,7 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to clone notebook"
+        "Challenge_summary":"unable to copy notebook"
     },
     {
         "Answerer_created_time":null,
@@ -8232,7 +8232,7 @@
         "Solution_word_count":74.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"incorrect directory display"
+        "Challenge_summary":"incorrect directory displayed"
     },
     {
         "Answerer_created_time":1374169767267,
@@ -8293,7 +8293,7 @@
         "Solution_word_count":163.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"challenges in monitoring training job"
+        "Challenge_summary":"unable to monitor training job"
     },
     {
         "Answerer_created_time":null,
@@ -8354,7 +8354,7 @@
         "Solution_word_count":240.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing RStudio installation"
+        "Challenge_summary":"RStudio not installed by default"
     },
     {
         "Answerer_created_time":1639972620503,
@@ -8476,7 +8476,7 @@
         "Solution_word_count":37.0,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"expanded environment variable"
+        "Challenge_summary":"expanded environment variable in .dvc file"
     },
     {
         "Answerer_created_time":1587281590603,
@@ -8537,7 +8537,7 @@
         "Solution_word_count":168.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"widget not displaying"
+        "Challenge_summary":"ipydatagrid not displaying"
     },
     {
         "Answerer_created_time":null,
@@ -8720,7 +8720,7 @@
         "Solution_word_count":225.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error creating conda environment"
+        "Challenge_summary":"conda environment creation error"
     },
     {
         "Answerer_created_time":1544524371740,
@@ -8963,8 +8963,8 @@
         "Solution_sentence_count":5.0,
         "Solution_word_count":49.0,
         "Tool":"Amazon SageMaker",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"upgrade Python version"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"dataclasses not available in Python 3.6"
     },
     {
         "Answerer_created_time":1429811498812,
@@ -9025,7 +9025,7 @@
         "Solution_word_count":271.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"ModuleNotFoundError"
+        "Challenge_summary":"ModuleNotFoundError in helper scripts"
     },
     {
         "Answerer_created_time":null,
@@ -9268,8 +9268,8 @@
         "Solution_sentence_count":8.0,
         "Solution_word_count":108.0,
         "Tool":"Azure Machine Learning",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"cluster API with PowerBI"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"trouble consuming Cluster API"
     },
     {
         "Answerer_created_time":1522794798772,
@@ -9513,7 +9513,7 @@
         "Solution_word_count":89.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"no basic auth credentials"
+        "Challenge_summary":"no auth credentials for pulling images"
     },
     {
         "Answerer_created_time":1613062428296,
@@ -9574,7 +9574,7 @@
         "Solution_word_count":217.0,
         "Tool":"Kedro",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"set kernel.json automatically"
+        "Challenge_summary":"set kernel.json to current environment"
     },
     {
         "Answerer_created_time":1253986272627,
@@ -9635,7 +9635,7 @@
         "Solution_word_count":123.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"integrate Python\/Jupyter graphs"
+        "Challenge_summary":"integrate Python\/Jupyter visualization"
     },
     {
         "Answerer_created_time":1395235213383,
@@ -9696,7 +9696,7 @@
         "Solution_word_count":112.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to open notebook"
+        "Challenge_summary":"greyed out notebook option"
     },
     {
         "Answerer_created_time":null,
@@ -9757,7 +9757,7 @@
         "Solution_word_count":60.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"AttributeError in Sagemaker Studio"
+        "Challenge_summary":"AttributeError in CloudWatch logs"
     },
     {
         "Answerer_created_time":1356359759000,
@@ -9879,7 +9879,7 @@
         "Solution_word_count":383.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to import pyarrow"
+        "Challenge_summary":"unable to read parquet files"
     },
     {
         "Answerer_created_time":1469978721363,
@@ -10001,7 +10001,7 @@
         "Solution_word_count":75.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"notebook error"
+        "Challenge_summary":"error in notebook"
     },
     {
         "Answerer_created_time":1611181716003,
@@ -10062,7 +10062,7 @@
         "Solution_word_count":66.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error with zero lines of data"
+        "Challenge_summary":"error with zero data export"
     },
     {
         "Answerer_created_time":1589293508567,
@@ -10123,7 +10123,7 @@
         "Solution_word_count":140.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing required packages"
+        "Challenge_summary":"missing packages in Notebook"
     },
     {
         "Answerer_created_time":1600461527240,
@@ -10184,7 +10184,7 @@
         "Solution_word_count":66.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"execute Jupyter Notebook in Step Functions"
+        "Challenge_summary":"start Jupyter in Step Functions"
     },
     {
         "Answerer_created_time":1446841002932,
@@ -10245,7 +10245,7 @@
         "Solution_word_count":221.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unresponsive web service"
+        "Challenge_summary":"no response from web service"
     },
     {
         "Answerer_created_time":1393579668636,
@@ -10306,7 +10306,7 @@
         "Solution_word_count":106.0,
         "Tool":"Kedro",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"dynamic parameter change"
+        "Challenge_summary":"dynamically change Kedro parameters"
     },
     {
         "Answerer_created_time":1351534968768,
@@ -10367,7 +10367,7 @@
         "Solution_word_count":82.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unsupported h2o package"
+        "Challenge_summary":"h2o package not supported"
     },
     {
         "Answerer_created_time":null,
@@ -10428,7 +10428,7 @@
         "Solution_word_count":38.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"retrieve old notebooks"
+        "Challenge_summary":"retrieve discontinued notebooks"
     },
     {
         "Answerer_created_time":1425426748316,
@@ -10489,7 +10489,7 @@
         "Solution_word_count":47.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"package installation error"
+        "Challenge_summary":"zip file not found"
     },
     {
         "Answerer_created_time":1452696930640,
@@ -10610,8 +10610,8 @@
         "Solution_sentence_count":6.0,
         "Solution_word_count":38.0,
         "Tool":"Azure Machine Learning",
-        "Challenge_type":"inquiry",
-        "Challenge_summary":"install packages with poetry"
+        "Challenge_type":"anomaly",
+        "Challenge_summary":"trouble installing packages"
     },
     {
         "Answerer_created_time":1655773889523,
@@ -10794,7 +10794,7 @@
         "Solution_word_count":34.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"project not found"
+        "Challenge_summary":"project not found in server"
     },
     {
         "Answerer_created_time":null,
@@ -10855,7 +10855,7 @@
         "Solution_word_count":47.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error in project creation"
+        "Challenge_summary":"error creating MLOps project"
     },
     {
         "Answerer_created_time":1441938169003,
@@ -10916,7 +10916,7 @@
         "Solution_word_count":91.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"access SageMaker code"
+        "Challenge_summary":"access SageMaker algorithm code"
     },
     {
         "Answerer_created_time":1554186784008,
@@ -10977,7 +10977,7 @@
         "Solution_word_count":30.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"internet connection for package download"
+        "Challenge_summary":"internet required for package download?"
     },
     {
         "Answerer_created_time":null,
@@ -11038,7 +11038,7 @@
         "Solution_word_count":100.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"export ML pipeline"
+        "Challenge_summary":"export ML Studio pipeline"
     },
     {
         "Answerer_created_time":null,
@@ -11099,7 +11099,7 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"MlflowException with invalid metric value and value error"
+        "Challenge_summary":"invalid metric value"
     },
     {
         "Answerer_created_time":1594906911350,
@@ -11160,7 +11160,7 @@
         "Solution_word_count":313.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"override container invocation"
+        "Challenge_summary":"override container invocation parameters"
     },
     {
         "Answerer_created_time":1244808478036,
@@ -11282,7 +11282,7 @@
         "Solution_word_count":69.0,
         "Tool":"Optuna",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"'NoneType' object error"
+        "Challenge_summary":" 'NoneType' attribute error"
     },
     {
         "Answerer_created_time":null,
@@ -11343,7 +11343,7 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unexpected error"
+        "Challenge_summary":"unable to save file"
     },
     {
         "Answerer_created_time":1317676233236,
@@ -11404,7 +11404,7 @@
         "Solution_word_count":29.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"update Jupyter environment"
+        "Challenge_summary":"update SageMaker Jupyter environment"
     },
     {
         "Answerer_created_time":null,
@@ -11587,7 +11587,7 @@
         "Solution_word_count":48.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"monitor Kubernetes resources"
+        "Challenge_summary":"monitor Kubernetes endpoints"
     },
     {
         "Answerer_created_time":1526889513900,
@@ -11709,7 +11709,7 @@
         "Solution_word_count":54.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error in creating endpoint"
+        "Challenge_summary":"error in endpoint creation"
     },
     {
         "Answerer_created_time":null,
@@ -11831,7 +11831,7 @@
         "Solution_word_count":171.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"cost savings of SageMaker pipe mode"
+        "Challenge_summary":"SageMaker pipe mode cost-saving?"
     },
     {
         "Answerer_created_time":1376606307612,
@@ -11892,7 +11892,7 @@
         "Solution_word_count":29.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing docker command"
+        "Challenge_summary":"docker command not found"
     },
     {
         "Answerer_created_time":1445975382243,
@@ -11953,7 +11953,7 @@
         "Solution_word_count":444.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"serving stacks and components"
+        "Challenge_summary":"serving stacks and responsibilities"
     },
     {
         "Answerer_created_time":null,
@@ -12136,7 +12136,7 @@
         "Solution_word_count":66.0,
         "Tool":"MLflow",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"access host's docker daemon"
+        "Challenge_summary":"access host docker daemon"
     },
     {
         "Answerer_created_time":null,
@@ -12380,7 +12380,7 @@
         "Solution_word_count":17.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"job not running on schedule"
+        "Challenge_summary":"notebook not running on schedule"
     },
     {
         "Answerer_created_time":1452696930640,
@@ -12441,7 +12441,7 @@
         "Solution_word_count":77.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"deploy custom Docker image"
+        "Challenge_summary":"deploy ML model with custom image"
     },
     {
         "Answerer_created_time":1376680978667,
@@ -12502,7 +12502,7 @@
         "Solution_word_count":71.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"automate identity-feature label"
+        "Challenge_summary":"automate identity label addition"
     },
     {
         "Answerer_created_time":1405786822143,
@@ -12624,7 +12624,7 @@
         "Solution_word_count":119.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"OSError when loading package"
+        "Challenge_summary":"OSError loading package"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -12685,6 +12685,6 @@
         "Solution_word_count":70.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"choose between Glue and Sagemaker"
+        "Challenge_summary":"Glue vs Sagemaker for ETL"
     }
 ]
