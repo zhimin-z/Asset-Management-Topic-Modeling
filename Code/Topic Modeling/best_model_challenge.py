@@ -14,7 +14,7 @@ path_general = os.path.join(path_result, 'General')
 path_challenge = os.path.join(path_result, 'Challenge')
 path_model = os.path.join(path_general, 'Model')
 
-model_name = 'Challenge_gpt_summary_rvzn024j'
+model_name = 'Challenge_gpt_summary_skk6x33z'
 
 df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
 
@@ -51,14 +51,14 @@ fig = topic_model.visualize_heatmap()
 fig.write_html(os.path.join(
     path_challenge, 'Topic similarity visualization.html'))
 
-# hierarchical_topics = topic_model.hierarchical_topics(docs)
-# fig = topic_model.visualize_hierarchy(hierarchical_topics=hierarchical_topics)
-# fig.write_html(os.path.join(
-#     path_challenge, 'Hierarchical clustering visualization.html'))
+hierarchical_topics = topic_model.hierarchical_topics(docs)
+fig = topic_model.visualize_hierarchy(hierarchical_topics=hierarchical_topics)
+fig.write_html(os.path.join(
+    path_challenge, 'Hierarchical clustering visualization.html'))
 
-# embeddings = topic_model.embedding_model.embed_documents(docs)
-# fig = topic_model.visualize_documents(docs, embeddings=embeddings)
-# fig.write_html(os.path.join(path_challenge, 'Document visualization.html'))
+embeddings = topic_model.embedding_model.embed_documents(docs)
+fig = topic_model.visualize_documents(docs, embeddings=embeddings)
+fig.write_html(os.path.join(path_challenge, 'Document visualization.html'))
 
 # This uses the soft-clustering as performed by HDBSCAN to find the best matching topic for each outlier document.
 topics_new = topic_model.reduce_outliers(
