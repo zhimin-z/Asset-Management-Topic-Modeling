@@ -12,7 +12,10 @@ import pandas as pd
 import wandb
 import os
 
-path_model = os.path.join(os.getcwd(), 'Model')
+path_result = os.path.join(os.path.dirname(os.getcwd()), 'Result')
+path_solution = os.path.join(path_result, 'Solution')
+path_solution_cardsorting = os.path.join(path_solution, 'Card Sorting')
+path_model = os.path.join(path_solution_cardsorting, 'Model')
 if not os.path.exists(path_model):
     os.makedirs(path_model)
 
@@ -52,7 +55,7 @@ class TopicModeling:
         self.top_models = []
         self.path_model = path_model
         
-        df = pd.read_json('sample.json')
+        df = pd.read_json(os.path.join(path_solution_cardsorting, 'sample.json'))
         self.docs = df[docs_name].tolist()
         
         config_sweep['name'] = docs_name
