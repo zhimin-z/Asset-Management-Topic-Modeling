@@ -56,7 +56,7 @@ class TopicModeling:
         self.path_model = path_model
         
         df = pd.read_json(os.path.join(path_solution_cardsorting, 'sample.json'))
-        self.docs = df[docs_name].tolist()
+        self.docs = df[df[docs_name] != 'N/A'][docs_name].tolist()
         
         config_sweep['name'] = docs_name
         config_sweep['parameters'] = {
