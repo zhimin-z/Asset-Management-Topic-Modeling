@@ -58,7 +58,9 @@
         "Solution_word_count":89.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to pass arguments"
+        "Challenge_summary":"unable to pass arguments",
+        "Challenge_root_cause":"use InferenceConfig class",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1492331396980,
@@ -119,7 +121,9 @@
         "Solution_word_count":123.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"modify input\/output schema"
+        "Challenge_summary":"modify input\/output schema",
+        "Challenge_root_cause":"add Select Columns box",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -180,7 +184,9 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"difficulty comparing runs"
+        "Challenge_summary":"difficulty comparing runs",
+        "Challenge_root_cause":"closed due to inactivity",
+        "Resolution_summary":"missing additional settings"
     },
     {
         "Answerer_created_time":null,
@@ -241,7 +247,9 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to set default logger"
+        "Challenge_summary":"unable to set default logger",
+        "Challenge_root_cause":"N\/A",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -302,7 +310,9 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"conflict and communication errors"
+        "Challenge_summary":"conflict and communication errors",
+        "Challenge_root_cause":"create PR for fix",
+        "Resolution_summary":"outdated main branch not applied to feature_68."
     },
     {
         "Answerer_created_time":null,
@@ -363,7 +373,9 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"metrics not logged"
+        "Challenge_summary":"metrics not logged",
+        "Challenge_root_cause":"reinstall pycaret",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1565215898703,
@@ -424,7 +436,9 @@
         "Solution_word_count":13.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"deploy AML Notebook VM"
+        "Challenge_summary":"deploy AML Notebook VM",
+        "Challenge_root_cause":"ARM support in roadmap",
+        "Resolution_summary":"unsupported functionality"
     },
     {
         "Answerer_created_time":null,
@@ -485,7 +499,9 @@
         "Solution_word_count":74.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing user logs folder"
+        "Challenge_summary":"missing user logs folder",
+        "Challenge_root_cause":"follow documentation",
+        "Resolution_summary":"missing user logs folder"
     },
     {
         "Answerer_created_time":1369156710532,
@@ -546,7 +562,9 @@
         "Solution_word_count":44.0,
         "Tool":"Optuna",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"model stops early"
+        "Challenge_summary":"model stops early",
+        "Challenge_root_cause":"adjust min_resource value",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1303910479480,
@@ -607,7 +625,9 @@
         "Solution_word_count":40.0,
         "Tool":"MLflow",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"continue logging on spot instances"
+        "Challenge_summary":"continue logging on spot instances",
+        "Challenge_root_cause":"pass run_id to start_run",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -668,7 +688,9 @@
         "Solution_word_count":60.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"sweep runs twice silently"
+        "Challenge_summary":"sweep runs twice silently",
+        "Challenge_root_cause":"change line of code",
+        "Resolution_summary":"calling constructor twice"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -729,7 +751,9 @@
         "Solution_word_count":113.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"reference training data in predict"
+        "Challenge_summary":"reference training data in predict",
+        "Challenge_root_cause":"use mapping file",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1392296244356,
@@ -790,7 +814,9 @@
         "Solution_word_count":23.0,
         "Tool":"Optuna",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"Wandb initialization error"
+        "Challenge_summary":"Wandb initialization error",
+        "Challenge_root_cause":"update wandb and transformers",
+        "Resolution_summary":"outdated versions"
     },
     {
         "Answerer_created_time":1587507179987,
@@ -851,7 +877,9 @@
         "Solution_word_count":34.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"endpoint not found"
+        "Challenge_summary":"endpoint not found",
+        "Challenge_root_cause":"use same region",
+        "Resolution_summary":"different regions used"
     },
     {
         "Answerer_created_time":1334762714136,
@@ -912,7 +940,9 @@
         "Solution_word_count":218.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"slow API-call"
+        "Challenge_summary":"slow API-call",
+        "Challenge_root_cause":"warm up containers, adjust calls",
+        "Resolution_summary":"cold containers, throttling"
     },
     {
         "Answerer_created_time":1468179475927,
@@ -973,7 +1003,9 @@
         "Solution_word_count":211.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"out of memory error"
+        "Challenge_summary":"out of memory error",
+        "Challenge_root_cause":"add new argument",
+        "Resolution_summary":"invalid regular expression"
     },
     {
         "Answerer_created_time":1243547542743,
@@ -1034,7 +1066,9 @@
         "Solution_word_count":109.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"kernel dies on dummy column"
+        "Challenge_summary":"kernel dies on dummy column",
+        "Challenge_root_cause":"use .to_sparse()",
+        "Resolution_summary":"memory usage issue"
     },
     {
         "Answerer_created_time":null,
@@ -1095,7 +1129,9 @@
         "Solution_word_count":64.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"restrict SageMaker instance types"
+        "Challenge_summary":"restrict SageMaker instance types",
+        "Challenge_root_cause":"use IAM policy",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1224733422316,
@@ -1156,7 +1192,9 @@
         "Solution_word_count":88.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"import error for ModelQualityMonitor"
+        "Challenge_summary":"import error for ModelQualityMonitor",
+        "Challenge_root_cause":"install sagemaker",
+        "Resolution_summary":"missing SDK installation"
     },
     {
         "Answerer_created_time":1253986272627,
@@ -1217,7 +1255,9 @@
         "Solution_word_count":240.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing .lst file"
+        "Challenge_summary":"missing .lst file",
+        "Challenge_root_cause":"define channels correctly",
+        "Resolution_summary":"incorrect channel definition"
     },
     {
         "Answerer_created_time":null,
@@ -1278,7 +1318,9 @@
         "Solution_word_count":265.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"limitations of k-means"
+        "Challenge_summary":"limitations of k-means",
+        "Challenge_root_cause":"pros and cons listed",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1646907459852,
@@ -1339,7 +1381,9 @@
         "Solution_word_count":67.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error in defining sampling algorithm"
+        "Challenge_summary":"error in defining sampling algorithm",
+        "Challenge_root_cause":"use sweep job for sampling",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -1400,7 +1444,9 @@
         "Solution_word_count":null,
         "Tool":"Comet",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"import error with CometLogger"
+        "Challenge_summary":"import error with CometLogger",
+        "Challenge_root_cause":"use workaround",
+        "Resolution_summary":"import error with CometLogger"
     },
     {
         "Answerer_created_time":null,
@@ -1461,7 +1507,9 @@
         "Solution_word_count":6.0,
         "Tool":"Polyaxon",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing admin dashboard"
+        "Challenge_summary":"missing admin dashboard",
+        "Challenge_root_cause":"access admin page",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -1522,7 +1570,9 @@
         "Solution_word_count":102.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"memory outage error"
+        "Challenge_summary":"memory outage error",
+        "Challenge_root_cause":"remove unnecessary steps",
+        "Resolution_summary":"too many steps in experiment"
     },
     {
         "Answerer_created_time":1546969667040,
@@ -1583,7 +1633,9 @@
         "Solution_word_count":135.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"out of memory error"
+        "Challenge_summary":"out of memory error",
+        "Challenge_root_cause":"ask for more context",
+        "Resolution_summary":"insufficient information provided"
     },
     {
         "Answerer_created_time":null,
@@ -1644,7 +1696,9 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"ResourceLimitExceeded error"
+        "Challenge_summary":"ResourceLimitExceeded error",
+        "Challenge_root_cause":"increase instance limit",
+        "Resolution_summary":"account instance limit reached"
     },
     {
         "Answerer_created_time":1517548787092,
@@ -1705,7 +1759,9 @@
         "Solution_word_count":102.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"specify nodeSelector in AKS"
+        "Challenge_summary":"specify nodeSelector in AKS",
+        "Challenge_root_cause":"use nodeSelector",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -1766,7 +1822,9 @@
         "Solution_word_count":34.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"incorrect kernel version"
+        "Challenge_summary":"incorrect kernel version",
+        "Challenge_root_cause":"use different command",
+        "Resolution_summary":"unsupported command"
     },
     {
         "Answerer_created_time":null,
@@ -1827,7 +1885,9 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"modified parameters not logged"
+        "Challenge_summary":"modified parameters not logged",
+        "Challenge_root_cause":"remove docker volumes",
+        "Resolution_summary":"schema checks enforced at startup"
     },
     {
         "Answerer_created_time":null,
@@ -1888,7 +1948,9 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"inconsistent log_param() behavior"
+        "Challenge_summary":"inconsistent log_param() behavior",
+        "Challenge_root_cause":"closed due to inactivity",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -1949,7 +2011,9 @@
         "Solution_word_count":null,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"confusing crossval behavior"
+        "Challenge_summary":"confusing crossval behavior",
+        "Challenge_root_cause":"check prerequisites, open support case",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1310482059760,
@@ -2010,7 +2074,9 @@
         "Solution_word_count":44.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to find EC2 instances"
+        "Challenge_summary":"unable to find EC2 instances",
+        "Challenge_root_cause":"monitor metrics in Cloudwatch",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -2071,7 +2137,9 @@
         "Solution_word_count":51.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to rerun deleted runs"
+        "Challenge_summary":"unable to rerun deleted runs",
+        "Challenge_root_cause":"only supported for grid search",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -2132,7 +2200,9 @@
         "Solution_word_count":57.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"no usage statistics\/credit spent"
+        "Challenge_summary":"no usage statistics\/credit spent",
+        "Challenge_root_cause":"check after 4 hours",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1565528932887,
@@ -2193,7 +2263,9 @@
         "Solution_word_count":476.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to pass parameter in init() method"
+        "Challenge_summary":"unable to pass parameter in init() method",
+        "Challenge_root_cause":"use runtime params file",
+        "Resolution_summary":"unable to pass parameter in init() method"
     },
     {
         "Answerer_created_time":1350376620496,
@@ -2254,7 +2326,9 @@
         "Solution_word_count":23.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"invalid compute target"
+        "Challenge_summary":"invalid compute target",
+        "Challenge_root_cause":"check MS announcement",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1458983415440,
@@ -2315,7 +2389,9 @@
         "Solution_word_count":50.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unsupported wandb argument"
+        "Challenge_summary":"unsupported wandb argument",
+        "Challenge_root_cause":"use list with 1 element",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -2376,7 +2452,9 @@
         "Solution_word_count":null,
         "Tool":"Neptune",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"credential scope error"
+        "Challenge_summary":"credential scope error",
+        "Challenge_root_cause":"add package or build bespoke image",
+        "Resolution_summary":"missing package in base image"
     },
     {
         "Answerer_created_time":null,
@@ -2437,7 +2515,9 @@
         "Solution_word_count":35.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"empty Parallel Coordinates panel"
+        "Challenge_summary":"empty Parallel Coordinates panel",
+        "Challenge_root_cause":"ungroup runs",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1224733422316,
@@ -2498,7 +2578,9 @@
         "Solution_word_count":43.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"additional hyperparameters not allowed"
+        "Challenge_summary":"additional hyperparameters not allowed",
+        "Challenge_root_cause":"pass include_cls_metadata=False",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1415722650716,
@@ -2559,7 +2641,9 @@
         "Solution_word_count":42.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"no run object, large file"
+        "Challenge_summary":"no run object, large file",
+        "Challenge_root_cause":"use Model.register",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -2620,7 +2704,9 @@
         "Solution_word_count":158.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"wrong API key user"
+        "Challenge_summary":"wrong API key user",
+        "Challenge_root_cause":"check .netrc file, update packages, remove .idea folders",
+        "Resolution_summary":"incorrect API key in .netrc file or"
     },
     {
         "Answerer_created_time":null,
@@ -2681,7 +2767,9 @@
         "Solution_word_count":188.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"significant processing time difference"
+        "Challenge_summary":"significant processing time difference",
+        "Challenge_root_cause":"AML Classic faster but less flexible, Designer slower but more flexible",
+        "Resolution_summary":"overhead for preparing each step, input data changes"
     },
     {
         "Answerer_created_time":null,
@@ -2742,7 +2830,9 @@
         "Solution_word_count":null,
         "Tool":"Kedro",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"mlflow fails silently"
+        "Challenge_summary":"mlflow fails silently",
+        "Challenge_root_cause":"add missing data",
+        "Resolution_summary":"missing data from catalog"
     },
     {
         "Answerer_created_time":null,
@@ -2803,7 +2893,9 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"inconsistent log_metrics behavior"
+        "Challenge_summary":"inconsistent log_metrics behavior",
+        "Challenge_root_cause":"code reference provided",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1492048364132,
@@ -2864,7 +2956,9 @@
         "Solution_word_count":246.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"deploy forecasting model on AWS"
+        "Challenge_summary":"deploy forecasting model on AWS",
+        "Challenge_root_cause":"consider Lambda or Step Functions",
+        "Resolution_summary":"limitations of Lambda for heavy models and data processing."
     },
     {
         "Answerer_created_time":1513106638900,
@@ -2925,7 +3019,9 @@
         "Solution_word_count":56.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"SM_CHANNEL_TRAIN issue"
+        "Challenge_summary":"SM_CHANNEL_TRAIN issue",
+        "Challenge_root_cause":"SM_CHANNEL_TRAIN explained",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -2986,7 +3082,9 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"config not saved to file"
+        "Challenge_summary":"config not saved to file",
+        "Challenge_root_cause":"N\/A",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -3047,7 +3145,9 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"failed status update"
+        "Challenge_summary":"failed status update",
+        "Challenge_root_cause":"add to Errata",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1410333105327,
@@ -3108,7 +3208,9 @@
         "Solution_word_count":68.0,
         "Tool":"MLflow",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"change mlflow log directory"
+        "Challenge_summary":"change mlflow log directory",
+        "Challenge_root_cause":"set new tracking uri",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1463745452883,
@@ -3169,7 +3271,9 @@
         "Solution_word_count":24.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error code 500"
+        "Challenge_summary":"error code 500",
+        "Challenge_root_cause":"follow instructions",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -3230,7 +3334,9 @@
         "Solution_word_count":408.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"REST call fails with 502 error"
+        "Challenge_summary":"REST call fails with 502 error",
+        "Challenge_root_cause":"N\/A",
+        "Resolution_summary":"invalid literal for int() with base 10"
     },
     {
         "Answerer_created_time":1480087531307,
@@ -3291,7 +3397,9 @@
         "Solution_word_count":64.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"check resource allocation details"
+        "Challenge_summary":"check resource allocation details",
+        "Challenge_root_cause":"use benchmarking tools",
+        "Resolution_summary":"insufficient resources or queuing delay"
     },
     {
         "Answerer_created_time":1661172608640,
@@ -3352,7 +3460,9 @@
         "Solution_word_count":51.0,
         "Tool":"DVC",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"log git hash in Hydra"
+        "Challenge_summary":"log git hash in Hydra",
+        "Challenge_root_cause":"DVC-Hydra integration in development",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1619163566860,
@@ -3413,7 +3523,9 @@
         "Solution_word_count":283.0,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"504 errors with scaling"
+        "Challenge_summary":"504 errors with scaling",
+        "Challenge_root_cause":"improve resource utilization, tune autoscaling, perform exponential backoff, provision higher replica count",
+        "Resolution_summary":"under-provisioned endpoint"
     },
     {
         "Answerer_created_time":1606724007903,
@@ -3474,7 +3586,9 @@
         "Solution_word_count":255.0,
         "Tool":"Vertex AI",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"run code on backend"
+        "Challenge_summary":"run code on backend",
+        "Challenge_root_cause":"use nbconvert command",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -3535,7 +3649,9 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"undefined hyperparameters"
+        "Challenge_summary":"undefined hyperparameters",
+        "Challenge_root_cause":"read from AWS secret manager",
+        "Resolution_summary":"missing permission or incorrect location of script"
     },
     {
         "Answerer_created_time":null,
@@ -3596,7 +3712,9 @@
         "Solution_word_count":23.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"no public IP option available"
+        "Challenge_summary":"no public IP option available",
+        "Challenge_root_cause":"set flag in Bicep\/Arm\/Terraform",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -3657,7 +3775,9 @@
         "Solution_word_count":null,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"data type mismatch"
+        "Challenge_summary":"data type mismatch",
+        "Challenge_root_cause":"use correct CURL format",
+        "Resolution_summary":"incorrect CURL format"
     },
     {
         "Answerer_created_time":1498252453503,
@@ -3718,7 +3838,9 @@
         "Solution_word_count":49.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"attribute error in tuner.py"
+        "Challenge_summary":"attribute error in tuner.py",
+        "Challenge_root_cause":"reorder arguments",
+        "Resolution_summary":"incorrect argument order"
     },
     {
         "Answerer_created_time":null,
@@ -3779,7 +3901,9 @@
         "Solution_word_count":134.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"allow cloudpickle<=2.0.0"
+        "Challenge_summary":"allow cloudpickle<=2.0.0",
+        "Challenge_root_cause":"PR submitted for review",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1484748258356,
@@ -3840,7 +3964,9 @@
         "Solution_word_count":34.0,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"quota limit error"
+        "Challenge_summary":"quota limit error",
+        "Challenge_root_cause":"wait for GA or use different project",
+        "Resolution_summary":"insufficient service usage history"
     },
     {
         "Answerer_created_time":null,
@@ -3901,7 +4027,9 @@
         "Solution_word_count":29.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"internal server error with tags"
+        "Challenge_summary":"internal server error with tags",
+        "Challenge_root_cause":"retry adding tags",
+        "Resolution_summary":"site issues"
     },
     {
         "Answerer_created_time":1324808381143,
@@ -3962,7 +4090,9 @@
         "Solution_word_count":33.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"import error"
+        "Challenge_summary":"import error",
+        "Challenge_root_cause":"add distribution parameter",
+        "Resolution_summary":"unsupported module outside SageMaker containers"
     },
     {
         "Answerer_created_time":null,
@@ -4023,7 +4153,9 @@
         "Solution_word_count":94.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to find resource details"
+        "Challenge_summary":"unable to find resource details",
+        "Challenge_root_cause":"use multiple subscriptions or regions",
+        "Resolution_summary":"limited quotas per subscription\/region"
     },
     {
         "Answerer_created_time":1231865173143,
@@ -4084,7 +4216,9 @@
         "Solution_word_count":200.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"program crashes with MLFlow and Hydra"
+        "Challenge_summary":"program crashes with MLFlow and Hydra",
+        "Challenge_root_cause":"set environment variable",
+        "Resolution_summary":"Hydra changes working directory"
     },
     {
         "Answerer_created_time":null,
@@ -4145,7 +4279,9 @@
         "Solution_word_count":20.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"multi-node gradient boosting on SageMaker"
+        "Challenge_summary":"multi-node gradient boosting on SageMaker",
+        "Challenge_root_cause":"use example in repo",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -4206,7 +4342,9 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unexpected keyword argument"
+        "Challenge_summary":"unexpected keyword argument",
+        "Challenge_root_cause":"resolved in PR",
+        "Resolution_summary":"unexpected keyword argument"
     },
     {
         "Answerer_created_time":null,
@@ -4267,7 +4405,9 @@
         "Solution_word_count":null,
         "Tool":"Comet",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"deprecated Comet API logger"
+        "Challenge_summary":"deprecated Comet API logger",
+        "Challenge_root_cause":"fix in progress",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1569996433956,
@@ -4328,7 +4468,9 @@
         "Solution_word_count":149.0,
         "Tool":"Optuna",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"avoid parameter duplicates"
+        "Challenge_summary":"avoid parameter duplicates",
+        "Challenge_root_cause":"check for duplication",
+        "Resolution_summary":"parameter duplication"
     },
     {
         "Answerer_created_time":1532464254552,
@@ -4389,7 +4531,9 @@
         "Solution_word_count":36.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"validation error in input data"
+        "Challenge_summary":"validation error in input data",
+        "Challenge_root_cause":"rename input channel",
+        "Resolution_summary":"incorrect input channel name"
     },
     {
         "Answerer_created_time":1566583092316,
@@ -4450,7 +4594,9 @@
         "Solution_word_count":54.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing module error"
+        "Challenge_summary":"missing module error",
+        "Challenge_root_cause":"install Tensorflow",
+        "Resolution_summary":"missing module"
     },
     {
         "Answerer_created_time":null,
@@ -4511,7 +4657,9 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"wandb login not appearing"
+        "Challenge_summary":"wandb login not appearing",
+        "Challenge_root_cause":"use specific environment",
+        "Resolution_summary":"outdated wandb-callbacks"
     },
     {
         "Answerer_created_time":1393576024047,
@@ -4572,7 +4720,9 @@
         "Solution_word_count":114.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"TensorBoard not supported in script mode"
+        "Challenge_summary":"TensorBoard not supported in script mode",
+        "Challenge_root_cause":"start tensorboard manually",
+        "Resolution_summary":"TensorBoard not supported in script mode"
     },
     {
         "Answerer_created_time":null,
@@ -4633,7 +4783,9 @@
         "Solution_word_count":91.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"automate hyper-parameter collection"
+        "Challenge_summary":"automate hyper-parameter collection",
+        "Challenge_root_cause":"use UI or config.yaml",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -4694,7 +4846,9 @@
         "Solution_word_count":163.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"parallel model training"
+        "Challenge_summary":"parallel model training",
+        "Challenge_root_cause":"run in distributed fashion",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1221528724667,
@@ -4755,7 +4909,9 @@
         "Solution_word_count":14.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"delete worker task templates"
+        "Challenge_summary":"delete worker task templates",
+        "Challenge_root_cause":"not currently possible",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1554186784008,
@@ -4816,7 +4972,9 @@
         "Solution_word_count":39.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unwanted data wrapper"
+        "Challenge_summary":"unwanted data wrapper",
+        "Challenge_root_cause":"use InferenceSchema package",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1619174589310,
@@ -4877,7 +5035,9 @@
         "Solution_word_count":43.0,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"404 error on prediction endpoint"
+        "Challenge_summary":"404 error on prediction endpoint",
+        "Challenge_root_cause":"specify regional endpoint",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -4938,7 +5098,9 @@
         "Solution_word_count":95.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"Personalizer metrics and hits"
+        "Challenge_summary":"Personalizer metrics and hits",
+        "Challenge_root_cause":"need minimum 1k events\/day",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -4999,7 +5161,9 @@
         "Solution_word_count":55.0,
         "Tool":"Polyaxon",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"compare top experiments by metric"
+        "Challenge_summary":"compare top experiments by metric",
+        "Challenge_root_cause":"use YAML or UI",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1531218624572,
@@ -5060,7 +5224,9 @@
         "Solution_word_count":25.0,
         "Tool":"Optuna",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"hyperparameters sum issue"
+        "Challenge_summary":"hyperparameters sum issue",
+        "Challenge_root_cause":"use dirichlet distribution",
+        "Resolution_summary":"N\/A (not explicitly mentioned)"
     },
     {
         "Answerer_created_time":null,
@@ -5121,7 +5287,9 @@
         "Solution_word_count":90.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"stop bad runs in sweeps"
+        "Challenge_summary":"stop bad runs in sweeps",
+        "Challenge_root_cause":"use early termination",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -5182,7 +5350,9 @@
         "Solution_word_count":213.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"install package in GPU pool"
+        "Challenge_summary":"install package in GPU pool",
+        "Challenge_root_cause":"no package support",
+        "Resolution_summary":"unsupported functionality for GPU spark pools"
     },
     {
         "Answerer_created_time":1416346350292,
@@ -5243,7 +5413,9 @@
         "Solution_word_count":80.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"duplicate event rule firing"
+        "Challenge_summary":"duplicate event rule firing",
+        "Challenge_root_cause":"no solution available",
+        "Resolution_summary":"Sagemaker generates duplicate events."
     },
     {
         "Answerer_created_time":null,
@@ -5304,7 +5476,9 @@
         "Solution_word_count":9.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"uncategorized sweeps"
+        "Challenge_summary":"uncategorized sweeps",
+        "Challenge_root_cause":"entity name corrected",
+        "Resolution_summary":"incorrect entity name used"
     },
     {
         "Answerer_created_time":1433841188323,
@@ -5365,7 +5539,9 @@
         "Solution_word_count":140.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"attribute error in deployment"
+        "Challenge_summary":"attribute error in deployment",
+        "Challenge_root_cause":"install python module",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1376999872723,
@@ -5426,7 +5602,9 @@
         "Solution_word_count":45.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"single output for first record"
+        "Challenge_summary":"single output for first record",
+        "Challenge_root_cause":"merge rows before output",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1509012479112,
@@ -5487,7 +5665,9 @@
         "Solution_word_count":21.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"set up hyperparameters for classification"
+        "Challenge_summary":"set up hyperparameters for classification",
+        "Challenge_root_cause":"use specific hyperparameters",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -5548,7 +5728,9 @@
         "Solution_word_count":null,
         "Tool":"Comet",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"logger overwrites variable"
+        "Challenge_summary":"logger overwrites variable",
+        "Challenge_root_cause":"open PR for fix",
+        "Resolution_summary":"logger overwriting variable"
     },
     {
         "Answerer_created_time":null,
@@ -5609,7 +5791,9 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"config too large"
+        "Challenge_summary":"config too large",
+        "Challenge_root_cause":"provide alternative options",
+        "Resolution_summary":"limitations of WandbLogger for large configs"
     },
     {
         "Answerer_created_time":1373018880576,
@@ -5670,7 +5854,9 @@
         "Solution_word_count":13.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"endpoint usage limit exceeded"
+        "Challenge_summary":"endpoint usage limit exceeded",
+        "Challenge_root_cause":"change instance type",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -5731,7 +5917,9 @@
         "Solution_word_count":null,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"sporadic internal server error"
+        "Challenge_summary":"sporadic internal server error",
+        "Challenge_root_cause":"check dataset versions",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -5792,7 +5980,9 @@
         "Solution_word_count":null,
         "Tool":"Comet",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing log messages"
+        "Challenge_summary":"missing log messages",
+        "Challenge_root_cause":"provide more information",
+        "Resolution_summary":"insufficient information provided"
     },
     {
         "Answerer_created_time":1621392911643,
@@ -5853,7 +6043,9 @@
         "Solution_word_count":71.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing argument for source directory"
+        "Challenge_summary":"missing argument for source directory",
+        "Challenge_root_cause":"pass source_dir argument",
+        "Resolution_summary":"missing argument"
     },
     {
         "Answerer_created_time":null,
@@ -5914,7 +6106,9 @@
         "Solution_word_count":42.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"check SageMaker quotas"
+        "Challenge_summary":"check SageMaker quotas",
+        "Challenge_root_cause":"check Service Quotas console",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -5975,7 +6169,9 @@
         "Solution_word_count":211.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to pass environment variables"
+        "Challenge_summary":"unable to pass environment variables",
+        "Challenge_root_cause":"use hyperparameters or customize container",
+        "Resolution_summary":"unsupported `Environment` collection in API"
     },
     {
         "Answerer_created_time":null,
@@ -6036,7 +6232,9 @@
         "Solution_word_count":62.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"large debug log files"
+        "Challenge_summary":"large debug log files",
+        "Challenge_root_cause":"cannot be disabled",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1576948018896,
@@ -6097,7 +6295,9 @@
         "Solution_word_count":18.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"endpoint errors"
+        "Challenge_summary":"endpoint errors",
+        "Challenge_root_cause":"add content-type argument",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1646907459852,
@@ -6158,7 +6358,9 @@
         "Solution_word_count":55.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to log parameters"
+        "Challenge_summary":"unable to log parameters",
+        "Challenge_root_cause":"install required packages",
+        "Resolution_summary":"missing dependencies"
     },
     {
         "Answerer_created_time":null,
@@ -6219,7 +6421,9 @@
         "Solution_word_count":106.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"NameError in ScriptRunConfig"
+        "Challenge_summary":"NameError in ScriptRunConfig",
+        "Challenge_root_cause":"convert to python script",
+        "Resolution_summary":"using notebook instead of python script"
     },
     {
         "Answerer_created_time":null,
@@ -6280,7 +6484,9 @@
         "Solution_word_count":42.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to add step metrics"
+        "Challenge_summary":"unable to add step metrics",
+        "Challenge_root_cause":"bug flagged for fix",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -6341,7 +6547,9 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"config too large"
+        "Challenge_summary":"config too large",
+        "Challenge_root_cause":"check fold_number before drop",
+        "Resolution_summary":"N\/A (not explicitly mentioned)"
     },
     {
         "Answerer_created_time":1250158552416,
@@ -6402,7 +6610,9 @@
         "Solution_word_count":96.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to add description"
+        "Challenge_summary":"unable to add description",
+        "Challenge_root_cause":"use Model.register method",
+        "Resolution_summary":"API limitation"
     },
     {
         "Answerer_created_time":null,
@@ -6463,7 +6673,9 @@
         "Solution_word_count":17.0,
         "Tool":"Polyaxon",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"save display preferences"
+        "Challenge_summary":"save display preferences",
+        "Challenge_root_cause":"use save button",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -6524,7 +6736,9 @@
         "Solution_word_count":123.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to access params"
+        "Challenge_summary":"unable to access params",
+        "Challenge_root_cause":"call wandb.init()",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1244808478036,
@@ -6585,7 +6799,9 @@
         "Solution_word_count":62.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"invalid \"Body\" parameter"
+        "Challenge_summary":"invalid \"Body\" parameter",
+        "Challenge_root_cause":"pass bytes instead",
+        "Resolution_summary":"DataFrame not in expected format"
     },
     {
         "Answerer_created_time":1626973229036,
@@ -6646,7 +6862,9 @@
         "Solution_word_count":126.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"pytest error in deployment"
+        "Challenge_summary":"pytest error in deployment",
+        "Challenge_root_cause":"use CDK Python",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1523298968403,
@@ -6707,7 +6925,9 @@
         "Solution_word_count":19.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error parsing hyperparameters"
+        "Challenge_summary":"error parsing hyperparameters",
+        "Challenge_root_cause":"use s3_input objects",
+        "Resolution_summary":"invalid hyperparameters parsing"
     },
     {
         "Answerer_created_time":null,
@@ -6768,7 +6988,9 @@
         "Solution_word_count":null,
         "Tool":"Comet",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error with CometLogger"
+        "Challenge_summary":"error with CometLogger",
+        "Challenge_root_cause":"suggest manual import",
+        "Resolution_summary":"issue with CometLogger import order"
     },
     {
         "Answerer_created_time":1606374398152,
@@ -6829,7 +7051,9 @@
         "Solution_word_count":43.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"need to preprocess data"
+        "Challenge_summary":"need to preprocess data",
+        "Challenge_root_cause":"use Sagemaker inference Pipeline",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -6890,7 +7114,9 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing mlruns folder"
+        "Challenge_summary":"missing mlruns folder",
+        "Challenge_root_cause":"upgrade dbx version",
+        "Resolution_summary":"outdated dbx version"
     },
     {
         "Answerer_created_time":1623879163643,
@@ -6951,7 +7177,9 @@
         "Solution_word_count":66.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"distribute tuning parameters in pipeline"
+        "Challenge_summary":"distribute tuning parameters in pipeline",
+        "Challenge_root_cause":"run HPO job",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -7012,7 +7240,9 @@
         "Solution_word_count":94.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"inference script error"
+        "Challenge_summary":"inference script error",
+        "Challenge_root_cause":"compile for Jetson device",
+        "Resolution_summary":"incompatible target and device architecture"
     },
     {
         "Answerer_created_time":null,
@@ -7073,7 +7303,9 @@
         "Solution_word_count":64.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"wandb not logging scalar values"
+        "Challenge_summary":"wandb not logging scalar values",
+        "Challenge_root_cause":"use wandb.tensorboard.patch",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1424791933163,
@@ -7134,7 +7366,9 @@
         "Solution_word_count":68.0,
         "Tool":"Optuna",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing activation function details"
+        "Challenge_summary":"missing activation function details",
+        "Challenge_root_cause":"use unique parameter names",
+        "Resolution_summary":"parameter name duplication"
     },
     {
         "Answerer_created_time":1397589101936,
@@ -7195,7 +7429,9 @@
         "Solution_word_count":48.0,
         "Tool":"Optuna",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"categorical_column overridden warning"
+        "Challenge_summary":"categorical_column overridden warning",
+        "Challenge_root_cause":"add feature_name parameter",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1565129860212,
@@ -7256,7 +7492,9 @@
         "Solution_word_count":36.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"check pipeline status"
+        "Challenge_summary":"check pipeline status",
+        "Challenge_root_cause":"use REST APIs",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1341441916656,
@@ -7317,7 +7555,9 @@
         "Solution_word_count":17.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unexpected hyperparameter error"
+        "Challenge_summary":"unexpected hyperparameter error",
+        "Challenge_root_cause":"correct typo",
+        "Resolution_summary":"typo in hyperparameter name"
     },
     {
         "Answerer_created_time":1324351066392,
@@ -7378,7 +7618,9 @@
         "Solution_word_count":66.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"version mismatch warning"
+        "Challenge_summary":"version mismatch warning",
+        "Challenge_root_cause":"install same env packages",
+        "Resolution_summary":"version mismatch"
     },
     {
         "Answerer_created_time":null,
@@ -7439,7 +7681,9 @@
         "Solution_word_count":25.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"optimize CNN with AutoML"
+        "Challenge_summary":"optimize CNN with AutoML",
+        "Challenge_root_cause":"roadmap in development",
+        "Resolution_summary":"unsupported functionality"
     },
     {
         "Answerer_created_time":null,
@@ -7500,7 +7744,9 @@
         "Solution_word_count":148.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"clarify define_metric function"
+        "Challenge_summary":"clarify define_metric function",
+        "Challenge_root_cause":"use define_metric function",
+        "Resolution_summary":"unclear usage"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -7561,7 +7807,9 @@
         "Solution_word_count":51.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"no predict method error"
+        "Challenge_summary":"no predict method error",
+        "Challenge_root_cause":"override predict_fn",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -7622,7 +7870,9 @@
         "Solution_word_count":37.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"no unique job created"
+        "Challenge_summary":"no unique job created",
+        "Challenge_root_cause":"use reinit flag",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -7683,7 +7933,9 @@
         "Solution_word_count":60.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"impact of disabling ECR"
+        "Challenge_summary":"impact of disabling ECR",
+        "Challenge_root_cause":"restricts custom images",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -7744,7 +7996,9 @@
         "Solution_word_count":13.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"continue wandb with errors"
+        "Challenge_summary":"continue wandb with errors",
+        "Challenge_root_cause":"set environment variable",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1527682322812,
@@ -7805,7 +8059,9 @@
         "Solution_word_count":145.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing log_model function"
+        "Challenge_summary":"missing log_model function",
+        "Challenge_root_cause":"use PythonModel interface",
+        "Resolution_summary":"unsupported object type for pyfunc"
     },
     {
         "Answerer_created_time":1556182989007,
@@ -7866,7 +8122,9 @@
         "Solution_word_count":115.0,
         "Tool":"Optuna",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"runtime error in multi-objective optimization"
+        "Challenge_summary":"runtime error in multi-objective optimization",
+        "Challenge_root_cause":"access Pareto front",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1416075035300,
@@ -7927,7 +8185,9 @@
         "Solution_word_count":130.0,
         "Tool":"Optuna",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error importing YAML file"
+        "Challenge_summary":"error importing YAML file",
+        "Challenge_root_cause":"use package directive or variable interpolation",
+        "Resolution_summary":"invalid YAML file import"
     },
     {
         "Answerer_created_time":1634305425288,
@@ -7988,7 +8248,9 @@
         "Solution_word_count":151.0,
         "Tool":"Optuna",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"stuck at trial 2"
+        "Challenge_summary":"stuck at trial 2",
+        "Challenge_root_cause":"delete \"booster: dart\"",
+        "Resolution_summary":"unsuitable parameter for certain booster type"
     },
     {
         "Answerer_created_time":null,
@@ -8049,7 +8311,9 @@
         "Solution_word_count":27.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"add archive feature for runs"
+        "Challenge_summary":"add archive feature for runs",
+        "Challenge_root_cause":"multiple selection not supported",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -8110,7 +8374,9 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"nested runs in MLflow"
+        "Challenge_summary":"nested runs in MLflow",
+        "Challenge_root_cause":"bug fixed, try latest codebase",
+        "Resolution_summary":"bug in nested runs in MLflow (fixed by specific pull request)"
     },
     {
         "Answerer_created_time":null,
@@ -8171,7 +8437,9 @@
         "Solution_word_count":36.0,
         "Tool":"Vertex AI",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"quota exceeded error"
+        "Challenge_summary":"quota exceeded error",
+        "Challenge_root_cause":"raised default quotas",
+        "Resolution_summary":"exceeded quotas"
     },
     {
         "Answerer_created_time":1624867238152,
@@ -8232,7 +8500,9 @@
         "Solution_word_count":91.0,
         "Tool":"Optuna",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unreproducible Optuna search"
+        "Challenge_summary":"unreproducible Optuna search",
+        "Challenge_root_cause":"save and overwrite rng",
+        "Resolution_summary":"random number generator reinitialized after interruption"
     },
     {
         "Answerer_created_time":1592311727163,
@@ -8293,7 +8563,9 @@
         "Solution_word_count":55.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"UnexpectedStatusException in Sagemaker"
+        "Challenge_summary":"UnexpectedStatusException in Sagemaker",
+        "Challenge_root_cause":"invalid characters in directory names",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1274693802127,
@@ -8354,7 +8626,9 @@
         "Solution_word_count":132.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"driver file not found"
+        "Challenge_summary":"driver file not found",
+        "Challenge_root_cause":"recreate workspace",
+        "Resolution_summary":"unsupported storage account capabilities"
     },
     {
         "Answerer_created_time":null,
@@ -8415,7 +8689,9 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"wandb compatibility issue"
+        "Challenge_summary":"wandb compatibility issue",
+        "Challenge_root_cause":"N\/A",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1553609947192,
@@ -8476,7 +8752,9 @@
         "Solution_word_count":119.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"broken pipe error"
+        "Challenge_summary":"broken pipe error",
+        "Challenge_root_cause":"try smaller dataset",
+        "Resolution_summary":"connection closed abruptly"
     },
     {
         "Answerer_created_time":1424453610300,
@@ -8537,7 +8815,9 @@
         "Solution_word_count":35.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"derive date features automatically"
+        "Challenge_summary":"derive date features automatically",
+        "Challenge_root_cause":"use execute-R module",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -8598,7 +8878,9 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"input_ids shape error"
+        "Challenge_summary":"input_ids shape error",
+        "Challenge_root_cause":"feature request created",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -8659,7 +8941,9 @@
         "Solution_word_count":60.0,
         "Tool":"Polyaxon",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"save\/access Polyaxon logs"
+        "Challenge_summary":"save\/access Polyaxon logs",
+        "Challenge_root_cause":"not possible",
+        "Resolution_summary":"limited access to artifacts store"
     },
     {
         "Answerer_created_time":1405457120427,
@@ -8720,7 +9004,9 @@
         "Solution_word_count":71.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"module not found"
+        "Challenge_summary":"module not found",
+        "Challenge_root_cause":"use ScriptRunConfig",
+        "Resolution_summary":"missing module"
     },
     {
         "Answerer_created_time":null,
@@ -8781,7 +9067,9 @@
         "Solution_word_count":null,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"CUDA error 46"
+        "Challenge_summary":"CUDA error 46",
+        "Challenge_root_cause":"N\/A",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -8842,7 +9130,9 @@
         "Solution_word_count":211.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"end result tracking instead of per trial"
+        "Challenge_summary":"end result tracking instead of per trial",
+        "Challenge_root_cause":"removed optimizer",
+        "Resolution_summary":"optimizer caused errors"
     },
     {
         "Answerer_created_time":1437078651387,
@@ -8903,7 +9193,9 @@
         "Solution_word_count":63.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to view training metrics"
+        "Challenge_summary":"unable to view training metrics",
+        "Challenge_root_cause":"increase epochs",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1428499037932,
@@ -8964,7 +9256,9 @@
         "Solution_word_count":87.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"graph best runs"
+        "Challenge_summary":"graph best runs",
+        "Challenge_root_cause":"filter runs by metric",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -9025,7 +9319,9 @@
         "Solution_word_count":30.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"empty PowerBI pop-up window"
+        "Challenge_summary":"empty PowerBI pop-up window",
+        "Challenge_root_cause":"seek help on community forum",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1442180190107,
@@ -9086,7 +9382,9 @@
         "Solution_word_count":150.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"model data not found"
+        "Challenge_summary":"model data not found",
+        "Challenge_root_cause":"persist model artifact",
+        "Resolution_summary":"missing model artifact in S3"
     },
     {
         "Answerer_created_time":1428654714763,
@@ -9147,7 +9445,9 @@
         "Solution_word_count":82.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"failed PowerShell Get request"
+        "Challenge_summary":"failed PowerShell Get request",
+        "Challenge_root_cause":"pass body as hashtable",
+        "Resolution_summary":"N\/A (implicit)"
     },
     {
         "Answerer_created_time":1253986272627,
@@ -9208,7 +9508,9 @@
         "Solution_word_count":163.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to create region-specific credentials"
+        "Challenge_summary":"unable to create region-specific credentials",
+        "Challenge_root_cause":"create IAM role and user",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1424453610300,
@@ -9269,7 +9571,9 @@
         "Solution_word_count":11.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"bad request with decimals"
+        "Challenge_summary":"bad request with decimals",
+        "Challenge_root_cause":"force type in Meta-Editor",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1621409485092,
@@ -9330,7 +9634,9 @@
         "Solution_word_count":183.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing compute resources"
+        "Challenge_summary":"missing compute resources",
+        "Challenge_root_cause":"no Kusto query available",
+        "Resolution_summary":"limited functionality of Azure Resource Graph Explorer"
     },
     {
         "Answerer_created_time":1421238326280,
@@ -9391,7 +9697,9 @@
         "Solution_word_count":62.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"issues with Tensorboard visualization"
+        "Challenge_summary":"issues with Tensorboard visualization",
+        "Challenge_root_cause":"install tensorboard, connect URL",
+        "Resolution_summary":"missing installation"
     },
     {
         "Answerer_created_time":1340284487940,
@@ -9452,7 +9760,9 @@
         "Solution_word_count":83.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"CapacityError on SageMaker"
+        "Challenge_summary":"CapacityError on SageMaker",
+        "Challenge_root_cause":"try different instance type or wait",
+        "Resolution_summary":"insufficient EC2 capacity"
     },
     {
         "Answerer_created_time":1531218624572,
@@ -9513,7 +9823,9 @@
         "Solution_word_count":29.0,
         "Tool":"Optuna",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"force specific parameters in Optuna"
+        "Challenge_summary":"force specific parameters in Optuna",
+        "Challenge_root_cause":"use FixedTrial",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -9574,7 +9886,9 @@
         "Solution_word_count":159.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"invalid hyperparameter configuration"
+        "Challenge_summary":"invalid hyperparameter configuration",
+        "Challenge_root_cause":"use dot notation",
+        "Resolution_summary":"nested parameters not supported"
     },
     {
         "Answerer_created_time":1225669466307,
@@ -9635,7 +9949,9 @@
         "Solution_word_count":156.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"translate C# to F#"
+        "Challenge_summary":"translate C# to F#",
+        "Challenge_root_cause":"wrap code in async block",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1501350003092,
@@ -9696,7 +10012,9 @@
         "Solution_word_count":50.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"service limit reached"
+        "Challenge_summary":"service limit reached",
+        "Challenge_root_cause":"use valid instance type",
+        "Resolution_summary":"exceeded service quota"
     },
     {
         "Answerer_created_time":1662621266503,
@@ -9757,7 +10075,9 @@
         "Solution_word_count":26.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"test SageMaker in local mode"
+        "Challenge_summary":"test SageMaker in local mode",
+        "Challenge_root_cause":"not possible yet",
+        "Resolution_summary":"unsupported functionality in local mode"
     },
     {
         "Answerer_created_time":1639972620503,
@@ -9818,7 +10138,9 @@
         "Solution_word_count":113.0,
         "Tool":"Vertex AI",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"parallel trials in GCP"
+        "Challenge_summary":"parallel trials in GCP",
+        "Challenge_root_cause":"use parallel trials",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1436184843608,
@@ -9879,7 +10201,9 @@
         "Solution_word_count":138.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"test multiple algorithms simultaneously"
+        "Challenge_summary":"test multiple algorithms simultaneously",
+        "Challenge_root_cause":"use Cross-Validate Model module",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -9940,7 +10264,9 @@
         "Solution_word_count":102.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"use sweeps for augmentation parameters"
+        "Challenge_summary":"use sweeps for augmentation parameters",
+        "Challenge_root_cause":"call function from main",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1476780098123,
@@ -10001,7 +10327,9 @@
         "Solution_word_count":599.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"CPU utilization maxed at 100%"
+        "Challenge_summary":"CPU utilization maxed at 100%",
+        "Challenge_root_cause":"set environment variables",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -10062,7 +10390,9 @@
         "Solution_word_count":292.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"screen correctness of applications"
+        "Challenge_summary":"screen correctness of applications",
+        "Challenge_root_cause":"use Azure form recognizer",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -10123,7 +10453,9 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"skipped logging steps"
+        "Challenge_summary":"skipped logging steps",
+        "Challenge_root_cause":"implemented in v0.4.4",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -10184,7 +10516,9 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"incorrect helm fetch release"
+        "Challenge_summary":"incorrect helm fetch release",
+        "Challenge_root_cause":"verify and close",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -10245,7 +10579,9 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to create probabilities"
+        "Challenge_summary":"unable to create probabilities",
+        "Challenge_root_cause":"install pre-release pycaret",
+        "Resolution_summary":"nested recursive runs"
     },
     {
         "Answerer_created_time":1530826195963,
@@ -10306,7 +10642,9 @@
         "Solution_word_count":70.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"AWS Sagemaker HPO mechanism"
+        "Challenge_summary":"AWS Sagemaker HPO mechanism",
+        "Challenge_root_cause":"hyperparameters.json contains tuning params",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1561143508792,
@@ -10367,7 +10705,9 @@
         "Solution_word_count":135.0,
         "Tool":"ClearML",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"loop for separated tasks"
+        "Challenge_summary":"loop for separated tasks",
+        "Challenge_root_cause":"close task after training",
+        "Resolution_summary":"task.close() not clearing logs"
     },
     {
         "Answerer_created_time":null,
@@ -10428,7 +10768,9 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing wandb directory"
+        "Challenge_summary":"missing wandb directory",
+        "Challenge_root_cause":"N\/A",
+        "Resolution_summary":"missing directory"
     },
     {
         "Answerer_created_time":1558310526776,
@@ -10489,7 +10831,9 @@
         "Solution_word_count":60.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"endpoint creation stuck on \"creating\""
+        "Challenge_summary":"endpoint creation stuck on \"creating\"",
+        "Challenge_root_cause":"use sagemaker.model.model",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1369156710532,
@@ -10550,7 +10894,9 @@
         "Solution_word_count":22.0,
         "Tool":"Optuna",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"failed to save parameters"
+        "Challenge_summary":"failed to save parameters",
+        "Challenge_root_cause":"use callback function",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1253986272627,
@@ -10611,7 +10957,9 @@
         "Solution_word_count":249.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"no speedup with instance count"
+        "Challenge_summary":"no speedup with instance count",
+        "Challenge_root_cause":"algorithms need optimization",
+        "Resolution_summary":"algorithms not designed for distributed training"
     },
     {
         "Answerer_created_time":null,
@@ -10672,7 +11020,9 @@
         "Solution_word_count":104.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"run multiple experiments, collect results"
+        "Challenge_summary":"run multiple experiments, collect results",
+        "Challenge_root_cause":"use API filters\/tags",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1491898605956,
@@ -10733,7 +11083,9 @@
         "Solution_word_count":18.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"cross validation in Sagemaker"
+        "Challenge_summary":"cross validation in Sagemaker",
+        "Challenge_root_cause":"add additional step",
+        "Resolution_summary":"not possible through HPO"
     },
     {
         "Answerer_created_time":1646907459852,
@@ -10794,7 +11146,9 @@
         "Solution_word_count":189.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error in evaluation metrics"
+        "Challenge_summary":"error in evaluation metrics",
+        "Challenge_root_cause":"follow step-by-step instructions",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1491467888608,
@@ -10855,7 +11209,9 @@
         "Solution_word_count":255.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"explain wandb.config in sweep"
+        "Challenge_summary":"explain wandb.config in sweep",
+        "Challenge_root_cause":"use wandb.config",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1538275960603,
@@ -10916,7 +11272,9 @@
         "Solution_word_count":52.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"find AML Compute quota"
+        "Challenge_summary":"find AML Compute quota",
+        "Challenge_root_cause":"use az vm list-usage",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1442334437952,
@@ -10977,7 +11335,9 @@
         "Solution_word_count":65.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"error parsing column picker rules"
+        "Challenge_summary":"error parsing column picker rules",
+        "Challenge_root_cause":"remove special characters",
+        "Resolution_summary":"special characters in column names"
     },
     {
         "Answerer_created_time":null,
@@ -11038,7 +11398,9 @@
         "Solution_word_count":107.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"wandb.watch not logging"
+        "Challenge_summary":"wandb.watch not logging",
+        "Challenge_root_cause":"issue resolved",
+        "Resolution_summary":"using wrong function"
     },
     {
         "Answerer_created_time":null,
@@ -11099,7 +11461,9 @@
         "Solution_word_count":115.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"cancel sweep run manually"
+        "Challenge_summary":"cancel sweep run manually",
+        "Challenge_root_cause":"stop run from webUI",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -11160,7 +11524,9 @@
         "Solution_word_count":122.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"upload code to WandB"
+        "Challenge_summary":"upload code to WandB",
+        "Challenge_root_cause":"no code storage",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -11221,7 +11587,9 @@
         "Solution_word_count":70.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"replacement add-in for Excel"
+        "Challenge_summary":"replacement add-in for Excel",
+        "Challenge_root_cause":"on roadmap for future",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -11282,7 +11650,9 @@
         "Solution_word_count":104.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"log learning rate with scheduler"
+        "Challenge_summary":"log learning rate with scheduler",
+        "Challenge_root_cause":"use LearningRateMonitor callback",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1539831335196,
@@ -11343,7 +11713,9 @@
         "Solution_word_count":221.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"CSVLogger fails to write"
+        "Challenge_summary":"CSVLogger fails to write",
+        "Challenge_root_cause":"use custom docker image",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -11404,7 +11776,9 @@
         "Solution_word_count":34.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"attribute error in AutoML model saving"
+        "Challenge_summary":"attribute error in AutoML model saving",
+        "Challenge_root_cause":"N\/A",
+        "Resolution_summary":"N\/A (no explicit mention of root cause)"
     },
     {
         "Answerer_created_time":null,
@@ -11465,7 +11839,9 @@
         "Solution_word_count":64.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"crashed script, offset epoch"
+        "Challenge_summary":"crashed script, offset epoch",
+        "Challenge_root_cause":"offline mode not supported",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1468179475927,
@@ -11526,7 +11902,9 @@
         "Solution_word_count":199.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"transform data for recommendations"
+        "Challenge_summary":"transform data for recommendations",
+        "Challenge_root_cause":"add zero-rated pairs",
+        "Resolution_summary":"N\/A (not explicitly mentioned)"
     },
     {
         "Answerer_created_time":1646907459852,
@@ -11587,7 +11965,9 @@
         "Solution_word_count":55.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to log parameters"
+        "Challenge_summary":"unable to log parameters",
+        "Challenge_root_cause":"install required packages",
+        "Resolution_summary":"missing dependencies"
     },
     {
         "Answerer_created_time":1579718832727,
@@ -11648,7 +12028,9 @@
         "Solution_word_count":63.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"ExecutionException when using mlflow.run"
+        "Challenge_summary":"ExecutionException when using mlflow.run",
+        "Challenge_root_cause":"no protocol for exception passing",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -11709,6 +12091,8 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"missing models in MLflow UI"
+        "Challenge_summary":"missing models in MLflow UI",
+        "Challenge_root_cause":"update pycaret",
+        "Resolution_summary":"N\/A"
     }
 ]

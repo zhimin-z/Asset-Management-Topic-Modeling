@@ -58,7 +58,9 @@
         "Solution_word_count":81.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"track S3 dataset versions"
+        "Challenge_summary":"track S3 dataset versions",
+        "Challenge_root_cause":"use SageMaker search",
+        "Resolution_summary":"unsupported functionality"
     },
     {
         "Answerer_created_time":1405882600928,
@@ -119,7 +121,9 @@
         "Solution_word_count":78.0,
         "Tool":"Kedro",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"versioning error for CSVDataSet"
+        "Challenge_summary":"versioning error for CSVDataSet",
+        "Challenge_root_cause":"version downstream output",
+        "Resolution_summary":"name conflict with existing file"
     },
     {
         "Answerer_created_time":1614882423070,
@@ -180,7 +184,9 @@
         "Solution_word_count":36.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to access local files"
+        "Challenge_summary":"unable to access local files",
+        "Challenge_root_cause":"no solution provided",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1250347954880,
@@ -241,7 +247,9 @@
         "Solution_word_count":86.0,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"only pushes latest commit"
+        "Challenge_summary":"only pushes latest commit",
+        "Challenge_root_cause":"use Git hook",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1305851487736,
@@ -302,7 +310,9 @@
         "Solution_word_count":112.0,
         "Tool":"DVC",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"use different remotes for folders"
+        "Challenge_summary":"use different remotes for folders",
+        "Challenge_root_cause":"add multiple remotes",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1305851487736,
@@ -363,7 +373,9 @@
         "Solution_word_count":89.0,
         "Tool":"DVC",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"incrementally add data in DVC"
+        "Challenge_summary":"incrementally add data in DVC",
+        "Challenge_root_cause":"use dvc add\/commit",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1250347954880,
@@ -424,7 +436,9 @@
         "Solution_word_count":99.0,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"failed to clone repo"
+        "Challenge_summary":"failed to clone repo",
+        "Challenge_root_cause":"use SSH",
+        "Resolution_summary":"private repo access issue"
     },
     {
         "Answerer_created_time":null,
@@ -485,7 +499,9 @@
         "Solution_word_count":null,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"inconvenient branch switching"
+        "Challenge_summary":"inconvenient branch switching",
+        "Challenge_root_cause":"N\/A",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -546,7 +562,9 @@
         "Solution_word_count":32.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"connect Sagemaker to private repo"
+        "Challenge_summary":"connect Sagemaker to private repo",
+        "Challenge_root_cause":"unsupported by Sagemaker",
+        "Resolution_summary":"unsupported functionality"
     },
     {
         "Answerer_created_time":1662022756172,
@@ -607,7 +625,9 @@
         "Solution_word_count":45.0,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"untracked files in VScode"
+        "Challenge_summary":"untracked files in VScode",
+        "Challenge_root_cause":"track files with Git\/DVC",
+        "Resolution_summary":"untracked files in SCM trees"
     },
     {
         "Answerer_created_time":1614873430827,
@@ -668,7 +688,9 @@
         "Solution_word_count":60.0,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"DVC-file format error"
+        "Challenge_summary":"DVC-file format error",
+        "Challenge_root_cause":"check dvc version compatibility",
+        "Resolution_summary":"version incompatibility"
     },
     {
         "Answerer_created_time":1221810788500,
@@ -729,7 +751,9 @@
         "Solution_word_count":75.0,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unable to set directory"
+        "Challenge_summary":"unable to set directory",
+        "Challenge_root_cause":"set TMPDIR environment variable",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1620132280447,
@@ -790,7 +814,9 @@
         "Solution_word_count":39.0,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"corrupted lockfile"
+        "Challenge_summary":"corrupted lockfile",
+        "Challenge_root_cause":"upgrade DVC version",
+        "Resolution_summary":"incompatible DVC schema"
     },
     {
         "Answerer_created_time":null,
@@ -851,7 +877,9 @@
         "Solution_word_count":null,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"incorrect root directory detection"
+        "Challenge_summary":"incorrect root directory detection",
+        "Challenge_root_cause":"update to latest version",
+        "Resolution_summary":"outdated version with bug"
     },
     {
         "Answerer_created_time":null,
@@ -912,7 +940,9 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"unconfigured wandb API key"
+        "Challenge_summary":"unconfigured wandb API key",
+        "Challenge_root_cause":"N\/A",
+        "Resolution_summary":"unconfigured API key"
     },
     {
         "Answerer_created_time":null,
@@ -973,7 +1003,9 @@
         "Solution_word_count":null,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"incomplete dependency tree"
+        "Challenge_summary":"incomplete dependency tree",
+        "Challenge_root_cause":"added and pinned dependencies",
+        "Resolution_summary":"incomplete dependency tree"
     },
     {
         "Answerer_created_time":null,
@@ -1034,7 +1066,9 @@
         "Solution_word_count":null,
         "Tool":"MLflow",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"deployment issues with MLflow"
+        "Challenge_summary":"deployment issues with MLflow",
+        "Challenge_root_cause":"wrapped in try-except block, bug fix release",
+        "Resolution_summary":"invalid data type mapping, presence of null values"
     },
     {
         "Answerer_created_time":null,
@@ -1095,7 +1129,9 @@
         "Solution_word_count":73.0,
         "Tool":"Weights & Biases",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"request for W&B badge"
+        "Challenge_summary":"request for W&B badge",
+        "Challenge_root_cause":"badge already available",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":null,
@@ -1156,7 +1192,9 @@
         "Solution_word_count":null,
         "Tool":"Weights & Biases",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"untracked directory slipped through"
+        "Challenge_summary":"untracked directory slipped through",
+        "Challenge_root_cause":"issue fixed",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1631019482980,
@@ -1217,7 +1255,9 @@
         "Solution_word_count":27.0,
         "Tool":"DVC",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"overlapping DVC tracked output"
+        "Challenge_summary":"overlapping DVC tracked output",
+        "Challenge_root_cause":"fix cyclical dependencies in dvc.yaml",
+        "Resolution_summary":"cyclical dependencies in dvc.yaml"
     },
     {
         "Answerer_created_time":null,
@@ -1278,7 +1318,9 @@
         "Solution_word_count":116.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"FileNotFoundError retrieving image URI"
+        "Challenge_summary":"FileNotFoundError retrieving image URI",
+        "Challenge_root_cause":"use new parameters",
+        "Resolution_summary":"incorrect parameters used"
     },
     {
         "Answerer_created_time":1424548126510,
@@ -1339,7 +1381,9 @@
         "Solution_word_count":31.0,
         "Tool":"Amazon SageMaker",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"failed \"cd\" command"
+        "Challenge_summary":"failed \"cd\" command",
+        "Challenge_root_cause":"not specific to SageMaker",
+        "Resolution_summary":"bug in JupyterLab Git extension"
     },
     {
         "Answerer_created_time":null,
@@ -1400,7 +1444,9 @@
         "Solution_word_count":89.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"cannot access samples link"
+        "Challenge_summary":"cannot access samples link",
+        "Challenge_root_cause":"link deprecated",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1510527902860,
@@ -1461,7 +1507,9 @@
         "Solution_word_count":296.0,
         "Tool":"Kedro",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"failed installation attempts"
+        "Challenge_summary":"failed installation attempts",
+        "Challenge_root_cause":"two issues",
+        "Resolution_summary":"decoding error and pip install error"
     },
     {
         "Answerer_created_time":1541523185320,
@@ -1522,7 +1570,9 @@
         "Solution_word_count":42.0,
         "Tool":"DVC",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"compare git-lfs and dvc"
+        "Challenge_summary":"compare git-lfs and dvc",
+        "Challenge_root_cause":"DVC is better",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1294388296987,
@@ -1583,7 +1633,9 @@
         "Solution_word_count":74.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"anomaly",
-        "Challenge_summary":"files not ignored in branch switch"
+        "Challenge_summary":"files not ignored in branch switch",
+        "Challenge_root_cause":"run git clean command",
+        "Resolution_summary":"untracked files not cleaned in branch switch"
     },
     {
         "Answerer_created_time":1646219230528,
@@ -1644,7 +1696,9 @@
         "Solution_word_count":64.0,
         "Tool":"Azure Machine Learning",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"connect to Azure DevOps repository"
+        "Challenge_summary":"connect to Azure DevOps repository",
+        "Challenge_root_cause":"change target URL",
+        "Resolution_summary":"N\/A"
     },
     {
         "Answerer_created_time":1314097464768,
@@ -1705,6 +1759,8 @@
         "Solution_word_count":14.0,
         "Tool":"Neptune",
         "Challenge_type":"inquiry",
-        "Challenge_summary":"make Neptune git-aware"
+        "Challenge_summary":"make Neptune git-aware",
+        "Challenge_root_cause":"git integration available",
+        "Resolution_summary":"N\/A"
     }
 ]
