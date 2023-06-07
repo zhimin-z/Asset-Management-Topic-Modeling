@@ -12,7 +12,7 @@ import pandas as pd
 import wandb
 import os
 
-path_result = os.path.join(os.path.dirname(os.getcwd()), 'Result')
+path_result = os.path.join(os.getcwd(), 'Result')
 path_solution = os.path.join(path_result, 'Solution')
 path_solution_cardsorting = os.path.join(path_solution, 'Card Sorting')
 path_model = os.path.join(path_solution_cardsorting, 'Model')
