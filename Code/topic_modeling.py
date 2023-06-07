@@ -192,7 +192,6 @@ class TopicModeling:
                     # Find the model with the lowest topic number in the list
                     lowest_number_topics_model = min(
                         self.top_models, key=lambda x: x['model_metrics']['number_topics'])
-                    lowest_number_topics = lowest_number_topics_model['model_metrics']['number_topics']
                     if coherence_cv > lowest_number_topics_model['model_metrics']['coherence_cv']:
                         # Replace the model with the lowest topic number in the list with the new model
                         self.top_models.remove(lowest_number_topics_model)
