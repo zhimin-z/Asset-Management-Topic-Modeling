@@ -12,9 +12,7 @@ import pandas as pd
 import wandb
 import os
 
-path_result = os.path.join(os.getcwd(), 'Result')
-path_solution = os.path.join(path_result, 'Solution')
-path_solution_cardsorting = os.path.join(path_solution, 'Card Sorting')
+path_solution_cardsorting = os.path.join(os.getcwd(), 'Result', 'Solution', 'Card Sorting')
 path_model = os.path.join(path_solution_cardsorting, 'Model')
 if not os.path.exists(path_model):
     os.makedirs(path_model)
@@ -50,15 +48,15 @@ config_sweep = {
 
 
 class TopicModeling:
-    def __init__(self, docs_name):
+    def __init__(self, column_name):
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
         
         df = pd.read_json(os.path.join(path_solution_cardsorting, 'solved.json'))
-        self.docs = df[df[docs_name] != 'N/A'][docs_name].tolist()
+        self.docs = df[df[column_name] != 'N/A'][column_name].tolist()
         
-        config_sweep['name'] = docs_name
+        config_sweep['name'] = column_name
         config_sweep['parameters'] = {
             'min_samples': {
                 'values': list(range(1, config_defaults['min_cluster_size'] + 1))

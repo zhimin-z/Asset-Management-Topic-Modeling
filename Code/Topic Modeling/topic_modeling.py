@@ -52,18 +52,18 @@ config_sweep = {
 
 
 class TopicModeling:
-    def __init__(self, docs_name):
+    def __init__(self, column_name):
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
         
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
-        self.docs = df[df[docs_name].notna()][docs_name].tolist()
+        self.docs = df[df[column_name].notna()][column_name].tolist()
         
-        if 'Solution' in docs_name:
+        if 'Solution' in column_name:
             config_defaults['min_cluster_size'] = 5
         
-        config_sweep['name'] = docs_name
+        config_sweep['name'] = column_name
         config_sweep['parameters'] = {
             'min_samples': {
                 'values': list(range(1, config_defaults['min_cluster_size'] + 1))
