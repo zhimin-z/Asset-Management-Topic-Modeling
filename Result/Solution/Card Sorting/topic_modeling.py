@@ -55,7 +55,7 @@ class TopicModeling:
         self.top_models = []
         self.path_model = path_model
         
-        df = pd.read_json(os.path.join(path_solution_cardsorting, 'sample.json'))
+        df = pd.read_json(os.path.join(path_solution_cardsorting, 'solved.json'))
         self.docs = df[df[docs_name] != 'N/A'][docs_name].tolist()
         
         config_sweep['name'] = docs_name
