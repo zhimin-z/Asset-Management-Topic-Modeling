@@ -1,11 +1,10 @@
-
-from bertopic import BERTopic
-from matplotlib import pyplot as plt
-from wordcloud import WordCloud
-
 import os
 import pickle
 import pandas as pd
+
+from bertopic import BERTopic
+from wordcloud import WordCloud
+from matplotlib import pyplot as plt
 
 path_result = 'Result'
 path_dataset = 'Dataset'
