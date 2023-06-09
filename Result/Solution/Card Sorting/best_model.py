@@ -11,9 +11,9 @@ path_challenge = os.path.join(path_solution_cardsorting, 'Challenge')
 path_extra = os.path.join(path_solution_cardsorting, 'Extra')
 path_resolution = os.path.join(path_solution_cardsorting, 'Resolution')
 
-name_model_challenge = 'Challenge_summary_skk6x33z'
-name_model_extra = 'Challenge_extra_summary_skk6x33z'
-name_model_resolution = 'Resolution_summary_skk6x33z'
+name_model_challenge = 'Challenge_summary_4pzl88h9'
+name_model_extra = 'Challenge_extra_summary_driq44pz'
+name_model_resolution = 'Resolution_summary_0544ssky'
 
 df = pd.read_json(os.path.join(path_solution_cardsorting, 'solved.json'))
 
