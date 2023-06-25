@@ -48,12 +48,14 @@ config_sweep = {
 
 
 class TopicModeling:
-    def __init__(self, column_name):
+    def __init__(self, column_name, challenge_type=None):
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
         
-        df = pd.read_json(os.path.join(path_solution_cardsorting, 'solved.json'))
+        df = pd.read_json(os.path.join(path_solution_cardsorting, 'labels.json'))
+        if challenge_type:
+            df = df[df['Challenge_type'] == challenge_type]
         self.docs = df[df[column_name] != 'N/A'][column_name].tolist()
         
         config_sweep['name'] = column_name
