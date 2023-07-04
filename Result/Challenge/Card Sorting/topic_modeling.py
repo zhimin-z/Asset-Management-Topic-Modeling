@@ -12,8 +12,8 @@ import pandas as pd
 import wandb
 import os
 
-path_solution_cardsorting = os.path.join(os.getcwd(), 'Result', 'Solution', 'Card Sorting')
-path_model = os.path.join(path_solution_cardsorting, 'Model')
+path_cardsorting = os.path.join(os.getcwd(), 'Result', 'Challenge', 'Card Sorting')
+path_model = os.path.join(path_cardsorting, 'Model')
 if not os.path.exists(path_model):
     os.makedirs(path_model)
 
@@ -53,7 +53,7 @@ class TopicModeling:
         self.top_models = []
         self.path_model = path_model
         
-        df = pd.read_json(os.path.join(path_solution_cardsorting, 'labels.json'))
+        df = pd.read_json(os.path.join(path_cardsorting, 'labels.json'))
         if challenge_type:
             df = df[df['Challenge_type'] == challenge_type]
         self.docs = df[df[column_name] != 'N/A'][column_name].tolist()
