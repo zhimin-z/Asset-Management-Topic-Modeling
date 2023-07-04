@@ -32,7 +32,7 @@ config_defaults = {
     'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
-    'min_cluster_size': 10,
+    'min_cluster_size': 20,
     'random_state': 42,
     'n_components': 5,
     'ngram_range': 2
