@@ -1,4 +1,4 @@
-bertopic==0.14.1
+bertopic==0.15.0
 gensim==4.3.1
 kaleido==0.2.1
 matplotlib==3.7.1
