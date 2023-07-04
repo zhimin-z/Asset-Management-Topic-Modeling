@@ -56,7 +56,7 @@ class TopicModeling:
         df = pd.read_json(os.path.join(path_cardsorting, 'labels.json'))
         if challenge_type:
             df = df[df['Challenge_type'] == challenge_type]
-        self.docs = df[df[column_name] != 'N/A'][column_name].tolist()
+        self.docs = df[df[column_name] != 'na'][column_name].tolist()
         
         config_sweep['name'] = column_name
         config_sweep['parameters'] = {
@@ -167,7 +167,6 @@ class TopicModeling:
                 {'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
 
             # persist top 5 topic models
-
             model_name = f'{config_sweep["name"]}_{run.id}'
             model = {
                 'model_path': os.path.join(self.path_model, model_name),

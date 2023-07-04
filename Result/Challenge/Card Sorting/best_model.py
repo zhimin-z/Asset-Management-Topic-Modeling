@@ -13,9 +13,9 @@ path_solution = os.path.join(path_cardsorting, 'Solution')
 path_inquiry = os.path.join(path_cardsorting, 'Inquiry')
 
 name_model_anomaly = 'Challenge_summary_tni44ecq'
-name_model_root_cause = 'Challenge_summary_wgla1qaq'
+name_model_root_cause = 'Challenge_root_cause_9wqsvkgx'
 name_model_solution = 'Challenge_solution_xnu8xil6'
-name_model_inquiry = 'Challenge_extra_summary_9wqsvkgx'
+name_model_inquiry = 'Challenge_summary_wgla1qaq'
 
 df = pd.read_json(os.path.join(path_cardsorting, 'labels.json'))
 
@@ -69,13 +69,13 @@ for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs
     fig = topic_model.visualize_heatmap()
     fig.write_html(os.path.join(path, 'Topic similarity visualization.html'))
     
-    # hierarchical_topics = topic_model.hierarchical_topics(docs)
-    # fig = topic_model.visualize_hierarchy(hierarchical_topics=hierarchical_topics)
-    # fig.write_html(os.path.join(path, 'Hierarchical clustering visualization.html'))
+    hierarchical_topics = topic_model.hierarchical_topics(docs)
+    fig = topic_model.visualize_hierarchy(hierarchical_topics=hierarchical_topics)
+    fig.write_html(os.path.join(path, 'Hierarchical clustering visualization.html'))
     
-    # embeddings = topic_model.embedding_model.embed_documents(docs)
-    # fig = topic_model.visualize_documents(docs, embeddings=embeddings)
-    # fig.write_html(os.path.join(path, 'Document visualization.html'))
+    embeddings = topic_model.embedding_model.embed_documents(docs)
+    fig = topic_model.visualize_documents(docs, embeddings=embeddings)
+    fig.write_html(os.path.join(path, 'Document visualization.html'))
     
     # This uses the soft-clustering as performed by HDBSCAN to find the best matching topic for each outlier document.
     topics_new = topic_model.reduce_outliers(docs, topics, probabilities=probs, strategy="probabilities")
