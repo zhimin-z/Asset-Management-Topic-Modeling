@@ -143,7 +143,7 @@ for index, topic in zip(indice_challenge, topics_new_challenge):
 
 del df['Challenge_original_content']
 del df['Challenge_preprocessed_content']
-del df['Challenge_gpt_summary']
+del df['Challenge_gpt_summary_preprocessed_content']
 
 # del df['Solution_original_content']
 # del df['Solution_preprocessed_content']
