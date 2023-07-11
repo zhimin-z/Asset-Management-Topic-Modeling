@@ -46,6 +46,9 @@ for index, row in df.iterrows():
     elif row['Challenge_type'] == 'inquiry':
         indice_inquiry.append(index)
         docs_inquiry.append(row['Challenge_summary'])
+        if row['Challenge_solution'] != 'na':
+            indice_solution.append(index)
+            docs_solution.append(row['Challenge_solution'])
         
 for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs_solution, docs_inquiry], [indice_anomaly, indice_root_cause, indice_solution, indice_inquiry], [path_anomaly, path_root_cause, path_solution, path_inquiry], [name_model_anomaly, name_model_root_cause, name_model_solution, name_model_inquiry], ['Challenge_card_sorting_topic', 'Challenge_root_cause_card_sorting_topic', 'Solution_card_sorting_topic', 'Challenge_card_sorting_topic']):
     topic_model = BERTopic.load(os.path.join(path_model, name))
