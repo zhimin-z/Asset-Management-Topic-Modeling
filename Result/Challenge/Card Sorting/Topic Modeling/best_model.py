@@ -37,10 +37,10 @@ for index, row in df.iterrows():
     if row['Challenge_type'] == 'anomaly':
         indice_anomaly.append(index)
         docs_anomaly.append(row['Challenge_summary'])
-        if row['Challenge_root_cause'] != 'N/A':
+        if row['Challenge_root_cause'] != 'na':
             indice_root_cause.append(index)
             docs_root_cause.append(row['Challenge_root_cause'])
-        if row['Challenge_solution'] != 'N/A':
+        if row['Challenge_solution'] != 'na':
             indice_solution.append(index)
             docs_solution.append(row['Challenge_solution'])
     elif row['Challenge_type'] == 'inquiry':
