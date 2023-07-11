@@ -1,380 +1,367 @@
 [
     {
-        "Platform":"Github",
-        "Tool":"Amazon SageMaker",
-        "State":"closed",
-        "value":65
-    },
-    {
-        "Platform":"Github",
-        "Tool":"Amazon SageMaker",
-        "State":"open",
-        "value":10
-    },
-    {
-        "Platform":"Github",
-        "Tool":"Azure Machine Learning",
-        "State":"closed",
-        "value":50
-    },
-    {
-        "Platform":"Github",
-        "Tool":"Azure Machine Learning",
-        "State":"open",
-        "value":22
-    },
-    {
-        "Platform":"Github",
-        "Tool":"ClearML",
-        "State":"closed",
-        "value":2
-    },
-    {
-        "Platform":"Github",
-        "Tool":"ClearML",
-        "State":"open",
-        "value":1
-    },
-    {
-        "Platform":"Github",
-        "Tool":"Comet",
-        "State":"closed",
+        "Challenge_card_sorting_topic_macro":"Authorization and Authentication Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Access and Permission Issues",
         "value":21
     },
     {
-        "Platform":"Github",
-        "Tool":"Comet",
-        "State":"open",
-        "value":1
-    },
-    {
-        "Platform":"Github",
-        "Tool":"DVC",
-        "State":"closed",
-        "value":21
-    },
-    {
-        "Platform":"Github",
-        "Tool":"DVC",
-        "State":"open",
-        "value":7
-    },
-    {
-        "Platform":"Github",
-        "Tool":"Kedro",
-        "State":"closed",
-        "value":15
-    },
-    {
-        "Platform":"Github",
-        "Tool":"Kedro",
-        "State":"open",
-        "value":4
-    },
-    {
-        "Platform":"Github",
-        "Tool":"MLflow",
-        "State":"closed",
-        "value":96
-    },
-    {
-        "Platform":"Github",
-        "Tool":"MLflow",
-        "State":"open",
-        "value":14
-    },
-    {
-        "Platform":"Github",
-        "Tool":"Neptune",
-        "State":"closed",
-        "value":10
-    },
-    {
-        "Platform":"Github",
-        "Tool":"Neptune",
-        "State":"open",
-        "value":2
-    },
-    {
-        "Platform":"Github",
-        "Tool":"Optuna",
-        "State":"closed",
-        "value":1
-    },
-    {
-        "Platform":"Github",
-        "Tool":"SigOpt",
-        "State":"closed",
+        "Challenge_card_sorting_topic_macro":"Authorization and Authentication Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Compatibility and Support Issues",
         "value":3
     },
     {
-        "Platform":"Github",
-        "Tool":"SigOpt",
-        "State":"open",
-        "value":1
+        "Challenge_card_sorting_topic_macro":"Authorization and Authentication Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Data and Validation Issues",
+        "value":9
     },
     {
-        "Platform":"Github",
-        "Tool":"Vertex AI",
-        "State":"closed",
-        "value":8
+        "Challenge_card_sorting_topic_macro":"Authorization and Authentication Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Deployment Errors",
+        "value":3
     },
     {
-        "Platform":"Github",
-        "Tool":"Weights & Biases",
-        "State":"closed",
-        "value":36
+        "Challenge_card_sorting_topic_macro":"Authorization and Authentication Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Execution and Debugging Issues",
+        "value":12
     },
     {
-        "Platform":"Github",
-        "Tool":"Weights & Biases",
-        "State":"open",
-        "value":1
+        "Challenge_card_sorting_topic_macro":"Authorization and Authentication Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"NA",
+        "value":312
     },
     {
-        "Platform":"Gitlab",
-        "Tool":"Amazon SageMaker",
-        "State":"closed",
-        "value":1
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"Amazon SageMaker",
-        "State":"closed",
-        "value":710
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"Amazon SageMaker",
-        "State":"open",
-        "value":1437
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"Azure Machine Learning",
-        "State":"closed",
-        "value":560
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"Azure Machine Learning",
-        "State":"open",
-        "value":903
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"ClearML",
-        "State":"closed",
-        "value":20
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"ClearML",
-        "State":"open",
-        "value":20
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"Comet",
-        "State":"closed",
-        "value":4
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"Comet",
-        "State":"open",
-        "value":6
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"DVC",
-        "State":"closed",
-        "value":49
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"DVC",
-        "State":"open",
-        "value":40
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"Kedro",
-        "State":"closed",
-        "value":59
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"Kedro",
-        "State":"open",
-        "value":88
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"MLflow",
-        "State":"closed",
-        "value":125
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"MLflow",
-        "State":"open",
-        "value":419
-    },
-    {
-        "Platform":"Stack Overflow",
-        "Tool":"Neptune",
-        "State":"closed",
+        "Challenge_card_sorting_topic_macro":"Authorization and Authentication Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Resource Limitations",
         "value":2
     },
     {
-        "Platform":"Stack Overflow",
-        "Tool":"Neptune",
-        "State":"open",
+        "Challenge_card_sorting_topic_macro":"Configuration and Compatibility Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Access and Permission Issues",
         "value":5
     },
     {
-        "Platform":"Stack Overflow",
-        "Tool":"Optuna",
-        "State":"closed",
-        "value":36
+        "Challenge_card_sorting_topic_macro":"Configuration and Compatibility Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Compatibility and Support Issues",
+        "value":11
     },
     {
-        "Platform":"Stack Overflow",
-        "Tool":"Optuna",
-        "State":"open",
-        "value":103
+        "Challenge_card_sorting_topic_macro":"Configuration and Compatibility Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Data and Validation Issues",
+        "value":1
     },
     {
-        "Platform":"Stack Overflow",
-        "Tool":"Sacred",
-        "State":"closed",
+        "Challenge_card_sorting_topic_macro":"Configuration and Compatibility Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Deployment Errors",
+        "value":1
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Configuration and Compatibility Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Execution and Debugging Issues",
         "value":7
     },
     {
-        "Platform":"Stack Overflow",
-        "Tool":"Sacred",
-        "State":"open",
-        "value":3
+        "Challenge_card_sorting_topic_macro":"Configuration and Compatibility Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"NA",
+        "value":216
     },
     {
-        "Platform":"Stack Overflow",
-        "Tool":"Vertex AI",
-        "State":"closed",
-        "value":107
+        "Challenge_card_sorting_topic_macro":"Connection and Network Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Access and Permission Issues",
+        "value":10
     },
     {
-        "Platform":"Stack Overflow",
-        "Tool":"Vertex AI",
-        "State":"open",
-        "value":211
+        "Challenge_card_sorting_topic_macro":"Connection and Network Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Compatibility and Support Issues",
+        "value":11
     },
     {
-        "Platform":"Stack Overflow",
-        "Tool":"Weights & Biases",
-        "State":"closed",
-        "value":21
+        "Challenge_card_sorting_topic_macro":"Connection and Network Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Data and Validation Issues",
+        "value":5
     },
     {
-        "Platform":"Stack Overflow",
-        "Tool":"Weights & Biases",
-        "State":"open",
-        "value":54
-    },
-    {
-        "Platform":"Tool-specific",
-        "Tool":"Amazon SageMaker",
-        "State":"closed",
-        "value":186
-    },
-    {
-        "Platform":"Tool-specific",
-        "Tool":"Amazon SageMaker",
-        "State":"open",
-        "value":529
-    },
-    {
-        "Platform":"Tool-specific",
-        "Tool":"Azure Machine Learning",
-        "State":"closed",
-        "value":371
-    },
-    {
-        "Platform":"Tool-specific",
-        "Tool":"Azure Machine Learning",
-        "State":"open",
-        "value":1283
-    },
-    {
-        "Platform":"Tool-specific",
-        "Tool":"DVC",
-        "State":"open",
-        "value":379
-    },
-    {
-        "Platform":"Tool-specific",
-        "Tool":"Domino",
-        "State":"open",
-        "value":13
-    },
-    {
-        "Platform":"Tool-specific",
-        "Tool":"Guild AI",
-        "State":"closed",
+        "Challenge_card_sorting_topic_macro":"Connection and Network Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Deployment Errors",
         "value":4
     },
     {
-        "Platform":"Tool-specific",
-        "Tool":"Guild AI",
-        "State":"open",
-        "value":117
+        "Challenge_card_sorting_topic_macro":"Connection and Network Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Execution and Debugging Issues",
+        "value":5
     },
     {
-        "Platform":"Tool-specific",
-        "Tool":"MLflow",
-        "State":"open",
-        "value":238
+        "Challenge_card_sorting_topic_macro":"Connection and Network Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"NA",
+        "value":258
     },
     {
-        "Platform":"Tool-specific",
-        "Tool":"Polyaxon",
-        "State":"closed",
+        "Challenge_card_sorting_topic_macro":"Connection and Network Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Resource Limitations",
+        "value":4
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Consistency and Integrity Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Access and Permission Issues",
+        "value":3
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Consistency and Integrity Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Compatibility and Support Issues",
+        "value":10
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Consistency and Integrity Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Data and Validation Issues",
+        "value":6
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Consistency and Integrity Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Deployment Errors",
+        "value":1
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Consistency and Integrity Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Execution and Debugging Issues",
+        "value":12
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Consistency and Integrity Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"NA",
+        "value":275
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Consistency and Integrity Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Resource Limitations",
+        "value":6
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Data Conversion and Storage Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Access and Permission Issues",
+        "value":2
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Data Conversion and Storage Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Compatibility and Support Issues",
+        "value":3
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Data Conversion and Storage Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Data and Validation Issues",
+        "value":8
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Data Conversion and Storage Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Execution and Debugging Issues",
+        "value":9
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Data Conversion and Storage Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"NA",
+        "value":218
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Data Conversion and Storage Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Resource Limitations",
+        "value":6
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Deployment and Environment Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Access and Permission Issues",
+        "value":12
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Deployment and Environment Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Compatibility and Support Issues",
+        "value":9
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Deployment and Environment Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Data and Validation Issues",
+        "value":6
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Deployment and Environment Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Deployment Errors",
+        "value":1
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Deployment and Environment Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Execution and Debugging Issues",
+        "value":12
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Deployment and Environment Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"NA",
+        "value":361
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Deployment and Environment Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Resource Limitations",
+        "value":6
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Experiment and Training Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Access and Permission Issues",
+        "value":2
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Experiment and Training Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Compatibility and Support Issues",
+        "value":4
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Experiment and Training Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Data and Validation Issues",
+        "value":9
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Experiment and Training Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Deployment Errors",
+        "value":2
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Experiment and Training Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Execution and Debugging Issues",
+        "value":1
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Experiment and Training Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"NA",
+        "value":133
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Experiment and Training Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Resource Limitations",
+        "value":5
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"File and Data Handling",
+        "Challenge_root_cause_card_sorting_topic_macro":"Access and Permission Issues",
+        "value":34
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"File and Data Handling",
+        "Challenge_root_cause_card_sorting_topic_macro":"Compatibility and Support Issues",
+        "value":19
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"File and Data Handling",
+        "Challenge_root_cause_card_sorting_topic_macro":"Data and Validation Issues",
         "value":29
     },
     {
-        "Platform":"Tool-specific",
-        "Tool":"Polyaxon",
-        "State":"open",
-        "value":10
+        "Challenge_card_sorting_topic_macro":"File and Data Handling",
+        "Challenge_root_cause_card_sorting_topic_macro":"Deployment Errors",
+        "value":6
     },
     {
-        "Platform":"Tool-specific",
-        "Tool":"SigOpt",
-        "State":"open",
-        "value":10
+        "Challenge_card_sorting_topic_macro":"File and Data Handling",
+        "Challenge_root_cause_card_sorting_topic_macro":"Execution and Debugging Issues",
+        "value":18
     },
     {
-        "Platform":"Tool-specific",
-        "Tool":"Vertex AI",
-        "State":"closed",
+        "Challenge_card_sorting_topic_macro":"File and Data Handling",
+        "Challenge_root_cause_card_sorting_topic_macro":"NA",
+        "value":695
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"File and Data Handling",
+        "Challenge_root_cause_card_sorting_topic_macro":"Resource Limitations",
+        "value":9
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Module and Feature Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Access and Permission Issues",
+        "value":29
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Module and Feature Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Compatibility and Support Issues",
         "value":43
     },
     {
-        "Platform":"Tool-specific",
-        "Tool":"Vertex AI",
-        "State":"open",
-        "value":248
+        "Challenge_card_sorting_topic_macro":"Module and Feature Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Data and Validation Issues",
+        "value":26
     },
     {
-        "Platform":"Tool-specific",
-        "Tool":"Weights & Biases",
-        "State":"closed",
-        "value":139
+        "Challenge_card_sorting_topic_macro":"Module and Feature Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Deployment Errors",
+        "value":3
     },
     {
-        "Platform":"Tool-specific",
-        "Tool":"Weights & Biases",
-        "State":"open",
-        "value":702
+        "Challenge_card_sorting_topic_macro":"Module and Feature Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Execution and Debugging Issues",
+        "value":42
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Module and Feature Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"NA",
+        "value":974
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Module and Feature Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Resource Limitations",
+        "value":12
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Performance and Scalability Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Access and Permission Issues",
+        "value":10
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Performance and Scalability Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Compatibility and Support Issues",
+        "value":7
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Performance and Scalability Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Data and Validation Issues",
+        "value":13
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Performance and Scalability Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Deployment Errors",
+        "value":5
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Performance and Scalability Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Execution and Debugging Issues",
+        "value":20
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Performance and Scalability Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"NA",
+        "value":677
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"Performance and Scalability Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Resource Limitations",
+        "value":25
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"User Interface\/Interaction Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Access and Permission Issues",
+        "value":1
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"User Interface\/Interaction Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Compatibility and Support Issues",
+        "value":1
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"User Interface\/Interaction Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Data and Validation Issues",
+        "value":9
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"User Interface\/Interaction Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"Execution and Debugging Issues",
+        "value":7
+    },
+    {
+        "Challenge_card_sorting_topic_macro":"User Interface\/Interaction Issues",
+        "Challenge_root_cause_card_sorting_topic_macro":"NA",
+        "value":135
     }
 ]

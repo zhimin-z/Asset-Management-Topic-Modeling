@@ -14,7 +14,7 @@ path_inquiry = os.path.join(path_cardsorting, 'Inquiry')
 
 name_model_anomaly = 'Challenge_summary_bova4na2'
 name_model_root_cause = 'Challenge_root_cause_xze4cswd'
-name_model_solution = 'Challenge_solution_lh76vd2a'
+name_model_solution = 'Challenge_solution_60dc96t0'
 name_model_inquiry = 'Challenge_summary_2bwogqvv'
 
 df = pd.read_json(os.path.join(path_cardsorting, 'labels.json'))
