@@ -12,10 +12,10 @@ path_root_cause = os.path.join(path_cardsorting, 'Root Cause')
 path_solution = os.path.join(path_cardsorting, 'Solution')
 path_inquiry = os.path.join(path_cardsorting, 'Inquiry')
 
-name_model_anomaly = 'Challenge_summary_tni44ecq'
-name_model_root_cause = 'Challenge_root_cause_9wqsvkgx'
-name_model_solution = 'Challenge_solution_xnu8xil6'
-name_model_inquiry = 'Challenge_summary_wgla1qaq'
+name_model_anomaly = 'Challenge_summary_bova4na2'
+name_model_root_cause = 'Challenge_root_cause_sfnec9m1'
+name_model_solution = 'Challenge_solution_60dc96t0'
+name_model_inquiry = 'Challenge_summary_lh76vd2a'
 
 df = pd.read_json(os.path.join(path_cardsorting, 'labels.json'))
 
