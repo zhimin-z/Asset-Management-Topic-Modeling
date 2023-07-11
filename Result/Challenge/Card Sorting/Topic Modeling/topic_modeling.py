@@ -32,7 +32,6 @@ config_defaults = {
     'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
-    'min_cluster_size': 30,
     'random_state': 42,
     'n_components': 5,
     'ngram_range': 2
@@ -48,7 +47,7 @@ config_sweep = {
 
 
 class TopicModeling:
-    def __init__(self, column_name, challenge_type=None):
+    def __init__(self, column_name, min_cluster_size=50, challenge_type=None):
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
@@ -58,6 +57,7 @@ class TopicModeling:
             df = df[df['Challenge_type'] == challenge_type]
         self.docs = df[df[column_name] != 'na'][column_name].tolist()
         
+        config_defaults['min_cluster_size'] = min_cluster_size
         config_sweep['name'] = column_name
         config_sweep['parameters'] = {
             'min_samples': {
