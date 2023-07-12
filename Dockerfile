@@ -19,4 +19,4 @@ WORKDIR /app
 
 RUN git config --global --add safe.directory /app
 
-CMD ["python", "Code/preprocess.py"]
+CMD ["python", "main.py"]

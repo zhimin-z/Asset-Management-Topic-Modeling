@@ -6,7 +6,7 @@ services:
     image: experiment
     volumes:
       - .:/app
-    command: python Code/Topic\ Modeling/tm_1.py
+    command: python Code/RQ1/General\ Topic\ Modeling/tm_1.py
     restart: on-failure
     deploy:
       resources:
@@ -23,7 +23,7 @@ services:
     image: experiment
     volumes:
       - .:/app
-    command: python Code/Topic\ Modeling/tm_2.py
+    command: python Code/RQ1/General\ Topic\ Modeling/tm_2.py
     restart: on-failure
     deploy:
       resources:
@@ -37,7 +37,7 @@ services:
     image: experiment
     volumes:
       - .:/app
-    command: python Code/Topic\ Modeling/tm_3.py
+    command: python Code/RQ1/General\ Topic\ Modeling/tm_3.py
     restart: on-failure
     deploy:
       resources:
