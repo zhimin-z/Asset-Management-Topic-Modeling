@@ -72,10 +72,6 @@ for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs
     fig = topic_model.visualize_heatmap()
     fig.write_html(os.path.join(path, 'Topic similarity visualization.html'))
     
-    hierarchical_topics = topic_model.hierarchical_topics(docs)
-    fig = topic_model.visualize_hierarchy(hierarchical_topics=hierarchical_topics)
-    fig.write_html(os.path.join(path, 'Hierarchical clustering visualization.html'))
-    
     embeddings = topic_model.embedding_model.embed_documents(docs)
     fig = topic_model.visualize_documents(docs, embeddings=embeddings)
     fig.write_html(os.path.join(path, 'Document visualization.html'))
