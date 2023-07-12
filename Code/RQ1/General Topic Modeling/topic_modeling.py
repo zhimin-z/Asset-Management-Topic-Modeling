@@ -26,7 +26,7 @@ os.environ["WANDB__SERVICE_WAIT"] = "100"
 # set default sweep configuration
 config_defaults = {
     # Refer to https://www.sbert.net/docs/pretrained_models.html
-    'model_name': 'all-mpnet-base-v2', #'all-MiniLM-L6-v2',
+    'model_name': 'all-mpnet-base-v2',
     'metric_distane': 'manhattan',
     'calculate_probabilities': True,
     'reduce_frequent_words': True,
