@@ -19,7 +19,7 @@ indice_challenge = []
 docs_challenge = []
 
 for index, row in df.iterrows():
-    if pd.notna(row[column_challenge]):
+    if pd.notna(row[column_challenge]) and len(row[column_challenge]):
         indice_challenge.append(index)
         docs_challenge.append(row[column_challenge])
         
