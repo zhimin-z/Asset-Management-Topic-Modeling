@@ -32,18 +32,20 @@ config_defaults = {
     'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
-    'min_cluster_size': 20,
     'random_state': 42,
     'n_components': 5,
     'ngram_range': 2
 }
 
 config_sweep = {
-    "method": "grid",
-    "metric": {
+    'method': 'grid',
+    'metric': {
         'name': 'Coherence CV',
-        'goal': 'maximize'
+        'goal': 'maximize',
     },
+    'parameters': {
+        'min_cluster_size': [20, 30, 40],
+    }
 }
 
 
@@ -57,11 +59,9 @@ class TopicModeling:
         self.docs = df[df[column_name].notna() & df[column_name].map(len)][column_name].tolist()
         
         config_sweep['name'] = column_name
-        config_sweep['parameters'] = {
-            'min_samples': {
-                'values': list(range(1, config_defaults['min_cluster_size'] + 1))
-                },
-            }
+        config_sweep['parameters']['min_samples'] = {
+            'values': list(range(1, config_defaults['min_cluster_size'] + 1)),
+        }
         
     def __train(self):
         # Initialize a new wandb run
@@ -73,12 +73,10 @@ class TopicModeling:
             embedding_model = SentenceTransformer(run.config.model_name)
 
             # Step 2 - Reduce dimensionality
-            umap_model = UMAP(n_components=run.config.n_components, metric=run.config.metric_distane,
-                              random_state=run.config.random_state, low_memory=run.config.low_memory)
+            umap_model = UMAP(n_components=run.config.n_components, metric=run.config.metric_distane, random_state=run.config.random_state, low_memory=run.config.low_memory)
 
             # Step 3 - Cluster reduced embeddings
-            hdbscan_model = HDBSCAN(min_cluster_size=run.config.min_cluster_size,
-                                    min_samples=wandb.config.min_samples, prediction_data=run.config.prediction_data)
+            hdbscan_model = HDBSCAN(min_cluster_size=wandb.config.min_cluster_size, min_samples=wandb.config.min_samples, prediction_data=run.config.prediction_data)
 
             # Step 4 - Tokenize topics
             vectorizer_model = TfidfVectorizer(ngram_range=(1, run.config.ngram_range))
@@ -103,13 +101,13 @@ class TopicModeling:
             topics, _ = topic_model.fit_transform(self.docs)
 
             # Preprocess Documents
-            documents = pd.DataFrame({"Document": self.docs,
-                                      "ID": range(len(self.docs)),
-                                      "Topic": topics})
-            documents_per_topic = documents.groupby(
-                ['Topic'], as_index=False).agg({'Document': ' '.join})
-            cleaned_docs = topic_model._preprocess_text(
-                documents_per_topic.Document.values)
+            documents = pd.DataFrame({
+                "Document": self.docs,
+                "ID": range(len(self.docs)),
+                "Topic": topics
+            })
+            documents_per_topic = documents.groupby(['Topic'], as_index=False).agg({'Document': ' '.join})
+            cleaned_docs = topic_model._preprocess_text(documents_per_topic.Document.values)
 
             # Extract vectorizer and analyzer from BERTopic
             vectorizer = topic_model.vectorizer_model
@@ -119,8 +117,7 @@ class TopicModeling:
             tokens = [analyzer(doc) for doc in cleaned_docs]
             dictionary = corpora.Dictionary(tokens)
             corpus = [dictionary.doc2bow(token) for token in tokens]
-            topic_words = [[words for words, _ in topic_model.get_topic(
-                topic)] for topic in range(len(set(topics))-1)]
+            topic_words = [[words for words, _ in topic_model.get_topic(topic)] for topic in range(len(set(topics))-1)]
 
             coherence_cv = CoherenceModel(
                 topics=topic_words,
@@ -161,8 +158,7 @@ class TopicModeling:
             wandb.log({'Coherence NPMI': coherence_cnpmi.get_coherence()})
             number_topics = topic_model.get_topic_info().shape[0] - 1
             wandb.log({'Topic Number': number_topics})
-            wandb.log(
-                {'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
+            wandb.log({'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
 
             # persist top 5 topic models
 
