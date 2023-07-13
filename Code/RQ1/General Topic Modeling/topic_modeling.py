@@ -32,6 +32,7 @@ config_defaults = {
     'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
+    'min_cluster_size': 20,
     'random_state': 42,
     'n_components': 5,
     'ngram_range': 2
@@ -43,9 +44,7 @@ config_sweep = {
         'name': 'Coherence CV',
         'goal': 'maximize',
     },
-    'parameters': {
-        'min_cluster_size': [20, 30, 40],
-    }
+    'parameters': {}
 }
 
 
@@ -76,7 +75,7 @@ class TopicModeling:
             umap_model = UMAP(n_components=run.config.n_components, metric=run.config.metric_distane, random_state=run.config.random_state, low_memory=run.config.low_memory)
 
             # Step 3 - Cluster reduced embeddings
-            hdbscan_model = HDBSCAN(min_cluster_size=wandb.config.min_cluster_size, min_samples=wandb.config.min_samples, prediction_data=run.config.prediction_data)
+            hdbscan_model = HDBSCAN(min_cluster_size=run.config.min_cluster_size, min_samples=wandb.config.min_samples, prediction_data=run.config.prediction_data)
 
             # Step 4 - Tokenize topics
             vectorizer_model = TfidfVectorizer(ngram_range=(1, run.config.ngram_range))

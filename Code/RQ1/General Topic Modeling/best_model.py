@@ -4,11 +4,11 @@ import pandas as pd
 
 from bertopic import BERTopic
 
-path_result = os.path.join('Result', 'RQ1')
+path_output = os.path.join('Result', 'RQ1', 'General Topics')
 path_topic = os.path.join('Code', 'RQ1', 'General Topic Modeling')
 path_model = os.path.join(path_topic, 'Model')
 
-name_model_challenge = 'Challenge_gpt_summary_preprocessed_content_dmmxjna7'
+name_model_challenge = 'Challenge_gpt_summary_preprocessed_content_lvrgcwxu'
 column_challenge = '_'.join(name_model_challenge.split('_')[:-1])
 
 df = pd.read_json(os.path.join('Dataset', 'preprocessed.json'))
@@ -57,4 +57,4 @@ del df['Challenge_original_content']
 del df['Challenge_preprocessed_content']
 del df['Challenge_gpt_summary_preprocessed_content']
 
-df.to_json(os.path.join(path_result, 'general topics.json'), indent=4, orient='records')
+df.to_json(os.path.join(path_output, 'topics.json'), indent=4, orient='records')
