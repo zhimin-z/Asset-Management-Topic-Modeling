@@ -12,8 +12,8 @@ import pandas as pd
 import wandb
 import os
 
-path_cardsorting = os.path.join(os.getcwd(), 'Result', 'Challenge', 'Card Sorting')
-path_model = os.path.join(path_cardsorting, 'Model')
+path_output = os.path.join(os.getcwd(), 'Result', 'RQ1', 'Special Topics')
+path_model = os.path.join(os.getcwd(), 'Code', 'RQ1', 'Special Topic Modeling', 'Model')
 if not os.path.exists(path_model):
     os.makedirs(path_model)
 
@@ -38,32 +38,31 @@ config_defaults = {
 }
 
 config_sweep = {
-    "method": "grid",
-    "metric": {
+    'method': 'grid',
+    'metric': {
         'name': 'Coherence CV',
         'goal': 'maximize'
     },
+    'parameters': {}
 }
 
 
 class TopicModeling:
-    def __init__(self, column_name, min_cluster_size=40, challenge_type=None):
+    def __init__(self, column_name, min_cluster_size=10, challenge_type=None):
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
         
-        df = pd.read_json(os.path.join(path_cardsorting, 'labels.json'))
+        df = pd.read_json(os.path.join(path_output, 'labels.json'))
         if challenge_type:
             df = df[df['Challenge_type'] == challenge_type]
         self.docs = df[df[column_name] != 'na'][column_name].tolist()
         
         config_defaults['min_cluster_size'] = min_cluster_size
         config_sweep['name'] = column_name
-        config_sweep['parameters'] = {
-            'min_samples': {
-                'values': list(range(1, config_defaults['min_cluster_size'] + 1))
-                },
-            }
+        config_sweep['parameters']['min_samples'] = {
+            'values': list(range(1, config_defaults['min_cluster_size'] + 1))
+        }
         
     def __train(self):
         # Initialize a new wandb run
