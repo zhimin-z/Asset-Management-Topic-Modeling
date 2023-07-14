@@ -4,18 +4,18 @@ import pandas as pd
 
 from bertopic import BERTopic
 
-path_cardsorting = os.path.join(os.getcwd(), 'Result', 'Challenge', 'Card Sorting')
-path_model = os.path.join(path_cardsorting, 'Model')
+path_output = os.path.join(os.getcwd(), 'Result', 'RQ1', 'Special Topics')
+path_topic = os.path.join(os.getcwd(), 'Code', 'RQ1', 'Special Topic Modeling')
+path_model = os.path.join(path_topic, 'Model')
+path_anomaly = os.path.join(path_topic, 'Anomaly')
+path_root_cause = os.path.join(path_topic, 'Root Cause')
+path_solution = os.path.join(path_topic, 'Solution')
 
-path_anomaly = os.path.join(path_cardsorting, 'Anomaly')
-path_root_cause = os.path.join(path_cardsorting, 'Root Cause')
-path_solution = os.path.join(path_cardsorting, 'Solution')
+name_model_anomaly = 'Challenge_summary_8jvdpphu'
+name_model_root_cause = 'Challenge_root_cause_2d4u15z2'
+name_model_solution = 'Challenge_solution_gigwnlxw'
 
-name_model_anomaly = 'Challenge_summary_bova4na2'
-name_model_root_cause = 'Challenge_root_cause_ra6oeve1'
-name_model_solution = 'Challenge_solution_60dc96t0'
-
-df = pd.read_json(os.path.join(path_cardsorting, 'labels.json'))
+df = pd.read_json(os.path.join(path_output, 'labels.json'))
 
 df['Challenge_card_sorting_topic'] = -1
 df['Challenge_root_cause_card_sorting_topic'] = -1
@@ -73,4 +73,4 @@ for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs
     for index, topic in zip(indice, topics_new):
         df.at[index, column] = topic
 
-df.to_json(os.path.join(path_cardsorting, 'topics.json'), indent=4, orient='records')
+df.to_json(os.path.join(path_output, 'topics.json'), indent=4, orient='records')
