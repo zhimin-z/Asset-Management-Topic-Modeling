@@ -8,7 +8,7 @@ path_output = os.path.join('Result', 'RQ1', 'General Topics')
 path_topic = os.path.join('Code', 'RQ1', 'General Topic Modeling')
 path_model = os.path.join(path_topic, 'Model')
 
-name_model_challenge = 'Challenge_gpt_summary_preprocessed_content_95o7w114'
+name_model_challenge = 'Challenge_gpt_summary_preprocessed_content_gqcsiu3m'
 column_challenge = '_'.join(name_model_challenge.split('_')[:-1])
 
 df = pd.read_json(os.path.join('Dataset', 'preprocessed.json'))
