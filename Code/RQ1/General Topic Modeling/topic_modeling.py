@@ -26,7 +26,7 @@ os.environ["WANDB__SERVICE_WAIT"] = "100"
 # set default sweep configuration
 config_defaults = {
     # Refer to https://www.sbert.net/docs/pretrained_models.html
-    'model_name': 'all-mpnet-base-v2',
+    'model_name': 'all-MiniLM-L6-v2',
     'metric_distane': 'manhattan',
     'calculate_probabilities': True,
     'reduce_frequent_words': True,
@@ -34,8 +34,7 @@ config_defaults = {
     'low_memory': False,
     'min_cluster_size': 30,
     'random_state': 42,
-    'n_components': 5,
-    'ngram_range': 2
+    'ngram_range': 3
 }
 
 config_sweep = {
@@ -44,7 +43,11 @@ config_sweep = {
         'name': 'Coherence CV',
         'goal': 'maximize',
     },
-    'parameters': {}
+    'parameters': {
+        'n_components': {
+            'values': [3, 4, 5],
+        },
+    }
 }
 
 
@@ -72,7 +75,7 @@ class TopicModeling:
             embedding_model = SentenceTransformer(run.config.model_name)
 
             # Step 2 - Reduce dimensionality
-            umap_model = UMAP(n_components=run.config.n_components, metric=run.config.metric_distane, random_state=run.config.random_state, low_memory=run.config.low_memory)
+            umap_model = UMAP(n_components=wandb.config.n_components, metric=run.config.metric_distane, random_state=run.config.random_state, low_memory=run.config.low_memory)
 
             # Step 3 - Cluster reduced embeddings
             hdbscan_model = HDBSCAN(min_cluster_size=run.config.min_cluster_size, min_samples=wandb.config.min_samples, prediction_data=run.config.prediction_data)
