@@ -34,7 +34,7 @@ config_defaults = {
     'low_memory': False,
     'min_cluster_size': 30,
     'random_state': 42,
-    'ngram_range': 3
+    'ngram_range': 2
 }
 
 config_sweep = {
