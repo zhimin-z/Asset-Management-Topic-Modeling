@@ -13,9 +13,9 @@ path_solution = os.path.join(path_topic, 'Solution')
 
 name_model_anomaly = 'anomaly_qvzif0vx'
 name_model_root_cause = 'anomaly_qvzif0vx'
-name_model_solution = 'solution_48eniqrs'
+name_model_solution = 'solution_ovahpfd7'
 
-df = pd.read_json(os.path.join(path_output, 'labels.json'))
+df = pd.read_json(os.path.join(path_output, 'preprocessed.json'))
 
 df['Challenge_summary_topic'] = -1
 df['Challenge_root_cause_topic'] = -1

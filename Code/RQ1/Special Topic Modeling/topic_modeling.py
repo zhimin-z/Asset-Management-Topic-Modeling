@@ -56,7 +56,7 @@ class TopicModeling:
         self.top_models = []
         self.path_model = path_model
         
-        df = pd.read_json(os.path.join(path_output, 'labels.json'))
+        df = pd.read_json(os.path.join(path_output, 'preprocessed.json'))
         if topic_type == 'anomaly':
             df = df[df['Challenge_type'] == 'anomaly']
             self.docs = df[df['Challenge_summary'] != 'na']['Challenge_summary'].tolist() + df[df['Challenge_root_cause'] != 'na']['Challenge_root_cause'].tolist()
