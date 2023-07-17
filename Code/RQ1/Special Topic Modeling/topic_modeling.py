@@ -61,7 +61,7 @@ class TopicModeling:
             df = df[df['Challenge_type'] == 'anomaly']
             self.docs = df[df['Challenge_summary'] != 'na']['Challenge_summary'].tolist() + df[df['Challenge_root_cause'] != 'na']['Challenge_root_cause'].tolist()
         elif topic_type == 'solution':
-            self.docs = df[df['Challenge_solution'] != 'na']['Challenge_solution'].tolist()
+            self.docs = df[df['Solution'] != 'na']['Solution'].tolist()
         
         config_defaults['min_cluster_size'] = min_cluster_size
         config_sweep['name'] = topic_type

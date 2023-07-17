@@ -17,9 +17,9 @@ name_model_solution = 'solution_48eniqrs'
 
 df = pd.read_json(os.path.join(path_output, 'labels.json'))
 
-df['Challenge_card_sorting_topic'] = -1
-df['Challenge_root_cause_card_sorting_topic'] = -1
-df['Solution_card_sorting_topic'] = -1
+df['Challenge_summary_topic'] = -1
+df['Challenge_root_cause_topic'] = -1
+df['Solution_topic'] = -1
 
 docs_anomaly = []
 docs_root_cause = []
@@ -36,11 +36,11 @@ for index, row in df.iterrows():
         if row['Challenge_root_cause'] != 'na':
             indice_root_cause.append(index)
             docs_root_cause.append(row['Challenge_root_cause'])
-    if row['Challenge_solution'] != 'na':
+    if row['Solution'] != 'na':
         indice_solution.append(index)
-        docs_solution.append(row['Challenge_solution'])
+        docs_solution.append(row['Solution'])
         
-for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs_solution], [indice_anomaly, indice_root_cause, indice_solution], [path_anomaly, path_root_cause, path_solution], [name_model_anomaly, name_model_root_cause, name_model_solution], ['Challenge_card_sorting_topic', 'Challenge_root_cause_card_sorting_topic', 'Solution_card_sorting_topic']):
+for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs_solution], [indice_anomaly, indice_root_cause, indice_solution], [path_anomaly, path_root_cause, path_solution], [name_model_anomaly, name_model_root_cause, name_model_solution], ['Challenge_summary_topic', 'Challenge_root_cause_topic', 'Solution_topic']):
     topic_model = BERTopic.load(os.path.join(path_model, name))
     topic_number = topic_model.get_topic_info().shape[0] - 1
     topics, probs = topic_model.transform(docs)
