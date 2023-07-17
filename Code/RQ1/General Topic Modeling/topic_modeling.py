@@ -161,34 +161,9 @@ class TopicModeling:
             number_topics = topic_model.get_topic_info().shape[0] - 1
             wandb.log({'Topic Number': number_topics})
             wandb.log({'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
-
-            # persist top 5 topic models
-
-            model_name = f'{config_sweep["name"]}_{run.id}'
-            model = {
-                'model_path': os.path.join(self.path_model, model_name),
-                'model_metrics': {
-                    'number_topics': number_topics,
-                    'coherence_cv': coherence_cv,
-                }
-            }
             
-            # Inspect the new model only the topic number is above 10 
-            if number_topics > 10:
-                # Add the new model to the list if model number is below 3
-                if len(self.top_models) < 3:
-                    self.top_models.append(model)
-                    topic_model.save(model['model_path'])
-                else:
-                    # Find the model with the lowest topic number in the list
-                    lowest_number_topics_model = min(
-                        self.top_models, key=lambda x: x['model_metrics']['number_topics'])
-                    if coherence_cv > lowest_number_topics_model['model_metrics']['coherence_cv']:
-                        # Replace the model with the lowest topic number in the list with the new model
-                        self.top_models.remove(lowest_number_topics_model)
-                        os.remove(lowest_number_topics_model['model_path'])
-                        self.top_models.append(model)
-                        topic_model.save(model['model_path'])
+            model_name = f'{config_sweep["name"]}_{run.id}'
+            topic_model.save(os.path.join(self.path_model, model_name))
 
     def sweep(self):
         wandb.login()

@@ -33,6 +33,7 @@ config_defaults = {
     'prediction_data': True,
     'low_memory': False,
     'random_state': 42,
+    'ngram_range': 2,
 }
 
 config_sweep = {
@@ -42,29 +43,28 @@ config_sweep = {
         'goal': 'maximize'
     },
     'parameters': {
-        'ngram_range': {
-            'values': [1, 2], 
-        },
         'n_components': {
-            'values': [3, 4, 5, 6],
+            'values': [3, 4, 5, 6, 7],
         },
     }
 }
 
 
 class TopicModeling:
-    def __init__(self, column_name, min_cluster_size=20, challenge_type=None):
+    def __init__(self, topic_type, min_cluster_size=20):
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
         
         df = pd.read_json(os.path.join(path_output, 'labels.json'))
-        if challenge_type:
-            df = df[df['Challenge_type'] == challenge_type]
-        self.docs = df[df[column_name] != 'na'][column_name].tolist()
+        if topic_type == 'anomaly':
+            df = df[df['Challenge_type'] == 'anomaly']
+            self.docs = df[df['Challenge_summary'] != 'na']['Challenge_summary'].tolist() + df[df['Challenge_root_cause'] != 'na']['Challenge_root_cause'].tolist()
+        elif topic_type == 'solution':
+            self.docs = df[df['Challenge_solution'] != 'na']['Challenge_solution'].tolist()
         
         config_defaults['min_cluster_size'] = min_cluster_size
-        config_sweep['name'] = column_name
+        config_sweep['name'] = topic_type
         config_sweep['parameters']['min_samples'] = {
             'values': list(range(1, config_defaults['min_cluster_size'] + 1))
         }
@@ -87,7 +87,7 @@ class TopicModeling:
                                     min_samples=wandb.config.min_samples, prediction_data=run.config.prediction_data)
 
             # Step 4 - Tokenize topics
-            vectorizer_model = TfidfVectorizer(ngram_range=(1, wandb.config.ngram_range))
+            vectorizer_model = TfidfVectorizer(ngram_range=(1, run.config.ngram_range))
 
             # Step 5 - Create topic representation
             ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
@@ -170,32 +170,8 @@ class TopicModeling:
             wandb.log(
                 {'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
 
-            # persist top 5 topic models
             model_name = f'{config_sweep["name"]}_{run.id}'
-            model = {
-                'model_path': os.path.join(self.path_model, model_name),
-                'model_metrics': {
-                    'number_topics': number_topics,
-                    'coherence_cv': coherence_cv,
-                }
-            }
-            
-            # Inspect the new model only the topic number is above 5 
-            if number_topics > 10:
-                # Add the new model to the list if model number is below 3
-                if len(self.top_models) < 3:
-                    self.top_models.append(model)
-                    topic_model.save(model['model_path'])
-                else:
-                    # Find the model with the lowest topic number in the list
-                    lowest_number_topics_model = min(
-                        self.top_models, key=lambda x: x['model_metrics']['number_topics'])
-                    if coherence_cv > lowest_number_topics_model['model_metrics']['coherence_cv']:
-                        # Replace the model with the lowest topic number in the list with the new model
-                        self.top_models.remove(lowest_number_topics_model)
-                        os.remove(lowest_number_topics_model['model_path'])
-                        self.top_models.append(model)
-                        topic_model.save(model['model_path'])
+            topic_model.save(os.path.join(self.path_model, model_name))
 
     def sweep(self):
         wandb.login()
