@@ -44,7 +44,7 @@ config_sweep = {
     },
     'parameters': {
         'n_components': {
-            'values': [4],
+            'values': [3, 4, 5, 6, 7],
         },
     }
 }
@@ -66,7 +66,7 @@ class TopicModeling:
         config_defaults['min_cluster_size'] = min_cluster_size
         config_sweep['name'] = topic_type
         config_sweep['parameters']['min_samples'] = {
-            'values': [7]
+            'values': list(range(1, config_defaults['min_cluster_size'] + 1))
         }
         
     def __train(self):
