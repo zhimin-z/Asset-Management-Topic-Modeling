@@ -11,9 +11,9 @@ path_anomaly = os.path.join(path_topic, 'Anomaly')
 path_root_cause = os.path.join(path_topic, 'Root Cause')
 path_solution = os.path.join(path_topic, 'Solution')
 
-name_model_anomaly = 'anomaly_y7g0kowc'
-name_model_root_cause = 'anomaly_y7g0kowc'
-name_model_solution = 'solution_utwyzwmk'
+name_model_anomaly = 'anomaly_gi16qj2b'
+name_model_root_cause = 'anomaly_gi16qj2b'
+name_model_solution = 'solution_j3mn1p7v'
 
 df = pd.read_json(os.path.join(path_output, 'preprocessed.json'))
 
