@@ -42,10 +42,6 @@ fig.write_html(os.path.join(path_topic, 'Term visualization.html'))
 fig = topic_model_challenge.visualize_heatmap()
 fig.write_html(os.path.join(path_topic, 'Topic similarity visualization.html'))
 
-embeddings = topic_model_challenge.embedding_model.embed_documents(docs)
-fig = topic_model_challenge.visualize_documents(docs, embeddings=embeddings)
-fig.write_html(os.path.join(path_topic, 'Document visualization.html'))
-
 # This uses the soft-clustering as performed by HDBSCAN to find the best matching topic for each outlier document.
 topics_new_challenge = topic_model_challenge.reduce_outliers(docs, topics_challenge, probabilities=probs_challenge, strategy="probabilities")
 

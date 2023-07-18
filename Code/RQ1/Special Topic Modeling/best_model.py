@@ -11,9 +11,9 @@ path_anomaly = os.path.join(path_topic, 'Anomaly')
 path_root_cause = os.path.join(path_topic, 'Root Cause')
 path_solution = os.path.join(path_topic, 'Solution')
 
-name_model_anomaly = 'anomaly_gi16qj2b'
-name_model_root_cause = 'anomaly_gi16qj2b'
-name_model_solution = 'solution_j3mn1p7v'
+name_model_anomaly = 'anomaly_3z5p4tap'
+name_model_root_cause = 'anomaly_3z5p4tap'
+name_model_solution = 'solution_kag9u6sf'
 
 df = pd.read_json(os.path.join(path_output, 'preprocessed.json'))
 
@@ -61,10 +61,6 @@ for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs
     
     fig = topic_model.visualize_heatmap()
     fig.write_html(os.path.join(path, 'Topic similarity visualization.html'))
-    
-    embeddings = topic_model.embedding_model.embed_documents(docs)
-    fig = topic_model.visualize_documents(docs, embeddings=embeddings)
-    fig.write_html(os.path.join(path, 'Document visualization.html'))
     
     # This uses the soft-clustering as performed by HDBSCAN to find the best matching topic for each outlier document.
     topics_new = topic_model.reduce_outliers(docs, topics, probabilities=probs, strategy="probabilities")
