@@ -7,12 +7,10 @@ from bertopic import BERTopic
 path_output = os.path.join(os.getcwd(), 'Result', 'RQ1', 'Special Topics')
 path_topic = os.path.join(os.getcwd(), 'Code', 'RQ1', 'Special Topic Modeling')
 path_model = os.path.join(path_topic, 'Model')
-path_anomaly = os.path.join(path_topic, 'Anomaly')
-path_root_cause = os.path.join(path_topic, 'Root Cause')
+path_root_cause = path_anomaly = os.path.join(path_topic, 'Anomaly')
 path_solution = os.path.join(path_topic, 'Solution')
 
-name_model_anomaly = 'anomaly_wht6m0pn'
-name_model_root_cause = 'anomaly_wht6m0pn'
+name_model_root_cause = name_model_anomaly = 'anomaly_wht6m0pn'
 name_model_solution = 'solution_wb84e7u6'
 
 df = pd.read_json(os.path.join(path_output, 'labels.json'))
@@ -42,8 +40,19 @@ for index, row in df.iterrows():
         
 for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs_solution], [indice_anomaly, indice_root_cause, indice_solution], [path_anomaly, path_root_cause, path_solution], [name_model_anomaly, name_model_root_cause, name_model_solution], ['Challenge_summary_topic', 'Challenge_root_cause_topic', 'Solution_topic']):
     topic_model = BERTopic.load(os.path.join(path_model, name))
-    topic_number = topic_model.get_topic_info().shape[0] - 1
+    
     topics, probs = topic_model.transform(docs)
+    # This uses the soft-clustering as performed by HDBSCAN to find the best matching topic for each outlier document.
+    topics_new = topic_model.reduce_outliers(docs, topics, probabilities=probs, strategy="probabilities")
+    
+    # persist the document topics
+    for index, topic in zip(indice, topics_new):
+        df.at[index, column] = topic
+    
+    if column == 'Challenge_root_cause_topic':
+        continue
+    
+    topic_number = topic_model.get_topic_info().shape[0] - 1
     
     # persist the topic terms
     with open(os.path.join(path, 'Topic terms.pickle'), 'wb') as handle:
@@ -61,12 +70,5 @@ for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs
     
     fig = topic_model.visualize_heatmap()
     fig.write_html(os.path.join(path, 'Topic similarity visualization.html'))
-    
-    # This uses the soft-clustering as performed by HDBSCAN to find the best matching topic for each outlier document.
-    topics_new = topic_model.reduce_outliers(docs, topics, probabilities=probs, strategy="probabilities")
-    
-    # persist the document topics
-    for index, topic in zip(indice, topics_new):
-        df.at[index, column] = topic
 
 df.to_json(os.path.join(path_output, 'topics.json'), indent=4, orient='records')
