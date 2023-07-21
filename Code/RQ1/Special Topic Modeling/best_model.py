@@ -10,8 +10,8 @@ path_model = os.path.join(path_topic, 'Model')
 path_root_cause = path_anomaly = os.path.join(path_topic, 'Anomaly')
 path_solution = os.path.join(path_topic, 'Solution')
 
-name_model_root_cause = name_model_anomaly = 'anomaly_wht6m0pn'
-name_model_solution = 'solution_wb84e7u6'
+name_model_root_cause = name_model_anomaly = 'anomaly_1zj6a3ap'
+name_model_solution = 'solution_jh27quwn'
 
 df = pd.read_json(os.path.join(path_output, 'labels.json'))
 
