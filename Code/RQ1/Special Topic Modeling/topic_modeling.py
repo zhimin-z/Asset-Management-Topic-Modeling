@@ -29,7 +29,7 @@ config_defaults = {
     'model_name': 'all-mpnet-base-v2',
     'metric_distane': 'cosine',
     'calculate_probabilities': True,
-    'reduce_frequent_words': True,
+    # 'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
     'random_state': 42,
@@ -44,7 +44,7 @@ config_sweep = {
     },
     'parameters': {
         'n_components': {
-            'values': [3, 4]#[3, 4, 5, 6, 7],
+            'values': [3, 4, 5, 6, 7],
         },
     }
 }
@@ -56,7 +56,7 @@ class TopicModeling:
         self.top_models = []
         self.path_model = path_model
         
-        df = pd.read_json(os.path.join(path_output, 'preprocessed.json'))
+        df = pd.read_json(os.path.join(path_output, 'labels.json'))
         if topic_type == 'anomaly':
             df = df[df['Challenge_type'] == 'anomaly']
             self.docs = df[df['Challenge_summary'] != 'na']['Challenge_summary'].tolist() + df[df['Challenge_root_cause'] != 'na']['Challenge_root_cause'].tolist()
@@ -66,7 +66,7 @@ class TopicModeling:
         config_defaults['min_cluster_size'] = min_cluster_size
         config_sweep['name'] = topic_type
         config_sweep['parameters']['min_samples'] = {
-            'values': [1]#list(range(1, config_defaults['min_cluster_size'] + 1))
+            'values': list(range(1, config_defaults['min_cluster_size'] + 1))
         }
         
     def __train(self):
@@ -90,7 +90,8 @@ class TopicModeling:
             vectorizer_model = TfidfVectorizer(ngram_range=(1, run.config.ngram_range))
 
             # Step 5 - Create topic representation
-            ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
+            ctfidf_model = ClassTfidfTransformer()
+            # ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
 
             # # Step 6 - Fine-tune topic representation
             # representation_model = KeyBERTInspired()
