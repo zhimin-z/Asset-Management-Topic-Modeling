@@ -15,9 +15,13 @@ name_model_solution = 'solution_jh27quwn'
 
 df = pd.read_json(os.path.join(path_output, 'labels.json'))
 
-df['Challenge_summary_topic'] = -1
-df['Challenge_root_cause_topic'] = -1
-df['Solution_topic'] = -1
+column_anomaly = 'Challenge_summary_topic'
+column_root_cause = 'Challenge_root_cause_topic'
+column_solution = 'Solution_topic'
+
+df[column_anomaly] = -1
+df[column_root_cause] = -1
+df[column_solution] = -1
 
 docs_anomaly = []
 docs_root_cause = []
@@ -38,7 +42,7 @@ for index, row in df.iterrows():
         indice_solution.append(index)
         docs_solution.append(row['Solution'])
         
-for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs_solution], [indice_anomaly, indice_root_cause, indice_solution], [path_anomaly, path_root_cause, path_solution], [name_model_anomaly, name_model_root_cause, name_model_solution], ['Challenge_summary_topic', 'Challenge_root_cause_topic', 'Solution_topic']):
+for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs_solution], [indice_anomaly, indice_root_cause, indice_solution], [path_anomaly, path_root_cause, path_solution], [name_model_anomaly, name_model_root_cause, name_model_solution], [column_anomaly, column_root_cause, column_solution]):
     topic_model = BERTopic.load(os.path.join(path_model, name))
     
     topics, probs = topic_model.transform(docs)
@@ -49,7 +53,7 @@ for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs
     for index, topic in zip(indice, topics_new):
         df.at[index, column] = topic
     
-    if column == 'Challenge_root_cause_topic':
+    if column == column_root_cause:
         continue
     
     topic_number = topic_model.get_topic_info().shape[0] - 1
