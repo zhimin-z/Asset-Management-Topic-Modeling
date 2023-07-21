@@ -10,8 +10,8 @@ path_model = os.path.join(path_topic, 'Model')
 path_root_cause = path_anomaly = os.path.join(path_topic, 'Anomaly')
 path_solution = os.path.join(path_topic, 'Solution')
 
-name_model_root_cause = name_model_anomaly = 'anomaly_5b4iugcc'
-name_model_solution = 'solution_nr6cyc9j'
+name_model_root_cause = name_model_anomaly = 'anomaly_gbvxbsk0'
+name_model_solution = 'solution_7ialjf9f'
 
 df = pd.read_json(os.path.join(path_output, 'preprocessed.json'))
 
@@ -44,10 +44,10 @@ for index, row in df.iterrows():
         
 for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs_solution], [indice_anomaly, indice_root_cause, indice_solution], [path_anomaly, path_root_cause, path_solution], [name_model_anomaly, name_model_root_cause, name_model_solution], [column_anomaly, column_root_cause, column_solution]):
     topic_model = BERTopic.load(os.path.join(path_model, name))
-    
     topics, probs = topic_model.transform(docs)
+    
     # This uses the soft-clustering as performed by HDBSCAN to find the best matching topic for each outlier document.
-    topics_new = topic_model.reduce_outliers(docs, topics, probabilities=probs, strategy="probabilities")
+    topics_new = topic_model.reduce_outliers(docs, topics=topics, probabilities=probs, strategy="probabilities")
     
     # persist the document topics
     for index, topic in zip(indice, topics_new):

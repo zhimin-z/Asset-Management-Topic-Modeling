@@ -2,7 +2,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from gensim.models.coherencemodel import CoherenceModel
 from bertopic.vectorizers import ClassTfidfTransformer
 from sentence_transformers import SentenceTransformer
-from bertopic.representation import KeyBERTInspired
+# from bertopic.representation import KeyBERTInspired
 from bertopic import BERTopic
 from hdbscan import HDBSCAN
 from umap import UMAP
@@ -27,7 +27,7 @@ os.environ["WANDB__SERVICE_WAIT"] = "100"
 config_defaults = {
     # Refer to https://www.sbert.net/docs/pretrained_models.html
     'model_name': 'all-mpnet-base-v2',
-    'metric_distane': 'manhattan',
+    'metric_distane': 'cosine',
     'calculate_probabilities': True,
     'reduce_frequent_words': True,
     'prediction_data': True,
@@ -44,7 +44,7 @@ config_sweep = {
     },
     'parameters': {
         'n_components': {
-            'values': [3, 4, 5, 6, 7],
+            'values': [3, 4]#[3, 4, 5, 6, 7],
         },
     }
 }
@@ -66,7 +66,7 @@ class TopicModeling:
         config_defaults['min_cluster_size'] = min_cluster_size
         config_sweep['name'] = topic_type
         config_sweep['parameters']['min_samples'] = {
-            'values': list(range(1, config_defaults['min_cluster_size'] + 1))
+            'values': [1]#list(range(1, config_defaults['min_cluster_size'] + 1))
         }
         
     def __train(self):
@@ -92,8 +92,8 @@ class TopicModeling:
             # Step 5 - Create topic representation
             ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
 
-            # Step 6 - Fine-tune topic representation
-            representation_model = KeyBERTInspired()
+            # # Step 6 - Fine-tune topic representation
+            # representation_model = KeyBERTInspired()
 
             # All steps together
             topic_model = BERTopic(
@@ -102,16 +102,17 @@ class TopicModeling:
                 hdbscan_model=hdbscan_model,
                 vectorizer_model=vectorizer_model,
                 ctfidf_model=ctfidf_model,
-                representation_model=representation_model,
+                # representation_model=representation_model,
                 calculate_probabilities=run.config.calculate_probabilities
             )
 
-            topics, _ = topic_model.fit_transform(self.docs)
+            topic_model = topic_model.fit(self.docs)
+            topic_model.reduce_topics(self.docs, nr_topics='auto')
 
             # Preprocess Documents
             documents = pd.DataFrame({"Document": self.docs,
                                       "ID": range(len(self.docs)),
-                                      "Topic": topics})
+                                      "Topic": topic_model.topics_})
             documents_per_topic = documents.groupby(
                 ['Topic'], as_index=False).agg({'Document': ' '.join})
             cleaned_docs = topic_model._preprocess_text(
@@ -126,7 +127,7 @@ class TopicModeling:
             dictionary = corpora.Dictionary(tokens)
             corpus = [dictionary.doc2bow(token) for token in tokens]
             topic_words = [[words for words, _ in topic_model.get_topic(
-                topic)] for topic in range(len(set(topics))-1)]
+                topic)] for topic in range(len(set(topic_model.topics_))-1)]
 
             coherence_cv = CoherenceModel(
                 topics=topic_words,
@@ -160,15 +161,12 @@ class TopicModeling:
                 coherence='c_npmi'
             )
 
-            coherence_cv = coherence_cv.get_coherence()
-            wandb.log({'Coherence CV': coherence_cv})
+            wandb.log({'Coherence CV': coherence_cv.get_coherence()})
             wandb.log({'Coherence UMASS': coherence_umass.get_coherence()})
             wandb.log({'Coherence UCI': coherence_cuci.get_coherence()})
             wandb.log({'Coherence NPMI': coherence_cnpmi.get_coherence()})
-            number_topics = topic_model.get_topic_info().shape[0] - 1
-            wandb.log({'Topic Number': number_topics})
-            wandb.log(
-                {'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
+            wandb.log({'Topic Number': topic_model.get_topic_info().shape[0] - 1})
+            wandb.log({'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
 
             model_name = f'{config_sweep["name"]}_{run.id}'
             topic_model.save(os.path.join(self.path_model, model_name))
