@@ -7,6 +7,7 @@ from bertopic import BERTopic
 from hdbscan import HDBSCAN
 from umap import UMAP
 
+from gensim.parsing.preprocessing import strip_punctuation
 import gensim.corpora as corpora
 import pandas as pd
 import wandb
@@ -59,9 +60,10 @@ class TopicModeling:
         df = pd.read_json(os.path.join(path_output, 'labels.json'))
         if topic_type == 'anomaly':
             df = df[df['Challenge_type'] == 'anomaly']
-            self.docs = df[df['Challenge_summary'] != 'na']['Challenge_summary'].tolist() + df[df['Challenge_root_cause'] != 'na']['Challenge_root_cause'].tolist()
+            docs = df[df['Challenge_summary'] != 'na']['Challenge_summary'].tolist() + df[df['Challenge_root_cause'] != 'na']['Challenge_root_cause'].tolist()
         elif topic_type == 'solution':
-            self.docs = df[df['Solution'] != 'na']['Solution'].tolist()
+            docs = df[df['Solution'] != 'na']['Solution'].tolist()
+        self.docs = [strip_punctuation(doc) for doc in docs]
         
         config_defaults['min_cluster_size'] = min_cluster_size
         config_sweep['name'] = topic_type

@@ -2,6 +2,7 @@ import os
 import pickle
 import pandas as pd
 
+from gensim.parsing.preprocessing import strip_punctuation
 from bertopic import BERTopic
 
 path_output = os.path.join(os.getcwd(), 'Result', 'RQ1', 'Special Topics')
@@ -34,12 +35,15 @@ indice_solution = []
 for index, row in df.iterrows():
     if row['Challenge_type'] == 'anomaly':
         indice_anomaly.append(index)
-        docs_anomaly.append(row['Challenge_summary'])
+        doc_anomay = strip_punctuation(row['Challenge_summary']) 
+        docs_anomaly.append(doc_anomay)
         if row['Challenge_root_cause'] != 'na':
             indice_root_cause.append(index)
-            docs_root_cause.append(row['Challenge_root_cause'])
+            doc_root_cause = strip_punctuation(row['Challenge_root_cause'])
+            docs_root_cause.append(doc_root_cause)
     if row['Solution'] != 'na':
         indice_solution.append(index)
+        doc_solution = strip_punctuation(row['Solution'])
         docs_solution.append(row['Solution'])
         
 for docs, indice, path, name, column in zip([docs_anomaly, docs_root_cause, docs_solution], [indice_anomaly, indice_root_cause, indice_solution], [path_anomaly, path_root_cause, path_solution], [name_model_anomaly, name_model_root_cause, name_model_solution], [column_anomaly, column_root_cause, column_solution]):
