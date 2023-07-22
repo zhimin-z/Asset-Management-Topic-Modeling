@@ -45,7 +45,7 @@ config_sweep = {
     },
     'parameters': {
         'n_components': {
-            'values': [3, 4, 5, 6, 7],
+            'values': [4,6,5]#[3, 4, 5, 6, 7],
         },
     }
 }
@@ -60,15 +60,15 @@ class TopicModeling:
         df = pd.read_json(os.path.join(path_output, 'labels.json'))
         if topic_type == 'anomaly':
             df = df[df['Challenge_type'] == 'anomaly']
-            docs = df[df['Challenge_summary'] != 'na']['Challenge_summary'].tolist() + df[df['Challenge_root_cause'] != 'na']['Challenge_root_cause'].tolist()
+            self.docs = df[df['Challenge_summary'] != 'na']['Challenge_summary'].tolist() + df[df['Challenge_root_cause'] != 'na']['Challenge_root_cause'].tolist()
         elif topic_type == 'solution':
             docs = df[df['Solution'] != 'na']['Solution'].tolist()
-        self.docs = [strip_punctuation(doc) for doc in docs]
+            self.docs = [strip_punctuation(doc) for doc in docs]
         
         config_defaults['min_cluster_size'] = min_cluster_size
         config_sweep['name'] = topic_type
         config_sweep['parameters']['min_samples'] = {
-            'values': list(range(1, config_defaults['min_cluster_size'] + 1))
+            'values': [1]#list(range(1, config_defaults['min_cluster_size'] + 1))
         }
         
     def __train(self):
