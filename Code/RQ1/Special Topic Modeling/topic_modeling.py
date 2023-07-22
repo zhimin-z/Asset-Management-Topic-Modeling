@@ -1,3 +1,9 @@
+import gensim.corpora as corpora
+import pandas as pd
+import wandb
+import os
+
+from gensim.parsing.preprocessing import strip_punctuation
 from sklearn.feature_extraction.text import TfidfVectorizer
 from gensim.models.coherencemodel import CoherenceModel
 from bertopic.vectorizers import ClassTfidfTransformer
@@ -6,12 +12,6 @@ from sentence_transformers import SentenceTransformer
 from bertopic import BERTopic
 from hdbscan import HDBSCAN
 from umap import UMAP
-
-from gensim.parsing.preprocessing import strip_punctuation
-import gensim.corpora as corpora
-import pandas as pd
-import wandb
-import os
 
 path_output = os.path.join(os.getcwd(), 'Result', 'RQ1', 'Special Topics')
 path_model = os.path.join(os.getcwd(), 'Code', 'RQ1', 'Special Topic Modeling', 'Model')
