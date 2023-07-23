@@ -109,7 +109,7 @@ class TopicModeling:
             )
 
             topic_model = topic_model.fit(self.docs)
-            topic_model.reduce_topics(self.docs, nr_topics='auto')
+            # topic_model.reduce_topics(self.docs, nr_topics='auto')
 
             # Preprocess Documents
             documents = pd.DataFrame({"Document": self.docs,
