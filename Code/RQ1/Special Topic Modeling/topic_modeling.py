@@ -30,7 +30,7 @@ config_defaults = {
     'model_name': 'all-mpnet-base-v2',
     'metric_distane': 'cosine',
     'calculate_probabilities': True,
-    # 'reduce_frequent_words': True,
+    'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
     'random_state': 42,
@@ -45,7 +45,7 @@ config_sweep = {
     },
     'parameters': {
         'n_components': {
-            'values': [4,6,5]#[3, 4, 5, 6, 7],
+            'values': [3, 4, 5, 6, 7],
         },
     }
 }
@@ -92,8 +92,7 @@ class TopicModeling:
             vectorizer_model = TfidfVectorizer(ngram_range=(1, run.config.ngram_range))
 
             # Step 5 - Create topic representation
-            ctfidf_model = ClassTfidfTransformer()
-            # ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
+            ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
 
             # # Step 6 - Fine-tune topic representation
             # representation_model = KeyBERTInspired()
