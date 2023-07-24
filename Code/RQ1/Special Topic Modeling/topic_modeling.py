@@ -1,14 +1,15 @@
 import gensim.corpora as corpora
 import pandas as pd
+import openai
 import wandb
 import os
 
 from gensim.parsing.preprocessing import strip_punctuation
 from sklearn.feature_extraction.text import TfidfVectorizer
 from gensim.models.coherencemodel import CoherenceModel
-from bertopic.vectorizers import ClassTfidfTransformer
 from sentence_transformers import SentenceTransformer
-# from bertopic.representation import KeyBERTInspired
+from bertopic.representation import KeyBERTInspired
+# from bertopic.vectorizers import ClassTfidfTransformer
 from bertopic import BERTopic
 from hdbscan import HDBSCAN
 from umap import UMAP
@@ -19,6 +20,7 @@ if not os.path.exists(path_model):
     os.makedirs(path_model)
 
 wandb_project = 'asset-management-topic-modeling'
+openai.api_key = os.getenv('OPENAI_API_KEY', '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')
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
@@ -45,7 +47,7 @@ config_sweep = {
     },
     'parameters': {
         'n_components': {
-            'values': [3, 4, 5, 6, 7],
+            'values': list(range(2,8)),
         },
     }
 }
@@ -68,7 +70,7 @@ class TopicModeling:
         config_defaults['min_cluster_size'] = min_cluster_size
         config_sweep['name'] = topic_type
         config_sweep['parameters']['min_samples'] = {
-            'values': [1]#list(range(1, config_defaults['min_cluster_size'] + 1))
+            'values': list(range(1, config_defaults['min_cluster_size'] + 1))
         }
         
     def __train(self):
@@ -76,7 +78,7 @@ class TopicModeling:
         with wandb.init() as run:
             # update any values not set by sweep
             run.config.setdefaults(config_defaults)
-
+            
             # Step 1 - Extract embeddings
             embedding_model = SentenceTransformer(run.config.model_name)
 
@@ -92,10 +94,10 @@ class TopicModeling:
             vectorizer_model = TfidfVectorizer(ngram_range=(1, run.config.ngram_range))
 
             # Step 5 - Create topic representation
-            ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
+            # ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
 
             # # Step 6 - Fine-tune topic representation
-            # representation_model = KeyBERTInspired()
+            representation_model = KeyBERTInspired()
 
             # All steps together
             topic_model = BERTopic(
@@ -103,8 +105,8 @@ class TopicModeling:
                 umap_model=umap_model,
                 hdbscan_model=hdbscan_model,
                 vectorizer_model=vectorizer_model,
-                ctfidf_model=ctfidf_model,
-                # representation_model=representation_model,
+                # ctfidf_model=ctfidf_model,
+                representation_model=representation_model,
                 calculate_probabilities=run.config.calculate_probabilities
             )
 
