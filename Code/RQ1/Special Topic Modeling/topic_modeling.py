@@ -4,7 +4,7 @@ import openai
 import wandb
 import os
 
-from gensim.parsing.preprocessing import strip_punctuation
+# from gensim.parsing.preprocessing import strip_punctuation
 from sklearn.feature_extraction.text import TfidfVectorizer
 from gensim.models.coherencemodel import CoherenceModel
 from sentence_transformers import SentenceTransformer
@@ -54,21 +54,16 @@ config_sweep = {
 
 
 class TopicModeling:
-    def __init__(self, topic_type, min_cluster_size=20):
+    def __init__(self, column_name, min_cluster_size=30):
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
         
         df = pd.read_json(os.path.join(path_output, 'labels.json'))
-        if topic_type == 'anomaly':
-            df = df[df['Challenge_type'] == 'anomaly']
-            self.docs = df[df['Challenge_summary'] != 'na']['Challenge_summary'].tolist() + df[df['Challenge_root_cause'] != 'na']['Challenge_root_cause'].tolist()
-        elif topic_type == 'Solution_summary':
-            docs = df[df['Solution_summary'] != 'na']['Solution_summary'].tolist()
-            self.docs = [strip_punctuation(doc) for doc in docs]
+        self.docs = df[df[column_name] != 'na'][column_name].tolist()
         
         config_defaults['min_cluster_size'] = min_cluster_size
-        config_sweep['name'] = topic_type
+        config_sweep['name'] = column_name
         config_sweep['parameters']['min_samples'] = {
             'values': list(range(1, config_defaults['min_cluster_size'] + 1))
         }
