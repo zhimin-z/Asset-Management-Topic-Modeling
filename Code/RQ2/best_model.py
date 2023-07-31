@@ -5,12 +5,11 @@ import pandas as pd
 # from gensim.parsing.preprocessing import strip_punctuation
 from bertopic import BERTopic
 
-path_output = os.path.join(os.getcwd(), 'Result', 'RQ1', 'Special Topics')
-path_topic = os.path.join(os.getcwd(), 'Code', 'RQ1', 'Special Topic Modeling')
-path_model = os.path.join(path_topic, 'Model')
-path_anomaly = os.path.join(path_topic, 'Anomaly')
-path_root_cause = os.path.join(path_topic, 'Root Cause')
-path_solution = os.path.join(path_topic, 'Solution')
+path_output = os.path.join(os.getcwd(), 'Result', 'RQ1')
+path_model = os.path.join(path_output, 'Model')
+path_anomaly = os.path.join(path_output, 'Anomaly')
+path_root_cause = os.path.join(path_output, 'Root Cause')
+path_solution = os.path.join(path_output, 'Solution')
 
 model_anomaly = 'Challenge_summary_547wgzi6'
 model_root_cause = 'Challenge_root_rause_summary_547wgzi6'
