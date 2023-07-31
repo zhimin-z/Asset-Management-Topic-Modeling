@@ -4,9 +4,8 @@ import pandas as pd
 
 from bertopic import BERTopic
 
-path_output = os.path.join('Result', 'RQ1', 'General Topics')
-path_topic = os.path.join('Code', 'RQ1', 'General Topic Modeling')
-path_model = os.path.join(path_topic, 'Model')
+path_rq1 = os.path.join('Result', 'RQ1')
+path_model = os.path.join(path_rq1, 'Model')
 
 name_model_challenge = 'Challenge_gpt_summary_preprocessed_content_7k6s9mi8'
 column_challenge = '_'.join(name_model_challenge.split('_')[:-1])
@@ -27,20 +26,20 @@ topic_number_challenge = topic_model_challenge.get_topic_info().shape[0] - 1
 topics_challenge, probs_challenge = topic_model_challenge.transform(docs)
 
 # persist the topic terms
-with open(os.path.join(path_topic, 'Topic terms.pickle'), 'wb') as handle:
+with open(os.path.join(path_rq1, 'Topic terms.pickle'), 'wb') as handle:
     topic_terms = []
     for i in range(topic_number_challenge):
         topic_terms.append(topic_model_challenge.get_topic(i))
     pickle.dump(topic_terms, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 fig = topic_model_challenge.visualize_topics()
-fig.write_html(os.path.join(path_topic, 'Topic visualization.html'))
+fig.write_html(os.path.join(path_rq1, 'Topic visualization.html'))
 
 fig = topic_model_challenge.visualize_barchart(top_n_topics=topic_number_challenge, n_words=10)
-fig.write_html(os.path.join(path_topic, 'Term visualization.html'))
+fig.write_html(os.path.join(path_rq1, 'Term visualization.html'))
 
 fig = topic_model_challenge.visualize_heatmap()
-fig.write_html(os.path.join(path_topic, 'Topic similarity visualization.html'))
+fig.write_html(os.path.join(path_rq1, 'Topic similarity visualization.html'))
 
 # This uses the soft-clustering as performed by HDBSCAN to find the best matching topic for each outlier document.
 topics_new_challenge = topic_model_challenge.reduce_outliers(docs, topics_challenge, probabilities=probs_challenge, strategy="probabilities")
@@ -53,4 +52,4 @@ del df['Challenge_original_content']
 del df['Challenge_preprocessed_content']
 del df['Challenge_gpt_summary_preprocessed_content']
 
-df.to_json(os.path.join(path_output, 'topics.json'), indent=4, orient='records')
+df.to_json(os.path.join(path_rq1, 'topics.json'), indent=4, orient='records')

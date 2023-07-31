@@ -13,7 +13,7 @@ import wandb
 import os
 
 path_dataset = 'Dataset'
-path_model = os.path.join('Code', 'RQ1', 'General Topic Modeling', 'Model')
+path_model = os.path.join('Code', 'RQ1', 'Model')
 if not os.path.exists(path_model):
     os.makedirs(path_model)
 
