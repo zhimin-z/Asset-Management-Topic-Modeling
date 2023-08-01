@@ -26,8 +26,8 @@ os.environ["WANDB__SERVICE_WAIT"] = "100"
 # set default sweep configuration
 config_defaults = {
     # Refer to https://www.sbert.net/docs/pretrained_models.html
-    'model_name': 'all-MiniLM-L6-v2',
-    'metric_distane': 'manhattan',
+    'model_name': 'all-mpnet-base-v2',
+    'metric_distane': 'cosine',
     'calculate_probabilities': True,
     'reduce_frequent_words': True,
     'prediction_data': True,
@@ -45,7 +45,7 @@ config_sweep = {
     },
     'parameters': {
         'n_components': {
-            'values': [3, 4, 5, 6],
+            'values': list(range(3,8)),
         },
     }
 }
@@ -158,8 +158,7 @@ class TopicModeling:
             wandb.log({'Coherence UMASS': coherence_umass.get_coherence()})
             wandb.log({'Coherence UCI': coherence_cuci.get_coherence()})
             wandb.log({'Coherence NPMI': coherence_cnpmi.get_coherence()})
-            number_topics = topic_model.get_topic_info().shape[0] - 1
-            wandb.log({'Topic Number': number_topics})
+            wandb.log({'Topic Number': topic_model.get_topic_info().shape[0] - 1})
             wandb.log({'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
             
             model_name = f'{config_sweep["name"]}_{run.id}'
