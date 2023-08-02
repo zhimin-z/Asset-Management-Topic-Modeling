@@ -32,7 +32,7 @@ config_defaults = {
     'model_name': 'all-mpnet-base-v2',
     'metric_distane': 'cosine',
     'calculate_probabilities': True,
-    'reduce_frequent_words': True,
+    # 'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
     'random_state': 42,

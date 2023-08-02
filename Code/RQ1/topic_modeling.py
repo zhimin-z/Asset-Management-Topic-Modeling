@@ -1,16 +1,16 @@
+import gensim.corpora as corpora
+import pandas as pd
+import wandb
+import os
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from gensim.models.coherencemodel import CoherenceModel
-from bertopic.vectorizers import ClassTfidfTransformer
+# from bertopic.vectorizers import ClassTfidfTransformer
 from sentence_transformers import SentenceTransformer
 from bertopic.representation import KeyBERTInspired
 from bertopic import BERTopic
 from hdbscan import HDBSCAN
 from umap import UMAP
-
-import gensim.corpora as corpora
-import pandas as pd
-import wandb
-import os
 
 path_dataset = 'Dataset'
 path_model = os.path.join('Code', 'RQ1', 'Model')
@@ -29,10 +29,10 @@ config_defaults = {
     'model_name': 'all-mpnet-base-v2',
     'metric_distane': 'cosine',
     'calculate_probabilities': True,
-    'reduce_frequent_words': True,
+    # 'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
-    'min_cluster_size': 30,
+    'min_cluster_size': 50,
     'random_state': 42,
     'ngram_range': 2
 }
@@ -58,7 +58,7 @@ class TopicModeling:
         self.path_model = path_model
         
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
-        self.docs = df[df[column_name].notna() & df[column_name].map(len)][column_name].tolist()
+        self.docs = df[df[column_name].map(len) > 0][column_name].tolist()
         
         config_sweep['name'] = column_name
         config_sweep['parameters']['min_samples'] = {
@@ -84,7 +84,7 @@ class TopicModeling:
             vectorizer_model = TfidfVectorizer(ngram_range=(1, run.config.ngram_range))
 
             # Step 5 - Create topic representation
-            ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
+            # ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
 
             # Step 6 - Fine-tune topic representation
             representation_model = KeyBERTInspired()
@@ -95,7 +95,7 @@ class TopicModeling:
                 umap_model=umap_model,
                 hdbscan_model=hdbscan_model,
                 vectorizer_model=vectorizer_model,
-                ctfidf_model=ctfidf_model,
+                # ctfidf_model=ctfidf_model,
                 representation_model=representation_model,
                 calculate_probabilities=run.config.calculate_probabilities
             )

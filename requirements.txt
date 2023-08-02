@@ -12,5 +12,5 @@ shap==0.42.0
 spacy==3.6.0
 statsmodels==0.13.5
 textstat==0.7.3
-wandb==0.15.5
+wandb==0.15.8
 xgboost==1.7.6
