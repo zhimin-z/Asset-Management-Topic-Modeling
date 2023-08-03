@@ -57,4 +57,5 @@ for path, model in zip([path_anomaly, path_root_cause, path_solution], [model_an
     fig = topic_model.visualize_heatmap()
     fig.write_html(os.path.join(path, 'Topic similarity visualization.html'))
 
+df.drop(columns=['Challenge_summary', 'Challenge_root_cause_summary', 'Solution_summary'], inplace=True)
 df.to_json(os.path.join(path_output, 'topics.json'), indent=4, orient='records')
