@@ -7,7 +7,7 @@ from bertopic import BERTopic
 path_rq1 = os.path.join('Result', 'RQ1')
 path_model = os.path.join(path_rq1, 'Model')
 
-model_name = 'Challenge_preprocessed_content_gdbvo4ll'
+model_name = 'Challenge_preprocessed_gpt_summary_fzqzh0m6'
 column = '_'.join(model_name.split('_')[:-1])
 
 df = pd.read_json(os.path.join('Dataset', 'preprocessed.json'))
