@@ -29,7 +29,7 @@ os.environ["WANDB__SERVICE_WAIT"] = "100"
 # set default sweep configuration
 config_defaults = {
     # Refer to https://www.sbert.net/docs/pretrained_models.html
-    'model_name': 'all-mpnet-base-v2',
+    'model_name': 'sentence-transformers/all-mpnet-base-v2',
     'metric_distane': 'cosine',
     'calculate_probabilities': True,
     # 'reduce_frequent_words': True,
@@ -168,7 +168,8 @@ class TopicModeling:
             wandb.log({'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
 
             model_name = f'{config_sweep["name"]}_{run.id}'
-            topic_model.save(os.path.join(self.path_model, model_name))
+            topic_model.save(os.path.join(self.path_model, model_name), serialization="safetensors", save_ctfidf=True, save_embedding_model=config_defaults['model_name'])
+
 
     def sweep(self):
         wandb.login()

@@ -26,13 +26,13 @@ os.environ["WANDB__SERVICE_WAIT"] = "100"
 # set default sweep configuration
 config_defaults = {
     # Refer to https://www.sbert.net/docs/pretrained_models.html
-    'model_name': 'all-mpnet-base-v2',
+    'model_name': 'sentence-transformers/all-MiniLM-L6-v2',
     'metric_distane': 'cosine',
     'calculate_probabilities': True,
     # 'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
-    'min_cluster_size': 50,
+    'min_cluster_size': 30,
     'random_state': 42,
     'ngram_range': 2
 }
@@ -52,15 +52,23 @@ config_sweep = {
 
 
 class TopicModeling:
-    def __init__(self, column_name):
+    def __init__(self, column):
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
         
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
-        self.docs = df[df[column_name].map(len) > 0][column_name].tolist()
-        
-        config_sweep['name'] = column_name
+        match column:
+            case 'title':
+                self.docs = df[df['Challenge_preprocessed_title'].map(len) > 0]['Challenge_preprocessed_title'].tolist()
+            case 'content':
+                self.docs = df[df['Challenge_preprocessed_content'].map(len) > 0]['Challenge_preprocessed_content'].tolist()
+            case 'title_gpt':
+                self.docs = df[df['Challenge_preprocessed_title'].map(len) > 0]['Challenge_preprocessed_content'].tolist() + df[(df['Challenge_preprocessed_title'].map(len) == 0) & (df['Challenge_preprocessed_gpt_summary'].map(len) > 0)]['Challenge_preprocessed_gpt_summary'].tolist()
+            case 'title_content':
+                self.docs = df[df['Challenge_preprocessed_title'].map(len) > 0]['Challenge_preprocessed_content'].tolist() + df[(df['Challenge_preprocessed_title'].map(len) == 0) & (df['Challenge_preprocessed_content'].map(len) > 0)]['Challenge_preprocessed_content'].tolist()
+            
+        config_sweep['name'] = column
         config_sweep['parameters']['min_samples'] = {
             'values': list(range(1, config_defaults['min_cluster_size'] + 1)),
         }
@@ -162,7 +170,7 @@ class TopicModeling:
             wandb.log({'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
             
             model_name = f'{config_sweep["name"]}_{run.id}'
-            topic_model.save(os.path.join(self.path_model, model_name))
+            topic_model.save(os.path.join(self.path_model, model_name))#, serialization="pytorch", save_ctfidf=True, save_embedding_model=config_defaults['model_name'])
 
     def sweep(self):
         wandb.login()
