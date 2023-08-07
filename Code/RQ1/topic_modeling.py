@@ -52,7 +52,7 @@ config_sweep = {
 
 
 class TopicModeling:
-    def __init__(self, column):
+    def __init__(self, column, level=1):
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
@@ -60,13 +60,13 @@ class TopicModeling:
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
         match column:
             case 'title':
-                self.docs = df[df['Challenge_preprocessed_title'].map(len) > 0]['Challenge_preprocessed_title'].tolist()
+                self.docs = df[df[f'Challenge_preprocessed_title{level}'].map(len) > 0][f'Challenge_preprocessed_title{level}'].tolist()
             case 'content':
-                self.docs = df[df['Challenge_preprocessed_content'].map(len) > 0]['Challenge_preprocessed_content'].tolist()
+                self.docs = df[df[f'Challenge_preprocessed_content{level}'].map(len) > 0][f'Challenge_preprocessed_content{level}'].tolist()
             case 'title_gpt':
-                self.docs = df[df['Challenge_preprocessed_title'].map(len) > 0]['Challenge_preprocessed_content'].tolist() + df[(df['Challenge_preprocessed_title'].map(len) == 0) & (df['Challenge_preprocessed_gpt_summary'].map(len) > 0)]['Challenge_preprocessed_gpt_summary'].tolist()
+                self.docs = df[df[f'Challenge_preprocessed_title{level}'].map(len) > 0][f'Challenge_preprocessed_content{level}'].tolist() + df[(df[f'Challenge_preprocessed_title{level}'].map(len) == 0) & (df[f'Challenge_preprocessed_gpt_summary{level}'].map(len) > 0)][f'Challenge_preprocessed_gpt_summary{level}'].tolist()
             case 'title_content':
-                self.docs = df[df['Challenge_preprocessed_title'].map(len) > 0]['Challenge_preprocessed_content'].tolist() + df[(df['Challenge_preprocessed_title'].map(len) == 0) & (df['Challenge_preprocessed_content'].map(len) > 0)]['Challenge_preprocessed_content'].tolist()
+                self.docs = df[df[f'Challenge_preprocessed_title{level}'].map(len) > 0][f'Challenge_preprocessed_content{level}'].tolist() + df[(df[f'Challenge_preprocessed_title{level}'].map(len) == 0) & (df[f'Challenge_preprocessed_content{level}'].map(len) > 0)][f'Challenge_preprocessed_content{level}'].tolist()
             
         config_sweep['name'] = column
         config_sweep['parameters']['min_samples'] = {
