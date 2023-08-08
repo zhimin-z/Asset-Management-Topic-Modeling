@@ -63,8 +63,6 @@ class TopicModeling:
                 self.docs = df[df[f'Challenge_preprocessed_title{level}'].map(len) > 0][f'Challenge_preprocessed_title{level}'].tolist()
             case 'content':
                 self.docs = df[df[f'Challenge_preprocessed_content{level}'].map(len) > 0][f'Challenge_preprocessed_content{level}'].tolist()
-            case 'title_gpt':
-                self.docs = df[df[f'Challenge_preprocessed_title{level}'].map(len) > 0][f'Challenge_preprocessed_content{level}'].tolist() + df[(df[f'Challenge_preprocessed_title{level}'].map(len) == 0) & (df[f'Challenge_preprocessed_gpt_summary{level}'].map(len) > 0)][f'Challenge_preprocessed_gpt_summary{level}'].tolist()
             case 'title_content':
                 self.docs = df[df[f'Challenge_preprocessed_title{level}'].map(len) > 0][f'Challenge_preprocessed_content{level}'].tolist() + df[(df[f'Challenge_preprocessed_title{level}'].map(len) == 0) & (df[f'Challenge_preprocessed_content{level}'].map(len) > 0)][f'Challenge_preprocessed_content{level}'].tolist()
             
