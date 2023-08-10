@@ -3,9 +3,9 @@ import pandas as pd
 import wandb
 import os
 
-from sklearn.feature_extraction.text import TfidfVectorizer
-from gensim.models.coherencemodel import CoherenceModel
+from sklearn.feature_extraction.text import CountVectorizer
 # from bertopic.vectorizers import ClassTfidfTransformer
+from gensim.models.coherencemodel import CoherenceModel
 from sentence_transformers import SentenceTransformer
 from bertopic.representation import KeyBERTInspired
 from bertopic import BERTopic
@@ -26,7 +26,7 @@ os.environ["WANDB__SERVICE_WAIT"] = "100"
 # set default sweep configuration
 config_defaults = {
     # Refer to https://www.sbert.net/docs/pretrained_models.html
-    'model_name': 'sentence-transformers/all-MiniLM-L6-v2',
+    'model_name': 'sentence-transformers/all-mpnet-base-v2',
     'metric_distane': 'cosine',
     'calculate_probabilities': True,
     # 'reduce_frequent_words': True,
@@ -52,19 +52,13 @@ config_sweep = {
 
 
 class TopicModeling:
-    def __init__(self, column, level=1):
+    def __init__(self, column):
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
         
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
-        match column:
-            case 'title':
-                self.docs = df[df[f'Challenge_preprocessed_title{level}'].map(len) > 0][f'Challenge_preprocessed_title{level}'].tolist()
-            case 'content':
-                self.docs = df[df[f'Challenge_preprocessed_content{level}'].map(len) > 0][f'Challenge_preprocessed_content{level}'].tolist()
-            case 'title_content':
-                self.docs = df[df[f'Challenge_preprocessed_title{level}'].map(len) > 0][f'Challenge_preprocessed_content{level}'].tolist() + df[(df[f'Challenge_preprocessed_title{level}'].map(len) == 0) & (df[f'Challenge_preprocessed_content{level}'].map(len) > 0)][f'Challenge_preprocessed_content{level}'].tolist()
+        self.docs = df[df[column].map(len) > 0][column].tolist()
             
         config_sweep['name'] = column
         config_sweep['parameters']['min_samples'] = {
@@ -87,7 +81,7 @@ class TopicModeling:
             hdbscan_model = HDBSCAN(min_cluster_size=run.config.min_cluster_size, min_samples=wandb.config.min_samples, prediction_data=run.config.prediction_data)
 
             # Step 4 - Tokenize topics
-            vectorizer_model = TfidfVectorizer(ngram_range=(1, run.config.ngram_range))
+            vectorizer_model = CountVectorizer(ngram_range=(1, run.config.ngram_range), stop_words='english')
 
             # Step 5 - Create topic representation
             # ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
@@ -168,7 +162,7 @@ class TopicModeling:
             wandb.log({'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
             
             model_name = f'{config_sweep["name"]}_{run.id}'
-            topic_model.save(os.path.join(self.path_model, model_name))#, serialization="pytorch", save_ctfidf=True, save_embedding_model=config_defaults['model_name'])
+            topic_model.save(os.path.join(self.path_model, model_name), serialization='safetensors', save_ctfidf=True)
 
     def sweep(self):
         wandb.login()

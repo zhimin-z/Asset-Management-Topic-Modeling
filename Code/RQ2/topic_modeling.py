@@ -4,17 +4,16 @@ import openai
 import wandb
 import os
 
-# from gensim.parsing.preprocessing import strip_punctuation
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
+# from bertopic.vectorizers import ClassTfidfTransformer
 from gensim.models.coherencemodel import CoherenceModel
 from sentence_transformers import SentenceTransformer
 from bertopic.representation import KeyBERTInspired
-# from bertopic.vectorizers import ClassTfidfTransformer
 from bertopic import BERTopic
 from hdbscan import HDBSCAN
 from umap import UMAP
 
-path_output = os.path.join(os.getcwd(), 'Result', 'RQ1')
+path_output = os.path.join(os.getcwd(), 'Result', 'RQ2')
 path_model = os.path.join(path_output, 'Model')
 if not os.path.exists(path_model):
     os.makedirs(path_model)
@@ -86,7 +85,7 @@ class TopicModeling:
                                     min_samples=wandb.config.min_samples, prediction_data=run.config.prediction_data)
 
             # Step 4 - Tokenize topics
-            vectorizer_model = TfidfVectorizer(ngram_range=(1, run.config.ngram_range))
+            vectorizer_model = CountVectorizer(ngram_range=(1, run.config.ngram_range), stop_words='english')
 
             # Step 5 - Create topic representation
             # ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
@@ -168,7 +167,7 @@ class TopicModeling:
             wandb.log({'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
 
             model_name = f'{config_sweep["name"]}_{run.id}'
-            topic_model.save(os.path.join(self.path_model, model_name), serialization="safetensors", save_ctfidf=True, save_embedding_model=config_defaults['model_name'])
+            topic_model.save(os.path.join(self.path_model, model_name), serialization='safetensors', save_ctfidf=True)
 
 
     def sweep(self):

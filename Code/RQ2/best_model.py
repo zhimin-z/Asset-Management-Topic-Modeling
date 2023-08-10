@@ -2,19 +2,20 @@ import os
 import pickle
 import pandas as pd
 
-# from gensim.parsing.preprocessing import strip_punctuation
 from bertopic import BERTopic
+from sentence_transformers import SentenceTransformer
 
-path_output = os.path.join(os.getcwd(), 'Result', 'RQ1')
+path_output = os.path.join(os.getcwd(), 'Result', 'RQ2')
 path_model = os.path.join(path_output, 'Model')
 path_anomaly = os.path.join(path_output, 'Anomaly')
 path_root_cause = os.path.join(path_output, 'Root Cause')
 path_solution = os.path.join(path_output, 'Solution')
 
-model_anomaly = 'Challenge_summary_547wgzi6'
-model_root_cause = 'Challenge_root_rause_summary_547wgzi6'
-model_solution = 'Solution_summary_406onakc'
+model_anomaly = 'Challenge_summary_yahv0e0s'
+model_root_cause = 'Challenge_root_cause_summary_fkef30v4'
+model_solution = 'Solution_summary_km5dwa8a'
 
+embedding_model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
 df = pd.read_json(os.path.join(path_output, 'labels.json'))
         
 for path, model in zip([path_anomaly, path_root_cause, path_solution], [model_anomaly, model_root_cause, model_solution]):
@@ -27,7 +28,7 @@ for path, model in zip([path_anomaly, path_root_cause, path_solution], [model_an
             docs.append(row[column])
             indice.append(index)
             
-    topic_model = BERTopic.load(os.path.join(path_model, model))
+    topic_model = BERTopic.load(os.path.join(path_model, model), embedding_model=embedding_model)
     topics, probs = topic_model.transform(docs)
     topic_number = topic_model.get_topic_info().shape[0] - 1
     
@@ -56,6 +57,7 @@ for path, model in zip([path_anomaly, path_root_cause, path_solution], [model_an
     
     fig = topic_model.visualize_heatmap()
     fig.write_html(os.path.join(path, 'Topic similarity visualization.html'))
+    
+    df.drop(columns=[column], inplace=True)
 
-df.drop(columns=['Challenge_summary', 'Challenge_root_cause_summary', 'Solution_summary'], inplace=True)
 df.to_json(os.path.join(path_output, 'topics.json'), indent=4, orient='records')
