@@ -29,14 +29,14 @@ for path, model in zip([path_anomaly, path_root_cause, path_solution], [model_an
             indice.append(index)
             
     topic_model = BERTopic.load(os.path.join(path_model, model), embedding_model=embedding_model)
-    topics, probs = topic_model.transform(docs)
     topic_number = topic_model.get_topic_info().shape[0] - 1
-    new_topics = topic_model.reduce_outliers(docs, topics, strategy="distribution")
+    topics, probs = topic_model.transform(docs)
+    topics = topic_model.reduce_outliers(docs, topics)
 
     column_topic = f'{column}_topic'
     df[column_topic] = -1
     # persist the document topics
-    for index, topic in zip(indice, new_topics):
+    for index, topic in zip(indice, topics):
         df.at[index, column_topic] = topic
     
     # persist the topic terms

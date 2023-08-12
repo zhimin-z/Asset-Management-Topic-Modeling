@@ -59,6 +59,7 @@ class TopicModeling:
         
         df = pd.read_json(os.path.join(path_dataset, 'preprocessed.json'))
         self.docs = df[df[column].map(len) > 0][column].tolist()
+        self.abandon_post_number = len(df) - len(self.docs)
             
         config_sweep['name'] = column
         config_sweep['parameters']['min_samples'] = {
@@ -160,6 +161,7 @@ class TopicModeling:
             wandb.log({'Coherence UCI': coherence_cuci.get_coherence()})
             wandb.log({'Coherence NPMI': coherence_cnpmi.get_coherence()})
             wandb.log({'Topic Number': topic_model.get_topic_info().shape[0] - 1})
+            wandb.log({'Abandoned Post Number': self.abandon_post_number})
             wandb.log({'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
             
             model_name = f'{config_sweep["name"]}_{run.id}'

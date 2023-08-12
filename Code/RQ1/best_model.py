@@ -26,7 +26,11 @@ for index, row in df.iterrows():
 topic_model = BERTopic.load(os.path.join(path_model, model_name), embedding_model=embedding_model)
 topic_number = topic_model.get_topic_info().shape[0] - 1
 topics, probs = topic_model.transform(docs)
-new_topics = topic_model.reduce_outliers(docs, topics, strategy="distribution")
+topics = topic_model.reduce_outliers(docs, topics)
+
+# persist the document topics
+for index, topic in zip(indice, topics):
+    df.at[index, 'Challenge_topic'] = topic
 
 # persist the topic terms
 with open(os.path.join(path_rq1, 'Topic terms.pickle'), 'wb') as handle:
@@ -43,10 +47,6 @@ fig.write_html(os.path.join(path_rq1, 'Term visualization.html'))
 
 fig = topic_model.visualize_heatmap()
 fig.write_html(os.path.join(path_rq1, 'Topic similarity visualization.html'))
-
-# persist the document topics
-for index, topic in zip(indice, new_topics):
-    df.at[index, 'Challenge_topic'] = topic
 
 df = df[df.columns.drop(list(df.filter(regex=r'preprocessed|gpt')))]
 df.to_json(os.path.join(path_rq1, 'topics.json'), indent=4, orient='records')
