@@ -8,7 +8,7 @@ from sentence_transformers import SentenceTransformer
 path_rq1 = os.path.join('Result', 'RQ1')
 path_model = os.path.join(path_rq1, 'Model')
 
-model_name = 'Challenge_preprocessed_title_4z17fib1'
+model_name = 'Challenge_preprocessed_gpt_summary_6uyoy8u7'
 column = '_'.join(model_name.split('_')[:-1])
 
 embedding_model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
