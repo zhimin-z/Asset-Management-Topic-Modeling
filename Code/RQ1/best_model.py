@@ -8,7 +8,7 @@ from sentence_transformers import SentenceTransformer
 path_rq1 = os.path.join('Result', 'RQ1')
 path_model = os.path.join(path_rq1, 'Model')
 
-model_name = 'Challenge_preprocessed_gpt_summary_6uyoy8u7'
+model_name = 'Challenge_preprocessed_title_4z17fib1'
 column = '_'.join(model_name.split('_')[:-1])
 
 embedding_model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
@@ -26,11 +26,7 @@ for index, row in df.iterrows():
 topic_model = BERTopic.load(os.path.join(path_model, model_name), embedding_model=embedding_model)
 topic_number = topic_model.get_topic_info().shape[0] - 1
 topics, probs = topic_model.transform(docs)
-
-# This uses the soft-clustering as performed by HDBSCAN to find the best matching topic for each outlier document.
-new_topics = topic_model.reduce_outliers(docs, topics, probabilities=probs, strategy="probabilities")
-
-# new_topics = topic_model.reduce_outliers(docs, topics, strategy="distribution")
+new_topics = topic_model.reduce_outliers(docs, topics, strategy="distribution")
 
 # persist the topic terms
 with open(os.path.join(path_rq1, 'Topic terms.pickle'), 'wb') as handle:
