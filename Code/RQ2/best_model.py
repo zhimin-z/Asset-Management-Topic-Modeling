@@ -7,18 +7,12 @@ from sentence_transformers import SentenceTransformer
 
 path_output = os.path.join(os.getcwd(), 'Result', 'RQ2')
 path_model = os.path.join(path_output, 'Model')
-path_anomaly = os.path.join(path_output, 'Anomaly')
-path_root_cause = os.path.join(path_output, 'Root Cause')
-path_solution = os.path.join(path_output, 'Solution')
-
-model_anomaly = 'Challenge_summary_yahv0e0s'
-model_root_cause = 'Challenge_root_cause_summary_fkef30v4'
-model_solution = 'Solution_summary_km5dwa8a'
+model_output = 'Resolution_summary_ye8nuqgu'
 
 embedding_model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
 df = pd.read_json(os.path.join(path_output, 'labels.json'))
         
-for path, model in zip([path_anomaly, path_root_cause, path_solution], [model_anomaly, model_root_cause, model_solution]):
+for path, model in zip([path_output], [model_output]):
     docs = []
     indice = []
     column = '_'.join(model.split('_')[:-1])
