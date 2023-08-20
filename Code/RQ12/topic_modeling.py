@@ -13,7 +13,7 @@ from hdbscan import HDBSCAN
 from umap import UMAP
 
 path_dataset = 'Dataset'
-path_model = os.path.join('Result', 'RQ1', 'Model')
+path_model = os.path.join('Result', 'RQ12', 'Model')
 if not os.path.exists(path_model):
     os.makedirs(path_model)
 
