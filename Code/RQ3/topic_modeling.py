@@ -13,7 +13,7 @@ from bertopic import BERTopic
 from hdbscan import HDBSCAN
 from umap import UMAP
 
-path_output = os.path.join(os.getcwd(), 'Result', 'RQ2')
+path_output = os.path.join(os.getcwd(), 'Result', 'RQ3')
 path_model = os.path.join(path_output, 'Model')
 if not os.path.exists(path_model):
     os.makedirs(path_model)

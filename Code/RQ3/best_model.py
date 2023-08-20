@@ -5,7 +5,7 @@ import pandas as pd
 from bertopic import BERTopic
 from sentence_transformers import SentenceTransformer
 
-path_output = os.path.join(os.getcwd(), 'Result', 'RQ2')
+path_output = os.path.join(os.getcwd(), 'Result', 'RQ3')
 path_model = os.path.join(path_output, 'Model')
 model_output = 'Resolution_summary_ye8nuqgu'
 
