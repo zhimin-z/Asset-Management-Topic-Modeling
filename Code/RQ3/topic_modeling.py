@@ -46,14 +46,14 @@ config_sweep = {
     },
     'parameters': {
         'n_components': {
-            'values': list(range(2,8)),
+            'values': list(range(3,10)),
         },
     }
 }
 
 
 class TopicModeling:
-    def __init__(self, column_name, min_cluster_size=30):
+    def __init__(self, column_name, min_cluster_size=20):
         # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
@@ -65,7 +65,7 @@ class TopicModeling:
         config_defaults['min_cluster_size'] = min_cluster_size
         config_sweep['name'] = column_name
         config_sweep['parameters']['min_samples'] = {
-            'values': list(range(1, config_defaults['min_cluster_size'] + 1))
+            'values': list(range(1, 10))#config_defaults['min_cluster_size'] + 1))
         }
         
     def __train(self):
