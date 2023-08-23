@@ -46,7 +46,7 @@ config_sweep = {
     },
     'parameters': {
         'n_components': {
-            'values': list(range(3,10)),
+            'values': list(range(3,8)),
         },
     }
 }
