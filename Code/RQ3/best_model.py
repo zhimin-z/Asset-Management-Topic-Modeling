@@ -49,7 +49,5 @@ for path, model in zip([path_output], [model_output]):
     
     fig = topic_model.visualize_heatmap()
     fig.write_html(os.path.join(path, 'Topic similarity visualization.html'))
-    
-    df.drop(columns=[column], inplace=True)
 
 df.to_json(os.path.join(path_output, 'topics.json'), indent=4, orient='records')
