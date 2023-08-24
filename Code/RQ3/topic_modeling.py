@@ -54,7 +54,6 @@ config_sweep = {
 
 class TopicModeling:
     def __init__(self, column_name, min_cluster_size=20):
-        # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
         

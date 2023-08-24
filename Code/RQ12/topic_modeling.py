@@ -53,7 +53,6 @@ config_sweep = {
 
 class TopicModeling:
     def __init__(self, column):
-        # Initialize an empty list to store top models
         self.top_models = []
         self.path_model = path_model
         
