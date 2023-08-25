@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 
 path_output = os.path.join(os.getcwd(), 'Result', 'RQ3')
 path_model = os.path.join(path_output, 'Model')
-model_output = 'Resolution_summary_y8b3x3mm'
+model_output = 'Resolution_summary_wk8olvme'
 
 embedding_model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
 df = pd.read_json(os.path.join(path_output, 'labels.json'))
