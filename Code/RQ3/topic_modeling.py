@@ -59,12 +59,11 @@ class TopicModeling:
         
         df = pd.read_json(os.path.join(path_output, 'labels.json'))
         self.docs = df[(df[column_name] != 'na') & (df[column_name] != 'non-issue') & (df[column_name] != 'intermittent issue')][column_name].tolist()
-        self.abandon_post_number = len(df) - len(self.docs)
         
         config_defaults['min_cluster_size'] = min_cluster_size
         config_sweep['name'] = column_name
         config_sweep['parameters']['min_samples'] = {
-            'values': list(range(1, 5))#config_defaults['min_cluster_size'] + 1))
+            'values': list(range(1, config_defaults['min_cluster_size'] + 1))
         }
         
     def __train(self):
@@ -165,7 +164,6 @@ class TopicModeling:
             wandb.log({'Coherence UCI': coherence_cuci.get_coherence()})
             wandb.log({'Coherence NPMI': coherence_cnpmi.get_coherence()})
             wandb.log({'Topic Number': topic_model.get_topic_info().shape[0] - 1})
-            wandb.log({'Abandoned Post Number': self.abandon_post_number})
             wandb.log({'Uncategorized Post Number': topic_model.get_topic_info().at[0, 'Count']})
 
             model_name = f'{config_sweep["name"]}_{run.id}'
