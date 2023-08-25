@@ -58,7 +58,7 @@ class TopicModeling:
         self.path_model = path_model
         
         df = pd.read_json(os.path.join(path_output, 'labels.json'))
-        self.docs = df[df[column_name] != 'na'][column_name].tolist()
+        self.docs = df[(df[column_name] != 'na') and (df[column_name] != 'non-issue')][column_name].tolist()
         self.abandon_post_number = len(df) - len(self.docs)
         
         config_defaults['min_cluster_size'] = min_cluster_size
