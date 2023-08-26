@@ -8,6 +8,7 @@ missingno==0.5.2
 nbformat==5.8.0
 openai==0.27.8
 plotly==5.14.1
+safetensors==0.3.3
 seaborn==0.12.2
 shap==0.42.0
 spacy==3.6.0
