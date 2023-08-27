@@ -23,7 +23,8 @@ macro_topic_indexing = {
     11: 'Network Management',
     12: 'Observability Management',
     13: 'Pipeline Management',
-    14: 'Security Management'
+    14: 'Security Management',
+    15: 'User Interface Management',
 }
 
 color_map = {
