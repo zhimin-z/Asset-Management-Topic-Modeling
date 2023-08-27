@@ -61,7 +61,7 @@ class TopicModeling:
         config_defaults['min_cluster_size'] = min_cluster_size
         config_sweep['name'] = column_name
         config_sweep['parameters']['min_samples'] = {
-            'values': list(range(1, 10))#config_defaults['min_cluster_size'] + 1))
+            'values': list(range(1, config_defaults['min_cluster_size'] + 1))
         }
         
     def __train(self):
