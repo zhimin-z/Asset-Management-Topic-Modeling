@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import plotly.io as pio 
 import plotly.graph_objects as go
 
 from plotly.subplots import make_subplots
@@ -86,5 +87,6 @@ fig.update_layout(
     )
 )
 fig.update_annotations(dict(font_size=13))
+pio.full_figure_for_development(fig, warn=False)
 fig.show()
 fig.write_image(os.path.join(path_rq3, 'Macro-topics group frequency histogram.pdf'))
