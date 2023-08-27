@@ -1,6 +1,5 @@
 import gensim.corpora as corpora
 import pandas as pd
-import openai
 import wandb
 import os
 
@@ -19,7 +18,6 @@ if not os.path.exists(path_model):
     os.makedirs(path_model)
 
 wandb_project = 'asset-management-topic-modeling'
-openai.api_key = os.getenv('OPENAI_API_KEY', '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')
 
 os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
