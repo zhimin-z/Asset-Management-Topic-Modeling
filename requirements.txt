@@ -2,7 +2,7 @@ beautifulsoup4==4.12.2
 bertopic==0.15.0
 gensim==4.3.1
 matplotlib==3.7.1
-nbformat==5.8.0
+nbformat==5.9.2
 openai==0.27.8
 plotly==5.16.1
 safetensors==0.3.3

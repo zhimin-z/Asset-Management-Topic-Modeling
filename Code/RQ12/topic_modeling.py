@@ -4,7 +4,7 @@ import wandb
 import os
 
 # from sklearn.feature_extraction.text import CountVectorizer
-# from bertopic.vectorizers import ClassTfidfTransformer
+from bertopic.vectorizers import ClassTfidfTransformer
 from gensim.models.coherencemodel import CoherenceModel
 from sentence_transformers import SentenceTransformer
 from bertopic.representation import KeyBERTInspired
@@ -29,7 +29,7 @@ config_defaults = {
     'model_name': 'sentence-transformers/all-mpnet-base-v2',
     'metric_distane': 'cosine',
     'calculate_probabilities': True,
-    # 'reduce_frequent_words': True,
+    'reduce_frequent_words': True,
     'prediction_data': True,
     'low_memory': False,
     'min_cluster_size': 30,
@@ -84,7 +84,7 @@ class TopicModeling:
             # vectorizer_model = CountVectorizer(ngram_range=(1, run.config.ngram_range), stop_words='english')
 
             # Step 5 - Create topic representation
-            # ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
+            ctfidf_model = ClassTfidfTransformer(reduce_frequent_words=run.config.reduce_frequent_words)
 
             # Step 6 - Fine-tune topic representation
             representation_model = KeyBERTInspired()
@@ -95,7 +95,7 @@ class TopicModeling:
                 umap_model=umap_model,
                 hdbscan_model=hdbscan_model,
                 # vectorizer_model=vectorizer_model,
-                # ctfidf_model=ctfidf_model,
+                ctfidf_model=ctfidf_model,
                 representation_model=representation_model,
                 n_gram_range=(1, run.config.ngram_range),
                 calculate_probabilities=run.config.calculate_probabilities
