@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-import plotly.io as pio 
+import plotly.io as pio
 import plotly.graph_objects as go
 
 from plotly.subplots import make_subplots
@@ -10,22 +10,23 @@ df = pd.read_json(os.path.join(path_rq4, 'macro-topics.json'))
 
 macro_topic_indexing = {
     0: 'Code Development',
-    1: 'Compute Management',
-    2: 'Data Development',
-    3: 'Data Management',
-    4: 'Document Consultation',
-    5: 'Environment Management',
-    6: 'Experiment Management',
-    7: 'File Management',
-    8: 'Maintenance Support',
-    9: 'Model Development',
-    10: 'Model Management',
-    11: 'Model Deployment',
-    12: 'Network Management',
-    13: 'Observability Management',
-    14: 'Pipeline Management',
-    15: 'Security Management',
-    16: 'User Interface Management'
+    1: 'Code Management',
+    2: 'Comparison & Recommendation',
+    3: 'Compute Management',
+    4: 'Data Development',
+    5: 'Data Management',
+    6: 'Environment Management',
+    7: 'Experiment Management',
+    8: 'File Management',
+    9: 'Maintenance & Support',
+    10: 'Model Development',
+    11: 'Model Management',
+    12: 'Model Deployment',
+    13: 'Network Management',
+    14: 'Observability Management',
+    15: 'Pipeline Management',
+    16: 'Security Management',
+    17: 'User Interface Management'
 }
 color_map = {
     'Problem': 'tomato',
