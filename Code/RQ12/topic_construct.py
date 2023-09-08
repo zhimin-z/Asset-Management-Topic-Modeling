@@ -74,7 +74,7 @@ for macro_name, macro_group in df.groupby('Challenge_topic_macro', sort=True):
 
 fig.update_yaxes(range=[0, 100])
 fig.update_layout(
-    barmode='group',
+    barmode='stack',
     width=1000, 
     height=1000,
     margin=go.layout.Margin(

@@ -77,7 +77,7 @@ for macro_name, macro_group in df.groupby('Resolution_summary_topic_macro', sort
 
 fig.update_yaxes(range=[0, 100])
 fig.update_layout(
-    barmode='group',
+    barmode='stack',
     width=1200,
     height=1000,
     margin=go.layout.Margin(
