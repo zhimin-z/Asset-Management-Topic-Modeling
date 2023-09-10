@@ -11,7 +11,7 @@ df = pd.read_json(os.path.join(path_rq4, 'macro-topics.json'))
 macro_topic_indexing = {
     0: 'Code Development',
     1: 'Code Management',
-    2: 'Compute Management',
+    2: 'Computation Management',
     3: 'Data Development',
     4: 'Data Management',
     5: 'Environment Management',

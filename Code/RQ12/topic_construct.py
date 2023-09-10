@@ -11,7 +11,7 @@ df = pd.read_json(os.path.join(path_rq12, 'macro-topics.json'))
 macro_topic_indexing = {
     0: 'Code Development',
     1: 'Code Management',
-    2: 'Compute Management',
+    2: 'Computation Management',
     3: 'Data Development',
     4: 'Data Management',
     5: 'Environment Management',
@@ -26,7 +26,17 @@ macro_topic_indexing = {
     14: 'Security Management',
     15: 'User Interface Management',
 }
-
+significant_macro_topics = {
+    'Code Development', 
+    'Computation Management', 
+    'Data Management', 
+    'Environment Management', 
+    'Model Deployment', 
+    'Model Development', 
+    'Model Management', 
+    'Observability Management', 
+    'Security Management',
+}
 color_map = {
     'Problem': 'tomato',
     'Knowledge': 'dodgerblue',
@@ -85,6 +95,10 @@ fig.update_layout(
     )
 )
 fig.update_annotations(dict(font_size=13))
+# Loop through annotations to set specific titles to bold
+for annotation in fig['layout']['annotations']:
+    if annotation['text'] in significant_macro_topics:
+        annotation['font'] = dict(family="Arial Black")
 pio.full_figure_for_development(fig, warn=False)
 fig.show()
 fig.write_image(os.path.join(path_rq12, 'Macro-topics group frequency histogram.pdf'))
