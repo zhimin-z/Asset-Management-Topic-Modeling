@@ -35,14 +35,14 @@ color_map = {
 rows = 5
 cols = 4
 fig = make_subplots(rows=rows, cols=cols, horizontal_spacing=0.05, vertical_spacing=0.05, subplot_titles=[
-                    macro_topic_indexing[i] for i in sorted(df['Resolution_summary_topic_macro'].unique())])
+                    macro_topic_indexing[i] for i in sorted(df['Solution_summary_topic_macro'].unique())])
 
-for macro_name, macro_group in df.groupby('Resolution_summary_topic_macro', sort=True):
+for macro_name, macro_group in df.groupby('Solution_summary_topic_macro', sort=True):
     categories = []
     frequency_p = []
     frequency_k = []
 
-    for name, group in macro_group.groupby('Resolution_summary_topic'):
+    for name, group in macro_group.groupby('Solution_summary_topic'):
         name = r'$\hat{R}_{0' + str(name+1) + '}$' if name < 9 else r'$\hat{R}_{' + str(name+1) + '}$'
         categories.append(name)
         frequency_p.append(len(group[group['Challenge_type'] == 'problem'])/len(group)*100)
