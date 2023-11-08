@@ -19,7 +19,7 @@ if not os.path.exists(path_model):
 
 wandb_project = 'asset-management-topic-modeling'
 
-os.environ["WANDB_API_KEY"] = '9963fa73f81aa361bdbaf545857e1230fc74094c'
+os.environ["WANDB_API_KEY"] = 'xxxxxx'
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 os.environ["WANDB__SERVICE_WAIT"] = "100"
 
