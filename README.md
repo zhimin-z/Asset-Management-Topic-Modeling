@@ -1,16 +1,17 @@
-# Machine Learning Asset Management Empirical Study
+# Empirical Study on ML Asset Management
 
-This repository contains the code and data used for the empirical study on challenges in machine learning (ML) asset management, as detailed in the paper "An Empirical Study of Challenges in Machine Learning Asset Management" by Zhimin Zhao et al.
+This repository hosts the code and data for the research conducted in "An Empirical Study of Challenges in Machine Learning Asset Management" by Zhimin Zhao et al. The study explores the multifaceted challenges encountered in managing ML assets, drawing data from diverse online discussion forums.
 
 ## Overview
-The study leverages general discussion forums (e.g. Stack Overflow), repository-specific discussion forums (e.g. GitHub, GitLab, and BitBucket), and tool-specific discussion forums to collect data for insights into the challenges and solutions related to ML asset management.
+Our study systematically gathers and analyzes data from general discussion forums (e.g., Stack Overflow), repository-specific forums (e.g., GitHub, GitLab, BitBucket), and tool-specific forums. This comprehensive approach provides insights into the prevalent challenges and emerging solutions in ML asset management.
 
 ## Contents
-1. **Code**: Contains the code used for data collection, preprocessing, and analysis.
-2. **Data**: Includes the datasets collected from various forums, the filtered and preprocessed data, and the final dataset used for analysis.
+1. **Code**: The repository includes scripts for data collection, preprocessing, and analysis, primarily developed for topic modeling. Notably, the scraping scripts from repository-specific forums can be accessed at [MSR Asset Management](https://github.com/zhimin-z/MSR-Asset-Management), and the general and tool-specific forum scripts at [QA Asset Management](https://github.com/zhimin-z/QA-Asset-Management).
+2. **Data**: This section hosts the raw dataset sourced from various forums, alongside the curated and preprocessed data sets.
 
 ## Citation
-If you use any part of the code or data from this repository in your work, please consider citing the original paper:
-```
-Zhimin Zhao et al. "An Empirical Study of Challenges in Machine Learning Asset Management." [TODO: add paper link]
-```
+Please cite our work as follows if you utilize this repository:
+Zhimin Zhao et al. "An Empirical Study of Challenges in Machine Learning Asset Management." [Paper Link]
+
+## Contact
+For queries or collaboration, feel free to raise an issue.
