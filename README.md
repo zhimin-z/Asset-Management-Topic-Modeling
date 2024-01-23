@@ -1,4 +1,4 @@
-# Machine Learning Asset Management Empirical Study Repository
+# Machine Learning Asset Management Empirical Study
 
 This repository contains the code and data used for the empirical study on challenges in machine learning (ML) asset management, as detailed in the paper "An Empirical Study of Challenges in Machine Learning Asset Management" by Zhimin Zhao et al.
 
