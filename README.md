@@ -1,4 +1,4 @@
-# Empirical Study on ML Asset Management
+# An Empirical Study on ML Asset Management
 
 This repository hosts the code and data for the research conducted in "An Empirical Study of Challenges in Machine Learning Asset Management" by Zhimin Zhao et al. The study explores the multifaceted challenges encountered in managing ML assets, drawing data from diverse online discussion forums.
 
