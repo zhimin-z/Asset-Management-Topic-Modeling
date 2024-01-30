@@ -1,4 +1,7 @@
-# An Empirical Study on ML Asset Management
+<div align="center">
+    <h1>An Empirical Study on ML Asset Management</h1>
+    <a href="https://zenodo.org/doi/10.5281/zenodo.10593653"><img src="[https://awesome.re/badge.svg](https://zenodo.org/badge/604438791.svg)"/></a>
+</div>
 
 This repository hosts the code and data for the research conducted in "An Empirical Study of Challenges in Machine Learning Asset Management" by Zhimin Zhao et al. The study explores the multifaceted challenges encountered in managing ML assets, drawing data from diverse online discussion forums.
 
