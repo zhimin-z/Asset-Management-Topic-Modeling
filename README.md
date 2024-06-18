@@ -6,7 +6,7 @@
 This repository hosts the code and data for the research conducted in "An Empirical Study of Challenges in Machine Learning Asset Management" by Zhimin Zhao et al. The study explores the multifaceted challenges encountered in managing ML assets, drawing data from diverse online discussion forums.
 
 ## Overview
-Our study systematically gathers and analyzes data from general discussion forums (e.g., Stack Overflow), repository-specific forums (e.g., GitHub, GitLab, BitBucket), and tool-specific forums. This comprehensive approach provides insights into the prevalent challenges and emerging solutions in ML asset management.
+Our study systematically gathers and analyzes data from general discussion forums (e.g., [Stack Overflow](https://stackoverflow.com)), repository-specific forums (e.g., [GitHub](https://github.com), [GitLab](https://about.gitlab.com), [BitBucket](https://bitbucket.org)), and tool-specific forums. This comprehensive approach provides insights into the prevalent challenges and emerging solutions in ML asset management.
 
 ## Contents
 1. **Code**: The repository includes scripts for data collection, preprocessing, and analysis, primarily developed for topic modeling. Notably, the data mining scripts from repository-specific forums can be accessed at [MSR Asset Management](https://github.com/zhimin-z/MSR-Asset-Management), and the general and tool-specific forum counterparts at [QA Asset Management](https://github.com/zhimin-z/QA-Asset-Management).
