@@ -14,7 +14,14 @@ Our study systematically gathers and analyzes data from general discussion forum
 
 ## Citation
 Please cite our work as follows if you utilize this repository:
-Zhimin Zhao et al. "An Empirical Study of Challenges in Machine Learning Asset Management." [Paper Link]
+```bibtex
+@article{zhao2024empirical,
+  title={An Empirical Study of Challenges in Machine Learning Asset Management},
+  author={Zhao, Zhimin and Chen, Yihao and Bangash, Abdul Ali and Adams, Bram and Hassan, Ahmed E},
+  journal={Empirical Software Engineering},
+  year={2024}
+}
+```
 
 ## Contact
 For queries or collaboration, feel free to raise an issue.
