@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>An Empirical Study on ML Asset Management</h1>
+    <h1>An Empirical Study of Challenges in Machine Learning Asset Management </h1>
     <a href="https://zenodo.org/doi/10.5281/zenodo.10593653"><img src="https://zenodo.org/badge/604438791.svg" alt="DOI"></a>
 </div>
 
