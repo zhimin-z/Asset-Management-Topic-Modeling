@@ -10,8 +10,8 @@ Our study systematically gathers and analyzes data from general discussion forum
 
 ## Contents
 1. **Code**: The repository includes scripts for data collection, preprocessing, and analysis, primarily developed for topic modeling. Notably, the data mining scripts from repository-specific forums can be accessed at [MSR Asset Management](https://github.com/zhimin-z/MSR-Asset-Management), and the general and tool-specific forum counterparts at [QA Asset Management](https://github.com/zhimin-z/QA-Asset-Management).
-2. **Data**: This section hosts the raw dataset sourced from various forums, alongside the curated and preprocessed datasets.
-3. **Results**: This section hosts the results from various analyses of the curated datasets.
+2. **Data**: This repository includes the raw dataset sourced from various forums, alongside the curated and preprocessed datasets.
+3. **Results**: This repository includes the results from various analyses of the curated datasets.
 
 ## Citation
 Please cite our work as follows if you utilize this repository:
