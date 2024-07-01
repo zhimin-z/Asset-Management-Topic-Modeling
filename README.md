@@ -5,9 +5,9 @@
 
 This repository hosts the code and data for the research conducted in [An Empirical Study of Challenges in Machine Learning Asset Management](https://rdcu.be/dKWyB) by Zhimin Zhao et al. The study explores the multifaceted challenges encountered in managing machine learning (ML) assets, drawing data from diverse online discussion forums.
 
-Watch the following video teaser to learn about our motivation, methodology, and key findings! (lyrics by [GPT-4o](https://chat.openai.com), music by [Suno](https://suno.plminu.com), video by [Canva](https://www.canva.com))
+Watch the following video teaser to learn about our motivation, methodology, and key findings! (cover & lyrics by [GPT-4o](https://chat.openai.com), music by [Suno](https://suno.plminu.com), video & editing by [Canva](https://www.canva.com))
 
-https://github.com/zhimin-z/Asset-Management-Topic-Modeling/assets/8592144/7b4b3486-9a4c-4f1b-81ab-7d223be9819d
+https://github.com/zhimin-z/Asset-Management-Topic-Modeling/assets/8592144/4b36d516-2d3a-4fac-9a48-82a1b7c1eb44
 
 ## Overview
 Our study comprehensively analyzes data from general forums (e.g., [Stack Overflow](https://stackoverflow.com)), repository-specific forums (e.g., [GitHub](https://github.com)), and tool-specific forums (e.g., [DVC](https://discuss.dvc.org)) to uncover prevalent challenges and emerging solutions in ML asset management.
