@@ -5,13 +5,17 @@
 
 This repository hosts the code and data for the research conducted in [An Empirical Study of Challenges in Machine Learning Asset Management](https://rdcu.be/dKWyB) by Zhimin Zhao et al. The study explores the multifaceted challenges encountered in managing machine learning (ML) assets, drawing data from diverse online discussion forums.
 
+Watch the following video teaser to learn about our motivation, methodology, and key findings! (lyrics by [GPT-4o](https://chat.openai.com), music by [Suno](https://suno.plminu.com), video by [Canva](https://www.canva.com))
+
+https://github.com/zhimin-z/Asset-Management-Topic-Modeling/assets/8592144/7b4b3486-9a4c-4f1b-81ab-7d223be9819d
+
 ## Overview
-Our study systematically gathers and analyzes data from general discussion forums (e.g., [Stack Overflow](https://stackoverflow.com)), repository-specific forums (e.g., [GitHub](https://github.com), [GitLab](https://about.gitlab.com), [BitBucket](https://bitbucket.org)), and tool-specific forums (e.g., [DVC](https://discuss.dvc.org)). This comprehensive approach provides insights into prevalent challenges and emerging solutions in ML asset management.
+Our study comprehensively analyzes data from general forums (e.g., [Stack Overflow](https://stackoverflow.com)), repository-specific forums (e.g., [GitHub](https://github.com)), and tool-specific forums (e.g., [DVC](https://discuss.dvc.org)) to uncover prevalent challenges and emerging solutions in ML asset management.
 
 ## Contents
 1. **Code**: The repository includes scripts for data collection, preprocessing, and analysis, primarily developed for topic modeling. Notably, the data mining scripts from repository-specific forums can be accessed at [MSR Asset Management](https://github.com/zhimin-z/MSR-Asset-Management), and the general and tool-specific forum counterparts at [QA Asset Management](https://github.com/zhimin-z/QA-Asset-Management).
 2. **Data**: This repository includes the raw dataset sourced from various forums, alongside the curated and preprocessed datasets.
-3. **Results**: This repository includes the results from various analyses of the curated datasets.
+3. **Results**: This repository includes the results and graphs from various analyses of the curated datasets.
 
 ## Citation
 Please cite our work as follows if you utilize this repository:
@@ -25,4 +29,4 @@ Please cite our work as follows if you utilize this repository:
 ```
 
 ## Contact
-For queries or collaboration, feel free to raise an issue.
+For queries or collaboration, feel free to [raise an issue](https://github.com/zhimin-z/Asset-Management-Topic-Modeling/issues/new).
