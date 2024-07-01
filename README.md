@@ -7,7 +7,7 @@ This repository hosts the code and data for the research conducted in [An Empiri
 
 Watch the following video teaser to learn about our motivation, methodology, and key findings! (cover & lyrics by [GPT-4o](https://chat.openai.com), music by [Suno](https://suno.plminu.com), video by [Canva](https://www.canva.com))
 
-https://github.com/zhimin-z/Asset-Management-Topic-Modeling/assets/8592144/4b36d516-2d3a-4fac-9a48-82a1b7c1eb44
+https://github.com/zhimin-z/Asset-Management-Topic-Modeling/assets/8592144/07c8a7e2-7379-41ac-8e59-1c004b11a0fe
 
 ## Overview
 Our study comprehensively analyzes data from general forums (e.g., [Stack Overflow](https://stackoverflow.com)), repository-specific forums (e.g., [GitHub](https://github.com)), and tool-specific forums (e.g., [DVC](https://discuss.dvc.org)) to uncover prevalent challenges and emerging solutions in ML asset management.
