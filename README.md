@@ -1,11 +1,17 @@
 <div align="center">
     <h1>An Empirical Study of Challenges in Machine Learning Asset Management </h1>
-    <a href="https://zenodo.org/doi/10.5281/zenodo.10593653"><img src="https://zenodo.org/badge/604438791.svg" alt="DOI"></a>
 </div>
+
+<p align="center">
+    <a href="https://arxiv.org/abs/2402.15990"><img src="https://img.shields.io/badge/📃-Arxiv-b31b1b?style=for-the-badge"></a>
+</a>
 
 This repository hosts the code and data for the research conducted in [An Empirical Study of Challenges in Machine Learning Asset Management](https://rdcu.be/dKWyB) by Zhimin Zhao et al. The study explores the multifaceted challenges of managing machine learning (ML) assets, drawing data from diverse online discussion forums.
 
-Watch the following video teaser to learn about our motivation, methodology, and key findings! (cover & lyrics by [GPT-4o](https://chat.openai.com), music by [Suno](https://suno.plminu.com), video by [Canva](https://www.canva.com))
+Watch the following video teaser to learn about our motivation, methodology, and key findings!
+#### Image: [GPT-4o](https://chat.openai.com)
+#### Music: [Suno](https://suno.plminu.com)
+#### Video: [Canva](https://www.canva.com)
 
 https://github.com/zhimin-z/Asset-Management-Topic-Modeling/assets/8592144/07c8a7e2-7379-41ac-8e59-1c004b11a0fe
 
