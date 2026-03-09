@@ -13,7 +13,7 @@ Watch the following video teaser to learn about our motivation, methodology, and
 #### Music: [Suno](https://suno.plminu.com)
 #### Video: [Canva](https://www.canva.com)
 
-![Video](demo.mp4)
+https://github.com/user-attachments/assets/8564059e-f5a6-41bf-bb85-c060ee59ddf7
 
 ## Overview
 Our study comprehensively analyzes data from general forums (e.g., [Stack Overflow](https://stackoverflow.com)), repository-specific forums (e.g., [GitHub](https://github.com)), and tool-specific forums (e.g., [DVC](https://discuss.dvc.org)) to uncover prevalent challenges and emerging solutions in ML asset management.
