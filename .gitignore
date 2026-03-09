@@ -1,0 +1,8 @@
+.env
+wandb
+Model
+__pycache__
+.DS_Store
+.venv
+.ipynb_checkpoints
+test.ipynb
