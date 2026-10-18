@@ -1,0 +1,18 @@
+# secrets — never commit
+.env
+.env.*
+!.env.example
+
+# large derived data (regenerate locally)
+*.json
+
+# binary artifacts
+*.pkl
+*.npy
+*.bin
+*.pickle
+
+# python
+__pycache__/
+*.pyc
+.venv/

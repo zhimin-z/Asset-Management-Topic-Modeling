@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  experiment-1:
+    # user: "${UID}:${GID}"
+    image: experiment
+    volumes:
+      - .:/app
+    command: python Code/RQ1/tm_1.py
+    restart: on-failure
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["5"]
+              capabilities: [gpu]
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+  experiment-2:
+    # user: "${UID}:${GID}"
+    image: experiment
+    volumes:
+      - .:/app
+    command: python Code/RQ1/tm_2.py
+    restart: on-failure
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["6"]
+              capabilities: [gpu]
+  experiment-3:
+    # user: "${UID}:${GID}"
+    image: experiment
+    volumes:
+      - .:/app
+    command: python Code/RQ1/tm_3.py
+    restart: on-failure
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["7"]
+              capabilities: [gpu]

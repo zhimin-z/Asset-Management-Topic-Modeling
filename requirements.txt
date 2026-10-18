@@ -1,0 +1,14 @@
+beautifulsoup4
+bertopic
+gensim
+kaleido
+matplotlib
+nbformat
+openai
+plotly
+safetensors
+seaborn
+spacy
+statsmodels
+textstat
+wandb
